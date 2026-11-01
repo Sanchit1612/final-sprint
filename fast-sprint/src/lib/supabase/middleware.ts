@@ -2,11 +2,11 @@ import { createServerClient, type CookieOptions } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 import { SUPABASE_KEY, SUPABASE_URL, supabaseConfigured } from "../env";
 
-const PROTECTED = ["/resources", "/analytics", "/dashboard", "/dsa", "/core", "/sprint", "/applications", "/saved", "/settings", "/onboarding"];
+const PROTECTED = ["/billing", "/resources", "/analytics", "/dashboard", "/dsa", "/core", "/sprint", "/applications", "/saved", "/settings", "/onboarding"];
 
 export async function updateSession(request: NextRequest) {
   let response = NextResponse.next({ request });
-  if (!supabaseConfigured()) return response;
+  if (request.nextUrl.pathname === "/api/billing/webhook" || !supabaseConfigured()) return response;
 
   const supabase = createServerClient(SUPABASE_URL, SUPABASE_KEY, {
     cookies: {

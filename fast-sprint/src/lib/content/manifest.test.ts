@@ -10,6 +10,7 @@ it("rejects unsafe URLs, duplicate paths and duplicate canonical problems", () =
 });
 it("propagates premium flags and rejects premium basic collections",()=>{
   expect(planManifest({version:1,root:{...root,isPro:true}}).every(r=>r.is_pro)).toBe(true);
+  expect(()=>planManifest({version:1,root:{...root,slug:"development",isPro:false}})).toThrow("must declare Pro");
   expect(()=>planManifest({version:1,root:{...root,slug:"dsa-200",isPro:true}})).toThrow("must be Free");
 });
 it("imports nested content atomically, preserves IDs and rolls back failures",async()=>{
@@ -23,5 +24,16 @@ it("imports nested content atomically, preserves IDs and rolls back failures",as
  const failAdapter={query:async(sql:string,values?:unknown[])=>{if(values?.includes('fixture/group/topic/problem'))throw Error('simulated write failure');return adapter.query(sql,values);}};
  await expect(writeManifest(failAdapter,{version:1,root:{...root,title:'Changed'}})).rejects.toThrow('simulated');
  expect((await db.query<{title:string}>("select title from content_items where path='fixture'")).rows[0].title).toBe('Fixture');
+ }finally{await db.close();}
+},30000);
+it('secures retained descendants when a collection becomes Pro without deleting records',async()=>{
+ const db=new PGlite();try{
+  await db.exec(`create role anon;create role authenticated;create role service_role;create schema auth;create table auth.users(id uuid primary key,raw_user_meta_data jsonb);create function auth.uid() returns uuid language sql as $$select null::uuid$$;`);
+  await db.exec(readFileSync('supabase/migrations/0001_v1_schema.sql','utf8'));
+  await db.exec("insert into content_items(item_type,path,slug,title,is_pro) values('topic','development/retained','retained','Retained topic',false)");
+  const adapter={query:async(sql:string,values?:unknown[])=>sql.includes('pg_advisory_xact_lock')?{rows:[]}:db.query<Record<string,unknown>>(sql,values)};
+  await writeManifest(adapter,{version:1,root:{slug:'development',title:'Development',type:'subject',isPro:true,children:[]}});
+  const row=(await db.query<{is_pro:boolean}>("select is_pro from content_items where path='development/retained'")).rows;
+  expect(row).toHaveLength(1);expect(row[0].is_pro).toBe(true);
  }finally{await db.close();}
 },30000);

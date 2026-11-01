@@ -6,97 +6,162 @@
     "type": "subject",
     "isPro": false,
     "meta": {
-      "contentStatus": "Official conceptual foundations; not a complete interview/practice bank"
+      "contentStatus": "Curated publisher learning index; not a hosted tutorial or certified job-readiness curriculum",
+      "curation": "GFG index-derived links; official specialised courses retained where relevant"
     },
     "children": [
       {
-        "slug": "relational-sql",
-        "title": "Relational databases and SQL",
+        "slug": "sql-foundations",
+        "title": "SQL foundations",
         "type": "topic",
+        "description": "Follow the linked publisher curriculum and its examples. External material remains subject to publisher access and licensing.",
         "children": [
           {
-            "slug": "postgres-tutorial",
-            "title": "PostgreSQL tutorial",
+            "slug": "gfg",
+            "title": "SQL foundations \u2014 GeeksforGeeks",
             "type": "resource",
-            "url": "https://www.postgresql.org/docs/current/tutorial.html",
+            "url": "https://www.geeksforgeeks.org/sql/sql-tutorial/",
             "meta": {
-              "verification": "page-opened-2026-11-01"
+              "verification": "http-200-title-checked-2026-11-02",
+              "publisher": "GeeksforGeeks"
             }
           }
         ]
       },
       {
-        "slug": "transactions",
-        "title": "Transactions",
+        "slug": "select-and-filtering",
+        "title": "SELECT and filtering",
         "type": "topic",
+        "description": "Follow the linked publisher curriculum and its examples. External material remains subject to publisher access and licensing.",
         "children": [
           {
-            "slug": "postgres-transactions",
-            "title": "PostgreSQL transactions tutorial",
+            "slug": "gfg",
+            "title": "SELECT and filtering \u2014 GeeksforGeeks",
             "type": "resource",
-            "url": "https://www.postgresql.org/docs/current/tutorial-transactions.html",
+            "url": "https://www.geeksforgeeks.org/sql/sql-select-query/",
             "meta": {
-              "verification": "page-opened-2026-11-01"
+              "verification": "http-200-title-checked-2026-11-02",
+              "publisher": "GeeksforGeeks"
             }
           }
         ]
       },
       {
-        "slug": "constraints",
-        "title": "Keys and integrity constraints",
+        "slug": "joins",
+        "title": "Joins",
         "type": "topic",
+        "description": "Follow the linked publisher curriculum and its examples. External material remains subject to publisher access and licensing.",
         "children": [
           {
-            "slug": "official",
-            "title": "Official PostgreSQL chapter",
+            "slug": "gfg",
+            "title": "Joins \u2014 GeeksforGeeks",
             "type": "resource",
-            "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+            "url": "https://www.geeksforgeeks.org/sql/sql-join-set-1-inner-left-right-and-full-joins/",
             "meta": {
-              "verification": "page-opened-2026-11-01"
+              "verification": "http-200-title-checked-2026-11-02",
+              "publisher": "GeeksforGeeks"
             }
           }
         ]
       },
       {
-        "slug": "indexes",
-        "title": "Indexes",
+        "slug": "grouping-and-aggregation",
+        "title": "Grouping and aggregation",
         "type": "topic",
+        "description": "Follow the linked publisher curriculum and its examples. External material remains subject to publisher access and licensing.",
         "children": [
           {
-            "slug": "official",
-            "title": "Official PostgreSQL chapter",
+            "slug": "gfg",
+            "title": "Grouping and aggregation \u2014 GeeksforGeeks",
             "type": "resource",
-            "url": "https://www.postgresql.org/docs/current/indexes.html",
+            "url": "https://www.geeksforgeeks.org/sql/sql-group-by/",
             "meta": {
-              "verification": "page-opened-2026-11-01"
+              "verification": "http-200-title-checked-2026-11-02",
+              "publisher": "GeeksforGeeks"
             }
           }
         ]
       },
       {
-        "slug": "concurrency",
-        "title": "Concurrency and transaction isolation",
+        "slug": "subqueries",
+        "title": "Subqueries",
         "type": "topic",
+        "description": "Follow the linked publisher curriculum and its examples. External material remains subject to publisher access and licensing.",
         "children": [
           {
-            "slug": "official",
-            "title": "Official PostgreSQL chapter",
+            "slug": "gfg",
+            "title": "Subqueries \u2014 GeeksforGeeks",
             "type": "resource",
-            "url": "https://www.postgresql.org/docs/current/mvcc.html",
+            "url": "https://www.geeksforgeeks.org/sql/sql-subquery/",
             "meta": {
-              "verification": "page-opened-2026-11-01"
+              "verification": "http-200-title-checked-2026-11-02",
+              "publisher": "GeeksforGeeks"
             }
           }
         ]
       },
       {
-        "slug": "query-plans",
+        "slug": "not-null-constraint",
+        "title": "NOT NULL constraint",
+        "type": "topic",
+        "description": "Follow the linked publisher curriculum and its examples. External material remains subject to publisher access and licensing.",
+        "children": [
+          {
+            "slug": "gfg",
+            "title": "NOT NULL constraint \u2014 GeeksforGeeks",
+            "type": "resource",
+            "url": "https://www.geeksforgeeks.org/sql/sql-not-null-constraint/",
+            "meta": {
+              "verification": "http-200-title-checked-2026-11-02",
+              "publisher": "GeeksforGeeks"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "transactions-and-acid",
+        "title": "Transactions and ACID",
+        "type": "topic",
+        "description": "Follow the linked publisher curriculum and its examples. External material remains subject to publisher access and licensing.",
+        "children": [
+          {
+            "slug": "gfg",
+            "title": "Transactions and ACID \u2014 GeeksforGeeks",
+            "type": "resource",
+            "url": "https://www.geeksforgeeks.org/sql/sql-transactions/",
+            "meta": {
+              "verification": "http-200-title-checked-2026-11-02",
+              "publisher": "GeeksforGeeks"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "sql-interview-practice",
+        "title": "SQL interview practice",
+        "type": "topic",
+        "description": "Follow the linked publisher curriculum and its examples. External material remains subject to publisher access and licensing.",
+        "children": [
+          {
+            "slug": "gfg",
+            "title": "SQL interview practice \u2014 GeeksforGeeks",
+            "type": "resource",
+            "url": "https://www.geeksforgeeks.org/sql/sql-interview-questions/",
+            "meta": {
+              "verification": "http-200-title-checked-2026-11-02",
+              "publisher": "GeeksforGeeks"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "supplement-query-plans",
         "title": "Reading query plans",
         "type": "topic",
         "children": [
           {
             "slug": "official",
-            "title": "Official PostgreSQL chapter",
+            "title": "PostgreSQL EXPLAIN documentation",
             "type": "resource",
             "url": "https://www.postgresql.org/docs/current/using-explain.html",
             "meta": {

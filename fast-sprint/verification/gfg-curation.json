@@ -1,0 +1,116 @@
+{
+  "checkedAt": "2026-11-02",
+  "scope": "HTTP status/title and topic mapping; no full tutorial quality/paywall audit",
+  "coreChecks": [
+    {
+      "url": "https://www.geeksforgeeks.org/dbms/commonly-asked-dbms-interview-questions/",
+      "finalUrl": "https://www.geeksforgeeks.org/dbms/commonly-asked-dbms-interview-questions/",
+      "status": 200,
+      "title": "DBMS Interview Questions with Answers - GeeksforGeeks"
+    },
+    {
+      "url": "https://www.geeksforgeeks.org/dbms/concurrency-control-in-dbms/",
+      "finalUrl": "https://www.geeksforgeeks.org/dbms/concurrency-control-in-dbms/",
+      "status": 200,
+      "title": "Concurrency Control in DBMS - GeeksforGeeks"
+    },
+    {
+      "url": "https://www.geeksforgeeks.org/dbms/denormalization-in-databases/",
+      "finalUrl": "https://www.geeksforgeeks.org/dbms/denormalization-in-databases/",
+      "status": 200,
+      "title": "Denormalization in Databases - GeeksforGeeks"
+    },
+    {
+      "url": "https://www.geeksforgeeks.org/dbms/indexing-in-databases-set-1/",
+      "finalUrl": "https://www.geeksforgeeks.org/dbms/indexing-in-databases-set-1/",
+      "status": 200,
+      "title": "Indexing in Databases - GeeksforGeeks"
+    },
+    {
+      "url": "https://www.geeksforgeeks.org/dbms/introduction-of-er-model/",
+      "finalUrl": "https://www.geeksforgeeks.org/dbms/introduction-of-er-model/",
+      "status": 200,
+      "title": "Introduction of ER Model - GeeksforGeeks"
+    },
+    {
+      "url": "https://www.geeksforgeeks.org/dbms/introduction-of-relational-algebra-in-dbms/",
+      "finalUrl": "https://www.geeksforgeeks.org/dbms/introduction-of-relational-algebra-in-dbms/",
+      "status": 200,
+      "title": "Introduction to Relational Algebra in DBMS - GeeksforGeeks"
+    },
+    {
+      "url": "https://www.geeksforgeeks.org/dbms/normal-forms-in-dbms/",
+      "finalUrl": "https://www.geeksforgeeks.org/dbms/normal-forms-in-dbms/",
+      "status": 200,
+      "title": "Normal Forms in DBMS - GeeksforGeeks"
+    },
+    {
+      "url": "https://www.geeksforgeeks.org/dbms/relational-model-in-dbms/",
+      "finalUrl": "https://www.geeksforgeeks.org/dbms/relational-model-in-dbms/",
+      "status": 200,
+      "title": "Relational Model in DBMS - GeeksforGeeks"
+    },
+    {
+      "url": "https://www.geeksforgeeks.org/dbms/types-of-keys-in-relational-model-candidate-super-primary-alternate-and-foreign/",
+      "finalUrl": "https://www.geeksforgeeks.org/dbms/types-of-keys-in-relational-model-candidate-super-primary-alternate-and-foreign/",
+      "status": 200,
+      "title": "Keys in Relational Model - GeeksforGeeks"
+    },
+    {
+      "url": "https://www.geeksforgeeks.org/sql/sql-group-by/",
+      "finalUrl": "https://www.geeksforgeeks.org/sql/sql-group-by/",
+      "status": 200,
+      "title": "SQL GROUP BY - GeeksforGeeks"
+    },
+    {
+      "url": "https://www.geeksforgeeks.org/sql/sql-interview-questions/",
+      "finalUrl": "https://www.geeksforgeeks.org/sql/sql-interview-questions/",
+      "status": 200,
+      "title": "SQL Interview Questions - GeeksforGeeks"
+    },
+    {
+      "url": "https://www.geeksforgeeks.org/sql/sql-join-set-1-inner-left-right-and-full-joins/",
+      "finalUrl": "https://www.geeksforgeeks.org/sql/sql-join-set-1-inner-left-right-and-full-joins/",
+      "status": 200,
+      "title": "SQL Joins (Inner, Left, Right and Full Join) - GeeksforGeeks"
+    },
+    {
+      "url": "https://www.geeksforgeeks.org/sql/sql-not-null-constraint/",
+      "finalUrl": "https://www.geeksforgeeks.org/sql/sql-not-null-constraint/",
+      "status": 200,
+      "title": "SQL NOT NULL Constraint - GeeksforGeeks"
+    },
+    {
+      "url": "https://www.geeksforgeeks.org/sql/sql-select-query/",
+      "finalUrl": "https://www.geeksforgeeks.org/sql/sql-select-query/",
+      "status": 200,
+      "title": "SQL SELECT Query - GeeksforGeeks"
+    },
+    {
+      "url": "https://www.geeksforgeeks.org/sql/sql-subquery/",
+      "finalUrl": "https://www.geeksforgeeks.org/sql/sql-subquery/",
+      "status": 200,
+      "title": "SQL Subquery - GeeksforGeeks"
+    },
+    {
+      "url": "https://www.geeksforgeeks.org/sql/sql-transactions/",
+      "finalUrl": "https://www.geeksforgeeks.org/sql/sql-transactions/",
+      "status": 200,
+      "title": "SQL TRANSACTIONS - GeeksforGeeks"
+    },
+    {
+      "url": "https://www.geeksforgeeks.org/sql/sql-tutorial/",
+      "finalUrl": "https://www.geeksforgeeks.org/sql/sql-tutorial/",
+      "status": 200,
+      "title": "SQL Tutorial - GeeksforGeeks"
+    }
+  ],
+  "development": {
+    "paths": 6,
+    "orderedSteps": 28,
+    "gfgDestinations": 14,
+    "http200": 14,
+    "details": "Private review report in backups/gfg-review/full-curation.json"
+  },
+  "gaps": []
+}

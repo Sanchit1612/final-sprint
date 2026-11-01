@@ -18,7 +18,7 @@ const uuid = z.string().uuid();
 
 // ───────── checklist progress ─────────
 export async function setDone(itemId: string, done: boolean): Promise<Result> {
-  if (!uuid.safeParse(itemId).success) return fail("Invalid item.");
+  if (!uuid.safeParse(itemId).success || !z.boolean().safeParse(done).success) return fail("Invalid item.");
   const { supabase, user } = await requireSession();
   const { error } = await supabase.from("user_item_progress").upsert({
     user_id: user.id, item_id: itemId, status: done ? "done" : "not_started", completed_at: done ? new Date().toISOString() : null,
@@ -29,7 +29,7 @@ export async function setDone(itemId: string, done: boolean): Promise<Result> {
 }
 
 export async function setRevise(itemId: string, value: boolean): Promise<Result> {
-  if (!uuid.safeParse(itemId).success) return fail("Invalid item.");
+  if (!uuid.safeParse(itemId).success || !z.boolean().safeParse(value).success) return fail("Invalid item.");
   const { supabase, user } = await requireSession();
   const { error } = await supabase.from("user_item_progress").upsert(
     { user_id: user.id, item_id: itemId, needs_revision: value }, { onConflict: "user_id,item_id", ignoreDuplicates: false });
@@ -39,7 +39,7 @@ export async function setRevise(itemId: string, value: boolean): Promise<Result>
 }
 
 export async function setBookmark(itemId: string, value: boolean): Promise<Result> {
-  if (!uuid.safeParse(itemId).success) return fail("Invalid item.");
+  if (!uuid.safeParse(itemId).success || !z.boolean().safeParse(value).success) return fail("Invalid item.");
   const { supabase, user } = await requireSession();
   const { error } = value
     ? await supabase.from("user_bookmarks").upsert({ user_id: user.id, item_id: itemId }, { onConflict: "user_id,item_id" })
@@ -51,6 +51,7 @@ export async function setBookmark(itemId: string, value: boolean): Promise<Resul
 
 export async function saveNote(itemId: string, body: string): Promise<Result> {
   if (!uuid.safeParse(itemId).success) return fail("Invalid item.");
+  if (typeof body !== "string") return fail("Invalid note.");
   const text = body.slice(0, 5000);
   const { supabase, user } = await requireSession();
   const { error } = text.trim()
@@ -80,27 +81,30 @@ export async function addTask(input: z.infer<typeof taskSchema>): Promise<Result
   return { ok: true };
 }
 export async function setTaskDone(id: string, done: boolean): Promise<Result> {
-  if (!uuid.safeParse(id).success) return fail("Invalid task.");
+  if (!uuid.safeParse(id).success || !z.boolean().safeParse(done).success) return fail("Invalid task.");
   const { supabase, user } = await requireSession();
-  const { error } = await supabase.from("daily_tasks").update({ status: done ? "done" : "pending", completed_at: done ? new Date().toISOString() : null })
-    .eq("id", id).eq("user_id", user.id);
+  const { data, error } = await supabase.from("daily_tasks").update({ status: done ? "done" : "pending", completed_at: done ? new Date().toISOString() : null })
+    .eq("id", id).eq("user_id", user.id).select("id").maybeSingle();
   if (error) return fail(error);
+  if (!data) return fail("This record is unavailable or has already been removed.");
   refresh();
   return { ok: true };
 }
 export async function moveTask(id: string, date: string): Promise<Result> {
   if (!uuid.safeParse(id).success || !isISODate(date)) return fail("Invalid request.");
   const { supabase, user } = await requireSession();
-  const { error } = await supabase.from("daily_tasks").update({ task_date: date }).eq("id", id).eq("user_id", user.id);
+  const { data, error } = await supabase.from("daily_tasks").update({ task_date: date }).eq("id", id).eq("user_id", user.id).select("id").maybeSingle();
   if (error) return fail(error);
+  if (!data) return fail("This record is unavailable or has already been removed.");
   refresh();
   return { ok: true };
 }
 export async function deleteTask(id: string): Promise<Result> {
   if (!uuid.safeParse(id).success) return fail("Invalid task.");
   const { supabase, user } = await requireSession();
-  const { error } = await supabase.from("daily_tasks").delete().eq("id", id).eq("user_id", user.id);
+  const { data, error } = await supabase.from("daily_tasks").delete().eq("id", id).eq("user_id", user.id).select("id").maybeSingle();
   if (error) return fail(error);
+  if (!data) return fail("This record is unavailable or has already been removed.");
   refresh();
   return { ok: true };
 }
@@ -119,32 +123,36 @@ export async function setApplicationStatus(id: string, status: string): Promise<
   const s = z.enum(APP_STATUSES).safeParse(status);
   if (!uuid.safeParse(id).success || !s.success) return fail("Invalid request.");
   const { supabase, user } = await requireSession();
-  const { error } = await supabase.from("applications").update({ status: s.data }).eq("id", id).eq("user_id", user.id);
+  const { data, error } = await supabase.from("applications").update({ status: s.data }).eq("id", id).eq("user_id", user.id).select("id").maybeSingle();
   if (error) return fail(error);
+  if (!data) return fail("This record is unavailable or has already been removed.");
   refresh();
   return { ok: true };
 }
 export async function deleteApplication(id: string): Promise<Result> {
   if (!uuid.safeParse(id).success) return fail("Invalid request.");
   const { supabase, user } = await requireSession();
-  const { error } = await supabase.from("applications").delete().eq("id", id).eq("user_id", user.id);
+  const { data, error } = await supabase.from("applications").delete().eq("id", id).eq("user_id", user.id).select("id").maybeSingle();
   if (error) return fail(error);
+  if (!data) return fail("This record is unavailable or has already been removed.");
   refresh();
   return { ok: true };
 }
 
 // ───────── profile ─────────
 export async function saveProfile(input: ProfileInput, complete = false): Promise<Result> {
+  if (!z.boolean().safeParse(complete).success) return fail("Invalid profile request.");
   const p = profileSchema.safeParse(input);
   if (!p.success) return fail(p.error.issues[0].message);
   const { supabase, user } = await requireSession();
   const d = p.data;
-  const { error } = await supabase.from("profiles").update({
+  const { data, error } = await supabase.from("profiles").update({
     full_name: d.full_name, college: d.college ?? null, branch: d.branch ?? null, graduation_year: d.graduation_year ?? null,
     target_role: d.target_role ?? null, target_company: d.target_company ?? null,
     ...(d.timezone ? { timezone: d.timezone } : {}), ...(complete ? { onboarded_at: new Date().toISOString() } : {}),
-  }).eq("id", user.id);
+  }).eq("id", user.id).select("id").maybeSingle();
   if (error) return fail(error);
+  if (!data) return fail("This record is unavailable or has already been removed.");
   refresh();
   return { ok: true };
 }

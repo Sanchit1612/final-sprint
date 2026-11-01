@@ -1,0 +1,18 @@
+{
+  "checkpoint": "resource-and-billing-preparation",
+  "testedAt": "2026-11-02",
+  "environment": "localhost app connected to existing staging; real Free browser session",
+  "checks": {
+    "developmentFreeGate": "passed: three public headings; no GFG resource links in rendered main",
+    "mobileDevelopment": "passed: viewport 390px; document 390px",
+    "mobileAnalytics": "passed: viewport 390px; document 390px; calendar 358px",
+    "desktopAnalytics": "passed: viewport/document 1280px; calendar 448px; day cell 53.42 by 53.42px; completion figure font-weight 700",
+    "sidebarCSDisclosure": "passed: expanded to DBMS, OS, CN, OOP, SQL and All CS concepts",
+    "paidCheckout": "not tested: no credentials, schema proposal unapplied",
+    "googleOAuth": "not tested: provider credentials/settings and public enable flag required",
+    "fullAccessibilityAudit": "not performed",
+    "dbmsResourceRendering": "passed: 11 reviewed topic leaves, actual GFG destinations and disabled review-only mutations",
+    "pricingSetupGate": "passed: all three checkout buttons disabled pending configuration"
+  },
+  "remoteWrites": 0
+}

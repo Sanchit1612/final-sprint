@@ -21,6 +21,7 @@ export function stableId(path: string) {
 export function planManifest(input: unknown): ImportRow[] {
   const { root } = manifestSchema.parse(input);
   if (root.type !== "subject") throw new Error("Root must be a subject");
+  if (["development","aptitude","behavioural","companies","interview"].includes(root.slug) && !root.isPro) throw new Error("Premium collections must declare Pro at the root");
   const paths = new Set<string>(), problems = new Set<string>(); const rows: ImportRow[] = [];
   const walk = (node: ContentNode, parent: string | null, position: number, premium: boolean, depth: number) => {
     if (depth > 12) throw new Error("Hierarchy exceeds 12 levels");
@@ -58,6 +59,8 @@ export async function writeManifest(db: Database, input: unknown) {
         returning id`, [row.id, row.parentPath ? ids.get(row.parentPath) : null, row.item_type, row.path, row.slug, row.title, row.description, row.url, row.difficulty, row.position, row.is_pro, JSON.stringify(row.meta)]);
       ids.set(row.path, String(rows[0].id));
     }
+    // Retired descendants survive non-destructive reimports, but must inherit a newly premium root.
+    if (plan[0].is_pro) await db.query("update public.content_items set is_pro=true where path=$1 or left(path,length($1)+1)=$1||'/'",[plan[0].path]);
     await db.query("commit");return { count: plan.length, ids: Object.fromEntries(ids) };
   } catch (e) { await db.query("rollback");throw e; }
 }

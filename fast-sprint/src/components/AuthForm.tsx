@@ -22,6 +22,8 @@ export function AuthForm({ mode }: { mode: "login" | "register" }) {
   const sp = useSearchParams();
   const next = safeAuthRedirect(sp.get("next"));
   const [error, setError] = useState<string | null>(sp.get("error"));
+  const [googlePending,setGooglePending] = useState(false);
+  const googleEnabled=process.env.NEXT_PUBLIC_GOOGLE_AUTH_ENABLED === "true";
   const [info, setInfo] = useState<string | null>(null);
   const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm<Values>({ resolver: zodResolver(schema) });
 
@@ -44,11 +46,14 @@ export function AuthForm({ mode }: { mode: "login" | "register" }) {
   });
 
   const google = async () => {
-    setError(null);
-    const { error } = await createClient().auth.signInWithOAuth({
-      provider: "google", options: { redirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(next)}` },
-    });
-    if (error) setError(error.message);
+    if(!googleEnabled||googlePending)return;
+    setError(null);setGooglePending(true);
+    try {
+      const { error } = await createClient().auth.signInWithOAuth({
+        provider: "google", options: { redirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(next)}` },
+      });
+      if (error) {setError(error.message);setGooglePending(false);}
+    }catch {setError("Google sign-in is unavailable. Please try again.");setGooglePending(false);}
   };
 
   return (
@@ -75,7 +80,7 @@ export function AuthForm({ mode }: { mode: "login" | "register" }) {
       </form>
       {mode === "login" && <Link href="/forgot-password" className="mt-4 inline-block text-sm text-accent">Forgot password?</Link>}
       <div className="my-5 flex items-center gap-3 text-xs text-muted"><span className="h-px flex-1 bg-line" />or<span className="h-px flex-1 bg-line" /></div>
-      <button type="button" onClick={google} className="btn-ghost w-full">Continue with Google</button>
+      <button type="button" onClick={google} disabled={!googleEnabled||googlePending} className="btn-ghost w-full">{googlePending?"Opening Google…":googleEnabled?"Continue with Google":"Google sign-in opens after setup"}</button>
       <p className="mt-6 text-center text-sm text-muted">
         {mode === "login" ? <>New here? <Link className="text-accent hover:underline" href="/register">Create an account</Link></> : <>Already have an account? <Link className="text-accent hover:underline" href="/login">Log in</Link></>}
       </p>

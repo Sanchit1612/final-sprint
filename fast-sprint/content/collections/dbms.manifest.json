@@ -6,117 +6,202 @@
     "type": "subject",
     "isPro": false,
     "meta": {
-      "contentStatus": "Official conceptual foundations; not a complete interview/practice bank"
+      "contentStatus": "Curated publisher learning index; not a hosted tutorial or certified job-readiness curriculum",
+      "curation": "GFG index-derived links; official specialised courses retained where relevant"
     },
     "children": [
       {
-        "slug": "relational-sql",
-        "title": "Relational databases and SQL",
+        "slug": "relational-model",
+        "title": "Relational model",
         "type": "topic",
+        "description": "Follow the linked publisher curriculum and its examples. External material remains subject to publisher access and licensing.",
         "children": [
           {
-            "slug": "postgres-tutorial",
-            "title": "PostgreSQL tutorial",
+            "slug": "gfg",
+            "title": "Relational model \u2014 GeeksforGeeks",
             "type": "resource",
-            "url": "https://www.postgresql.org/docs/current/tutorial.html",
+            "url": "https://www.geeksforgeeks.org/dbms/relational-model-in-dbms/",
             "meta": {
-              "verification": "page-opened-2026-11-01"
+              "verification": "http-200-title-checked-2026-11-02",
+              "publisher": "GeeksforGeeks"
             }
           }
         ]
       },
       {
-        "slug": "transactions",
-        "title": "Transactions",
+        "slug": "entity-relationship-modelling",
+        "title": "Entity relationship modelling",
         "type": "topic",
+        "description": "Follow the linked publisher curriculum and its examples. External material remains subject to publisher access and licensing.",
         "children": [
           {
-            "slug": "postgres-transactions",
-            "title": "PostgreSQL transactions tutorial",
+            "slug": "gfg",
+            "title": "Entity relationship modelling \u2014 GeeksforGeeks",
             "type": "resource",
-            "url": "https://www.postgresql.org/docs/current/tutorial-transactions.html",
+            "url": "https://www.geeksforgeeks.org/dbms/introduction-of-er-model/",
             "meta": {
-              "verification": "page-opened-2026-11-01"
+              "verification": "http-200-title-checked-2026-11-02",
+              "publisher": "GeeksforGeeks"
             }
           }
         ]
       },
       {
-        "slug": "constraints",
-        "title": "Keys and integrity constraints",
+        "slug": "keys-and-integrity",
+        "title": "Keys and integrity",
         "type": "topic",
+        "description": "Follow the linked publisher curriculum and its examples. External material remains subject to publisher access and licensing.",
         "children": [
           {
-            "slug": "official",
-            "title": "Official PostgreSQL chapter",
+            "slug": "gfg",
+            "title": "Keys and integrity \u2014 GeeksforGeeks",
             "type": "resource",
-            "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+            "url": "https://www.geeksforgeeks.org/dbms/types-of-keys-in-relational-model-candidate-super-primary-alternate-and-foreign/",
             "meta": {
-              "verification": "page-opened-2026-11-01"
+              "verification": "http-200-title-checked-2026-11-02",
+              "publisher": "GeeksforGeeks"
             }
           }
         ]
       },
       {
-        "slug": "indexes",
-        "title": "Indexes",
+        "slug": "relational-algebra",
+        "title": "Relational algebra",
         "type": "topic",
+        "description": "Follow the linked publisher curriculum and its examples. External material remains subject to publisher access and licensing.",
         "children": [
           {
-            "slug": "official",
-            "title": "Official PostgreSQL chapter",
+            "slug": "gfg",
+            "title": "Relational algebra \u2014 GeeksforGeeks",
             "type": "resource",
-            "url": "https://www.postgresql.org/docs/current/indexes.html",
+            "url": "https://www.geeksforgeeks.org/dbms/introduction-of-relational-algebra-in-dbms/",
             "meta": {
-              "verification": "page-opened-2026-11-01"
-            }
-          }
-        ]
-      },
-      {
-        "slug": "concurrency",
-        "title": "Concurrency and transaction isolation",
-        "type": "topic",
-        "children": [
-          {
-            "slug": "official",
-            "title": "Official PostgreSQL chapter",
-            "type": "resource",
-            "url": "https://www.postgresql.org/docs/current/mvcc.html",
-            "meta": {
-              "verification": "page-opened-2026-11-01"
-            }
-          }
-        ]
-      },
-      {
-        "slug": "query-plans",
-        "title": "Reading query plans",
-        "type": "topic",
-        "children": [
-          {
-            "slug": "official",
-            "title": "Official PostgreSQL chapter",
-            "type": "resource",
-            "url": "https://www.postgresql.org/docs/current/using-explain.html",
-            "meta": {
-              "verification": "page-opened-2026-11-01"
+              "verification": "http-200-title-checked-2026-11-02",
+              "publisher": "GeeksforGeeks"
             }
           }
         ]
       },
       {
         "slug": "normalization",
-        "title": "Normalization fundamentals",
+        "title": "Normalization",
+        "type": "topic",
+        "description": "Follow the linked publisher curriculum and its examples. External material remains subject to publisher access and licensing.",
+        "children": [
+          {
+            "slug": "gfg",
+            "title": "Normalization \u2014 GeeksforGeeks",
+            "type": "resource",
+            "url": "https://www.geeksforgeeks.org/dbms/normal-forms-in-dbms/",
+            "meta": {
+              "verification": "http-200-title-checked-2026-11-02",
+              "publisher": "GeeksforGeeks"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "denormalization",
+        "title": "Denormalization",
+        "type": "topic",
+        "description": "Follow the linked publisher curriculum and its examples. External material remains subject to publisher access and licensing.",
+        "children": [
+          {
+            "slug": "gfg",
+            "title": "Denormalization \u2014 GeeksforGeeks",
+            "type": "resource",
+            "url": "https://www.geeksforgeeks.org/dbms/denormalization-in-databases/",
+            "meta": {
+              "verification": "http-200-title-checked-2026-11-02",
+              "publisher": "GeeksforGeeks"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "concurrency-control",
+        "title": "Concurrency control",
+        "type": "topic",
+        "description": "Follow the linked publisher curriculum and its examples. External material remains subject to publisher access and licensing.",
+        "children": [
+          {
+            "slug": "gfg",
+            "title": "Concurrency control \u2014 GeeksforGeeks",
+            "type": "resource",
+            "url": "https://www.geeksforgeeks.org/dbms/concurrency-control-in-dbms/",
+            "meta": {
+              "verification": "http-200-title-checked-2026-11-02",
+              "publisher": "GeeksforGeeks"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "indexing",
+        "title": "Indexing",
+        "type": "topic",
+        "description": "Follow the linked publisher curriculum and its examples. External material remains subject to publisher access and licensing.",
+        "children": [
+          {
+            "slug": "gfg",
+            "title": "Indexing \u2014 GeeksforGeeks",
+            "type": "resource",
+            "url": "https://www.geeksforgeeks.org/dbms/indexing-in-databases-set-1/",
+            "meta": {
+              "verification": "http-200-title-checked-2026-11-02",
+              "publisher": "GeeksforGeeks"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "transactions-and-acid",
+        "title": "Transactions and ACID",
+        "type": "topic",
+        "description": "Follow the linked publisher curriculum and its examples. External material remains subject to publisher access and licensing.",
+        "children": [
+          {
+            "slug": "gfg",
+            "title": "Transactions and ACID \u2014 GeeksforGeeks",
+            "type": "resource",
+            "url": "https://www.geeksforgeeks.org/sql/sql-transactions/",
+            "meta": {
+              "verification": "http-200-title-checked-2026-11-02",
+              "publisher": "GeeksforGeeks"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "dbms-interview-questions",
+        "title": "DBMS interview questions",
+        "type": "topic",
+        "description": "Follow the linked publisher curriculum and its examples. External material remains subject to publisher access and licensing.",
+        "children": [
+          {
+            "slug": "gfg",
+            "title": "DBMS interview questions \u2014 GeeksforGeeks",
+            "type": "resource",
+            "url": "https://www.geeksforgeeks.org/dbms/commonly-asked-dbms-interview-questions/",
+            "meta": {
+              "verification": "http-200-title-checked-2026-11-02",
+              "publisher": "GeeksforGeeks"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "supplement-query-plans",
+        "title": "Reading query plans",
         "type": "topic",
         "children": [
           {
-            "slug": "microsoft",
-            "title": "Microsoft normalization guide (legacy documentation)",
+            "slug": "official",
+            "title": "PostgreSQL EXPLAIN documentation",
             "type": "resource",
-            "url": "https://learn.microsoft.com/en-us/previous-versions/troubleshoot/microsoft-365/microsoft-365-apps/access/database-normalization-description",
+            "url": "https://www.postgresql.org/docs/current/using-explain.html",
             "meta": {
-              "verification": "page-opened-2026-11-01; legacy page may display sign-in warning"
+              "verification": "page-opened-2026-11-01"
             }
           }
         ]

@@ -1,3 +1,5 @@
+import { ProPreview } from "@/components/ProPreview";
+import { PUBLIC_PRO_HEADINGS } from "@/config/library";
 import Link from "next/link";
 import { ActivityCalendar } from "@/components/ActivityCalendar";
 import { PageHeader, ProgressBar } from "@/components/ui";
@@ -19,7 +21,8 @@ export default async function Page(){
  const trends=isPro?completionTrends(activity.days,activity.today):null;
  const activeDays=Object.keys(activity.days).length;
  return <><PageHeader title="Your preparation, in view" subtitle="Progress from your saved checklist completions and daily tasks."/>
- <div className="mb-5 grid gap-3 sm:grid-cols-3">{[["Checklist complete",`${done} / ${total}`],["Current streak",`${activity.current} ${activity.current===1?"day":"days"}`],["Longest recorded run",`${activity.longest} ${activity.longest===1?"day":"days"}`]].map(([title,value])=><section key={title} className="card"><h2 className="text-sm text-muted">{title}</h2><p className="mt-2 text-3xl text-accent">{value}</p></section>)}</div>
+ {!isPro&&<ProPreview title="See your preparation in more detail" headings={PUBLIC_PRO_HEADINGS.analytics} description="Find the groups that need your attention and explore your completion trends with Pro. Your calendar, streak and basic progress stay Free."/>}
+ <div className="mb-5 grid gap-3 sm:grid-cols-3">{[["Checklist complete",`${done} / ${total}`],["Current streak",`${activity.current} ${activity.current===1?"day":"days"}`],["Longest recorded run",`${activity.longest} ${activity.longest===1?"day":"days"}`]].map(([title,value])=><section key={title} className="card"><h2 className="text-sm text-muted">{title}</h2><p className="mt-2 text-3xl font-bold tracking-tight text-accent">{value}</p></section>)}</div>
  <p className="mb-5 text-sm text-muted">A day is active when it has a saved checklist or task completion. Today may still be in progress, so a streak can end yesterday. These are completion snapshots: unchecking, re-completing or deleting records can change past counts. Durable history is awaiting an approved database change. Collections track progress independently.</p>
  <ActivityCalendar days={activity.days} timezone={tz} initialToday={activity.today}/>
  <section className="card mt-5"><h2 className="text-xl">Subject and collection progress</h2>{!available.length?<p className="mt-3 text-muted">Progress will appear when reviewed learning collections are published.</p>:<div className="mt-4 space-y-4">{available.map(({root,data})=><Link key={root.id} className="block" href={learningHref(root.slug)}><p className="mb-2 text-sm">{root.title} · {data!.completed}/{data!.total}</p><ProgressBar value={data!.completed} total={data!.total}/></Link>)}</div>}</section>

@@ -19,6 +19,7 @@ const NAV = [
 ];
 const NAV_BOTTOM = [
   { href: "/pricing", label: "Plans", icon: Sparkles },
+  { href: "/billing", label: "Payment history", icon: Sparkles },
   { href: "/settings", label: "Settings", icon: Settings },
 ];
 
@@ -38,9 +39,10 @@ export function AppShell({ name, isPro, children }: { name: string; isPro: boole
   };
 
   const sidebar = (
-    <nav aria-label="Main" className="flex h-full flex-col gap-1 p-4">
+    <nav aria-label="Main" className="flex h-full flex-col gap-1 overflow-y-auto p-4">
       <div className="mb-6 px-1"><Logo href="/dashboard" /></div>
-      {NAV.map(link)}
+      {NAV.filter(n=>n.href!=="/core").map(link)}
+      <details className="rounded-xl" open={path.startsWith("/core")||["dbms","os","cn","oop","sql"].some(s=>path===`/resources/${s}`)}><summary className="flex cursor-pointer items-center gap-3 px-3 py-2.5 text-sm text-muted"><Cpu className="h-4 w-4" aria-hidden/>CS concepts</summary><div className="ml-5 space-y-1 border-l border-line pl-2">{[{href:"/core",label:"All CS concepts",icon:Cpu},...[["dbms","DBMS"],["os","Operating Systems"],["cn","Computer Networks"],["oop","OOP"],["sql","SQL"]].map(([key,label])=>({href:`/resources/${key}`,label,icon:Cpu}))].map(link)}</div></details>
       <div className="mt-auto space-y-1 border-t border-line pt-4">
         {NAV_BOTTOM.map(link)}
         <form action={signOut}>

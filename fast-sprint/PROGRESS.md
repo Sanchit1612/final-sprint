@@ -1,9 +1,24 @@
 # Progress
 
-Last updated: 2026-11-01 — actual datasets, staged DSA persistence and analytics
+Last updated: 2026-11-02 — resource expansion, secure previews and integration preparation
 
-## Acceptance status
-Master200 and NeetCode150 now run on approved staging content with browser-tested progress/bookmark/note persistence. Source review, complete A2Zmapping and remaining resource packs are still pending. Recovery/GoogleOAuth/Pro browser acceptance remain open; the full product is NOT launch-accepted. No new migration was applied. Earlier checkpoint notes below are retained as history.
+## Current checkpoint status
+Continued from 17b78b6 without repeating migrations, DSA publication or earlier hosted checks. Expanded local resources and implemented secure preview/payment preparation. **Not launch-accepted:** provider credentials, hosted billing acceptance, recovery/Google/Pro browser acceptance, complete A2Z mappings and source-bank gaps remain. No deployment, remote SQL, new content publication or live payment enablement occurred.
+
+- DBMS: 11 learning leaves; SQL: 9. Topic-specific GFG resources replace generic references; specialised PostgreSQL EXPLAIN remains relevant. 31 distinct selected GFG destinations (including Development) returned HTTP200 and had destination titles/topic mappings reviewed; this is not full lesson correctness or permanent-availability verification.
+- Development: Pro, six paths/28 ordered steps, 14 distinct GFG destinations plus retained official specialised courses. Five private manifests and two Development curation scripts remain local/backup-only. Originals remain unchanged.
+- Free Pro-pack pages expose three deliberately public headings and decorative blur/upgrade prompts. Actual content stays behind server checks and published-row RLS. Analytics preview sits immediately below its title; completion figures are bolder (700); calendar is bounded with square cells. Sidebar CS concepts dropdown and consistent “Free” labels implemented.
+- Importer requires Pro at premium roots, secures retained descendants on approved reimport and keeps non-destructive transactions/ID preservation. Reports now include missing leaf links and repeated resource URLs, with private URL details omitted. All 13 manifests structurally valid; A2Z still has 311 missing original URLs and alias review pending. Supplied question indexes remain incomplete/unverified answer banks.
+- Razorpay: server-priced/idempotent checkout-order creation, same-origin authenticated callback, stored-order HMAC and provider capture/amount/currency checks, raw-body signed webhook reconciliation, atomic service-only settlement proposal, checkout-rate control and owner-read-only history. Test receipts never grant actual Pro. Payments disabled by default; live mode requires an additional explicit gate. Refund/chargeback entitlement reconciliation is not automated; a reviewed operational policy is required before paid launch.
+- `supabase/proposals/billing.sql` adds two tables, a rate-limit trigger/function and service-only settlement; replaces grant_pro to serialize account extensions and preserve lifetime access. Tested only in isolated embedded PostgreSQL. **Not applied remotely; separate approval required.** Activity-history SQL also remains unapplied; calendar/streaks still describe mutable completion snapshots.
+- Google: existing Supabase PKCE integration retained with an explicit setup-enable flag and loading/error states. Client ID/Secret belong in the Supabase Google provider dashboard. No configured Google sign-in success is claimed.
+- Fixed outstanding server-action edge cases: boolean/note runtime validation and explicit failure for zero-row task/application/profile mutations.
+
+Configuration/acceptance handoff: `DEPLOYMENT_CHECKLIST.md` lists exact environment variables, Google Cloud/Supabase/Razorpay settings, SQL effects, private-content handoff and tomorrow's test/deployment gates. Enter credentials locally/dashboard only. Google setup, test Razorpay keys/webhook secret, SQL approval, email recovery action and final publication/deployment approvals require the user; the agent does not wait indefinitely for them.
+
+## Current verification
+Local signed-in Free browser: Development shows exactly three headings and no GFG curriculum links; sidebar disclosure exposes all five CS subjects; DBMS renders actual reviewed resources; pricing keeps checkout disabled awaiting setup. Desktop analytics calendar width448px, cells53.42px square, completion font-weight700; mobile390px document width390px, calendar358px. No test data was written. This does not replace a Pro-account E2E or full screen-reader/contrast audit. See `verification/release-ui-checks.json`.
+Final checks: lint passed; explicit typecheck passed; **65 tests across16 files passed**; all13 nested manifests structurally valid; production build passed in an isolated copy without environment files. Tests cover HMAC tampering, cross-origin/unauthenticated/wrong-owner verification, capture mismatch, webhook retry, atomic duplicate settlement, test/live gating, lifetime-grant preservation and premium retained-descendant enforcement. Provider requests in route tests are mocked; actual checkout/delivery and hosted separate-session billing races remain pending. Previous hosted security/data-persistence evidence remains valid within its original scope and was not re-labelled as billing/provider verification.
 
 ## Earlier checkpoint verification
 - 0001 and 0002 were previously applied to hosted staging after approval. Verified eight RLS-enabled tables, twelve policies, ten triggers, six application functions and five subject roots.
@@ -14,7 +29,7 @@ Master200 and NeetCode150 now run on approved staging content with browser-teste
 - Final lint and production build passed in an isolated source copy without .env files. Explicit `npm run typecheck` also passed.
 - Browser: signed-out /dashboard redirected to /login?next=%2Fdashboard; empty login produced email/password validation errors; recovery/reset pages rendered with labelled fields. Login screenshot inspected at 390x844 and 1440x900. Mobile login document width matched viewport (390px), and Tab moved focus from email to password with a visible focus indicator.
 
-## Blocked or unverified — manual actions
+## Historical Milestone 1 open items (see current status above)
 - Google OAuth browser attempt returned HTTP 400: provider is not enabled. Configure Google OAuth credentials in Supabase Authentication -> Sign In / Providers -> Google. No provider settings were changed automatically.
 - User is registering a real test account and confirming email. Registration success, inbox delivery, confirmation callback, password recovery delivery/update, login/logout and refresh/reopen session persistence remain UNVERIFIED until observed. Password entry and password changes must be performed by the user in the browser; never send passwords or recovery links in chat.
 - Use http://localhost:3000 consistently and configure Supabase Site URL and callback Redirect URLs for that origin. Earlier OAuth provider availability probe used 127.0.0.1; it did not test the configured localhost callback.
@@ -68,3 +83,6 @@ Premium source manifests remain ignored/local and in a verified private backup; 
 
 ## Final checks for this implementation checkpoint
 `npm test`:50tests passed across13files, including a repeat run without the private premium manifests to check fresh-public-clone compatibility. `npm run lint`, explicit `npm run typecheck` and `npm run build`:passed. Offline nested validation passed for13local manifests; only9Free manifests are included in public source. Hosted checks matched743approved content rows and verified two-identity private learning-data isolation. Browser acceptance evidence is sanitized in verification/browser-content-acceptance.json. No new migration or production deployment. Source/private pack backup and Git push are verified in the final handoff after successful commands.
+
+## Integration preparation checkpoint handoff
+Final checked source is committed to main after local acceptance. Local backup target: `backups/fast-sprint-release-preparation-checkpoint.zip`, containing versioned app files plus five private manifests, two Development curation scripts and the private link-evidence report. Environment files, credentials, dependencies, Git internals and user records are excluded. CRC and per-file byte verification are performed before push; the final archive hash/commit verification stays in ignored backups to avoid a self-referential archive hash. Existing unrelated local files are preserved.

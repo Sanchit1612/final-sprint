@@ -15,3 +15,9 @@ content/collections/aptitude.manifest.json
 content/collections/behavioural.manifest.json
 content/collections/companies.manifest.json
 content/collections/interview.manifest.json
+
+content/collections/development.manifest.json
+
+# Private Development curation and ordering sources
+scripts/content/curate-library.py
+scripts/content/structure-development.py

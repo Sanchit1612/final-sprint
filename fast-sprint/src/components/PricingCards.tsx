@@ -1,3 +1,4 @@
+import { CheckoutButton } from "./CheckoutButton";
 import { passValue } from "@/lib/pricing";
 import { Check, Minus } from "lucide-react";
 import Link from "next/link";
@@ -6,7 +7,7 @@ import { FEATURES, PRICING } from "@/config/plans";
 const cell = (v: string | boolean) =>
   v === true ? <Check className="mx-auto h-4 w-4 text-success" aria-label="Included" /> : v === false ? <Minus className="mx-auto h-4 w-4 text-muted" aria-label="Not included" /> : <span className="text-sm">{v}</span>;
 
-export function PricingCards({ isPro, signedIn }: { isPro: boolean; signedIn: boolean }) {
+export function PricingCards({ isPro, signedIn, billing }: { isPro: boolean; signedIn: boolean; billing?: {ready:boolean;mode?:string} }) {
   return (
     <div className="space-y-12">
       <div className="grid gap-4 md:grid-cols-3">
@@ -17,7 +18,7 @@ export function PricingCards({ isPro, signedIn }: { isPro: boolean; signedIn: bo
             <p className="mt-3 text-lg">₹{value.perMonth.toFixed(2)} <span className="text-sm text-muted">/ month equivalent</span></p>
             {value.savings > 0 && <p className="mt-2 text-xs text-accent">Save ₹{value.savings} ({value.savingPercent}%) versus {p.months} separate one-month passes.</p>}
             <p className="mt-1 text-sm text-muted">{p.tagline}. One-time pass, no auto-renew.</p>
-            <button disabled className="btn-primary mt-5 w-full" title="Payments are not live yet">Payments open soon</button>
+            <CheckoutButton months={p.months} signedIn={signedIn} ready={billing?.ready??false} mode={billing?.mode}/>
           </div>
         ); })}
       </div>
@@ -42,7 +43,7 @@ export function PricingCards({ isPro, signedIn }: { isPro: boolean; signedIn: bo
       </div>
 
       <div className="text-center">
-        {isPro ? <p className="text-sm text-muted">You have an active Pro plan.</p> : signedIn ? <Link href="/dashboard" className="btn-ghost">Back to dashboard</Link> : <Link href="/register" className="btn-glow">Start free</Link>}
+        {isPro ? <p className="text-sm text-muted">You have an active Pro plan.</p> : signedIn ? <Link href="/billing" className="btn-ghost">View payment history</Link> : <Link href="/register" className="btn-glow">Start free</Link>}
       </div>
     </div>
   );

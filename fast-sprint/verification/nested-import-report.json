@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T18:04:20.629Z",
+  "generatedAt": "2026-11-01T18:53:57.715Z",
   "databaseWrites": 0,
   "reports": [
     {
@@ -8,6 +8,11 @@
       "rows": 162,
       "problems": 0,
       "resources": 75,
+      "learningLeaves": 75,
+      "leavesWithoutLinks": 0,
+      "duplicateResourceURLCount": 0,
+      "duplicateResourceURLs": "private-details-omitted",
+      "tier": "Pro",
       "missingProblemURLs": [],
       "pathsUnique": true,
       "status": "structure-valid; not approval to publish"
@@ -18,6 +23,11 @@
       "rows": 70,
       "problems": 0,
       "resources": 0,
+      "learningLeaves": 60,
+      "leavesWithoutLinks": 60,
+      "duplicateResourceURLCount": 0,
+      "duplicateResourceURLs": "private-details-omitted",
+      "tier": "Pro",
       "missingProblemURLs": [],
       "pathsUnique": true,
       "status": "structure-valid; not approval to publish"
@@ -28,6 +38,20 @@
       "rows": 254,
       "problems": 0,
       "resources": 118,
+      "learningLeaves": 118,
+      "leavesWithoutLinks": 0,
+      "duplicateResourceURLCount": 2,
+      "duplicateResourceURLs": [
+        {
+          "url": "https://www.geeksforgeeks.org/computer-networks/tcp-connection-establishment/",
+          "count": 2
+        },
+        {
+          "url": "https://www.geeksforgeeks.org/computer-networks/pptp-full-form/",
+          "count": 2
+        }
+      ],
+      "tier": "Free",
       "missingProblemURLs": [],
       "pathsUnique": true,
       "status": "structure-valid; not approval to publish"
@@ -38,26 +62,41 @@
       "rows": 205,
       "problems": 0,
       "resources": 86,
+      "learningLeaves": 86,
+      "leavesWithoutLinks": 0,
+      "duplicateResourceURLCount": 0,
+      "duplicateResourceURLs": "private-details-omitted",
+      "tier": "Pro",
       "missingProblemURLs": [],
       "pathsUnique": true,
       "status": "structure-valid; not approval to publish"
     },
     {
       "file": "dbms.manifest.json",
-      "sha256": "c0f857d8c74f0f90b15d95627648d204a494586ee37f953f5e5f87caf9500193",
-      "rows": 15,
+      "sha256": "fbd3cbd65317a6c7112a7fd8ce9f572f149815dda2ca73238dee687edc33c8fc",
+      "rows": 23,
       "problems": 0,
-      "resources": 7,
+      "resources": 11,
+      "learningLeaves": 11,
+      "leavesWithoutLinks": 0,
+      "duplicateResourceURLCount": 0,
+      "duplicateResourceURLs": [],
+      "tier": "Free",
       "missingProblemURLs": [],
       "pathsUnique": true,
       "status": "structure-valid; not approval to publish"
     },
     {
       "file": "development.manifest.json",
-      "sha256": "de9ed9894235ac3481fc716d6255131ef492f7b9a4d12de89d857b50414d9201",
-      "rows": 15,
+      "sha256": "5e8ad378a114b9589fefa0f998f7d8ff93018e5e262ddd70049295aedc9c671b",
+      "rows": 63,
       "problems": 0,
-      "resources": 7,
+      "resources": 28,
+      "learningLeaves": 28,
+      "leavesWithoutLinks": 0,
+      "duplicateResourceURLCount": 6,
+      "duplicateResourceURLs": "private-details-omitted",
+      "tier": "Pro",
       "missingProblemURLs": [],
       "pathsUnique": true,
       "status": "structure-valid; not approval to publish"
@@ -68,6 +107,11 @@
       "rows": 424,
       "problems": 200,
       "resources": 200,
+      "learningLeaves": 200,
+      "leavesWithoutLinks": 0,
+      "duplicateResourceURLCount": 0,
+      "duplicateResourceURLs": [],
+      "tier": "Free",
       "missingProblemURLs": [],
       "pathsUnique": true,
       "status": "structure-valid; not approval to publish"
@@ -78,6 +122,60 @@
       "rows": 618,
       "problems": 455,
       "resources": 144,
+      "learningLeaves": 455,
+      "leavesWithoutLinks": 311,
+      "duplicateResourceURLCount": 12,
+      "duplicateResourceURLs": [
+        {
+          "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+          "count": 2
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=1pkOgXD63yU",
+          "count": 2
+        },
+        {
+          "url": "https://leetcode.com/problems/merge-intervals/",
+          "count": 2
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=44H3cEC2fFM",
+          "count": 2
+        },
+        {
+          "url": "https://leetcode.com/problems/reverse-linked-list/",
+          "count": 2
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=G0_I-ZF0S38",
+          "count": 2
+        },
+        {
+          "url": "https://leetcode.com/problems/binary-tree-preorder-traversal/",
+          "count": 2
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=afTpieEZXck",
+          "count": 2
+        },
+        {
+          "url": "https://leetcode.com/problems/binary-tree-inorder-traversal/",
+          "count": 2
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=g_S5WuasWUE",
+          "count": 2
+        },
+        {
+          "url": "https://leetcode.com/problems/binary-tree-postorder-traversal/",
+          "count": 3
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=QhszUQhGGlA",
+          "count": 3
+        }
+      ],
+      "tier": "Free",
       "missingProblemURLs": [
         "dsa-a2z/step-1/entry-001",
         "dsa-a2z/step-1/entry-002",
@@ -400,6 +498,11 @@
       "rows": 319,
       "problems": 150,
       "resources": 150,
+      "learningLeaves": 150,
+      "leavesWithoutLinks": 0,
+      "duplicateResourceURLCount": 0,
+      "duplicateResourceURLs": [],
+      "tier": "Free",
       "missingProblemURLs": [],
       "pathsUnique": true,
       "status": "structure-valid; not approval to publish"
@@ -410,6 +513,11 @@
       "rows": 63,
       "problems": 0,
       "resources": 0,
+      "learningLeaves": 59,
+      "leavesWithoutLinks": 59,
+      "duplicateResourceURLCount": 0,
+      "duplicateResourceURLs": "private-details-omitted",
+      "tier": "Pro",
       "missingProblemURLs": [],
       "pathsUnique": true,
       "status": "structure-valid; not approval to publish"
@@ -420,6 +528,44 @@
       "rows": 78,
       "problems": 0,
       "resources": 36,
+      "learningLeaves": 36,
+      "leavesWithoutLinks": 0,
+      "duplicateResourceURLCount": 8,
+      "duplicateResourceURLs": [
+        {
+          "url": "https://www.geeksforgeeks.org/cpp/c-classes-and-objects/",
+          "count": 2
+        },
+        {
+          "url": "https://www.geeksforgeeks.org/cpp/constructors-c/",
+          "count": 2
+        },
+        {
+          "url": "https://www.geeksforgeeks.org/cpp/access-modifiers-in-c/",
+          "count": 2
+        },
+        {
+          "url": "https://www.geeksforgeeks.org/cpp/abstraction-in-cpp/",
+          "count": 3
+        },
+        {
+          "url": "https://www.geeksforgeeks.org/cpp/inheritance-in-c/",
+          "count": 2
+        },
+        {
+          "url": "https://www.geeksforgeeks.org/cpp/cpp-polymorphism/",
+          "count": 4
+        },
+        {
+          "url": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+          "count": 14
+        },
+        {
+          "url": "https://www.geeksforgeeks.org/system-design/association-class-relationship/",
+          "count": 2
+        }
+      ],
+      "tier": "Free",
       "missingProblemURLs": [],
       "pathsUnique": true,
       "status": "structure-valid; not approval to publish"
@@ -430,16 +576,26 @@
       "rows": 122,
       "problems": 0,
       "resources": 57,
+      "learningLeaves": 57,
+      "leavesWithoutLinks": 0,
+      "duplicateResourceURLCount": 0,
+      "duplicateResourceURLs": [],
+      "tier": "Free",
       "missingProblemURLs": [],
       "pathsUnique": true,
       "status": "structure-valid; not approval to publish"
     },
     {
       "file": "sql.manifest.json",
-      "sha256": "c213d4583f9b9994cc592b969ff4ba4b047d1be11a0ec9e33334ed5390847185",
-      "rows": 13,
+      "sha256": "1409722b3c262b83d62e69023f95a2b0bb42aa8e4e9f9bcc5671b00f03a2ef0c",
+      "rows": 19,
       "problems": 0,
-      "resources": 6,
+      "resources": 9,
+      "learningLeaves": 9,
+      "leavesWithoutLinks": 0,
+      "duplicateResourceURLCount": 0,
+      "duplicateResourceURLs": [],
+      "tier": "Free",
       "missingProblemURLs": [],
       "pathsUnique": true,
       "status": "structure-valid; not approval to publish"

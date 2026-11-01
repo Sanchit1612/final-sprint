@@ -22,3 +22,6 @@ it('loads a private pack only for an authorized Pro caller',async()=>{
  const r=await loadLearningTree({} as SupabaseClient,'user','behavioural',{},true,dir);expect(r?.total).toBe(1);expect(r?.tree[0].title).toBe('Private test question');
  }finally{rmSync(dir,{recursive:true,force:true});}
 });
+it('denies Development to Free accounts before any database read',async()=>{
+ load.mockClear();await expect(loadLearningTree({} as SupabaseClient,'user','development')).rejects.toThrow('Pro entitlement required');expect(load).not.toHaveBeenCalled();
+});
