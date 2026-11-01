@@ -1,0 +1,160 @@
+{
+  "runAt": "2026-11-01T16:19:09.326Z",
+  "results": [
+    {
+      "test": "two-account profiles read/update/delete isolation",
+      "account": 1,
+      "passed": true
+    },
+    {
+      "test": "two-account user_entitlements read/update/delete isolation",
+      "account": 1,
+      "passed": true
+    },
+    {
+      "test": "two-account user_item_progress read/update/delete isolation",
+      "account": 1,
+      "passed": true
+    },
+    {
+      "test": "two-account user_notes read/update/delete isolation",
+      "account": 1,
+      "passed": true
+    },
+    {
+      "test": "two-account user_bookmarks read/update/delete isolation",
+      "account": 1,
+      "passed": true
+    },
+    {
+      "test": "two-account daily_tasks read/update/delete isolation",
+      "account": 1,
+      "passed": true
+    },
+    {
+      "test": "two-account applications read/update/delete isolation",
+      "account": 1,
+      "passed": true
+    },
+    {
+      "test": "two-account profiles read/update/delete isolation",
+      "account": 2,
+      "passed": true
+    },
+    {
+      "test": "two-account user_entitlements read/update/delete isolation",
+      "account": 2,
+      "passed": true
+    },
+    {
+      "test": "two-account user_item_progress read/update/delete isolation",
+      "account": 2,
+      "passed": true
+    },
+    {
+      "test": "two-account user_notes read/update/delete isolation",
+      "account": 2,
+      "passed": true
+    },
+    {
+      "test": "two-account user_bookmarks read/update/delete isolation",
+      "account": 2,
+      "passed": true
+    },
+    {
+      "test": "two-account daily_tasks read/update/delete isolation",
+      "account": 2,
+      "passed": true
+    },
+    {
+      "test": "two-account applications read/update/delete isolation",
+      "account": 2,
+      "passed": true
+    },
+    {
+      "test": "profiles foreign insert denied",
+      "passed": true
+    },
+    {
+      "test": "user_entitlements foreign insert denied",
+      "passed": true
+    },
+    {
+      "test": "user_notes foreign insert denied",
+      "passed": true
+    },
+    {
+      "test": "user_item_progress foreign insert denied",
+      "passed": true
+    },
+    {
+      "test": "user_bookmarks foreign insert denied",
+      "passed": true
+    },
+    {
+      "test": "daily_tasks foreign insert denied",
+      "passed": true
+    },
+    {
+      "test": "applications foreign insert denied",
+      "passed": true
+    },
+    {
+      "test": "profiles foreign insert denied",
+      "passed": true
+    },
+    {
+      "test": "user_entitlements foreign insert denied",
+      "passed": true
+    },
+    {
+      "test": "user_notes foreign insert denied",
+      "passed": true
+    },
+    {
+      "test": "user_item_progress foreign insert denied",
+      "passed": true
+    },
+    {
+      "test": "user_bookmarks foreign insert denied",
+      "passed": true
+    },
+    {
+      "test": "daily_tasks foreign insert denied",
+      "passed": true
+    },
+    {
+      "test": "applications foreign insert denied",
+      "passed": true
+    },
+    {
+      "test": "self upgrades and grant RPC denied for both identities",
+      "passed": true
+    },
+    {
+      "test": "daily_tasks concurrency",
+      "sessions": 8,
+      "accepted": 1,
+      "rejected": 7,
+      "count": 5,
+      "passed": true
+    },
+    {
+      "test": "applications concurrency",
+      "sessions": 8,
+      "accepted": 1,
+      "rejected": 7,
+      "count": 10,
+      "passed": true
+    },
+    {
+      "test": "concurrent date moves into last task slot",
+      "sessions": 2,
+      "accepted": 1,
+      "rejected": 1,
+      "passed": true
+    }
+  ],
+  "success": true,
+  "fixturesRemoved": true
+}

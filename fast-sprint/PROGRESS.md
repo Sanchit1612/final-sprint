@@ -1,9 +1,29 @@
 # Progress
 
-Last updated: 2026-11-01 — Milestone 1 checkpoint
+Last updated: 2026-11-01 — hosted Milestone 1 acceptance checks
 
-## Status
-Milestone 1 checkpoint prepared; full Milestone 1 acceptance remains pending the hosted and multi-session checks below. Milestone 2 has NOT started. The existing architecture, eight-table foundation, design and complete V2 roadmap are preserved. This is the first Git checkpoint of the existing project because the local repository had no commits and remote main was absent when checked.
+## Acceptance status
+Hosted database security/quota checks passed. Full Milestone 1 acceptance remains OPEN pending real email/Google authentication and signed-in browser checks. Milestone 2 has not started. No migrations were rerun or added during this acceptance work.
+
+## Verified results
+- 0001 and 0002 were previously applied to hosted staging after approval. Verified eight RLS-enabled tables, twelve policies, ten triggers, six application functions and five subject roots.
+- Hosted SQL tests use two temporary auth.users identities, SET LOCAL ROLE authenticated and request.jwt.claim.sub. For all seven private tables, both identities can read their own fixture and cannot read/update/delete the other's rows. Forged-owner inserts are denied on every table. Self-upgrade updates return no rows; grant_pro execution is denied.
+- Eight independent PostgreSQL sessions race for one remaining task slot: one accepted, seven quota rejections, total five. Same race for applications: one accepted, seven rejected, total ten. Two separate sessions moving tasks into one remaining day slot: one accepted, one quota rejection.
+- Test fixtures removed after execution; no real account records were changed. Sanitized results: verification/hosted-milestone-1-results.json. These are SQL/RLS checks, NOT Supabase-issued JWT or browser-login tests.
+- Local suite: seven files, 34 tests passed, including four new server-action regression tests (input rejection, denied authentication, trusted user binding/quota error and timezone validation).
+- Final lint and production build passed in an isolated source copy without .env files. Explicit `npm run typecheck` also passed.
+- Browser: signed-out /dashboard redirected to /login?next=%2Fdashboard; empty login produced email/password validation errors; recovery/reset pages rendered with labelled fields. Login screenshot inspected at 390x844 and 1440x900. Mobile login document width matched viewport (390px), and Tab moved focus from email to password with a visible focus indicator.
+
+## Blocked or unverified — manual actions
+- Google OAuth browser attempt returned HTTP 400: provider is not enabled. Configure Google OAuth credentials in Supabase Authentication -> Sign In / Providers -> Google. No provider settings were changed automatically.
+- User is registering a real test account and confirming email. Registration success, inbox delivery, confirmation callback, password recovery delivery/update, login/logout and refresh/reopen session persistence remain UNVERIFIED until observed. Password entry and password changes must be performed by the user in the browser; never send passwords or recovery links in chat.
+- Use http://localhost:3000 consistently and configure Supabase Site URL and callback Redirect URLs for that origin. Earlier OAuth provider availability probe used 127.0.0.1; it did not test the configured localhost callback.
+- Signed-in app CRUD, authenticated mobile layouts, screen-reader/contrast audit, full keyboard navigation and end-to-end error states remain pending.
+- SQL suite does not exhaust every allowed CRUD operation, anonymous access, hosted premium expiry/revocation or PostgREST/JWT behavior. Premium gating currently has embedded PostgreSQL regression coverage only.
+- Server-action zero-row mutation outcomes can still return success, and runtime argument validation coverage is not exhaustive. Streak uses current completion timestamps, not immutable activity history.
+
+## Local backups
+Before/after migration schema catalogs and downloaded CA certificate remain under ignored backups/. The acceptance ZIP excludes environment files, credentials, dependencies, generated output and Git internals. Only sanitized results are committed. Final commit, push and archive verification are reported in chat after Git succeeds.
 
 ## Changes in this checkpoint
 - Added `0002_quota_security.sql`: checks inserts and date moves, serializes quota checks with a per-profile row lock, and permits non-quota updates at capacity. No live migration has been applied and no user data was removed.
@@ -13,26 +33,6 @@ Milestone 1 checkpoint prepared; full Milestone 1 acceptance remains pending the
 - Surfaced previously ignored tree, account, revision-count and list-read errors through error boundaries; made logout failure explicit.
 - Added strict calendar/timezone validation, fail-closed entitlement date checks and disabled checklist controls during pending writes.
 - Expanded local regression coverage with embedded PostgreSQL migration/RLS/quota tests and application helper tests. Strengthened environment-file ignores.
-
-## Final checks actually executed
-- `npm test`: 6 files, 30 tests passed.
-- `npm run lint`: passed without warnings.
-- `npm run build`: passed, Next.js 15.5.28, including type validation.
-- `npm run typecheck`: passed without errors.
-- Embedded PostgreSQL executed BOTH active migrations using a minimal Supabase identity contract. Verified task insertion/move limits, completion at capacity, application limits/status updates, private-task isolation, denied entitlement inserts/updates and denied grant RPC, premium visibility and denied premium progress writes before a trusted grant.
-- The embedded database has one serialized connection: it does NOT prove cross-session concurrency safety, nor does it replace real Supabase Auth/PostgREST tests.
-- Earlier no-environment production HTTP smoke checks confirmed landing/pricing and setup notices. Browser interactions and responsive layouts were not verified in this checkpoint.
-
-## Pending verification — requires external setup
-1. Supply a staging Supabase project via local `.env.local` (never chat or Git): `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY`. Service-role credentials are only required locally for administrative scripts, not for the frontend or deployment.
-2. Review and apply `0001_v1_schema.sql`, then `0002_quota_security.sql` on a fresh project. On an existing V1 database apply only 0002 after checking migration state. Do NOT apply `supabase/future`. The second migration replaces quota triggers and adds restrictive policies; it does not delete data.
-3. Test at least two independent authenticated accounts through Supabase: cross-user reads AND writes on every private table, anonymous denial, entitlement tampering, premium content, expiry and revoked access.
-4. Run concurrent inserts/moves from separate PostgreSQL sessions near both limits. The lock implementation is present, but this runtime scenario remains unverified.
-5. Verify registration, email confirmation, email recovery links, password changes, Google OAuth, logout, session persistence, protected routes, invalid/expired links and every Phase 1 CRUD flow in a browser. Configure Supabase Site URL and callback allowlist first.
-6. Browser accessibility/mobile checks and error states remain pending. Remaining Milestone 1 review includes mutation zero-row outcomes and complete server-action/security regression coverage; current tests are not exhaustive.
-
-## Backup and Git
-The checkpoint ZIP is generated from the reviewed source set, excluding dependencies, generated output, Git internals and secrets. It is checked for CRC errors, file-set equality and matching source bytes before handoff. The final chat report records the successful commit/push hash and backup path; do not interpret this section as confirmation of a push before Git reports success.
 
 ## Content and later milestones
 No real educational content has been imported; `content/import` is empty. The importer still needs hierarchical sections, Pro flags, duplicate/transaction hardening and the actual source resources. Payments are not implemented or enabled. No checkout or webhook has been verified. Milestones 2–7 remain pending; do not start Milestone 2 until this checkpoint is delivered.
