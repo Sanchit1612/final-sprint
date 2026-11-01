@@ -1,0 +1,15 @@
+{
+  "verifiedAt": "2026-11-01T18:00:49.400Z",
+  "verified": [
+    {
+      "root": "dsa-200",
+      "rows": 424,
+      "parentPathsTitlesURLsDifficultiesPositionsAndTiersMatch": true
+    },
+    {
+      "root": "dsa-neetcode150",
+      "rows": 319,
+      "parentPathsTitlesURLsDifficultiesPositionsAndTiersMatch": true
+    }
+  ]
+}

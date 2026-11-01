@@ -1,0 +1,702 @@
+{
+  "version": 1,
+  "root": {
+    "slug": "oop",
+    "title": "Object-Oriented Programming in C++",
+    "type": "subject",
+    "isPro": false,
+    "meta": {
+      "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/"
+    },
+    "children": [
+      {
+        "slug": "characteristics-of-oop",
+        "title": "Characteristics of OOP",
+        "type": "section",
+        "description": "Core class/object and object-lifecycle concepts.",
+        "children": [
+          {
+            "slug": "class",
+            "title": "Class",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Class \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/cpp/c-classes-and-objects/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "object",
+            "title": "Object",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Object \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/cpp/c-classes-and-objects/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "constructor",
+            "title": "Constructor",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Constructor \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/cpp/constructors-c/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "types-of-constructors",
+            "title": "Types of Constructors",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Types of Constructors \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/cpp/constructors-c/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "destructor",
+            "title": "Destructor",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Destructor \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/cpp/destructors-c/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "access-specifiers",
+            "title": "Access Specifiers",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Access Specifiers \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/cpp/access-modifiers-in-c/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "data-hiding",
+            "title": "Data Hiding",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Data Hiding \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/cpp/access-modifiers-in-c/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "four-pillars-of-oop-in-c",
+        "title": "Four Pillars of OOP in C++",
+        "type": "section",
+        "description": "The four core principles of object-oriented programming.",
+        "children": [
+          {
+            "slug": "abstraction",
+            "title": "Abstraction",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Abstraction \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/cpp/abstraction-in-cpp/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "abstract-class",
+            "title": "Abstract Class",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Abstract Class \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/cpp/abstraction-in-cpp/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "pure-virtual-function",
+            "title": "Pure Virtual Function",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Pure Virtual Function \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/cpp/abstraction-in-cpp/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "encapsulation",
+            "title": "Encapsulation",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Encapsulation \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/cpp/encapsulation-in-cpp/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "inheritance",
+            "title": "Inheritance",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Inheritance \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/cpp/inheritance-in-c/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "types-of-inheritance",
+            "title": "Types of Inheritance",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Types of Inheritance \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/cpp/inheritance-in-c/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "polymorphism",
+            "title": "Polymorphism",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Polymorphism \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/cpp/cpp-polymorphism/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "types-of-polymorphism-in-c",
+            "title": "Types of Polymorphism in C++",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Types of Polymorphism in C++ \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/cpp/cpp-polymorphism/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "compile-time-polymorphism-static-polymorphism",
+            "title": "Compile-time Polymorphism (Static Polymorphism)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Compile-time Polymorphism (Static Polymorphism) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/cpp/cpp-polymorphism/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "function-overloading",
+            "title": "Function Overloading",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Function Overloading \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "operator-overloading",
+            "title": "Operator Overloading",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Operator Overloading \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "run-time-polymorphism-dynamic-polymorphism",
+            "title": "Run-time Polymorphism (Dynamic Polymorphism)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Run-time Polymorphism (Dynamic Polymorphism) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/cpp/cpp-polymorphism/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "function-overriding",
+            "title": "Function Overriding",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Function Overriding \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "virtual-functions",
+            "title": "Virtual Functions",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Virtual Functions \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/cpp/virtual-function-cpp/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "relationships-between-classes-in-c",
+        "title": "Relationships Between Classes in C++",
+        "type": "section",
+        "description": "Relationships between objects and classes.",
+        "children": [
+          {
+            "slug": "association",
+            "title": "Association",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Association \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/system-design/association-class-relationship/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "types-of-association",
+            "title": "Types of Association",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Types of Association \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/system-design/association-class-relationship/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "aggregation-weak-association",
+            "title": "Aggregation (Weak Association)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Aggregation (Weak Association) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/system-design/aggregation-class-relationship/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "composition-strong-association",
+            "title": "Composition (Strong Association)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Composition (Strong Association) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/cpp/object-composition-delegation-in-c-with-examples/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "advantages-of-oop-in-c",
+        "title": "Advantages of OOP in C++",
+        "type": "section",
+        "description": "Benefits listed by the GFG OOP article.",
+        "children": [
+          {
+            "slug": "code-reusability",
+            "title": "Code Reusability",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Code Reusability \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "better-organization",
+            "title": "Better Organization",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Better Organization \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "improved-modularity",
+            "title": "Improved Modularity",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Improved Modularity \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "dry-principle",
+            "title": "DRY Principle",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "DRY Principle \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "scalability",
+            "title": "Scalability",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Scalability \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "data-security",
+            "title": "Data Security",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Data Security \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "limitations-of-oop-in-c",
+        "title": "Limitations of OOP in C++",
+        "type": "section",
+        "description": "Limitations listed by the GFG OOP article.",
+        "children": [
+          {
+            "slug": "steeper-learning-curve",
+            "title": "Steeper Learning Curve",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Steeper Learning Curve \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "higher-design-complexity",
+            "title": "Higher Design Complexity",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Higher Design Complexity \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "additional-overhead",
+            "title": "Additional Overhead",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Additional Overhead \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "higher-memory-usage",
+            "title": "Higher Memory Usage",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Higher Memory Usage \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "performance-overhead",
+            "title": "Performance Overhead",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Performance Overhead \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

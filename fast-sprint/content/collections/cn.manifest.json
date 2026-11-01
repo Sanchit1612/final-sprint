@@ -1,0 +1,2274 @@
+{
+  "version": 1,
+  "root": {
+    "slug": "cn",
+    "title": "Computer Networks",
+    "type": "subject",
+    "isPro": false,
+    "meta": {
+      "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/"
+    },
+    "children": [
+      {
+        "slug": "fundamentals",
+        "title": "Fundamentals",
+        "type": "section",
+        "description": "Computer networking fundamentals and devices.",
+        "children": [
+          {
+            "slug": "basics-of-computer-networks",
+            "title": "Basics of Computer Networks",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Basics of Computer Networks \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/basics-computer-networking/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "network-devices",
+            "title": "Network Devices",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Network Devices \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/network-devices-hub-repeater-bridge-switch-router-gateways/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "types-of-computer-networks",
+            "title": "Types of Computer Networks",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Types of Computer Networks \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/types-of-computer-networks/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "network-models",
+        "title": "Network Models",
+        "type": "section",
+        "description": "Layered models used to standardize network communication.",
+        "children": [
+          {
+            "slug": "osi-model",
+            "title": "OSI Model",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "OSI Model \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/open-systems-interconnection-model-osi/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "tcp-ip-model",
+            "title": "TCP/IP Model",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "TCP/IP Model \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/tcp-ip-model/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "physical-layer",
+        "title": "Physical Layer",
+        "type": "section",
+        "description": "Physical transmission, topology and media.",
+        "children": [
+          {
+            "slug": "physical-layer",
+            "title": "Physical Layer",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Physical Layer \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/physical-layer-in-osi-model/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "types-of-network-topology",
+            "title": "Types of Network Topology",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Types of Network Topology \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/network-topology/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "modes-of-transmission",
+            "title": "Modes of Transmission",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Modes of Transmission \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/transmission-modes-computer-networks/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "transmission-media",
+            "title": "Transmission Media",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Transmission Media \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/types-transmission-media/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "data-link-layer",
+        "title": "Data Link Layer",
+        "type": "section",
+        "description": "Framing, switching, error handling and flow control.",
+        "children": [
+          {
+            "slug": "data-link-layer",
+            "title": "Data Link Layer",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Data Link Layer \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/data-link-layer/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "switching-techniques",
+            "title": "Switching Techniques",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Switching Techniques \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/what-is-switching/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "virtual-lan",
+            "title": "Virtual LAN",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Virtual LAN \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/virtual-lan-vlan/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "link-aggregation",
+            "title": "Link Aggregation",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Link Aggregation \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/link-aggregation-control-protocol/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "framing",
+            "title": "Framing",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Framing \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/framing-in-data-link-layer/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "error-control",
+            "title": "Error Control",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Error Control \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/error-control-in-data-link-layer/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "error-detection",
+            "title": "Error Detection",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Error Detection \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/error-detection-in-computer-networks/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "error-correction",
+            "title": "Error Correction",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Error Correction \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/error-correction-in-computer-networks/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "flow-control",
+            "title": "Flow Control",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Flow Control \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/flow-control-in-data-link-layer/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "stop-and-wait-arq",
+            "title": "Stop and wait ARQ",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Stop and wait ARQ \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/stop-and-wait-arq/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "sliding-window-protocol-go-back-n",
+            "title": "Sliding Window Protocol- Go Back N",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Sliding Window Protocol- Go Back N \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/sliding-window-protocol-set-2-receiver-side/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "sliding-window-protocol-selective-repeat",
+            "title": "Sliding Window Protocol- Selective Repeat",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Sliding Window Protocol- Selective Repeat \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/sliding-window-protocol-set-3-selective-repeat/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "piggybacking",
+            "title": "Piggybacking",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Piggybacking \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/piggybacking-in-computer-networks/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "network-layer",
+        "title": "Network Layer",
+        "type": "section",
+        "description": "Logical addressing and packet forwarding.",
+        "children": [
+          {
+            "slug": "network-layer",
+            "title": "Network Layer",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Network Layer \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/network-layer-in-osi-model/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "classful-network-addressing",
+            "title": "Classful Network Addressing",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Classful Network Addressing \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/introduction-of-classful-ip-addressing/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "classless-network-addressing",
+            "title": "Classless Network Addressing",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Classless Network Addressing \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/ip-addressing-classless-addressing/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "ipv4-header-format",
+            "title": "IPv4 Header Format",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "IPv4 Header Format \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/introduction-and-ipv4-datagram-header/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "ipv4-vs-ipv6",
+            "title": "IPv4 vs IPv6",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "IPv4 vs IPv6 \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/differences-between-ipv4-and-ipv6/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "private-vs-public-ip-addresses",
+            "title": "Private vs Public IP addresses",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Private vs Public IP addresses \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/difference-between-private-and-public-ip-addresses/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "subnetting",
+        "title": "Subnetting",
+        "type": "section",
+        "description": "Subnet masks, address ranges and VLSM.",
+        "children": [
+          {
+            "slug": "introduction-to-subnetting",
+            "title": "Introduction to Subnetting",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Introduction to Subnetting \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/introduction-to-subnetting/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "role-of-subnet-mask",
+            "title": "Role of Subnet Mask",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Role of Subnet Mask \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/role-of-subnet-mask/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "calculate-network-broadcast-and-host-addresses",
+            "title": "Calculate network, broadcast and host addresses",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Calculate network, broadcast and host addresses \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/how-to-calculate-number-of-host-in-a-subnet/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "variable-length-subnet-masking-vlsm",
+            "title": "Variable Length Subnet Masking (VLSM)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Variable Length Subnet Masking (VLSM) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/introduction-of-variable-length-subnet-mask-vlsm/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "supernetting",
+            "title": "Supernetting",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Supernetting \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/supernetting-in-network-layer/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "routing",
+        "title": "Routing",
+        "type": "section",
+        "description": "Routing methods and algorithms.",
+        "children": [
+          {
+            "slug": "what-is-routing",
+            "title": "What is Routing?",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "What is Routing? \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/what-is-routing/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "static-vs-dynamic-routing",
+            "title": "Static vs Dynamic Routing",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Static vs Dynamic Routing \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/difference-between-static-and-dynamic-routing/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "link-state-routing",
+            "title": "Link State Routing",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Link State Routing \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/unicast-routing-link-state-routing/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "distance-vector-routing",
+            "title": "Distance Vector Routing",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Distance Vector Routing \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/distance-vector-routing-dvr-protocol/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "network-address-translation-nat",
+            "title": "Network Address Translation (NAT)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Network Address Translation (NAT) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/network-address-translation-nat/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "network-layer-protocols",
+        "title": "Network Layer Protocols",
+        "type": "section",
+        "description": "Addressing, control and routing protocols.",
+        "children": [
+          {
+            "slug": "address-resolution-protocol-arp",
+            "title": "Address Resolution Protocol (ARP)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Address Resolution Protocol (ARP) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/arp-protocol/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "reverse-address-resolution-protocol-rarp",
+            "title": "Reverse Address Resolution Protocol (RARP)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Reverse Address Resolution Protocol (RARP) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/what-is-rarp/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "dynamic-host-configuration-protocol-dhcp",
+            "title": "Dynamic Host Configuration Protocol (DHCP)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Dynamic Host Configuration Protocol (DHCP) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/dynamic-host-configuration-protocol-dhcp/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "internet-control-message-protocol-icmp",
+            "title": "Internet Control Message Protocol (ICMP)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Internet Control Message Protocol (ICMP) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/internet-control-message-protocol-icmp/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "internet-group-management-protocol-igmp",
+            "title": "Internet Group Management Protocol (IGMP)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Internet Group Management Protocol (IGMP) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/what-is-igmpinternet-group-management-protocol/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "routing-information-protocol-rip",
+            "title": "Routing Information Protocol (RIP)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Routing Information Protocol (RIP) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/routing-information-protocol-rip/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "open-shortest-path-first-ospf",
+            "title": "Open Shortest Path First (OSPF)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Open Shortest Path First (OSPF) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/open-shortest-path-first-ospf-protocol-states/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "intermediate-system-to-intermediate-system-is-is",
+            "title": "Intermediate System to Intermediate System (IS-IS)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Intermediate System to Intermediate System (IS-IS) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/difference-between-ospf-and-is-is/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "enhanced-interior-gateway-routing-protocol-eigrp",
+            "title": "Enhanced Interior Gateway Routing Protocol (EIGRP)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Enhanced Interior Gateway Routing Protocol (EIGRP) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/eigrp-fundamentals/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "border-gateway-protocol-bgp",
+            "title": "Border Gateway Protocol (BGP)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Border Gateway Protocol (BGP) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/border-gateway-protocol-bgp/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "multiprotocol-label-switching-mpls",
+            "title": "Multiprotocol Label Switching (MPLS)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Multiprotocol Label Switching (MPLS) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/multi-protocol-label-switching-mpls/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "internet-protocol-ip",
+            "title": "Internet Protocol (IP)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Internet Protocol (IP) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/what-is-internet-protocol-ip/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "generic-routing-encapsulation-gre",
+            "title": "Generic Routing Encapsulation (GRE)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Generic Routing Encapsulation (GRE) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/generic-routing-encapsulation-gre-tunnel/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "transport-layer",
+        "title": "Transport Layer",
+        "type": "section",
+        "description": "Transport protocols, connection management and congestion.",
+        "children": [
+          {
+            "slug": "transport-layer",
+            "title": "Transport Layer",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Transport Layer \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/transport-layer-in-osi-model/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "tcp-protocol",
+            "title": "TCP Protocol",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "TCP Protocol \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/what-is-transmission-control-protocol-tcp/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "tcp-3-way-handshake-process",
+            "title": "TCP 3-Way Handshake Process",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "TCP 3-Way Handshake Process \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/tcp-connection-establishment/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "services-and-segment-structure-in-tcp",
+            "title": "Services and Segment structure in TCP",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Services and Segment structure in TCP \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/services-and-segment-structure-in-tcp/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "tcp-connection-establishment",
+            "title": "TCP Connection Establishment",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "TCP Connection Establishment \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/tcp-connection-establishment/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "tcp-termination",
+            "title": "TCP Termination",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "TCP Termination \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/tcp-connection-termination/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "congestion-control-in-tcp",
+            "title": "Congestion Control in TCP",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Congestion Control in TCP \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/congestion-control-in-computer-networks/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "udp-protocol",
+            "title": "UDP Protocol",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "UDP Protocol \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/user-datagram-protocol-udp/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "tcp-vs-udp-protocol",
+            "title": "TCP vs UDP Protocol",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "TCP vs UDP Protocol \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/differences-between-tcp-and-udp/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "stream-control-transmission-protocol-sctp",
+            "title": "Stream Control Transmission Protocol (SCTP)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Stream Control Transmission Protocol (SCTP) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/stream-control-transmission-protocol/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "datagram-congestion-control-protocol-dccp",
+            "title": "Datagram Congestion Control Protocol (DCCP)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Datagram Congestion Control Protocol (DCCP) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/what-is-dccp-datagram-congestion-control-protocol/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "reliable-user-datagram-protocol-rudp",
+            "title": "Reliable User Datagram Protocol (RUDP)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Reliable User Datagram Protocol (RUDP) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/reliable-user-datagram-protocol-rudp/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "quick-udp-internet-connections-quic",
+            "title": "Quick UDP Internet Connections (QUIC)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Quick UDP Internet Connections (QUIC) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/javascript/quic-protocol/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "session-layer",
+        "title": "Session Layer",
+        "type": "section",
+        "description": "Session management and communication control.",
+        "children": [
+          {
+            "slug": "session-layer",
+            "title": "Session Layer",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Session Layer \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/session-layer-in-osi-model/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "functions-of-session-layer",
+            "title": "Functions of Session Layer",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Functions of Session Layer \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/functions-of-session-layer/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "remote-procedure-call-rpc",
+            "title": "Remote Procedure Call (RPC)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Remote Procedure Call (RPC) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/what-is-rpc-mechanism-in-distributed-system/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "point-to-point-tunneling-protocol",
+            "title": "Point-to-Point Tunneling Protocol",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Point-to-Point Tunneling Protocol \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/pptp-full-form/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "presentation-layer",
+        "title": "Presentation Layer",
+        "type": "section",
+        "description": "Data representation and related protocols.",
+        "children": [
+          {
+            "slug": "presentation-layer",
+            "title": "Presentation Layer",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Presentation Layer \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/presentation-layer-in-osi-model/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "services-provided-by-presentation-layer",
+            "title": "Services Provided by Presentation Layer",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Services Provided by Presentation Layer \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/presentation-layer-services/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "apple-filing-protocol-afp",
+            "title": "Apple Filing Protocol (AFP)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Apple Filing Protocol (AFP) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/afp-fullform/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "netware-core-protocol-ncp",
+            "title": "NetWare Core Protocol (NCP)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "NetWare Core Protocol (NCP) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/introduction-of-novell-netware/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "secure-socket-layer-ssl",
+            "title": "Secure Socket Layer (SSL)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Secure Socket Layer (SSL) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/secure-socket-layer-ssl/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "remote-procedure-call-rpc",
+            "title": "Remote Procedure Call (RPC)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Remote Procedure Call (RPC) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/rpc-message-protocol/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "point-to-point-tunneling-protocol-pptp",
+            "title": "Point-to-Point Tunneling Protocol (PPTP)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Point-to-Point Tunneling Protocol (PPTP) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/pptp-full-form/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "multipurpose-internet-mail-extensions-mime",
+            "title": "Multipurpose Internet Mail Extensions (MIME)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Multipurpose Internet Mail Extensions (MIME) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/multipurpose-internet-mail-extension-mime-protocol/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "application-layer",
+        "title": "Application Layer",
+        "type": "section",
+        "description": "End-user services and application communication.",
+        "children": [
+          {
+            "slug": "application-layer",
+            "title": "Application Layer",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Application Layer \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/application-layer-in-osi-model/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "client-server-model",
+            "title": "Client-Server Model",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Client-Server Model \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/system-design/client-server-model/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "world-wide-web-www",
+            "title": "World Wide Web (WWW)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "World Wide Web (WWW) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/world-wide-web-www/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "e-mail",
+            "title": "E-Mail",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "E-Mail \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-science-fundamentals/introduction-to-electronic-mail/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "content-distribution-network-cdn",
+            "title": "Content Distribution Network (CDN)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Content Distribution Network (CDN) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/what-is-a-content-distribution-network-and-how-does-it-work/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "application-layer-protocols",
+        "title": "Application Layer Protocols",
+        "type": "section",
+        "description": "Common application-layer protocols.",
+        "children": [
+          {
+            "slug": "domain-name-system-dns",
+            "title": "Domain Name System (DNS)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Domain Name System (DNS) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/domain-name-system-dns-in-application-layer/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "file-transfer-protocol-ftp",
+            "title": "File Transfer Protocol (FTP)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "File Transfer Protocol (FTP) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/file-transfer-protocol-ftp-in-application-layer/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "simple-mail-transfer-protocol-smtp",
+            "title": "Simple Mail Transfer Protocol (SMTP)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Simple Mail Transfer Protocol (SMTP) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/simple-mail-transfer-protocol-smtp/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "simple-network-management-protocol-snmp",
+            "title": "Simple Network Management Protocol (SNMP)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Simple Network Management Protocol (SNMP) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/simple-network-management-protocol-snmp/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "hypertext-transfer-protocol-http",
+            "title": "HyperText Transfer Protocol (HTTP)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "HyperText Transfer Protocol (HTTP) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/html/what-is-http/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "hypertext-transfer-protocol-secure-https",
+            "title": "HyperText Transfer Protocol Secure (HTTPS)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "HyperText Transfer Protocol Secure (HTTPS) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/html/explain-working-of-https/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "post-office-protocol-v3-pop3",
+            "title": "Post Office Protocol v3 (POP3)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Post Office Protocol v3 (POP3) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/what-is-pop3-post-office-protocol-version-3/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "internet-message-access-protocol-imap",
+            "title": "Internet Message Access Protocol (IMAP)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Internet Message Access Protocol (IMAP) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/internet-message-access-protocol-imap/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "lightweight-directory-access-protocol-ldap",
+            "title": "Lightweight Directory Access Protocol (LDAP)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Lightweight Directory Access Protocol (LDAP) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/lightweight-directory-access-protocol-ldap/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "network-time-protocol-ntp",
+            "title": "Network Time Protocol (NTP)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Network Time Protocol (NTP) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/network-time-protocol-ntp/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "trivial-file-transfer-protocol-tftp",
+            "title": "Trivial File Transfer Protocol (TFTP)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Trivial File Transfer Protocol (TFTP) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/what-is-tftp-trivial-file-transfer-protocol/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "network-news-transfer-protocol-nntp",
+            "title": "Network News Transfer Protocol (NNTP)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Network News Transfer Protocol (NNTP) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/network-news-transfer-protocol-nntp/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "message-queuing-telemetry-transport-mqtt",
+            "title": "Message Queuing Telemetry Transport (MQTT)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Message Queuing Telemetry Transport (MQTT) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/introduction-of-message-queue-telemetry-transport-protocol-mqtt/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "session-initiation-protocol-sip",
+            "title": "Session Initiation Protocol (SIP)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Session Initiation Protocol (SIP) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/session-initiation-protocol/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "server-message-block-smb",
+            "title": "Server Message Block (SMB)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Server Message Block (SMB) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/ethical-hacking/smb-enumeration/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "network-performance-and-quality",
+        "title": "Network Performance and Quality",
+        "type": "section",
+        "description": "Congestion, QoS and traffic shaping.",
+        "children": [
+          {
+            "slug": "congestion-control",
+            "title": "Congestion Control",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Congestion Control \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/congestion-control-techniques-in-computer-networks/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "qos-and-multimedia",
+            "title": "QoS and Multimedia",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "QoS and Multimedia \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/computer-network-quality-of-service-and-multimedia/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "techniques-for-achieving-qos",
+            "title": "Techniques for achieving QoS",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Techniques for achieving QoS \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/techniques-for-achieving-good-quality-of-serviceqos/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "token-bucket",
+            "title": "Token Bucket",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Token Bucket \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/token-bucket-algorithm/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "leaky-bucket",
+            "title": "Leaky Bucket",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Leaky Bucket \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/leaky-bucket-algorithm/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "network-security",
+        "title": "Network Security",
+        "type": "section",
+        "description": "Security mechanisms and access protection.",
+        "children": [
+          {
+            "slug": "authentication",
+            "title": "Authentication",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Authentication \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/authentication-in-computer-network/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "encryption",
+            "title": "Encryption",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Encryption \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/ethical-hacking/encryption-its-algorithms-and-its-future/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "firewalls",
+            "title": "Firewalls",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Firewalls \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/introduction-of-firewall-in-computer-network/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "mac-address-filtering",
+            "title": "MAC Address Filtering",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "MAC Address Filtering \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/mac-filtering-in-computer-network/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "intrusion-detection-system",
+            "title": "Intrusion Detection System",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Intrusion Detection System \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/ethical-hacking/intrusion-detection-system-ids/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "intrusion-prevention-system",
+            "title": "Intrusion Prevention System",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Intrusion Prevention System \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/ethical-hacking/intrusion-prevention-system-ips/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "vpn",
+            "title": "VPN",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "VPN \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/what-is-vpn-how-it-works-types-of-vpn/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "wireless-and-special-networks",
+        "title": "Wireless and Special Networks",
+        "type": "section",
+        "description": "Wireless technologies and standards.",
+        "children": [
+          {
+            "slug": "wi-fi-standards",
+            "title": "Wi-Fi Standards",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Wi-Fi Standards \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/wi-fi-standards-explained/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "wireless-lan",
+            "title": "Wireless LAN",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Wireless LAN \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/wlan-full-form/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "bluetooth",
+            "title": "Bluetooth",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Bluetooth \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/bluetooth/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "zigbee",
+            "title": "Zigbee",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Zigbee \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/introduction-of-zigbee/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "mobile-networks",
+            "title": "Mobile Networks",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Mobile Networks \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/generations-of-wireless-communication/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "modern-networking-concepts",
+        "title": "Modern Networking Concepts",
+        "type": "section",
+        "description": "Modern software-defined, cloud and IoT networking.",
+        "children": [
+          {
+            "slug": "software-defined-networking-sdn",
+            "title": "Software Defined Networking (SDN)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Software Defined Networking (SDN) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/software-defined-networking/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "network-function-virtualization-nfv",
+            "title": "Network Function Virtualization (NFV)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Network Function Virtualization (NFV) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/network-functions-virtualization/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "types-of-cloud-services",
+            "title": "Types of Cloud Services",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Types of Cloud Services \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/cloud-computing/cloud-based-services/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "iot-networking",
+            "title": "IoT Networking",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "IoT Networking \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/introduction-to-internet-of-things-iot-set-1/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "network-slicing-in-5g",
+            "title": "Network Slicing in 5G",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Network Slicing in 5G \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-networks/network-slicing-in-5g-networks/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/computer-networks/computer-network-tutorials/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

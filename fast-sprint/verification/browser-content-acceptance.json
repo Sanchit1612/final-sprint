@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-01",
+  "environment": "local app + hosted staging",
+  "observed": [
+    "Master200 populated with200records/23patterns",
+    "TwoSum search returned2 and Mediumfilter returned1",
+    "problem-specific video link present",
+    "Free behavioural directURL gated without questions",
+    "calendar November-to-October navigation",
+    "mobile390px analytics no horizontal overflow",
+    "temporarySprint completion -> calendar1/currentstreak1",
+    "publishedMaster completion/bookmark/note saved and persisted through fullreload",
+    "testtaskdeleted and testproblemvisible state restored afterreload"
+  ],
+  "unverified": [
+    "full video playback/content audit",
+    "LeetCode original page reachability (403)",
+    "Pro browser session",
+    "all device/page combinations",
+    "new collection persistence across explicit logout/login",
+    "immutable activity history",
+    "A2Z unresolved mappings and all other hosted imports"
+  ]
+}

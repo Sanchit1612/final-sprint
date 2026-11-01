@@ -28,8 +28,13 @@ Without Supabase env vars the landing and pricing pages work and every other pag
 | `npm run content:import` | Import them into Supabase (service role) |
 | `npm run entitlement:grant -- email 3 "note"` | Grant or extend a Pro pass (service role) |
 
-## Loading your content
-See `content/README.md`. Put DSA and Core CS files under `content/import/dsa` and `content/import/core`, run `content:validate`, then `content:import`. The app ships with **no educational content**; empty states explain this.
+## Nested review content
+`npm run content:validate:nested` validates all prepared manifests without connecting to Supabase. `npm run content:manifest -- <file>` is a dry run. Do not pass `--apply` until the exact manifest hash has been reviewed and publication approved. The nested importer uses a single transaction and preserves existing IDs; locally supply `SUPABASE_DB_URL` and `SUPABASE_DB_CA_FILE` for an approved run. It does not load `.env.local` automatically. Secrets and the CA file stay outside Git. Never apply `supabase/proposals` automatically.
+
+The activity calendar currently reports completion snapshots, not immutable lifetime learning history. See the on-page limitation before interpreting streaks or Pro coverage.
+
+## Loading legacy content
+See `content/README.md`. Put DSA and Core CS files under `content/import/dsa` and `content/import/core`, run `content:validate`, then `content:import`. Prepared datasets now live in `content/collections` and are shown in signed-in **read-only review mode** until approved database publication. See `RESOURCE_IMPORT_REPORT.md`; these are not all verified or complete.
 
 ## Free vs Pro
 Defined in `src/config/plans.ts`. Enforced in the database, not only the UI:
@@ -53,3 +58,8 @@ content/           import docs, templates, the original sample files
 
 ## Deploying to Vercel
 Add the env vars from `.env.example` (omit the service-role key; keep it local). Set `NEXT_PUBLIC_SITE_URL` and add the production `/auth/callback` URL in Supabase.
+
+## Private preparation-pack sources
+The GitHub repository is public. Aptitude, behavioural, company and interview source manifests are intentionally ignored so raw paid-pack contents cannot bypass application entitlements via GitHub. They are preserved locally in `backups/prepared-pro-manifests.zip` and the original resource archive, and must be supplied privately for local review or approved database publication. Fresh clones have the code/Free sources; they do not contain those private packs. The app checks Pro on the server before reading premium review data and uses RLS for published data.
+
+Hosted staging verification scripts: `scripts/verify-staging-shape.mjs` is read-only; `scripts/verify-staging-dsa.mjs --with-disposable-fixtures` creates/removes only generated test identities and must run only on approved staging. Supply credentials locally via Node's `--env-file=.env.local`; never commit them.

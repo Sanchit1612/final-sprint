@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "root": {
+    "slug": "dbms",
+    "title": "DBMS foundations",
+    "type": "subject",
+    "isPro": false,
+    "meta": {
+      "contentStatus": "Official conceptual foundations; not a complete interview/practice bank"
+    },
+    "children": [
+      {
+        "slug": "relational-sql",
+        "title": "Relational databases and SQL",
+        "type": "topic",
+        "children": [
+          {
+            "slug": "postgres-tutorial",
+            "title": "PostgreSQL tutorial",
+            "type": "resource",
+            "url": "https://www.postgresql.org/docs/current/tutorial.html",
+            "meta": {
+              "verification": "page-opened-2026-11-01"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "transactions",
+        "title": "Transactions",
+        "type": "topic",
+        "children": [
+          {
+            "slug": "postgres-transactions",
+            "title": "PostgreSQL transactions tutorial",
+            "type": "resource",
+            "url": "https://www.postgresql.org/docs/current/tutorial-transactions.html",
+            "meta": {
+              "verification": "page-opened-2026-11-01"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "constraints",
+        "title": "Keys and integrity constraints",
+        "type": "topic",
+        "children": [
+          {
+            "slug": "official",
+            "title": "Official PostgreSQL chapter",
+            "type": "resource",
+            "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+            "meta": {
+              "verification": "page-opened-2026-11-01"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "indexes",
+        "title": "Indexes",
+        "type": "topic",
+        "children": [
+          {
+            "slug": "official",
+            "title": "Official PostgreSQL chapter",
+            "type": "resource",
+            "url": "https://www.postgresql.org/docs/current/indexes.html",
+            "meta": {
+              "verification": "page-opened-2026-11-01"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "concurrency",
+        "title": "Concurrency and transaction isolation",
+        "type": "topic",
+        "children": [
+          {
+            "slug": "official",
+            "title": "Official PostgreSQL chapter",
+            "type": "resource",
+            "url": "https://www.postgresql.org/docs/current/mvcc.html",
+            "meta": {
+              "verification": "page-opened-2026-11-01"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "query-plans",
+        "title": "Reading query plans",
+        "type": "topic",
+        "children": [
+          {
+            "slug": "official",
+            "title": "Official PostgreSQL chapter",
+            "type": "resource",
+            "url": "https://www.postgresql.org/docs/current/using-explain.html",
+            "meta": {
+              "verification": "page-opened-2026-11-01"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "normalization",
+        "title": "Normalization fundamentals",
+        "type": "topic",
+        "children": [
+          {
+            "slug": "microsoft",
+            "title": "Microsoft normalization guide (legacy documentation)",
+            "type": "resource",
+            "url": "https://learn.microsoft.com/en-us/previous-versions/troubleshoot/microsoft-365/microsoft-365-apps/access/database-normalization-description",
+            "meta": {
+              "verification": "page-opened-2026-11-01; legacy page may display sign-in warning"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

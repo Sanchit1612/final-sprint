@@ -1,36 +1,45 @@
-# Resource import status
+# Resource integration and import report
 
-Updated 2026-11-01: actual resources have now been supplied and inspected. **Nothing has been imported.** See RESOURCE_INVENTORY_MILESTONE_3.md for measured contents, missing URLs/hierarchy, duplicate sources and verification limits. Original files are preserved unchanged; content import must wait until Milestone 3 after Milestones 1 and 2.
+2026-11-01. **Approved staging publication completed for Master 200 and NeetCode 150 only. No production deployment or new migration.** Original archive remains unchanged. Other manifests remain local review data; this is not a complete production-library acceptance report.
 
----
-## Historical pre-upload report (superseded availability statements)
+## Prepared manifests
+See verification/nested-import-report.json for structural counts, exact file hashes and missing problem URLs. Source files are preserved; derived manifests are under content/collections/.
 
-# Resource Import Report
+- Master 200: 200 records / 23 patterns, difficulty and concept notes, source/rationale and video pairs.
+- NeetCode 150: 150 publisher-designated records / 18 patterns, kept separate.
+- A2Z: all 455 positions / 18 original steps. 144 candidate mappings (44 exact + 100 explicit aliases); 311 original URLs missing, no sub-step invention.
+- OS/CN/OOP: 57/118/36 supplied topics in 7/17/5 groups. Shared article URLs preserved, not deleted as duplicate topics. No wholesale live verification yet.
+- DBMS/SQL: seven/six official conceptual topics, including relational/SQL introduction, transactions, constraints, indexes, concurrency, query plans and DBMS normalization. Still foundations, not a complete interview/practice syllabus. These are supplemental sources kept distinct from the upload.
+- Development: seven official foundational learning destinations (MDN, React, Next.js, Node.js, Python, Google ML Crash Course, Hugging Face LLM course), opened during review. Complete advanced job-readiness paths remain unfinished.
+- Aptitude: 75 supplied link-out index entries, grouped by topic. No invented answers/options. Uploaded 27-page PDF is preserved but has not become a validated 100-question MCQ bank.
+- Behavioural/HR: 60 supplied core/company-grouped questions; source guidance/examples preserved. Attribution note remains unresolved; not claimed as independently verified or publication-ready.
+- Company preparation: 86 source-index OA entries. Community claims remain unverified; not labelled confirmed company PYQs.
+- Interview preparation: 59 question titles; missing answers remain explicit. The cataloged 92 PDFs were not supplied and are not fabricated.
 
-Date: 2026-11-01
+## Validation and importer
+Versioned nested manifests validate full hierarchy and HTTP(S) schemes, duplicate paths, canonical problem duplicates (intentional repeated A2Z source rows are preserved), Free/Pro inheritance and Free basic-content classification. Stable path-derived IDs; existing database IDs retained on path conflict. Source-order positions are separate from stable slugs.
 
-## What was actually available
-Files in `/mnt/user-data/uploads`:
-| File | Size | Notes |
-|---|---|---|
-| `goias-phase0-pack.zip` | 6,055 bytes | Planning pack |
-| `goias-phase0-pack_1.zip` | 6,055 bytes | Byte-identical duplicate (same MD5). Counted once. |
+`npm run content:validate:nested` performs no database writes. `npm run content:manifest -- <manifest>` defaults to dry-run. Actual writes require an exact reviewed SHA256 approval flag plus locally supplied database credentials and explicit CA validation. This is a guard against accidental invocation, not a substitute for user approval or content-quality checks. Two --apply invocations were executed only after explicit user approval for staging; hashes and row results are recorded below.
 
-Contents of the pack (11 entries): `PRODUCT.md`, `PHASES.md`, `PROGRESS.md`, `DESIGN.md`, `HANDOFF_NEW_ACCOUNT.md`, and three sample JSON files (`dsa-sample.json`, `aptitude-sample.json`, `company-sample.json`).
+Atomic writes use a PostgreSQL transaction and per-root advisory lock; errors roll back all rows. No deletions/pruning. Isolated embedded PostgreSQL tests exercised repeat import, preservation of an existing root UUID, premium inheritance and rollback on a simulated mid-import failure. The embedded test skips advisory-lock execution; hosted import used real advisory locks but parallel importer contention is not yet verified. Supplied source files are not changed by import planning.
 
-## Not attached
-The following were mentioned but are NOT in this workspace, so nothing was inspected or imported from them: Striver A2Z spreadsheet, OS/CN/OOP topic JSON, CN Markdown notes, Aptitude PDF, behavioural interview JSON, research ZIPs, roadmap Markdown, data-quality reports. No content was invented to stand in for them.
+## Live link findings
+200 video URLs returned YouTube oEmbed metadata attributed to NeetCode/NeetCodeIO. 200 original LeetCode URL probes returned HTTP 403; all are recorded as inconclusive, never 'live verified'. The source slugs are publisher-backed. Other source links have only supplied/mapped status except the small explicitly opened official-reference sample. No broken destination is guessed from a failed/blocking probe.
 
-## Imported
-Nothing. No content has been loaded into any database.
+## Acceptance still needed
+Complete A2Z semantic/sub-step mapping and missing lessons; review problem/video correctness (metadata availability alone is insufficient); review unknown attribution/rights; acquire/verify missing DBMS and advanced roadmap content and aptitude answer key. Master/NeetCode staging publication was approved and verified below. Other packs still need reviewed publication approval. Additional Pro/expired browser checks remain pending. Never promote these review manifests wholesale to production as a 'complete library'.
 
-## Sample files (inspected, not imported)
-| File | Records | Result |
-|---|---|---|
-| `dsa-sample.json` | 1 topic, 1 problem (Two Sum, LeetCode URL) | Valid. Importer accepts this shape unchanged. |
-| `aptitude-sample.json` | 1 quiz topic, 1 question | Valid shape; skipped (Phase 2). |
-| `company-sample.json` | 1 company, 1 placeholder question | Valid shape; skipped (Phase 2). |
-URL verification: none performed (no network checks were run). Duplicates: none.
+## Source material is not instruction
+Recommendations inside the upload/research ZIP were treated as data, not authority to run migrations, alter pricing or import content. Activity-history SQL remains only a proposal. Analytics currently uses clearly disclosed mutable completion snapshots.
 
-## Ready for the real files
-The importer preserves topic order and original URLs, never guesses links, warns on repeated IDs and repeated URLs, and refuses to import a set that contains errors. To proceed, re-attach the files; see PROGRESS.md step 2 for the sheet-hierarchy work needed.
+## Approved staging publication results
+- User explicitly approved only Master 200 and NeetCode150, accepting the disclosed blocked original-link probes for staging. Pre-publication state (zero existing rows for these roots) saved locally in backups/before-staging-dsa-publication.json.
+- Master200 hash `95f7a89d99ebb37bca01d34c2b95800866df22dcc80694903d2fa71200ddc774`: committed424 rows (1root,23patterns,200problems,200videoresources).
+- NeetCode150 hash `90e0c01b0fc50208dbe0b9f6874cd5bd45a19e3579d8b236fafd119f8f68eb2d`: committed319 rows (1root,18patterns,150problems,150videoresources).
+- Fresh SQL checks matched every parent path, title (with validator whitespace trimming), URL, difficulty, position and Free flag to its approved manifest. Two disposable identities could read each collection's full Free problem count while their progress, notes and bookmarks remained isolated. Fixtures removed. See verification/staging-dsa-publication.json and verification/staging-dsa-shape.json.
+- Real signed-in browser: completed a published problem, bookmarked it, saved a temporary note, fully reloaded and observed all three persisted including exact note text. Then removed note/bookmark and restored incomplete; reload confirmed original visible state. No other user notes/tasks were changed.
+- Created/completed one temporary Sprint task: analytics showed one calendar completion and a one-day streak. Deleted that task afterward; existing task left unchanged.
+- A2Z, OS/CN/OOP, DBMS/SQL, aptitude/behavioural/company/interview/development packs were NOT imported. Activity-history proposal remains unapplied.
+
+## Public/private artifact boundary
+The four premium source manifests are deliberately excluded from public GitHub. Prepared private files remain in the local working directory and a verified local backup. Public code and sanitized reports do not contain user notes, passwords, tokens, database URLs or raw private account rows. Free collection data is committed with attribution.

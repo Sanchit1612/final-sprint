@@ -1,0 +1,67 @@
+{
+  "verifiedAt": "2026-11-01T17:57:24.336Z",
+  "counts": [
+    {
+      "path": "dsa-200",
+      "item_type": "problem",
+      "count": 200,
+      "all_free": true,
+      "root_valid": true
+    },
+    {
+      "path": "dsa-200",
+      "item_type": "resource",
+      "count": 200,
+      "all_free": true,
+      "root_valid": true
+    },
+    {
+      "path": "dsa-200",
+      "item_type": "section",
+      "count": 23,
+      "all_free": true,
+      "root_valid": true
+    },
+    {
+      "path": "dsa-200",
+      "item_type": "subject",
+      "count": 1,
+      "all_free": true,
+      "root_valid": true
+    },
+    {
+      "path": "dsa-neetcode150",
+      "item_type": "problem",
+      "count": 150,
+      "all_free": true,
+      "root_valid": true
+    },
+    {
+      "path": "dsa-neetcode150",
+      "item_type": "resource",
+      "count": 150,
+      "all_free": true,
+      "root_valid": true
+    },
+    {
+      "path": "dsa-neetcode150",
+      "item_type": "section",
+      "count": 18,
+      "all_free": true,
+      "root_valid": true
+    },
+    {
+      "path": "dsa-neetcode150",
+      "item_type": "subject",
+      "count": 1,
+      "all_free": true,
+      "root_valid": true
+    }
+  ],
+  "checks": [
+    "Free collection visibility and private learning data isolation passed",
+    "Free collection visibility and private learning data isolation passed"
+  ],
+  "scope": "staging only; SQL authenticated-role claims plus separate actual-browser persistence test",
+  "success": true
+}

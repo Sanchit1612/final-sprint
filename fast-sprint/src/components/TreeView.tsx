@@ -3,12 +3,12 @@ import type { TreeNode } from "@/lib/tree";
 import { ItemRow } from "./ItemRow";
 import { ProgressBar } from "./ui";
 
-export function TreeView({ nodes, depth = 0, forceOpen }: { nodes: TreeNode[]; depth?: number; forceOpen: boolean }) {
+export function TreeView({ nodes, depth = 0, forceOpen, readOnly = false }: { nodes: TreeNode[]; depth?: number; forceOpen: boolean; readOnly?: boolean }) {
   return (
     <div className={depth === 0 ? "space-y-3" : "space-y-1 border-l border-line pl-3 sm:pl-4"}>
       {nodes.map((n) =>
         n.checkable ? (
-          <ItemRow key={n.id} id={n.id} title={n.title} difficulty={n.difficulty} url={n.url} platform={n.platform} description={n.description}
+          <ItemRow readOnly={readOnly} key={n.id} id={n.id} title={n.title} difficulty={n.difficulty} url={n.url} platform={n.platform} description={n.description}
             done={n.done} revise={n.revise} bookmarked={n.bookmarked} note={n.note} resources={n.resources} />
         ) : (
           <details key={n.id} id={n.id} open={forceOpen} className={depth === 0 ? "group card !p-0" : "group"}>
@@ -26,7 +26,7 @@ export function TreeView({ nodes, depth = 0, forceOpen }: { nodes: TreeNode[]; d
                   {n.resources.map((r) => r.url && <a key={r.id} href={r.url} target="_blank" rel="noopener noreferrer" className="text-xs text-accent hover:underline">{r.title}</a>)}
                 </div>
               )}
-              <TreeView nodes={n.children} depth={depth + 1} forceOpen={forceOpen} />
+              <TreeView nodes={n.children} depth={depth + 1} forceOpen={forceOpen} readOnly={readOnly} />
             </div>
           </details>
         ),

@@ -1,0 +1,1096 @@
+{
+  "version": 1,
+  "root": {
+    "slug": "os",
+    "title": "Operating Systems",
+    "type": "subject",
+    "isPro": false,
+    "meta": {
+      "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/"
+    },
+    "children": [
+      {
+        "slug": "basics",
+        "title": "Basics",
+        "type": "section",
+        "description": "This section introduces the fundamentals of operating systems.",
+        "children": [
+          {
+            "slug": "introduction",
+            "title": "Introduction",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Introduction \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/introduction-of-operating-system-set-1/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "types-of-os",
+            "title": "Types of OS",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Types of OS \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/types-of-operating-systems/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "kernel-in-os",
+            "title": "Kernel in OS",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Kernel in OS \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/kernel-in-operating-system/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "system-call",
+            "title": "System Call",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "System Call \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/introduction-of-system-call/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "system-initialization",
+            "title": "System Initialization",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "System Initialization \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/what-happens-when-we-turn-on-computer/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "process-scheduling",
+        "title": "Process Scheduling",
+        "type": "section",
+        "description": "Focuses on process management and scheduling in operating systems.",
+        "children": [
+          {
+            "slug": "process-introduction",
+            "title": "Process Introduction",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Process Introduction \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/process-in-operating-system/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "process-control-block",
+            "title": "Process Control Block",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Process Control Block \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/process-control-block-in-os/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "process-table",
+            "title": "Process Table",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Process Table \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/process-table-and-process-control-block-pcb/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "process-management-introduction",
+            "title": "Process Management Introduction",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Process Management Introduction \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/introduction-of-process-management/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "process-states",
+            "title": "Process States",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Process States \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/states-of-a-process-in-operating-systems/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "process-scheduler",
+            "title": "Process Scheduler",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Process Scheduler \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/process-schedulers-in-operating-system/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "cpu-scheduling-algorithms",
+            "title": "CPU Scheduling Algorithms",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "CPU Scheduling Algorithms \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/cpu-scheduling-in-operating-systems/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "preemptive-vs-non-preemptive",
+            "title": "Preemptive vs Non-Preemptive",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Preemptive vs Non-Preemptive \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/preemptive-and-non-preemptive-scheduling/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "dispatcher-vs-scheduler",
+            "title": "Dispatcher vs scheduler",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Dispatcher vs scheduler \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/difference-between-dispatcher-and-scheduler/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "starvation-and-aging",
+            "title": "Starvation and Aging",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Starvation and Aging \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/starvation-and-aging-in-operating-systems/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "process-synchronization",
+        "title": "Process Synchronization",
+        "type": "section",
+        "description": "Covers synchronization and IPC concepts.",
+        "children": [
+          {
+            "slug": "inter-process-communication",
+            "title": "Inter Process Communication",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Inter Process Communication \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/inter-process-communication-ipc/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "process-synchronization",
+            "title": "Process Synchronization",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Process Synchronization \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/introduction-of-process-synchronization/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "race-condition",
+            "title": "Race Condition",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Race Condition \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/race-condition-in-operating-systems/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "critical-section",
+            "title": "Critical Section",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Critical Section \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/critical-section-in-synchronization/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "solutions-to-process-synchronization-problems",
+            "title": "Solutions to Process Synchronization Problems",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Solutions to Process Synchronization Problems \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/solutions-to-critical-section-problem/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "peterson-s-algorithm",
+            "title": "Peterson\u2019s Algorithm",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Peterson\u2019s Algorithm \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/dsa/petersons-algorithm-in-process-synchronization/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "dekker-s-algorithm",
+            "title": "Dekker\u2019s algorithm",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Dekker\u2019s algorithm \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/dsa/dekkers-algorithm-in-process-synchronization/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "bakery-algorithm",
+            "title": "Bakery Algorithm",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Bakery Algorithm \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/dsa/bakery-algorithm-in-process-synchronization/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "hardware-based-solutions",
+            "title": "Hardware Based Solutions",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Hardware Based Solutions \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/hardware-based-solutions/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "semaphores",
+            "title": "Semaphores",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Semaphores \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/semaphores-in-process-synchronization/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "mutex-vs-semaphore",
+            "title": "Mutex vs. Semaphore",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Mutex vs. Semaphore \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/mutex-vs-semaphore/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "monitors",
+            "title": "Monitors",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Monitors \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/monitors-in-process-synchronization/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "priority-inversion",
+            "title": "Priority Inversion",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Priority Inversion \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/priority-inversion/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "classical-ipc-problems",
+            "title": "Classical IPC Problems",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Classical IPC Problems \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/classical-ipc-problems/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "deadlock",
+        "title": "Deadlock",
+        "type": "section",
+        "description": "Explains deadlock in operating systems.",
+        "children": [
+          {
+            "slug": "introduction",
+            "title": "Introduction",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Introduction \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/introduction-of-deadlock-in-operating-system/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "deadlock-handling",
+            "title": "Deadlock Handling",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Deadlock Handling \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/handling-deadlocks/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "deadlock-prevention",
+            "title": "Deadlock Prevention",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Deadlock Prevention \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/deadlock-prevention/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "banker-s-algorithm-for-deadlock-avoidance",
+            "title": "Banker\u2019s Algorithm for Deadlock Avoidance",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Banker\u2019s Algorithm for Deadlock Avoidance \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/bankers-algorithm-in-operating-system-2/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "detection-and-recovery",
+            "title": "Detection And Recovery",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Detection And Recovery \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/deadlock-detection-recovery/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "starvation-and-livelock",
+            "title": "Starvation, and Livelock",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Starvation, and Livelock \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/deadlock-starvation-and-livelock/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "resource-allocation-graph-rag",
+            "title": "Resource Allocation Graph (RAG)",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Resource Allocation Graph (RAG) \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/resource-allocation-graph-rag-in-operating-system/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "methods-of-resource-allocation",
+            "title": "Methods of resource allocation",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Methods of resource allocation \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/resource-allocation-techniques-for-processes/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "program-for-deadlock-free-condition",
+            "title": "Program for Deadlock free condition",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Program for Deadlock free condition \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/program-for-deadlock-free-condition-in-operating-system/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "multithreading",
+        "title": "Multithreading",
+        "type": "section",
+        "description": "Focuses on multithreading concepts in operating systems.",
+        "children": [
+          {
+            "slug": "operating-system-thread",
+            "title": "Operating System | Thread",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Operating System | Thread \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/thread-in-operating-system/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "user-level-vs-kernel-level-threads",
+            "title": "User Level Vs Kernel Level threads",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "User Level Vs Kernel Level threads \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/difference-between-user-level-thread-and-kernel-level-thread/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "process-based-and-thread-based-multitasking",
+            "title": "Process-based and Thread-based Multitasking",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Process-based and Thread-based Multitasking \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/process-based-and-thread-based-multitasking/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "multi-threading-models",
+            "title": "Multi threading models",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Multi threading models \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/multi-threading-models-in-process-management/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "benefits-of-multithreading",
+            "title": "Benefits of Multithreading",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Benefits of Multithreading \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/benefits-of-multithreading-in-operating-system/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "memory-management",
+        "title": "Memory Management",
+        "type": "section",
+        "description": "Introduces the fundamentals of memory management in operating systems.",
+        "children": [
+          {
+            "slug": "memory-management-in-operating-system",
+            "title": "Memory Management in Operating System",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Memory Management in Operating System \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/memory-management-in-operating-system/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "disk-management",
+        "title": "Disk Management",
+        "type": "section",
+        "description": "Explains disk and file management in operating systems.",
+        "children": [
+          {
+            "slug": "file-systems",
+            "title": "File Systems",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "File Systems \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/file-systems-in-operating-system/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "unix-file-system",
+            "title": "Unix File System",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Unix File System \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/unix-file-system/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "file-directory-path-name",
+            "title": "File Directory | Path Name",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "File Directory | Path Name \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/path-name-in-file-directory/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "structures-of-directory",
+            "title": "Structures of Directory",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Structures of Directory \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/structures-of-directory-in-operating-system/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "file-allocation-methods",
+            "title": "File Allocation Methods",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "File Allocation Methods \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/file-allocation-methods/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "file-access-methods",
+            "title": "File Access Methods",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "File Access Methods \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/file-access-methods-in-operating-system/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "secondary-memory",
+            "title": "Secondary memory",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Secondary memory \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-science-fundamentals/secondary-memory/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "secondary-memory-hard-disk-drive",
+            "title": "Secondary memory \u2013 Hard disk drive",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Secondary memory \u2013 Hard disk drive \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/computer-organization-architecture/hard-disk-drive-hdd-secondary-memory/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "disk-scheduling-algorithms",
+            "title": "Disk Scheduling Algorithms",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Disk Scheduling Algorithms \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/disk-scheduling-algorithms/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "program-for-sstf-disk-scheduling-algorithm",
+            "title": "Program for SSTF disk scheduling algorithm",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Program for SSTF disk scheduling algorithm \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/program-for-sstf-disk-scheduling-algorithm/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "what-exactly-spooling-is-all-about",
+            "title": "What exactly Spooling is all about?",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "What exactly Spooling is all about? \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/spooling-in-operating-system/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "spooling-vs-buffering",
+            "title": "Spooling vs Buffering",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Spooling vs Buffering \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/difference-between-spooling-and-buffering/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          },
+          {
+            "slug": "free-space-management",
+            "title": "Free space management",
+            "type": "topic",
+            "children": [
+              {
+                "slug": "article",
+                "title": "Free space management \u2014 GeeksforGeeks",
+                "type": "resource",
+                "url": "https://www.geeksforgeeks.org/operating-systems/free-space-management-in-operating-system/",
+                "meta": {
+                  "kind": "article",
+                  "source": "https://www.geeksforgeeks.org/operating-systems/operating-systems/",
+                  "verification": "supplied-unverified"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

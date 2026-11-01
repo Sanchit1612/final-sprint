@@ -1,15 +1,16 @@
-import { isDsaRoot } from "@/config/dsa";
+import { isCoreRoot } from "@/config/library";
 import Link from "next/link";
 import { Empty, PageHeader, ProgressBar } from "@/components/ui";
 import { requireSession } from "@/lib/session";
-import { getRoots, loadTree } from "@/lib/tree";
+import { getRoots } from "@/lib/tree";
+import { loadLearningTree } from "@/lib/content/preview";
 
 export const metadata = { title: "Core CS" };
 
 export default async function Page() {
   const { supabase, user } = await requireSession();
-  const roots = (await getRoots(supabase)).filter((r) => !isDsaRoot(r.slug));
-  const stats = await Promise.all(roots.map(async (r) => ({ ...r, t: await loadTree(supabase, user.id, r.slug) })));
+  const roots = (await getRoots(supabase)).filter((r) => isCoreRoot(r.slug));
+  const stats = await Promise.all(roots.map(async (r) => ({ ...r, t: await loadLearningTree(supabase, user.id, r.slug) })));
   return (
     <>
       <PageHeader title="Core CS" subtitle="DBMS, Operating Systems, Computer Networks and OOP, each as a checklist with notes and bookmarks." />
@@ -20,7 +21,7 @@ export default async function Page() {
               <h2 className="text-lg">{s.title}</h2>
               {s.t && s.t.total > 0 ? (
                 <>
-                  <p className="mt-1 text-sm text-muted">{s.t.completed} of {s.t.total} topics done</p>
+                  <p className="mt-1 text-sm text-muted">{s.t.completed} of {s.t.total} topics done{s.t.preview ? " · review preview" : ""}</p>
                   <ProgressBar value={s.t.completed} total={s.t.total} className="mt-4" />
                 </>
               ) : <p className="mt-1 text-sm text-muted">No topics added yet.</p>}

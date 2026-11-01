@@ -1,0 +1,2402 @@
+{
+  "https://leetcode.com/problems/contains-duplicate/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=3OamzN90kPg": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D3OamzN90kPg",
+    "checkedAt": "2026-11-01T17:34:12.132369+00:00",
+    "title": "Contains Duplicate - Leetcode 217 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/valid-anagram/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=9UtInBqnCgA": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D9UtInBqnCgA",
+    "checkedAt": "2026-11-01T17:34:12.137291+00:00",
+    "title": "Valid Anagram - Leetcode 242 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/two-sum/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=KLlXCFG5TnA": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DKLlXCFG5TnA",
+    "checkedAt": "2026-11-01T17:34:12.137893+00:00",
+    "title": "Two Sum - Leetcode 1 - HashMap - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/group-anagrams/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=vzdNOK2oB2E": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DvzdNOK2oB2E",
+    "checkedAt": "2026-11-01T17:34:12.190405+00:00",
+    "title": "Group Anagrams - Categorize Strings by Count - Leetcode 49",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/top-k-frequent-elements/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=YPTqKIgVk-k": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DYPTqKIgVk-k",
+    "checkedAt": "2026-11-01T17:34:12.264210+00:00",
+    "title": "Top K Frequent Elements - Bucket Sort - Leetcode 347 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/product-of-array-except-self/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=bNvIQI2wAjk": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DbNvIQI2wAjk",
+    "checkedAt": "2026-11-01T17:34:12.294264+00:00",
+    "title": "Product of Array Except Self - Leetcode 238 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/valid-sudoku/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=TjFXEUCMqI8": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DTjFXEUCMqI8",
+    "checkedAt": "2026-11-01T17:34:12.353999+00:00",
+    "title": "Valid Sudoku - Amazon Interview Question - Leetcode 36 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/encode-and-decode-strings/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=B1k_sxOSgv8": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DB1k_sxOSgv8",
+    "checkedAt": "2026-11-01T17:34:12.387520+00:00",
+    "title": "Encode and Decode Strings - Leetcode 271 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/longest-consecutive-sequence/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=P6RZZMu_maU": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DP6RZZMu_maU",
+    "checkedAt": "2026-11-01T17:34:12.382161+00:00",
+    "title": "Leetcode 128 - LONGEST CONSECUTIVE SEQUENCE",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/valid-palindrome/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=jJXJ16kPFWg": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DjJXJ16kPFWg",
+    "checkedAt": "2026-11-01T17:34:13.353755+00:00",
+    "title": "Valid Palindrome - Leetcode 125 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=cQ1Oz4ckceM": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DcQ1Oz4ckceM",
+    "checkedAt": "2026-11-01T17:34:13.460097+00:00",
+    "title": "TWO SUM II - Amazon Coding Interview Question - Leetcode 167 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/3sum/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=jzZsG8n2R9A": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DjzZsG8n2R9A",
+    "checkedAt": "2026-11-01T17:34:13.466646+00:00",
+    "title": "3Sum - Leetcode 15 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/container-with-most-water/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=UuiTKBwPgAo": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DUuiTKBwPgAo",
+    "checkedAt": "2026-11-01T17:34:13.528338+00:00",
+    "title": "Container with Most Water - Leetcode 11 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/trapping-rain-water/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=ZI2z5pq0TqA": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DZI2z5pq0TqA",
+    "checkedAt": "2026-11-01T17:34:13.537733+00:00",
+    "title": "Trapping Rain Water - Google Interview Question - Leetcode 42",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=1pkOgXD63yU": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D1pkOgXD63yU",
+    "checkedAt": "2026-11-01T17:34:13.570473+00:00",
+    "title": "Sliding Window: Best Time to Buy and Sell Stock - Leetcode 121 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/longest-substring-without-repeating-characters/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=wiGpQwVHdE0": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DwiGpQwVHdE0",
+    "checkedAt": "2026-11-01T17:34:13.679808+00:00",
+    "title": "Longest Substring Without Repeating Characters - Leetcode 3 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/longest-repeating-character-replacement/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=gqXU1UyA8pk": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DgqXU1UyA8pk",
+    "checkedAt": "2026-11-01T17:34:13.671128+00:00",
+    "title": "Longest Repeating Character Replacement - Leetcode 424 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/permutation-in-string/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=UbyhOgBN834": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DUbyhOgBN834",
+    "checkedAt": "2026-11-01T17:34:13.773083+00:00",
+    "title": "Permutation in String - Leetcode 567 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/minimum-window-substring/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=jSto0O4AJbM": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DjSto0O4AJbM",
+    "checkedAt": "2026-11-01T17:34:13.749242+00:00",
+    "title": "Minimum Window Substring - Airbnb Interview Question - Leetcode 76",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/sliding-window-maximum/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=DfljaUwZsOk": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DDfljaUwZsOk",
+    "checkedAt": "2026-11-01T17:34:13.839118+00:00",
+    "title": "Sliding Window Maximum - Monotonic Queue - Leetcode 239",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/valid-parentheses/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=WTzjTskDFMg": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DWTzjTskDFMg",
+    "checkedAt": "2026-11-01T17:34:13.877029+00:00",
+    "title": "Valid Parentheses - Stack - Leetcode 20 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/min-stack/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=qkLl7nAwDPo": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DqkLl7nAwDPo",
+    "checkedAt": "2026-11-01T17:34:13.941009+00:00",
+    "title": "Design Min Stack - Amazon Interview Question - Leetcode 155 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/evaluate-reverse-polish-notation/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=iu0082c4HDE": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Diu0082c4HDE",
+    "checkedAt": "2026-11-01T17:34:13.931033+00:00",
+    "title": "Evaluate Reverse Polish Notation - Leetcode 150 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/generate-parentheses/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=s9fokUqJ76A": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Ds9fokUqJ76A",
+    "checkedAt": "2026-11-01T17:34:14.019908+00:00",
+    "title": "Generate Parentheses - Stack - Leetcode 22",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/daily-temperatures/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=cTBiBSnjO3c": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DcTBiBSnjO3c",
+    "checkedAt": "2026-11-01T17:34:14.033737+00:00",
+    "title": "Daily Temperatures - Monotonic Stack - Leetcode 739 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/car-fleet/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=Pr6T-3yB9RM": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DPr6T-3yB9RM",
+    "checkedAt": "2026-11-01T17:34:14.108880+00:00",
+    "title": "Car Fleet - Leetcode 853 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/largest-rectangle-in-histogram/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=zx5Sw9130L0": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dzx5Sw9130L0",
+    "checkedAt": "2026-11-01T17:34:14.143605+00:00",
+    "title": "LARGEST RECTANGLE IN HISTOGRAM - Leetcode 84 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/binary-search/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=s4DPM8ct1pI": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Ds4DPM8ct1pI",
+    "checkedAt": "2026-11-01T17:34:14.206312+00:00",
+    "title": "Binary Search - Leetcode 704 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/search-a-2d-matrix/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=Ber2pi2C0j0": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DBer2pi2C0j0",
+    "checkedAt": "2026-11-01T17:34:14.246643+00:00",
+    "title": "Search a 2D Matrix - Leetcode 74 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/koko-eating-bananas/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=U2SozAs9RzA": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DU2SozAs9RzA",
+    "checkedAt": "2026-11-01T17:34:14.251379+00:00",
+    "title": "Koko Eating Bananas - Binary Search - Leetcode 875 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=nIVW4P8b1VA": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DnIVW4P8b1VA",
+    "checkedAt": "2026-11-01T17:34:14.306275+00:00",
+    "title": "Find Minimum in Rotated Sorted Array - Binary Search - Leetcode 153 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/search-in-rotated-sorted-array/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=U8XENwh8Oy8": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DU8XENwh8Oy8",
+    "checkedAt": "2026-11-01T17:34:14.342245+00:00",
+    "title": "Search in rotated sorted array - Leetcode 33 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/time-based-key-value-store/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=fu2cD_6E8Hw": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dfu2cD_6E8Hw",
+    "checkedAt": "2026-11-01T17:34:14.412194+00:00",
+    "title": "Time Based Key-Value Store - Leetcode 981 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/median-of-two-sorted-arrays/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=q6IEA26hvXc": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dq6IEA26hvXc",
+    "checkedAt": "2026-11-01T17:34:14.436101+00:00",
+    "title": "Median of Two Sorted Arrays - Binary Search - Leetcode 4",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/reverse-linked-list/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=G0_I-ZF0S38": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DG0_I-ZF0S38",
+    "checkedAt": "2026-11-01T17:34:14.472556+00:00",
+    "title": "Reverse Linked List - Iterative AND Recursive - Leetcode 206 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/merge-two-sorted-lists/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=XIdigk956u0": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DXIdigk956u0",
+    "checkedAt": "2026-11-01T17:34:14.478963+00:00",
+    "title": "Merge Two Sorted Lists - Leetcode 21 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/reorder-list/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=S5bfdUTrKLM": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DS5bfdUTrKLM",
+    "checkedAt": "2026-11-01T17:34:14.533028+00:00",
+    "title": "Linkedin Interview Question - Reorder List - Leetcode 143 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/remove-nth-node-from-end-of-list/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=XVuQxVej6y8": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DXVuQxVej6y8",
+    "checkedAt": "2026-11-01T17:34:14.620094+00:00",
+    "title": "Remove Nth Node from End of List - Oracle Interview Question - Leetcode 19",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/copy-list-with-random-pointer/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=5Y2EiZST97Y": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D5Y2EiZST97Y",
+    "checkedAt": "2026-11-01T17:34:14.656589+00:00",
+    "title": "Copy List with Random Pointer - Linked List - Leetcode 138",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/add-two-numbers/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=wgFPrzTjm7s": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DwgFPrzTjm7s",
+    "checkedAt": "2026-11-01T17:34:14.664457+00:00",
+    "title": "Add Two Numbers - Leetcode 2 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/linked-list-cycle/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=gBTe7lFR3vc": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DgBTe7lFR3vc",
+    "checkedAt": "2026-11-01T17:34:14.758392+00:00",
+    "title": "Linked List Cycle - Floyd's Tortoise and Hare - Leetcode 141 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/find-the-duplicate-number/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=wjYnzkAhcNk": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DwjYnzkAhcNk",
+    "checkedAt": "2026-11-01T17:34:14.716021+00:00",
+    "title": "Find the Duplicate Number - Floyd's Cycle Detection - Leetcode 287 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/lru-cache/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=7ABFKPK2hD4": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D7ABFKPK2hD4",
+    "checkedAt": "2026-11-01T17:34:14.826866+00:00",
+    "title": "LRU Cache - Twitch Interview Question - Leetcode 146",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/merge-k-sorted-lists/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=q5a5OiGbT6Q": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dq5a5OiGbT6Q",
+    "checkedAt": "2026-11-01T17:34:14.861677+00:00",
+    "title": "Merge K Sorted Lists - Leetcode 23 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/reverse-nodes-in-k-group/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=1UOPsfP85V4": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D1UOPsfP85V4",
+    "checkedAt": "2026-11-01T17:34:14.911381+00:00",
+    "title": "Reverse Nodes in K-Group - Linked List - Leetcode 25",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/invert-binary-tree/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=OnSn2XEQ4MY": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DOnSn2XEQ4MY",
+    "checkedAt": "2026-11-01T17:34:14.932541+00:00",
+    "title": "Invert Binary Tree - Depth First Search - Leetcode 226",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/maximum-depth-of-binary-tree/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=hTM3phVI6YQ": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DhTM3phVI6YQ",
+    "checkedAt": "2026-11-01T17:34:14.990841+00:00",
+    "title": "Maximum Depth of Binary Tree - 3 Solutions - Leetcode 104 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/diameter-of-binary-tree/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=bkxqA8Rfv04": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DbkxqA8Rfv04",
+    "checkedAt": "2026-11-01T17:34:15.062081+00:00",
+    "title": "Diameter of a Binary Tree - Leetcode 543 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/balanced-binary-tree/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=QfJsau0ItOY": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DQfJsau0ItOY",
+    "checkedAt": "2026-11-01T17:34:15.047473+00:00",
+    "title": "Balanced Binary Tree - Leetcode 110 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/same-tree/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=vRbbcKXCxOw": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DvRbbcKXCxOw",
+    "checkedAt": "2026-11-01T17:34:15.105882+00:00",
+    "title": "Same Tree - Leetcode 100 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/subtree-of-another-tree/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=E36O5SWp-LE": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DE36O5SWp-LE",
+    "checkedAt": "2026-11-01T17:34:15.153356+00:00",
+    "title": "Subtree of Another Tree - Leetcode 572 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=gs2LMfuOR9k": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dgs2LMfuOR9k",
+    "checkedAt": "2026-11-01T17:34:15.184872+00:00",
+    "title": "Lowest Common Ancestor of a Binary Search Tree - Leetcode 235 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/binary-tree-level-order-traversal/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=6ZnyEApgFYg": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D6ZnyEApgFYg",
+    "checkedAt": "2026-11-01T17:34:15.263535+00:00",
+    "title": "Binary Tree Level Order Traversal - BFS - Leetcode 102",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/binary-tree-right-side-view/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=d4zLyf32e3I": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dd4zLyf32e3I",
+    "checkedAt": "2026-11-01T17:34:15.299668+00:00",
+    "title": "Binary Tree Right Side View - Breadth First Search - Leetcode 199",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/count-good-nodes-in-binary-tree/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=7cp5imvDzl4": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D7cp5imvDzl4",
+    "checkedAt": "2026-11-01T17:34:15.294701+00:00",
+    "title": "Microsoft's Most Asked Question 2021 - Count Good Nodes in a Binary Tree - Leetcode 1448 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/validate-binary-search-tree/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=s6ATEkipzow": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Ds6ATEkipzow",
+    "checkedAt": "2026-11-01T17:34:15.381943+00:00",
+    "title": "Validate Binary Search Tree - Depth First Search - Leetcode 98",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/kth-smallest-element-in-a-bst/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=5LUXSvjmGCw": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D5LUXSvjmGCw",
+    "checkedAt": "2026-11-01T17:34:15.409510+00:00",
+    "title": "Kth Smallest Element in a BST - Leetcode 230 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=ihj4IQGZ2zc": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dihj4IQGZ2zc",
+    "checkedAt": "2026-11-01T17:34:15.461408+00:00",
+    "title": "Construct Binary Tree from Inorder and Preorder Traversal - Leetcode 105 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/binary-tree-maximum-path-sum/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=Hr5cWUld4vU": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DHr5cWUld4vU",
+    "checkedAt": "2026-11-01T17:34:15.498480+00:00",
+    "title": "Binary Tree Maximum Path Sum - DFS - Leetcode 124 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=u4JAi2JJhI8": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Du4JAi2JJhI8",
+    "checkedAt": "2026-11-01T17:34:15.555440+00:00",
+    "title": "Serialize and Deserialize Binary Tree - Preorder Traversal - Leetcode 297 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/implement-trie-prefix-tree/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=oobqoCJlHA0": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DoobqoCJlHA0",
+    "checkedAt": "2026-11-01T17:34:15.605767+00:00",
+    "title": "Implement Trie (Prefix Tree) - Leetcode 208",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/design-add-and-search-words-data-structure/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=BTf05gs_8iU": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DBTf05gs_8iU",
+    "checkedAt": "2026-11-01T17:34:15.620703+00:00",
+    "title": "Design Add and Search Words Data Structure - Leetcode 211 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/word-search-ii/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=asbcE9mZz_U": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DasbcE9mZz_U",
+    "checkedAt": "2026-11-01T17:34:15.673578+00:00",
+    "title": "Word Search II - Backtracking Trie - Leetcode 212 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/kth-largest-element-in-a-stream/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=hOjcdrqMoQ8": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DhOjcdrqMoQ8",
+    "checkedAt": "2026-11-01T17:34:15.729315+00:00",
+    "title": "Kth Largest Element in a Stream - Leetcode 703 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/last-stone-weight/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=B-QCq79-Vfw": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DB-QCq79-Vfw",
+    "checkedAt": "2026-11-01T17:34:15.768082+00:00",
+    "title": "Last Stone Weight - Priority Queue - Leetcode 1046 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/k-closest-points-to-origin/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=rI2EBUEMfTk": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DrI2EBUEMfTk",
+    "checkedAt": "2026-11-01T17:34:15.832679+00:00",
+    "title": "K Closest Points to Origin - Heap / Priority Queue - Leetcode 973 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/kth-largest-element-in-an-array/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=XEmy13g1Qxc": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DXEmy13g1Qxc",
+    "checkedAt": "2026-11-01T17:34:15.895939+00:00",
+    "title": "Kth Largest Element in an Array - Quick Select - Leetcode 215 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/task-scheduler/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=s8p8ukTyA2I": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Ds8p8ukTyA2I",
+    "checkedAt": "2026-11-01T17:34:15.877377+00:00",
+    "title": "Task Scheduler - Leetcode 621 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/design-twitter/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=pNichitDD2E": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DpNichitDD2E",
+    "checkedAt": "2026-11-01T17:34:15.946915+00:00",
+    "title": "Design Twitter - Leetcode 355 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/find-median-from-data-stream/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=itmhHWaHupI": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DitmhHWaHupI",
+    "checkedAt": "2026-11-01T17:34:15.996655+00:00",
+    "title": "Find Median from Data Stream - Heap & Priority Queue - Leetcode 295",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/subsets/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=REOH22Xwdkk": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DREOH22Xwdkk",
+    "checkedAt": "2026-11-01T17:34:16.046227+00:00",
+    "title": "Subsets - Backtracking - Leetcode 78",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/combination-sum/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=GBKI9VSKdGg": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DGBKI9VSKdGg",
+    "checkedAt": "2026-11-01T17:34:16.107315+00:00",
+    "title": "Combination Sum - Backtracking - Leetcode 39 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/permutations/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=s7AvT7cGdSo": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Ds7AvT7cGdSo",
+    "checkedAt": "2026-11-01T17:34:16.482693+00:00",
+    "title": "Backtracking: Permutations - Leetcode 46 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/subsets-ii/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=Vn2v6ajA7U0": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DVn2v6ajA7U0",
+    "checkedAt": "2026-11-01T17:34:16.561345+00:00",
+    "title": "Subsets II - Backtracking - Leetcode 90 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/combination-sum-ii/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=rSA3t6BDDwg": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DrSA3t6BDDwg",
+    "checkedAt": "2026-11-01T17:34:16.544972+00:00",
+    "title": "Combination Sum II - Backtracking - Leetcode 40 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/word-search/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=pfiQ_PS1g8E": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DpfiQ_PS1g8E",
+    "checkedAt": "2026-11-01T17:34:16.593827+00:00",
+    "title": "Word Search - Backtracking - Leetcode 79 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/palindrome-partitioning/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=3jvWodd7ht0": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D3jvWodd7ht0",
+    "checkedAt": "2026-11-01T17:34:16.625150+00:00",
+    "title": "Palindrome Partitioning - Backtracking - Leetcode 131",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/letter-combinations-of-a-phone-number/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=0snEunUacZY": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D0snEunUacZY",
+    "checkedAt": "2026-11-01T17:34:16.659170+00:00",
+    "title": "Letter Combinations of a Phone Number - Backtracking - Leetcode 17",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/n-queens/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=Ph95IHmRp5M": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DPh95IHmRp5M",
+    "checkedAt": "2026-11-01T17:34:16.750404+00:00",
+    "title": "N-Queens - Backtracking - Leetcode 51 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/number-of-islands/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=pV2kpPD66nE": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DpV2kpPD66nE",
+    "checkedAt": "2026-11-01T17:34:16.804556+00:00",
+    "title": "NUMBER OF ISLANDS - Leetcode 200 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/clone-graph/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=mQeF6bN8hMk": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DmQeF6bN8hMk",
+    "checkedAt": "2026-11-01T17:34:16.829292+00:00",
+    "title": "Clone Graph - Depth First Search - Leetcode 133",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/max-area-of-island/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=iJGr1OtmH0c": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DiJGr1OtmH0c",
+    "checkedAt": "2026-11-01T17:34:16.846380+00:00",
+    "title": "Max Area of Island - Leetcode 695 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/pacific-atlantic-water-flow/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=s-VkcjHqkGI": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Ds-VkcjHqkGI",
+    "checkedAt": "2026-11-01T17:34:16.881531+00:00",
+    "title": "Pacific Atlantic Water Flow - Leetcode 417 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/surrounded-regions/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=9z2BunfoZ5Y": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D9z2BunfoZ5Y",
+    "checkedAt": "2026-11-01T17:34:16.960060+00:00",
+    "title": "Surrounded Regions - Graph - Leetcode 130 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/rotting-oranges/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=y704fEOx0s0": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dy704fEOx0s0",
+    "checkedAt": "2026-11-01T17:34:17.022839+00:00",
+    "title": "Rotting Oranges - Leetcode 994 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/walls-and-gates/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=e69C6xhiSQE": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3De69C6xhiSQE",
+    "checkedAt": "2026-11-01T17:34:17.046726+00:00",
+    "title": "Walls and Gates - Multi-Source BFS - Leetcode 286 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/course-schedule/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=EgI5nU9etnU": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DEgI5nU9etnU",
+    "checkedAt": "2026-11-01T17:34:17.074501+00:00",
+    "title": "Course Schedule - Graph Adjacency List - Leetcode 207",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/course-schedule-ii/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=Akt3glAwyfY": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DAkt3glAwyfY",
+    "checkedAt": "2026-11-01T17:34:17.104018+00:00",
+    "title": "Course Schedule II - Topological Sort - Leetcode 210",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/redundant-connection/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=FXWRE67PLL0": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DFXWRE67PLL0",
+    "checkedAt": "2026-11-01T17:34:17.178072+00:00",
+    "title": "Redundant Connection - Union Find - Leetcode 684 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=8f1XPm4WOUc": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D8f1XPm4WOUc",
+    "checkedAt": "2026-11-01T17:34:17.232053+00:00",
+    "title": "Number of Connected Components in an Undirected Graph - Union Find - Leetcode 323 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/graph-valid-tree/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=bXsUuownnoQ": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DbXsUuownnoQ",
+    "checkedAt": "2026-11-01T17:34:17.277097+00:00",
+    "title": "Graph Valid Tree - Leetcode 261 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/word-ladder/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=h9iTnkgv05E": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dh9iTnkgv05E",
+    "checkedAt": "2026-11-01T17:34:17.282590+00:00",
+    "title": "Word Ladder - Breadth First Search - Leetcode 127 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/reconstruct-itinerary/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=ZyB_gQ8vqGA": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DZyB_gQ8vqGA",
+    "checkedAt": "2026-11-01T17:34:17.303475+00:00",
+    "title": "Reconstruct Itinerary - Leetcode 332 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/min-cost-to-connect-all-points/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=f7JOBJIC-NA": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Df7JOBJIC-NA",
+    "checkedAt": "2026-11-01T17:34:17.369485+00:00",
+    "title": "Prim's Algorithm - Minimum Spanning Tree - Min Cost to Connect all Points - Leetcode 1584 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/network-delay-time/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=EaphyqKU4PQ": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DEaphyqKU4PQ",
+    "checkedAt": "2026-11-01T17:34:17.459001+00:00",
+    "title": "Network Delay Time - Dijkstra's algorithm - Leetcode 743",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/swim-in-rising-water/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=amvrKlMLuGY": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DamvrKlMLuGY",
+    "checkedAt": "2026-11-01T17:34:17.480677+00:00",
+    "title": "Swim in Rising Water - Dijkstra's Algorithm - Leetcode 778 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/alien-dictionary/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=6kTZYvNNyps": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D6kTZYvNNyps",
+    "checkedAt": "2026-11-01T17:34:17.516149+00:00",
+    "title": "Alien Dictionary - Topological Sort - Leetcode 269 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/cheapest-flights-within-k-stops/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=5eIK3zUdYmE": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D5eIK3zUdYmE",
+    "checkedAt": "2026-11-01T17:34:17.516916+00:00",
+    "title": "Bellman-Ford - Cheapest Flights within K Stops - Leetcode 787 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/climbing-stairs/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=Y0lT9Fck7qI": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DY0lT9Fck7qI",
+    "checkedAt": "2026-11-01T17:34:17.598039+00:00",
+    "title": "Climbing Stairs - Dynamic Programming - Leetcode 70 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/min-cost-climbing-stairs/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=ktmzAZWkEZ0": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DktmzAZWkEZ0",
+    "checkedAt": "2026-11-01T17:34:17.658544+00:00",
+    "title": "Min Cost Climbing Stairs - Dynamic Programming - Leetcode 746 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/house-robber/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=73r3KWiEvyk": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D73r3KWiEvyk",
+    "checkedAt": "2026-11-01T17:34:17.707003+00:00",
+    "title": "House Robber -  Leetcode 198 - Python Dynamic Programming",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/house-robber-ii/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=rWAJCfYYOvM": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DrWAJCfYYOvM",
+    "checkedAt": "2026-11-01T17:34:17.718407+00:00",
+    "title": "House Robber II - Dynamic Programming - Leetcode 213",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/longest-palindromic-substring/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=XYQecbcd6_c": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DXYQecbcd6_c",
+    "checkedAt": "2026-11-01T17:34:17.786561+00:00",
+    "title": "Longest Palindromic Substring - Python - Leetcode 5",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/palindromic-substrings/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=4RACzI5-du8": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D4RACzI5-du8",
+    "checkedAt": "2026-11-01T17:34:17.800003+00:00",
+    "title": "Palindromic Substrings - Leetcode 647 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/decode-ways/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=6aEyTjOwlJU": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D6aEyTjOwlJU",
+    "checkedAt": "2026-11-01T17:34:17.850040+00:00",
+    "title": "Decode Ways - Dynamic Programming - Leetcode 91 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/coin-change/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=H9bfqozjoqs": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DH9bfqozjoqs",
+    "checkedAt": "2026-11-01T17:34:17.924135+00:00",
+    "title": "Coin Change - Dynamic Programming Bottom Up - Leetcode 322",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/maximum-product-subarray/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=lXVy6YWFcRM": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DlXVy6YWFcRM",
+    "checkedAt": "2026-11-01T17:34:17.929320+00:00",
+    "title": "Maximum Product Subarray - Dynamic Programming - Leetcode 152",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/word-break/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=Sx9NNgInc3A": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DSx9NNgInc3A",
+    "checkedAt": "2026-11-01T17:34:17.990013+00:00",
+    "title": "Word Break - Dynamic Programming - Leetcode 139 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/longest-increasing-subsequence/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=cjWnW0hdF1Y": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DcjWnW0hdF1Y",
+    "checkedAt": "2026-11-01T17:34:18.000904+00:00",
+    "title": "Longest Increasing Subsequence - Dynamic Programming - Leetcode 300",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/partition-equal-subset-sum/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=IsvocB5BJhw": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DIsvocB5BJhw",
+    "checkedAt": "2026-11-01T17:34:18.051656+00:00",
+    "title": "Partition Equal Subset Sum - Dynamic Programming - Leetcode 416 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/unique-paths/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=IlEsdxuD4lY": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DIlEsdxuD4lY",
+    "checkedAt": "2026-11-01T17:34:18.630043+00:00",
+    "title": "Unique Paths - Dynamic Programming - Leetcode 62",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/longest-common-subsequence/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=Ua0GhsJSlWM": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DUa0GhsJSlWM",
+    "checkedAt": "2026-11-01T17:34:18.633151+00:00",
+    "title": "Longest Common Subsequence - Dynamic Programming - Leetcode 1143",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=I7j0F7AHpb8": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DI7j0F7AHpb8",
+    "checkedAt": "2026-11-01T17:34:18.646710+00:00",
+    "title": "Best Time to Buy and Sell Stock with Cooldown - Leetcode 309 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/coin-change-ii/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=Mjy4hd2xgrs": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DMjy4hd2xgrs",
+    "checkedAt": "2026-11-01T17:34:18.754515+00:00",
+    "title": "Coin Change 2 - Dynamic Programming Unbounded Knapsack - Leetcode 518 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/target-sum/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=g0npyaQtAQM": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dg0npyaQtAQM",
+    "checkedAt": "2026-11-01T17:34:18.803135+00:00",
+    "title": "Target Sum - Dynamic Programming - Leetcode 494 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/interleaving-string/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=3Rw3p9LrgvE": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D3Rw3p9LrgvE",
+    "checkedAt": "2026-11-01T17:34:18.831951+00:00",
+    "title": "Interleaving Strings - Dynamic Programming - Leetcode 97 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/longest-increasing-path-in-a-matrix/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=wCc_nd-GiEc": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DwCc_nd-GiEc",
+    "checkedAt": "2026-11-01T17:34:18.836919+00:00",
+    "title": "Longest Increasing Path in a Matrix - Leetcode 329",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/distinct-subsequences/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=-RDzMJ33nx8": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D-RDzMJ33nx8",
+    "checkedAt": "2026-11-01T17:34:18.882523+00:00",
+    "title": "Distinct Subsequences - Dynamic Programming - Leetcode 115 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/edit-distance/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=XYi2-LPrwm4": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DXYi2-LPrwm4",
+    "checkedAt": "2026-11-01T17:34:18.979377+00:00",
+    "title": "Edit Distance - Dynamic Programming - Leetcode 72 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/burst-balloons/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=VFskby7lUbw": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DVFskby7lUbw",
+    "checkedAt": "2026-11-01T17:34:19.014397+00:00",
+    "title": "Burst Baloons - Dynamic Programming - Leetcode 312 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/regular-expression-matching/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=HAA8mgxlov8": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DHAA8mgxlov8",
+    "checkedAt": "2026-11-01T17:34:19.059850+00:00",
+    "title": "Regular Expression Matching - Dynamic Programming Top-Down Memoization - Leetcode 10",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/maximum-subarray/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=5WZl3MMT0Eg": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D5WZl3MMT0Eg",
+    "checkedAt": "2026-11-01T17:34:19.108008+00:00",
+    "title": "Maximum Subarray - Amazon Coding Interview Question - Leetcode 53 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/jump-game/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=Yan0cv2cLy8": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DYan0cv2cLy8",
+    "checkedAt": "2026-11-01T17:34:19.152985+00:00",
+    "title": "Jump Game - Greedy - Leetcode 55",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/jump-game-ii/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=dJ7sWiOoK7g": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DdJ7sWiOoK7g",
+    "checkedAt": "2026-11-01T17:34:19.171649+00:00",
+    "title": "Jump Game II - Greedy - Leetcode 45 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/gas-station/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=lJwbPZGo05A": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DlJwbPZGo05A",
+    "checkedAt": "2026-11-01T17:34:19.193906+00:00",
+    "title": "Gas Station - Greedy - Leetcode 134 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/hand-of-straights/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=amnrMCVd2YI": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DamnrMCVd2YI",
+    "checkedAt": "2026-11-01T17:34:19.255378+00:00",
+    "title": "Hand of Straights - Leetcode 846 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/merge-triplets-to-form-target-triplet/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=kShkQLQZ9K4": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DkShkQLQZ9K4",
+    "checkedAt": "2026-11-01T17:34:19.321505+00:00",
+    "title": "Merge Triplets to Form Target Triplet - Greedy - Leetcode 1899 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/partition-labels/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=B7m8UmZE-vw": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DB7m8UmZE-vw",
+    "checkedAt": "2026-11-01T17:34:19.363050+00:00",
+    "title": "Partition Labels - Leetcode 763 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/valid-parenthesis-string/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=QhPdNS143Qg": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DQhPdNS143Qg",
+    "checkedAt": "2026-11-01T17:34:19.401755+00:00",
+    "title": "Valid Parenthesis String - Leetcode 678 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/insert-interval/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=A8NUOmlwOlM": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DA8NUOmlwOlM",
+    "checkedAt": "2026-11-01T17:34:19.431513+00:00",
+    "title": "Insert Interval - Leetcode 57 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/merge-intervals/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=44H3cEC2fFM": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D44H3cEC2fFM",
+    "checkedAt": "2026-11-01T17:34:19.469017+00:00",
+    "title": "Merge Intervals - Sorting - Leetcode 56",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/non-overlapping-intervals/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=nONCGxWoUfM": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DnONCGxWoUfM",
+    "checkedAt": "2026-11-01T17:34:19.517984+00:00",
+    "title": "Non-Overlapping Intervals - Leetcode 435 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/meeting-rooms/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=PaJxqZVPhbg": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DPaJxqZVPhbg",
+    "checkedAt": "2026-11-01T17:34:19.558443+00:00",
+    "title": "Meeting Rooms - Leetcode 252 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/meeting-rooms-ii/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=FdzJmTCVyJU": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DFdzJmTCVyJU",
+    "checkedAt": "2026-11-01T17:34:19.607319+00:00",
+    "title": "Meeting Rooms II - Leetcode 253 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/minimum-interval-to-include-each-query/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=5hQ5WWW5awQ": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D5hQ5WWW5awQ",
+    "checkedAt": "2026-11-01T17:34:19.665379+00:00",
+    "title": "Minimum Interval to Include Each Query - Leetcode 1851 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/rotate-image/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=fMSJSS7eO1w": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DfMSJSS7eO1w",
+    "checkedAt": "2026-11-01T17:34:19.715045+00:00",
+    "title": "Rotate Image - Matrix - Leetcode 48",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/spiral-matrix/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=BJnMZNwUk1M": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DBJnMZNwUk1M",
+    "checkedAt": "2026-11-01T17:34:19.759143+00:00",
+    "title": "Spiral Matrix - Microsoft Interview Question - Leetcode 54",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/set-matrix-zeroes/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=T41rL0L3Pnw": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DT41rL0L3Pnw",
+    "checkedAt": "2026-11-01T17:34:19.767798+00:00",
+    "title": "Set Matrix Zeroes - In-place - Leetcode 73",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/happy-number/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=ljz85bxOYJ0": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dljz85bxOYJ0",
+    "checkedAt": "2026-11-01T17:34:19.803867+00:00",
+    "title": "Happy Number - Leetcode 202 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/plus-one/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=jIaA8boiG1s": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DjIaA8boiG1s",
+    "checkedAt": "2026-11-01T17:34:19.860333+00:00",
+    "title": "Plus One - Leetcode 66 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/powx-n/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=g9YQyYi4IQQ": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dg9YQyYi4IQQ",
+    "checkedAt": "2026-11-01T17:34:19.933387+00:00",
+    "title": "Pow(x, n) - X to the power of N - Leetcode 50 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/multiply-strings/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=1vZswirL8Y8": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D1vZswirL8Y8",
+    "checkedAt": "2026-11-01T17:34:19.976941+00:00",
+    "title": "Multiply Strings - Leetcode 43 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/detect-squares/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=bahebearrDc": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DbahebearrDc",
+    "checkedAt": "2026-11-01T17:34:20.020211+00:00",
+    "title": "Detect Squares - Leetcode Weekly Contest - Problem 2013 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/single-number/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=qMPX1AOa83k": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DqMPX1AOa83k",
+    "checkedAt": "2026-11-01T17:34:20.033471+00:00",
+    "title": "Single Number - Leetcode 136 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/number-of-1-bits/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=5Km3utixwZs": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D5Km3utixwZs",
+    "checkedAt": "2026-11-01T17:34:20.061382+00:00",
+    "title": "Number of 1 Bits - Leetcode 191 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/counting-bits/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=RyBM56RIWrM": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DRyBM56RIWrM",
+    "checkedAt": "2026-11-01T17:34:20.136361+00:00",
+    "title": "Counting Bits - Dynamic Programming - Leetcode 338 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/reverse-bits/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=UcoN6UjAI64": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DUcoN6UjAI64",
+    "checkedAt": "2026-11-01T17:34:20.204573+00:00",
+    "title": "Reverse Bits - Binary - Leetcode 190 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/missing-number/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=WnPLSRLSANE": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DWnPLSRLSANE",
+    "checkedAt": "2026-11-01T17:34:20.230511+00:00",
+    "title": "Missing Number - Blind 75 - Leetcode 268 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/sum-of-two-integers/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=gVUrDV4tZfY": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DgVUrDV4tZfY",
+    "checkedAt": "2026-11-01T17:34:20.269292+00:00",
+    "title": "Sum of Two Integers - Leetcode 371 - Java",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/reverse-integer/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=HAgLH58IgJQ": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DHAgLH58IgJQ",
+    "checkedAt": "2026-11-01T17:34:20.280847+00:00",
+    "title": "Reverse Integer - Bit Manipulation - Leetcode 7 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/longest-common-prefix/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=0sWShKIJoo4": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D0sWShKIJoo4",
+    "checkedAt": "2026-11-01T17:34:20.345472+00:00",
+    "title": "Longest Common Prefix - Leetcode 14 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/isomorphic-strings/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=7yF-U1hLEqQ": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D7yF-U1hLEqQ",
+    "checkedAt": "2026-11-01T17:34:20.406414+00:00",
+    "title": "Isomorphic Strings - Leetcode 205 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/majority-element/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=7pnhv842keE": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D7pnhv842keE",
+    "checkedAt": "2026-11-01T17:34:20.429423+00:00",
+    "title": "Majority Element - Leetcode 169 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/design-hashset/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=VymjPQUXjL8": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DVymjPQUXjL8",
+    "checkedAt": "2026-11-01T17:34:20.493503+00:00",
+    "title": "Design HashSet - Leetcode 705 - Python",
+    "author": "NeetCodeIO",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/design-hashmap/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=cNWsgbKwwoU": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DcNWsgbKwwoU",
+    "checkedAt": "2026-11-01T17:34:20.525991+00:00",
+    "title": "Design Hashmap - Leetcode 706 - Python",
+    "author": "NeetCodeIO",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/is-subsequence/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=99RVfqklbCE": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D99RVfqklbCE",
+    "checkedAt": "2026-11-01T17:34:20.530673+00:00",
+    "title": "Is Subsequence - Leetcode 392",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/valid-palindrome-ii/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=JrxRYBwG6EI": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DJrxRYBwG6EI",
+    "checkedAt": "2026-11-01T17:34:20.615893+00:00",
+    "title": "Valid Palindrome II - Leetcode 680 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/reverse-string/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=_d0T_2Lk2qA": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D_d0T_2Lk2qA",
+    "checkedAt": "2026-11-01T17:34:20.620496+00:00",
+    "title": "Reverse String - 3 Ways - Leetcode 344 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/merge-sorted-array/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=P1Ic85RarKY": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DP1Ic85RarKY",
+    "checkedAt": "2026-11-01T17:34:20.707383+00:00",
+    "title": "Merge Sorted Array - Leetcode 88 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/move-zeroes/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=aayNRwUN3Do": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DaayNRwUN3Do",
+    "checkedAt": "2026-11-01T17:34:20.739330+00:00",
+    "title": "Move Zeroes - Leetcode 283 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/remove-duplicates-from-sorted-array/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=DEJAZBq0FDA": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DDEJAZBq0FDA",
+    "checkedAt": "2026-11-01T17:34:20.811549+00:00",
+    "title": "Remove Duplicates from Sorted Array - Leetcode 26 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/find-all-anagrams-in-a-string/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=G8xtZy0fDKg": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DG8xtZy0fDKg",
+    "checkedAt": "2026-11-01T17:34:20.822527+00:00",
+    "title": "Find All Anagrams in a String - Leetcode 438 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/fruit-into-baskets/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=yYtaV0G3mWQ": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DyYtaV0G3mWQ",
+    "checkedAt": "2026-11-01T17:34:20.828238+00:00",
+    "title": "Fruits into Basket - Leetcode 904 - Python",
+    "author": "NeetCodeIO",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/minimum-size-subarray-sum/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=aYqYMIqZx5s": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DaYqYMIqZx5s",
+    "checkedAt": "2026-11-01T17:34:20.893991+00:00",
+    "title": "Minimum Size Subarray Sum - Leetcode 209 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/find-pivot-index/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=u89i60lYx8U": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Du89i60lYx8U",
+    "checkedAt": "2026-11-01T17:34:20.944459+00:00",
+    "title": "Find Pivot Index - Leetcode 724 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/range-sum-query-immutable/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=2pndAmo_sMA": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D2pndAmo_sMA",
+    "checkedAt": "2026-11-01T17:34:21.022178+00:00",
+    "title": "Range Sum Query Immutable - Leetcode 303 - Python",
+    "author": "NeetCodeIO",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/subarray-sum-equals-k/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=fFVZt-6sgyo": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DfFVZt-6sgyo",
+    "checkedAt": "2026-11-01T17:34:21.031548+00:00",
+    "title": "Subarray Sum Equals K - Prefix Sums - Leetcode 560 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/continuous-subarray-sum/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=OKcrLfR-8mE": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DOKcrLfR-8mE",
+    "checkedAt": "2026-11-01T17:34:21.068039+00:00",
+    "title": "Continuous Subarray Sum - Leetcode 523 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/range-sum-query-2d-immutable/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=KE8MQuwE2yA": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DKE8MQuwE2yA",
+    "checkedAt": "2026-11-01T17:34:21.131884+00:00",
+    "title": "Range Sum Query 2D - Immutable - Leetcode 304 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/sort-an-array/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=MsYZSinhuFo": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DMsYZSinhuFo",
+    "checkedAt": "2026-11-01T17:34:21.167051+00:00",
+    "title": "Sort an Array - Leetcode 912 - Python",
+    "author": "NeetCodeIO",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/sort-colors/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=4xbWSRZHqac": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D4xbWSRZHqac",
+    "checkedAt": "2026-11-01T17:34:21.261294+00:00",
+    "title": "Sort Colors - Quicksort Partition - Leetcode 75 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/sort-list/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=TGveA1oFhrc": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DTGveA1oFhrc",
+    "checkedAt": "2026-11-01T17:34:21.296684+00:00",
+    "title": "Sort List - Merge Sort - Leetcode 148",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/asteroid-collision/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=LN7KjRszjk4": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DLN7KjRszjk4",
+    "checkedAt": "2026-11-01T17:34:21.382580+00:00",
+    "title": "Asteroid Collision - Stack - Leetcode 735",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/decode-string/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=qB0zZpBJlh8": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DqB0zZpBJlh8",
+    "checkedAt": "2026-11-01T17:34:21.377392+00:00",
+    "title": "Decode String - Leetcode 394 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/next-greater-element-i/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=68a1Dc_qVq4": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D68a1Dc_qVq4",
+    "checkedAt": "2026-11-01T17:34:21.449477+00:00",
+    "title": "Next Greater Element I - Leetcode 496 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/online-stock-span/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=slYh0ZNEqSw": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DslYh0ZNEqSw",
+    "checkedAt": "2026-11-01T17:34:21.507424+00:00",
+    "title": "Online Stock Span - Leetcode 901 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/remove-k-digits/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=cFabMOnJaq0": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DcFabMOnJaq0",
+    "checkedAt": "2026-11-01T17:34:21.541746+00:00",
+    "title": "Remove K Digits - Leetcode 402 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/search-insert-position/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=K-RYzDZkzCI": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DK-RYzDZkzCI",
+    "checkedAt": "2026-11-01T17:34:21.592885+00:00",
+    "title": "Search Insert Position - Binary Search - Leetcode 35 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=ER_oLmdc-nw": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DER_oLmdc-nw",
+    "checkedAt": "2026-11-01T17:34:21.674937+00:00",
+    "title": "Capacity to Ship Packages - Leetcode 1011 - Python",
+    "author": "NeetCodeIO",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/find-peak-element/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=kMzJy9es7Hc": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DkMzJy9es7Hc",
+    "checkedAt": "2026-11-01T17:34:21.669296+00:00",
+    "title": "Find Peak Element - Leetcode 162 - Python",
+    "author": "NeetCodeIO",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=4sQL7R5ySUU": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D4sQL7R5ySUU",
+    "checkedAt": "2026-11-01T17:34:21.722942+00:00",
+    "title": "First and Last Position of Element in Sorted Array - Binary Search - Leetcode 34",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/palindrome-linked-list/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=yOzXms1J6Nk": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DyOzXms1J6Nk",
+    "checkedAt": "2026-11-01T17:34:21.795430+00:00",
+    "title": "Palindrome Linked List - Leetcode 234 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/middle-of-the-linked-list/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=A2_ldqM4QcY": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DA2_ldqM4QcY",
+    "checkedAt": "2026-11-01T17:34:21.844448+00:00",
+    "title": "Middle of the Linked List - Leetcode 876 - Python",
+    "author": "NeetCodeIO",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/intersection-of-two-linked-lists/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=D0X0BONOQhI": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DD0X0BONOQhI",
+    "checkedAt": "2026-11-01T17:34:21.882226+00:00",
+    "title": "Intersection of Two Linked Lists - Leetcode 160 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/reverse-linked-list-ii/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=RF_M9tX4Eag": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DRF_M9tX4Eag",
+    "checkedAt": "2026-11-01T17:34:21.941946+00:00",
+    "title": "Reverse Linked List II - Leetcode 92 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/binary-tree-inorder-traversal/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=g_S5WuasWUE": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dg_S5WuasWUE",
+    "checkedAt": "2026-11-01T17:34:21.916327+00:00",
+    "title": "Iterative & Recursive - Binary Tree Inorder Traversal - Leetcode 94 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/path-sum/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=LSKQyOz_P8I": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DLSKQyOz_P8I",
+    "checkedAt": "2026-11-01T17:34:21.979449+00:00",
+    "title": "Path Sum - Leetcode 112 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/symmetric-tree/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=Mao9uzxwvmc": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DMao9uzxwvmc",
+    "checkedAt": "2026-11-01T17:34:22.083204+00:00",
+    "title": "Symmetric Tree - Leetcode 101 - Python",
+    "author": "NeetCodeIO",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/delete-node-in-a-bst/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=LFzAoJJt92M": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DLFzAoJJt92M",
+    "checkedAt": "2026-11-01T17:34:22.061056+00:00",
+    "title": "Delete Node in a BST - Leetcode 450 - Python",
+    "author": "NeetCodeIO",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/combinations/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=q0s6m7AiM7o": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dq0s6m7AiM7o",
+    "checkedAt": "2026-11-01T17:34:22.120694+00:00",
+    "title": "Combinations - Leetcode 77 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/shortest-bridge/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=gkINMhbbIbU": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DgkINMhbbIbU",
+    "checkedAt": "2026-11-01T17:34:22.176200+00:00",
+    "title": "Shortest Bridge - Leetcode 934 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/is-graph-bipartite/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=mev55LTubBY": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dmev55LTubBY",
+    "checkedAt": "2026-11-01T17:34:22.204087+00:00",
+    "title": "Is Graph Bipartite? - Leetcode 785 - Python",
+    "author": "NeetCodeIO",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/accounts-merge/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=6st4IxEF-90": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D6st4IxEF-90",
+    "checkedAt": "2026-11-01T17:34:22.236077+00:00",
+    "title": "Accounts Merge - Leetcode 721 - Python",
+    "author": "NeetCodeIO",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/pascals-triangle/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=nPVEaB3AjUM": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DnPVEaB3AjUM",
+    "checkedAt": "2026-11-01T17:34:22.267282+00:00",
+    "title": "Pascal's Triangle - Leetcode 118 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/triangle/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=OM1MTokvxs4": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DOM1MTokvxs4",
+    "checkedAt": "2026-11-01T17:34:22.338968+00:00",
+    "title": "Triangle - Dynamic Programming made Easy - Leetcode 120",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/unique-paths-ii/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=d3UOz7zdE4I": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dd3UOz7zdE4I",
+    "checkedAt": "2026-11-01T17:34:22.388767+00:00",
+    "title": "Unique Paths II - Leetcode 63 - Python",
+    "author": "NeetCodeIO",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/longest-palindromic-subsequence/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=bUr8cNWI09Q": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DbUr8cNWI09Q",
+    "checkedAt": "2026-11-01T17:34:22.405024+00:00",
+    "title": "Longest Palindromic Subsequence - Leetcode 516 - Python",
+    "author": "NeetCodeIO",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/minimum-path-sum/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=pGMsrvt0fpk": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DpGMsrvt0fpk",
+    "checkedAt": "2026-11-01T17:34:22.445429+00:00",
+    "title": "Minimum Path Sum - Dynamic Programming - Leetcode 64 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/maximal-square/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=6X7Ha2PrDmM": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D6X7Ha2PrDmM",
+    "checkedAt": "2026-11-01T17:34:22.506104+00:00",
+    "title": "Maximal Square - Top Down Memoization - Leetcode 221",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  },
+  "https://leetcode.com/problems/remove-covered-intervals/": {
+    "status": 403,
+    "state": "inconclusive-blocked"
+  },
+  "https://www.youtube.com/watch?v=nhAsMabiVkM": {
+    "status": 200,
+    "finalURL": "https://www.youtube.com/oembed?format=json&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DnhAsMabiVkM",
+    "checkedAt": "2026-11-01T17:34:22.523047+00:00",
+    "title": "Remove Covered Intervals - Leetcode 1288 - Python",
+    "author": "NeetCode",
+    "state": "reachable-oembed"
+  }
+}

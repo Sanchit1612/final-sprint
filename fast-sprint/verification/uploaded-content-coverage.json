@@ -1,0 +1,26 @@
+{
+  "a2z": {
+    "steps": 18,
+    "entries": 455,
+    "sourceBackedCandidates": 144,
+    "unresolved": 311,
+    "mappingMethod": "exact titles or explicit alias candidates; final semantic confirmation still required"
+  },
+  "core": [
+    {
+      "subject": "os",
+      "groups": 7,
+      "topics": 57
+    },
+    {
+      "subject": "cn",
+      "groups": 17,
+      "topics": 118
+    },
+    {
+      "subject": "oop",
+      "groups": 5,
+      "topics": 36
+    }
+  ]
+}

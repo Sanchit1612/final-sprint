@@ -9,3 +9,9 @@ backups/
 next-env.d.ts
 content/import/**/*
 !content/import/.gitkeep
+
+# Private preparation-pack sources must not bypass entitlements through public GitHub.
+content/collections/aptitude.manifest.json
+content/collections/behavioural.manifest.json
+content/collections/companies.manifest.json
+content/collections/interview.manifest.json

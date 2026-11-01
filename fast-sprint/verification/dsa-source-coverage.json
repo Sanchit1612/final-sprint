@@ -1,0 +1,67 @@
+{
+  "master200": {
+    "records": 200,
+    "patterns": {
+      "Arrays & Hashing": 14,
+      "Two Pointers": 11,
+      "Sliding Window": 9,
+      "Prefix Sum": 5,
+      "Sorting": 3,
+      "Stack": 7,
+      "Monotonic Stack": 5,
+      "Binary Search": 11,
+      "Linked List": 15,
+      "Trees": 19,
+      "Tries": 3,
+      "Heap / Priority Queue": 7,
+      "Backtracking": 10,
+      "Graphs": 10,
+      "Topological Sorting": 3,
+      "Union Find": 4,
+      "Advanced Graphs": 5,
+      "1-D Dynamic Programming": 14,
+      "2-D Dynamic Programming": 15,
+      "Greedy": 8,
+      "Intervals": 7,
+      "Math & Geometry": 8,
+      "Bit Manipulation": 7
+    },
+    "difficulty": {
+      "easy": 50,
+      "medium": 129,
+      "hard": 21
+    },
+    "missingVideos": [],
+    "duplicateURLs": 0
+  },
+  "neetcode150": {
+    "records": 150,
+    "patterns": {
+      "Arrays & Hashing": 9,
+      "Two Pointers": 5,
+      "Sliding Window": 6,
+      "Stack": 7,
+      "Binary Search": 7,
+      "Linked List": 11,
+      "Trees": 15,
+      "Tries": 3,
+      "Heap / Priority Queue": 7,
+      "Backtracking": 9,
+      "Graphs": 13,
+      "Advanced Graphs": 6,
+      "1-D Dynamic Programming": 12,
+      "2-D Dynamic Programming": 11,
+      "Greedy": 8,
+      "Intervals": 6,
+      "Math & Geometry": 8,
+      "Bit Manipulation": 7
+    },
+    "difficulty": {
+      "easy": 28,
+      "medium": 101,
+      "hard": 21
+    },
+    "missingVideos": [],
+    "duplicateURLs": 0
+  }
+}

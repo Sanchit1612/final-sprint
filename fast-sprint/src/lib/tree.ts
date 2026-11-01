@@ -106,8 +106,9 @@ export async function loadTree(supabase: SupabaseClient, userId: string, rootSlu
   };
   top.forEach(countAll);
   const totals = { total: top.reduce((a, c) => a + c.total, 0), completed: top.reduce((a, c) => a + c.completed, 0) };
+  const patterns = top.map(n => ({ id: n.id, title: n.title }));
   const filtered = isFiltered(f) ? top.map(prune).filter((n): n is TreeNode => n !== null) : top.map((n) => { markCheckable(n); return n; });
-  return { root, tree: filtered, ...totals, filtered: isFiltered(f) };
+  return { root, tree: filtered, ...totals, filtered: isFiltered(f), patterns };
 }
 
 function markCheckable(n: TreeNode) { n.checkable = n.children.length === 0; n.children.forEach(markCheckable); }
