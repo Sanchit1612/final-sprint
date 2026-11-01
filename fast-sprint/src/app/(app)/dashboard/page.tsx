@@ -1,3 +1,4 @@
+import { learningHref } from "@/config/dsa";
 import { Target } from "lucide-react";
 import Link from "next/link";
 import { STATUS_LABEL } from "@/components/ApplicationsBoard";
@@ -62,7 +63,7 @@ export default async function Page() {
           ) : (
             <div className="space-y-4">
               {withContent.map(({ root, t }) => (
-                <Link key={root.id} href={root.slug === "dsa" ? "/dsa" : `/core/${root.slug}`} className="block rounded-xl p-1 hover:bg-white/[0.03]">
+                <Link key={root.id} href={learningHref(root.slug)} className="block rounded-xl p-1 hover:bg-white/[0.03]">
                   <div className="mb-1.5 flex justify-between text-sm"><span>{root.title}</span><span className="text-muted">{t!.completed}/{t!.total}</span></div>
                   <ProgressBar value={t!.completed} total={t!.total} />
                 </Link>

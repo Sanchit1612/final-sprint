@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { DSA_COLLECTIONS, dsaCollection } from "@/config/dsa";
+import { difficultyCounts } from "@/lib/dsa/stats";
 import { Filters } from "@/components/Filters";
 import { HashOpener } from "@/components/HashOpener";
 import { TreeView } from "@/components/TreeView";
@@ -10,23 +13,33 @@ export const metadata = { title: "DSA" };
 export default async function Page({ searchParams }: { searchParams: Promise<Record<string, string | undefined>> }) {
   const sp = await searchParams;
   const { supabase, user } = await requireSession();
-  const data = await loadTree(supabase, user.id, "dsa", { difficulty: sp.difficulty, status: sp.status, q: sp.q });
+  const collection = dsaCollection(sp.collection);
+  const legacy = sp.collection === "legacy";
+  const root = legacy ? "dsa" : collection.root;
+  const data = await loadTree(supabase, user.id, root, { difficulty: sp.difficulty, status: sp.status, q: sp.q });
+  const patterns = data?.tree ?? [];
+  const visible = sp.pattern ? patterns.filter(n => n.id === sp.pattern) : patterns;
+  const distribution = difficultyCounts(visible);
+  const pct = data?.total ? Math.round(data.completed / data.total * 100) : 0;
   return (
     <>
-      <PageHeader title="DSA" subtitle="Tick problems off as you solve them on LeetCode, GeeksforGeeks and other sites. Links open in a new tab." />
+      <PageHeader title={legacy ? "Existing DSA checklist" : collection.title} subtitle={legacy ? "Your original checklist and saved progress." : collection.description} />
+      <nav aria-label="DSA collections" className="mb-6 grid gap-3 md:grid-cols-3">
+        {DSA_COLLECTIONS.map(c => <Link key={c.key} href={`/dsa?collection=${c.key}`} aria-current={!legacy && collection.key === c.key ? "page" : undefined} className={`card !p-4 ${!legacy && collection.key === c.key ? "border-accent" : "hover-card"}`}><p className="text-xs text-accent">Free collection</p><h2 className="mt-1 text-base">{c.title}</h2><p className="mt-2 text-xs text-muted">{c.description}</p></Link>)}
+      </nav>
+      {!legacy && <Link href="/dsa?collection=legacy" className="mb-4 inline-block text-xs text-muted hover:text-white">Open existing checklist</Link>}
       {!data || data.total === 0 ? (
-        <Empty title="No DSA problems have been added yet">
-          The checklist fills in once your problem sheet is imported. Run <code className="text-white">npm run content:import</code> after adding files to <code className="text-white">content/import/dsa</code>. See <code className="text-white">content/README.md</code>.
-        </Empty>
+        <Empty title="This collection is being prepared">Verified problem links and learning order will appear here after content review. No problems have been published to this collection yet.</Empty>
       ) : (
         <>
           <div className="card mb-5">
-            <div className="mb-2 flex items-baseline justify-between"><span className="text-sm text-muted">Overall progress</span><span className="text-sm">{data.completed} / {data.total} done</span></div>
+            <div className="mb-2 flex items-baseline justify-between"><span className="text-sm text-muted">Overall progress</span><span className="text-sm">{data.completed} / {data.total} done · {pct}%</span></div>
             <ProgressBar value={data.completed} total={data.total} />
           </div>
-          <Filters />
+          <Filters patterns={patterns.map(n => ({ id: n.id, title: n.title }))} />
+          <p className="mb-4 text-xs text-muted">Visible problems: {distribution.easy} Easy · {distribution.medium} Medium · {distribution.hard} Hard{distribution.unspecified ? ` · ${distribution.unspecified} without difficulty` : ""}</p>
           <HashOpener />
-          {data.tree.length === 0 ? <Empty title="Nothing matches those filters">Try clearing the search or choosing a different status.</Empty> : <TreeView nodes={data.tree} forceOpen={data.filtered} />}
+          {visible.length === 0 ? <Empty title="Nothing matches those filters">Try clearing the search or choosing a different status.</Empty> : <TreeView nodes={visible} forceOpen={data.filtered} />}
         </>
       )}
     </>

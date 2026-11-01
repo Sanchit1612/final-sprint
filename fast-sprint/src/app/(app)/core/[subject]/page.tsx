@@ -1,3 +1,4 @@
+import { isDsaRoot } from "@/config/dsa";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Filters } from "@/components/Filters";
@@ -10,7 +11,7 @@ import { loadTree } from "@/lib/tree";
 export default async function Page({ params, searchParams }: { params: Promise<{ subject: string }>; searchParams: Promise<Record<string, string | undefined>> }) {
   const { subject } = await params;
   const sp = await searchParams;
-  if (subject === "dsa") notFound();
+  if (isDsaRoot(subject)) notFound();
   const { supabase, user } = await requireSession();
   const data = await loadTree(supabase, user.id, subject, { status: sp.status, q: sp.q });
   if (!data) notFound();

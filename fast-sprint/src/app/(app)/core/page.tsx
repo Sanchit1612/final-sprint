@@ -1,3 +1,4 @@
+import { isDsaRoot } from "@/config/dsa";
 import Link from "next/link";
 import { Empty, PageHeader, ProgressBar } from "@/components/ui";
 import { requireSession } from "@/lib/session";
@@ -7,7 +8,7 @@ export const metadata = { title: "Core CS" };
 
 export default async function Page() {
   const { supabase, user } = await requireSession();
-  const roots = (await getRoots(supabase)).filter((r) => r.slug !== "dsa");
+  const roots = (await getRoots(supabase)).filter((r) => !isDsaRoot(r.slug));
   const stats = await Promise.all(roots.map(async (r) => ({ ...r, t: await loadTree(supabase, user.id, r.slug) })));
   return (
     <>

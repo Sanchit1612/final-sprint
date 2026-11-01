@@ -13,12 +13,15 @@ export const FEATURES: Feature[] = [
   { name: "Progress tracking, notes and bookmarks", free: true, pro: true, available: true },
   { name: "Daily Sprint task list", free: "5 tasks per day", pro: "Unlimited", available: true },
   { name: "Application tracker", free: "10 applications", pro: "Unlimited", available: true },
-  { name: "Pro-only content collections", free: false, pro: true, available: true },
+  { name: "200 Most Important Problems, A2Z and NeetCode 150", free: true, pro: true, available: false },
+  { name: "Aptitude preparation packs", free: false, pro: true, available: false },
+  { name: "Behavioural and HR preparation packs", free: false, pro: true, available: false },
+  { name: "Company preparation packs", free: false, pro: true, available: false },
   { name: "Personalised Placement Mode", free: false, pro: true, available: false },
   { name: "Spaced repetition and revision tools", free: false, pro: true, available: false },
   { name: "Company-specific mocks and readiness reports", free: false, pro: true, available: false },
   { name: "Advanced analytics", free: false, pro: true, available: false },
-  { name: "Expanded aptitude and interview preparation", free: "Basic", pro: "Full", available: false },
+  { name: "Expanded technical interview collections", free: false, pro: true, available: false },
 ];
 
 export interface Entitlement { plan: string; status: string; starts_at: string; expires_at: string | null }

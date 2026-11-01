@@ -1,3 +1,4 @@
+import { learningHref } from "@/config/dsa";
 import { ExternalLink } from "lucide-react";
 import Link from "next/link";
 import { Empty, PageHeader } from "@/components/ui";
@@ -15,7 +16,7 @@ export default async function Page({ searchParams }: { searchParams: Promise<{ t
   const { supabase } = await requireSession();
   const roots = await getRoots(supabase);
   const slugOf = new Map(roots.map((r) => [r.id, r.slug]));
-  const hrefFor = (i: Item) => { const s = slugOf.get(i.root_id); return s ? `${s === "dsa" ? "/dsa" : `/core/${s}`}#${i.id}` : "/dsa"; };
+  const hrefFor = (i: Item) => { const s = slugOf.get(i.root_id); return s ? `${learningHref(s)}#${i.id}` : "/dsa"; };
 
   let items: Item[] = [];
   const cols = "id,title,root_id,url";
