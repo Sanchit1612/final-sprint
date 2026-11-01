@@ -1,0 +1,7 @@
+{
+  "company": "TCS",
+  "pattern": "Describe exam rounds here",
+  "questions": [
+    { "id": "tcs-1", "type": "coding", "title": "Question title", "details": "", "source": "your own note" }
+  ]
+}

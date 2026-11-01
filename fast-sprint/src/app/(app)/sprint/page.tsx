@@ -1,0 +1,55 @@
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import Link from "next/link";
+import { AddTaskForm } from "@/components/AddTaskForm";
+import { TaskList, type TaskItem } from "@/components/TaskList";
+import { Empty, PageHeader, ProgressBar } from "@/components/ui";
+import { addDays, formatDay, isISODate } from "@/lib/dates";
+import { fetchAll } from "@/lib/tree";
+import { requireSession } from "@/lib/session";
+
+export const metadata = { title: "Daily Sprint" };
+
+export default async function Page({ searchParams }: { searchParams: Promise<{ date?: string }> }) {
+  const sp = await searchParams;
+  const { supabase, today, isPro } = await requireSession();
+  const date = sp.date && isISODate(sp.date) ? sp.date : today;
+  const [dayTasks, overdue] = await Promise.all([
+    fetchAll<TaskItem>((a, b) => supabase.from("daily_tasks").select("id,title,notes,status,task_date").eq("task_date", date).order("sort_order").order("created_at").order("id").range(a, b)),
+    fetchAll<TaskItem>((a, b) => supabase.from("daily_tasks").select("id,title,notes,status,task_date").lt("task_date", today).eq("status", "pending").order("task_date").order("id").range(a, b)),
+  ]);
+  const tasks = (dayTasks ?? []) as TaskItem[];
+  const done = tasks.filter((t) => t.status === "done").length;
+  const missed = (overdue ?? []) as TaskItem[];
+
+  return (
+    <>
+      <PageHeader title="Daily Sprint" subtitle="A simple list of what you commit to each day." />
+      <div className="mb-5 flex items-center justify-between gap-3">
+        <div className="flex items-center gap-1">
+          <Link aria-label="Previous day" href={`/sprint?date=${addDays(date, -1)}`} className="btn-ghost !px-2.5"><ChevronLeft className="h-4 w-4" /></Link>
+          <Link aria-label="Next day" href={`/sprint?date=${addDays(date, 1)}`} className="btn-ghost !px-2.5"><ChevronRight className="h-4 w-4" /></Link>
+          {date !== today && <Link href="/sprint" className="btn-ghost">Today</Link>}
+        </div>
+        <h2 className="text-lg">{date === today ? "Today, " : ""}{formatDay(date)}</h2>
+      </div>
+
+      <section className="card">
+        {tasks.length > 0 && (
+          <div className="mb-4"><div className="mb-1.5 flex justify-between text-xs text-muted"><span>{done} of {tasks.length} done</span></div><ProgressBar value={done} total={tasks.length} /></div>
+        )}
+        {tasks.length === 0 ? <p className="mb-4 text-sm text-muted">No tasks for this day yet. Add your first one below.</p> : <div className="mb-4"><TaskList tasks={tasks} /></div>}
+        <AddTaskForm date={date} />
+        {!isPro && <p className="mt-3 text-xs text-muted">Free plan: up to 5 tasks per day. <Link href="/pricing" className="text-accent hover:underline">See Pro</Link></p>}
+      </section>
+
+      {missed.length > 0 && (
+        <section className="card mt-6">
+          <h2 className="text-lg">Missed tasks</h2>
+          <p className="mb-2 text-sm text-muted">Unfinished from earlier days. Move them to today, or delete them.</p>
+          <TaskList tasks={missed} moveTo={today} />
+        </section>
+      )}
+      {tasks.length === 0 && missed.length === 0 && date === today && <div className="mt-6"><Empty title="A clear day">Tasks you add show up here and on your dashboard.</Empty></div>}
+    </>
+  );
+}

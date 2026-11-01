@@ -1,0 +1,6 @@
+{
+  "topic": "percentages",
+  "questions": [
+    { "id": "pct-1", "q": "What is 20% of 250?", "options": ["30","40","50","60"], "answer": 2, "explanation": "250 x 0.2 = 50", "difficulty": "Easy" }
+  ]
+}

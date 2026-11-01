@@ -1,0 +1,12 @@
+{
+  "subject": "dsa",
+  "topics": [
+    {
+      "id": "arrays",
+      "title": "Arrays",
+      "problems": [
+        { "id": "two-sum", "title": "Two Sum", "difficulty": "Easy", "link": "https://leetcode.com/problems/two-sum/", "resource": "" }
+      ]
+    }
+  ]
+}
