@@ -1,3 +1,10 @@
+# Resource import status
+
+Updated 2026-11-01: actual resources have now been supplied and inspected. **Nothing has been imported.** See RESOURCE_INVENTORY_MILESTONE_3.md for measured contents, missing URLs/hierarchy, duplicate sources and verification limits. Original files are preserved unchanged; content import must wait until Milestone 3 after Milestones 1 and 2.
+
+---
+## Historical pre-upload report (superseded availability statements)
+
 # Resource Import Report
 
 Date: 2026-11-01

@@ -35,7 +35,10 @@ Before/after migration schema catalogs and downloaded CA certificate remain unde
 - Expanded local regression coverage with embedded PostgreSQL migration/RLS/quota tests and application helper tests. Strengthened environment-file ignores.
 
 ## Content and later milestones
-No real educational content has been imported; `content/import` is empty. The importer still needs hierarchical sections, Pro flags, duplicate/transaction hardening and the actual source resources. Payments are not implemented or enabled. No checkout or webhook has been verified. Milestones 2–7 remain pending; do not start Milestone 2 until this checkpoint is delivered.
+Actual resources were received and inventoried in RESOURCE_INVENTORY_MILESTONE_3.md; none have been imported and `content/import` remains empty. The importer still needs hierarchical sections, Pro flags, duplicate/transaction hardening and the actual source resources. Payments are not implemented or enabled. No checkout or webhook has been verified. Milestones 2–7 remain pending; do not start Milestone 2 until this checkpoint is delivered.
 
 ## Full product vision retained
 Dashboard; DSA; DBMS/OS/CN/OOP; Full Stack/ML/AI roadmaps; aptitude; HR/behavioural/technical interviews; Daily Sprint; Placement Mode; adaptive scheduling; spaced repetition; company preparation; advanced analytics/readiness; applications; interview story bank; Free/Pro fixed-term subscriptions. Existing dormant scheduler, revision engine and future schemas remain in place. The authoritative scope is `FAST_SPRINT_PRODUCT_SRS_V2.md`.
+
+## Resource inventory update
+Actual resources inspected without import or schema changes. Original archive and contents preserved with hashes in ignored backups/. A2Z contains 455 ordered entries but no URLs/sub-step structure; Core CS contains OS/CN/OOP groups and URLs; DBMS tree remains missing. See the inventory for full counts and link-validation limits. User reports successful email login, while refresh/logout/recovery and Google OAuth still await observed acceptance checks. Milestone order remains unchanged.
