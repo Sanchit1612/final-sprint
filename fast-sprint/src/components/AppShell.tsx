@@ -8,6 +8,7 @@ import { signOut } from "@/app/actions";
 import { Logo } from "./Logo";
 
 const NAV = [
+  {href:"/companies",label:"Company-wise DSA",icon:Briefcase},
   { href: "/resources", label: "Resource library", icon: BookMarked },
   { href: "/analytics", label: "Analytics", icon: LayoutDashboard },
   { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },

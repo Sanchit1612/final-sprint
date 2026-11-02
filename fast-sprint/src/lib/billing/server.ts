@@ -27,14 +27,14 @@ export async function settlePayment(providerOrder: string, paymentId: string, ev
  const payment=paymentSchema.parse(await razorpay(`payments/${encodeURIComponent(paymentId)}`,config));
  if(payment.id!==paymentId)throw new Error("Payment identifier mismatch.");
  assertCaptured(payment,order);
- const result=await db.rpc("settle_payment",{p_order:order.id,p_payment:payment.id,p_event:event,p_mode:config.mode,p_amount:payment.amount,p_currency:payment.currency});
+ const result=await db.rpc("process_payment",{p_order:order.id,p_payment:payment.id,p_event:event,p_mode:config.mode,p_amount:payment.amount,p_currency:payment.currency,p_test_pro:config.testPro});
  if(result.error)throw new Error("Payment confirmation is pending. Your payment can be reconciled safely by webhook or retry.");
- return {confirmed:true,mode:config.mode,proGranted:config.mode==="live"};
+ return {confirmed:true,mode:config.mode,proGranted:result.data?.proGranted===true};
 }
 export async function billingAvailability() {
  try {
   const config=billingConfig();
-  const {error}=await billingAdmin().from("payment_orders").select("id").limit(1);
-  return {ready:!error,mode:config.mode};
+  const {data,error}=await billingAdmin().from("billing_environment").select("mode,allow_test_pro").eq("singleton",true).maybeSingle();
+  return {ready:!error&&data?.mode===config.mode&&(!config.testPro||data.allow_test_pro),mode:config.mode,testPro:config.testPro};
  }catch{return {ready:false,mode:undefined};}
 }

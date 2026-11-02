@@ -1,0 +1,78 @@
+{
+  "appliedAt": "2026-11-02T13:06:01.968Z",
+  "environment": "approved staging only",
+  "proposalSHA256": "366b776dad719191611e165d854e3fb32871087af76a68a6e9202e3a050ea372",
+  "tables": [
+    {
+      "tablename": "billing_access_ledger",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "billing_environment",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "payment_disputes",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "payment_events",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "payment_orders",
+      "rowsecurity": true
+    }
+  ],
+  "functions": [
+    {
+      "proname": "billing_capture_baseline",
+      "client_execute": false,
+      "anon_execute": false
+    },
+    {
+      "proname": "billing_recompute",
+      "client_execute": false,
+      "anon_execute": false
+    },
+    {
+      "proname": "grant_pro",
+      "client_execute": false,
+      "anon_execute": false
+    },
+    {
+      "proname": "limit_checkout_orders",
+      "client_execute": false,
+      "anon_execute": false
+    },
+    {
+      "proname": "process_payment",
+      "client_execute": false,
+      "anon_execute": false
+    },
+    {
+      "proname": "reconcile_payment",
+      "client_execute": false,
+      "anon_execute": false
+    },
+    {
+      "proname": "record_payment_attempt",
+      "client_execute": false,
+      "anon_execute": false
+    },
+    {
+      "proname": "revoke_test_access",
+      "client_execute": false,
+      "anon_execute": false
+    },
+    {
+      "proname": "settle_payment",
+      "client_execute": false,
+      "anon_execute": false
+    }
+  ],
+  "testMode": true,
+  "stagingTestProGate": true,
+  "productionChanges": 0,
+  "contentChanges": 0
+}

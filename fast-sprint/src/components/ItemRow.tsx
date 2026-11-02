@@ -1,4 +1,6 @@
 "use client";
+import {PracticeExercise} from "./PracticeExercise";
+import type {PracticeData} from "@/lib/content/practice";
 
 import { Bookmark, Check, ExternalLink, NotebookPen, RotateCcw } from "lucide-react";
 import { useState, useTransition } from "react";
@@ -6,6 +8,7 @@ import { saveNote, setBookmark, setDone, setRevise } from "@/app/actions";
 import type { Res } from "@/lib/tree";
 
 interface Props {
+  practice?: PracticeData;
   readOnly?: boolean;
   id: string; title: string; difficulty: string | null; url: string | null; platform: string | null; description: string | null;
   done: boolean; revise: boolean; bookmarked: boolean; note: string; resources: Res[];
@@ -64,6 +67,7 @@ export function ItemRow(p: Props) {
           <IconBtn disabled={pending || !!p.readOnly} label="Notes" active={open || !!note} onClick={() => setOpen((o) => !o)}><NotebookPen className="h-4 w-4" /></IconBtn>
         </div>
       </div>
+      {p.practice&&<div className="pl-8"><PracticeExercise data={p.practice}/></div>}
       {open && (
         <div className="mt-2 pl-8">
           <textarea className="input min-h-24" value={note} maxLength={5000} placeholder="Your approach, mistakes, things to remember" aria-label={`Notes for ${p.title}`}

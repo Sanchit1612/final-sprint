@@ -1,0 +1,56 @@
+{
+  "sourceQuestionCount": 100,
+  "statuses": {
+    "independently-reviewed": 67,
+    "source-issue-ungraded": 11,
+    "diagram-review-pending": 22
+  },
+  "answerVerification": "Independent derivations; arithmetic witnesses asserted; not a publisher-certified key",
+  "publication": "local private review only; rights and remaining source/diagram review pending",
+  "knownIssues": [
+    {
+      "sourceNumber": 5,
+      "issue": "The smallest valid four-digit number is1013 (1013%6=5 and1013%5=3), but it is absent from the choices.1043 is valid but not the smallest."
+    },
+    {
+      "sourceNumber": 7,
+      "issue": "With fixed grass and no growth specified,15oxen=20cows, so6oxen+2cows=10cows and duration160days. No choice matches. Grass-growth assumptions are missing."
+    },
+    {
+      "sourceNumber": 17,
+      "issue": "The result is4hours45minutes. Options b (4\u00behours) and d (4hours45minutes) are duplicates; no unique answer."
+    },
+    {
+      "sourceNumber": 24,
+      "issue": "Weighted cost=(30\u00d78.5+20\u00d79)/50=8.7. A20% profit requires10.44/kg, absent from the choices;10.5 is not exact."
+    },
+    {
+      "sourceNumber": 29,
+      "issue": "With omit/first-alternative/second-alternative choices per question, the nonempty total is3^8\u22121=6560. The source choices/interpretation need correction."
+    },
+    {
+      "sourceNumber": 31,
+      "issue": "At least one subject passed=73%; both passed=62%. The wording does not specify which and73% is not listed."
+    },
+    {
+      "sourceNumber": 34,
+      "issue": "Sale price is117% of original listed price; actual gain is27% of listed price or30% of paid cost. \u201cProfit on original price\u201d is ambiguous; do not force17% without clarifying the reference."
+    },
+    {
+      "sourceNumber": 47,
+      "issue": "As written, language-overlap information is insufficient and does not justify the listed totals."
+    },
+    {
+      "sourceNumber": 76,
+      "issue": "Several listed relationships can hold for E under the usual family interpretation; the source needs a unique requested relationship."
+    },
+    {
+      "sourceNumber": 77,
+      "issue": "The granddaughter may be a sister, cousin or X herself; the relationship to X is not uniquely determined."
+    },
+    {
+      "sourceNumber": 84,
+      "issue": "A unique intended series rule has not been established; no guessed odd term is supplied."
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import {beforeEach,expect,it,vi} from 'vitest';
-const {session,admin,settle}=vi.hoisted(()=>({session:vi.fn(),admin:vi.fn(),settle:vi.fn()}));
+const {session,admin,settle,reconcile}=vi.hoisted(()=>({session:vi.fn(),admin:vi.fn(),settle:vi.fn(),reconcile:vi.fn()}));
+vi.mock('./reconcile',()=>({reconcileNotice:reconcile}));
 vi.mock('@/lib/session',()=>({getSession:session}));
 vi.mock('./server',async(importOriginal)=>({...await importOriginal<typeof import('./server')>(),billingAdmin:admin,settlePayment:settle}));
 import {POST as verify} from '@/app/api/billing/verify/route';
@@ -27,16 +28,16 @@ it('looks up the stored order for the authenticated owner and refuses forged sig
  expect(settle).toHaveBeenCalledWith('order_stored','pay_fixture','callback:pay_fixture',expect.objectContaining({mode:'test'}),'owner');
 });
 it('verifies raw webhook bytes and ignores non-capture events without granting access',async()=>{
- const body=JSON.stringify({event:'payment.authorized',payload:{}});
+ const body=JSON.stringify({event:'payment.authorized',created_at:1,payload:{}});
  const request=(sig:string)=>new Request('http://localhost:3000/api/billing/webhook',{method:'POST',headers:{'x-razorpay-signature':sig},body});
  expect((await webhook(request('0'.repeat(64)))).status).toBe(400);
  const sig=createHmac('sha256','webhook_fixture').update(body).digest('hex');expect((await webhook(request(sig))).status).toBe(200);expect(settle).not.toHaveBeenCalled();
 });
 it('uses signed payment identity for durable webhook reconciliation and retries failures',async()=>{
- const body=JSON.stringify({event:'payment.captured',payload:{payment:{entity:{id:'pay_fixture',order_id:'order_stored'}}}});
+ const body=JSON.stringify({event:'payment.captured',created_at:1,payload:{payment:{entity:{id:'pay_fixture',order_id:'order_stored'}}}});
  const request=()=>new Request('http://localhost:3000/api/billing/webhook',{method:'POST',headers:{'x-razorpay-signature':createHmac('sha256','webhook_fixture').update(body).digest('hex'),'x-razorpay-event-id':'untrusted-header'},body});
- settle.mockRejectedValueOnce(new Error('DB unavailable'));expect((await webhook(request())).status).toBe(503);
- settle.mockResolvedValueOnce({confirmed:true});expect((await webhook(request())).status).toBe(200);expect(settle).toHaveBeenLastCalledWith('order_stored','pay_fixture','webhook:payment.captured:pay_fixture',expect.anything());
+ reconcile.mockRejectedValueOnce(new Error('DB unavailable'));expect((await webhook(request())).status).toBe(503);
+ reconcile.mockResolvedValueOnce({confirmed:true});expect((await webhook(request())).status).toBe(200);expect(reconcile).toHaveBeenLastCalledWith('order_stored','pay_fixture',expect.stringMatching(/^webhook:[a-f0-9]{64}$/),expect.anything(),expect.objectContaining({event:'payment.captured'}));
 });
 it('rejects oversized request bodies before parsing them',async()=>{
  await expect(readRaw(req('x'.repeat(5000)),4096)).rejects.toThrow('too large');

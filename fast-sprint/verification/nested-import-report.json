@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-11-01T18:53:57.715Z",
+  "generatedAt": "2026-11-02T16:09:32.188Z",
   "databaseWrites": 0,
   "reports": [
     {
       "file": "aptitude.manifest.json",
-      "sha256": "d208e341c864ec044c2f13a425fda659218b9b923b2cf7ce453c1ed0e57b189c",
-      "rows": 162,
+      "sha256": "6c0acea27597b8417ebc49564a9f84d11029faf29d0e92a208fd7d09b9d1d96d",
+      "rows": 236,
       "problems": 0,
       "resources": 75,
-      "learningLeaves": 75,
-      "leavesWithoutLinks": 0,
+      "learningLeaves": 142,
+      "leavesWithoutLinks": 67,
       "duplicateResourceURLCount": 0,
       "duplicateResourceURLs": "private-details-omitted",
       "tier": "Pro",
@@ -118,20 +118,72 @@
     },
     {
       "file": "dsa-a2z.manifest.json",
-      "sha256": "1b0abd38bca697f9b10449f968d0674ac4ce1b3d0b90efd73bd30f86bc9cc772",
-      "rows": 618,
+      "sha256": "3753fd9d248f61a832822ea39b21837dba84b9c31726054dc4d5c76f8410f873",
+      "rows": 1102,
       "problems": 455,
-      "resources": 144,
+      "resources": 628,
       "learningLeaves": 455,
-      "leavesWithoutLinks": 311,
-      "duplicateResourceURLCount": 12,
+      "leavesWithoutLinks": 0,
+      "duplicateResourceURLCount": 74,
       "duplicateResourceURLs": [
+        {
+          "url": "https://www.geeksforgeeks.org/cpp/cpp-decision-making/",
+          "count": 2
+        },
+        {
+          "url": "https://takeuforward.org/blogs/data-structure-and-algorithm/count-divisors",
+          "count": 2
+        },
+        {
+          "url": "https://youtu.be/1xNbjMdbjug?t=1580",
+          "count": 2
+        },
+        {
+          "url": "https://takeuforward.org/blogs/data-structure-and-algorithm/print-name-n-times-using-recursion",
+          "count": 2
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=69ZCDFy-OUo&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=3",
+          "count": 2
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=twuC1F6gLI8&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=4",
+          "count": 2
+        },
+        {
+          "url": "https://www.geeksforgeeks.org/dsa/counting-frequencies-of-array-elements/",
+          "count": 2
+        },
+        {
+          "url": "https://takeuforward.org/blogs/data-structure-and-algorithm/single-number-i",
+          "count": 2
+        },
+        {
+          "url": "https://youtu.be/bYWLJb3vCWY?t=1369",
+          "count": 2
+        },
+        {
+          "url": "https://takeuforward.org/practice/dsa/longest-subarray-with-sum-k?category=faqs&source=strivers-a2z-dsa-sheet",
+          "count": 2
+        },
+        {
+          "url": "https://youtu.be/frf7qxiN2qU",
+          "count": 2
+        },
         {
           "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
           "count": 2
         },
         {
           "url": "https://www.youtube.com/watch?v=1pkOgXD63yU",
+          "count": 2
+        },
+        {
+          "url": "https://takeuforward.org/blogs/data-structure-and-algorithm/best-time-to-buy-and-sell-stock",
+          "count": 2
+        },
+        {
+          "url": "https://youtu.be/excAOvwF_Wk",
           "count": 2
         },
         {
@@ -143,11 +195,103 @@
           "count": 2
         },
         {
+          "url": "https://takeuforward.org/blogs/data-structure-and-algorithm/merge-overlapping-intervals",
+          "count": 2
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=2JzRBPFYbKE&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=6",
+          "count": 2
+        },
+        {
+          "url": "https://youtu.be/6zhGS79oQ4k",
+          "count": 3
+        },
+        {
+          "url": "https://youtu.be/hjR1IYVx9lY",
+          "count": 2
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=thUd_WJn6wk&list=PLgUwDviBIf0pMFMWuuvDNMAkoQFi-h0ZF&index=20",
+          "count": 2
+        },
+        {
           "url": "https://leetcode.com/problems/reverse-linked-list/",
           "count": 2
         },
         {
           "url": "https://www.youtube.com/watch?v=G0_I-ZF0S38",
+          "count": 2
+        },
+        {
+          "url": "https://takeuforward.org/blogs/data-structure-and-algorithm/reverse-a-singly-linked-list",
+          "count": 2
+        },
+        {
+          "url": "https://youtu.be/D2vI2DNJGd8?si=RCaLSx01qR21IBdh",
+          "count": 2
+        },
+        {
+          "url": "https://takeuforward.org/practice/dsa/pow(x,n)?category=implementation-problems&source=strivers-a2z-dsa-sheet",
+          "count": 2
+        },
+        {
+          "url": "https://youtu.be/l0YC3876qxg",
+          "count": 2
+        },
+        {
+          "url": "https://takeuforward.org/practice/dsa/power-set?category=implementation-problems&source=strivers-a2z-dsa-sheet",
+          "count": 2
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=b7AYbpM5YrE&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=67",
+          "count": 2
+        },
+        {
+          "url": "https://youtu.be/_H8V5hJUGd0",
+          "count": 2
+        },
+        {
+          "url": "https://youtu.be/nttpF8kwgd4?si=x9o8PsYaA2XVZ9rV",
+          "count": 5
+        },
+        {
+          "url": "https://takeuforward.org/practice/dsa/prime-factorisation-of-a-number?category=sieve-of-eratosthenes&source=strivers-a2z-dsa-sheet",
+          "count": 2
+        },
+        {
+          "url": "https://youtu.be/LT7XhVdeRyg?si=6HkjQokJRPTFai21",
+          "count": 2
+        },
+        {
+          "url": "https://youtu.be/tqQ5fTamIN4?si=ofLt8Zt1ZvhikZ6w",
+          "count": 6
+        },
+        {
+          "url": "https://youtu.be/4pIc9UBHJtk?si=ryeVvQWpCgwbTQrh",
+          "count": 2
+        },
+        {
+          "url": "https://youtu.be/4pIc9UBHJtk?si=0pWtyDC1GhbiYP3P",
+          "count": 4
+        },
+        {
+          "url": "https://takeuforward.org/practice/dsa/maximum-rectangles?category=faqs&source=strivers-a2z-dsa-sheet",
+          "count": 2
+        },
+        {
+          "url": "https://youtu.be/tOylVCugy9k",
+          "count": 2
+        },
+        {
+          "url": "https://takeuforward.org/blogs/data-structure-and-algorithm/assign-cookies",
+          "count": 2
+        },
+        {
+          "url": "https://youtu.be/DIX2p7vb9co?si=GofAIDimue-Av0Fi",
+          "count": 2
+        },
+        {
+          "url": "https://www.geeksforgeeks.org/dsa/binary-tree-representation/",
           "count": 2
         },
         {
@@ -159,11 +303,27 @@
           "count": 2
         },
         {
+          "url": "https://takeuforward.org/practice/dsa/preorder-traversal?category=theory-and-traversals&source=strivers-a2z-dsa-sheet",
+          "count": 2
+        },
+        {
+          "url": "https://youtu.be/RlUu72JrOCQ",
+          "count": 2
+        },
+        {
           "url": "https://leetcode.com/problems/binary-tree-inorder-traversal/",
           "count": 2
         },
         {
           "url": "https://www.youtube.com/watch?v=g_S5WuasWUE",
+          "count": 2
+        },
+        {
+          "url": "https://takeuforward.org/practice/dsa/inorder-traversal?category=theory-and-traversals&source=strivers-a2z-dsa-sheet",
+          "count": 2
+        },
+        {
+          "url": "https://youtu.be/lxTGsVXjwvM",
           "count": 2
         },
         {
@@ -173,322 +333,98 @@
         {
           "url": "https://www.youtube.com/watch?v=QhszUQhGGlA",
           "count": 3
+        },
+        {
+          "url": "https://takeuforward.org/practice/dsa/postorder-traversal?category=theory-and-traversals&source=strivers-a2z-dsa-sheet",
+          "count": 3
+        },
+        {
+          "url": "https://youtu.be/2YBhNLodD8Q",
+          "count": 3
+        },
+        {
+          "url": "https://youtu.be/80Zug6D1_r4",
+          "count": 2
+        },
+        {
+          "url": "https://takeuforward.org/blogs/data-structure-and-algorithm/floor-and-ceil-in-a-bst",
+          "count": 2
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=xm_W1ub-K-w&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=43",
+          "count": 2
+        },
+        {
+          "url": "https://www.geeksforgeeks.org/dsa/graph-and-its-representations/",
+          "count": 2
+        },
+        {
+          "url": "https://takeuforward.org/blogs/data-structure-and-algorithm/detect-a-cycle-in-an-undirected-graph",
+          "count": 2
+        },
+        {
+          "url": "https://youtu.be/zQ3zgFypzX4",
+          "count": 2
+        },
+        {
+          "url": "https://takeuforward.org/blogs/data-structure-and-algorithm/detect-a-cycle-in-a-directed-graph",
+          "count": 2
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=uzVUw90ZFIg&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=12",
+          "count": 2
+        },
+        {
+          "url": "https://takeuforward.org/practice/dsa/topological-sort-or-kahns-algorithm?category=cycles&source=strivers-a2z-dsa-sheet",
+          "count": 2
+        },
+        {
+          "url": "https://youtu.be/5lZ0iJMrUMk",
+          "count": 2
+        },
+        {
+          "url": "https://youtu.be/WAOfKpxYHR8",
+          "count": 2
+        },
+        {
+          "url": "https://takeuforward.org/blogs/data-structure-and-algorithm/dijkstras-algorithm",
+          "count": 2
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=rp1SMw7HSO8&list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn&index=35",
+          "count": 2
+        },
+        {
+          "url": "https://youtu.be/9XybHVqTHcQ",
+          "count": 2
+        },
+        {
+          "url": "https://takeuforward.org/blogs/data-structure-and-algorithm/disjoint-set-union",
+          "count": 2
+        },
+        {
+          "url": "https://youtu.be/aBxjDBC4M1U",
+          "count": 2
+        },
+        {
+          "url": "https://takeuforward.org/practice/dsa/longest-increasing-subsequence?category=lis-dp&source=strivers-a2z-dsa-sheet",
+          "count": 2
+        },
+        {
+          "url": "https://youtu.be/on2hvxBXJH4",
+          "count": 2
+        },
+        {
+          "url": "https://takeuforward.org/practice/dsa/matrix-chain-multiplication?category=mcm-dp&source=strivers-a2z-dsa-sheet",
+          "count": 2
+        },
+        {
+          "url": "https://youtu.be/vRVfmbCFW7Y",
+          "count": 2
         }
       ],
       "tier": "Free",
-      "missingProblemURLs": [
-        "dsa-a2z/step-1/entry-001",
-        "dsa-a2z/step-1/entry-002",
-        "dsa-a2z/step-1/entry-003",
-        "dsa-a2z/step-1/entry-004",
-        "dsa-a2z/step-1/entry-005",
-        "dsa-a2z/step-1/entry-006",
-        "dsa-a2z/step-1/entry-007",
-        "dsa-a2z/step-1/entry-008",
-        "dsa-a2z/step-1/entry-009",
-        "dsa-a2z/step-1/entry-010",
-        "dsa-a2z/step-1/entry-011",
-        "dsa-a2z/step-1/entry-012",
-        "dsa-a2z/step-1/entry-013",
-        "dsa-a2z/step-1/entry-014",
-        "dsa-a2z/step-1/entry-015",
-        "dsa-a2z/step-1/entry-016",
-        "dsa-a2z/step-1/entry-017",
-        "dsa-a2z/step-1/entry-018",
-        "dsa-a2z/step-1/entry-019",
-        "dsa-a2z/step-1/entry-020",
-        "dsa-a2z/step-1/entry-021",
-        "dsa-a2z/step-1/entry-022",
-        "dsa-a2z/step-1/entry-023",
-        "dsa-a2z/step-1/entry-024",
-        "dsa-a2z/step-1/entry-025",
-        "dsa-a2z/step-1/entry-026",
-        "dsa-a2z/step-1/entry-027",
-        "dsa-a2z/step-1/entry-028",
-        "dsa-a2z/step-1/entry-029",
-        "dsa-a2z/step-1/entry-030",
-        "dsa-a2z/step-1/entry-031",
-        "dsa-a2z/step-2/entry-032",
-        "dsa-a2z/step-2/entry-033",
-        "dsa-a2z/step-2/entry-034",
-        "dsa-a2z/step-2/entry-035",
-        "dsa-a2z/step-2/entry-036",
-        "dsa-a2z/step-2/entry-037",
-        "dsa-a2z/step-2/entry-038",
-        "dsa-a2z/step-3/entry-039",
-        "dsa-a2z/step-3/entry-040",
-        "dsa-a2z/step-3/entry-041",
-        "dsa-a2z/step-3/entry-043",
-        "dsa-a2z/step-3/entry-044",
-        "dsa-a2z/step-3/entry-046",
-        "dsa-a2z/step-3/entry-047",
-        "dsa-a2z/step-3/entry-049",
-        "dsa-a2z/step-3/entry-051",
-        "dsa-a2z/step-3/entry-052",
-        "dsa-a2z/step-3/entry-057",
-        "dsa-a2z/step-3/entry-059",
-        "dsa-a2z/step-3/entry-060",
-        "dsa-a2z/step-3/entry-061",
-        "dsa-a2z/step-3/entry-068",
-        "dsa-a2z/step-3/entry-071",
-        "dsa-a2z/step-3/entry-072",
-        "dsa-a2z/step-3/entry-074",
-        "dsa-a2z/step-3/entry-075",
-        "dsa-a2z/step-3/entry-076",
-        "dsa-a2z/step-3/entry-077",
-        "dsa-a2z/step-4/entry-080",
-        "dsa-a2z/step-4/entry-081",
-        "dsa-a2z/step-4/entry-083",
-        "dsa-a2z/step-4/entry-085",
-        "dsa-a2z/step-4/entry-089",
-        "dsa-a2z/step-4/entry-092",
-        "dsa-a2z/step-4/entry-093",
-        "dsa-a2z/step-4/entry-095",
-        "dsa-a2z/step-4/entry-096",
-        "dsa-a2z/step-4/entry-098",
-        "dsa-a2z/step-4/entry-099",
-        "dsa-a2z/step-4/entry-100",
-        "dsa-a2z/step-4/entry-102",
-        "dsa-a2z/step-4/entry-103",
-        "dsa-a2z/step-4/entry-105",
-        "dsa-a2z/step-4/entry-106",
-        "dsa-a2z/step-4/entry-108",
-        "dsa-a2z/step-4/entry-109",
-        "dsa-a2z/step-4/entry-110",
-        "dsa-a2z/step-5/entry-111",
-        "dsa-a2z/step-5/entry-112",
-        "dsa-a2z/step-5/entry-113",
-        "dsa-a2z/step-5/entry-116",
-        "dsa-a2z/step-5/entry-118",
-        "dsa-a2z/step-5/entry-119",
-        "dsa-a2z/step-5/entry-120",
-        "dsa-a2z/step-5/entry-121",
-        "dsa-a2z/step-5/entry-122",
-        "dsa-a2z/step-5/entry-124",
-        "dsa-a2z/step-5/entry-125",
-        "dsa-a2z/step-6/entry-126",
-        "dsa-a2z/step-6/entry-127",
-        "dsa-a2z/step-6/entry-128",
-        "dsa-a2z/step-6/entry-129",
-        "dsa-a2z/step-6/entry-130",
-        "dsa-a2z/step-6/entry-131",
-        "dsa-a2z/step-6/entry-132",
-        "dsa-a2z/step-6/entry-133",
-        "dsa-a2z/step-6/entry-134",
-        "dsa-a2z/step-6/entry-139",
-        "dsa-a2z/step-6/entry-140",
-        "dsa-a2z/step-6/entry-142",
-        "dsa-a2z/step-6/entry-144",
-        "dsa-a2z/step-6/entry-146",
-        "dsa-a2z/step-6/entry-148",
-        "dsa-a2z/step-6/entry-150",
-        "dsa-a2z/step-6/entry-151",
-        "dsa-a2z/step-6/entry-152",
-        "dsa-a2z/step-6/entry-154",
-        "dsa-a2z/step-6/entry-155",
-        "dsa-a2z/step-7/entry-157",
-        "dsa-a2z/step-7/entry-159",
-        "dsa-a2z/step-7/entry-160",
-        "dsa-a2z/step-7/entry-161",
-        "dsa-a2z/step-7/entry-162",
-        "dsa-a2z/step-7/entry-165",
-        "dsa-a2z/step-7/entry-166",
-        "dsa-a2z/step-7/entry-167",
-        "dsa-a2z/step-7/entry-170",
-        "dsa-a2z/step-7/entry-172",
-        "dsa-a2z/step-7/entry-177",
-        "dsa-a2z/step-7/entry-179",
-        "dsa-a2z/step-7/entry-180",
-        "dsa-a2z/step-7/entry-181",
-        "dsa-a2z/step-8/entry-182",
-        "dsa-a2z/step-8/entry-183",
-        "dsa-a2z/step-8/entry-184",
-        "dsa-a2z/step-8/entry-185",
-        "dsa-a2z/step-8/entry-186",
-        "dsa-a2z/step-8/entry-187",
-        "dsa-a2z/step-8/entry-188",
-        "dsa-a2z/step-8/entry-189",
-        "dsa-a2z/step-8/entry-190",
-        "dsa-a2z/step-8/entry-191",
-        "dsa-a2z/step-8/entry-192",
-        "dsa-a2z/step-8/entry-193",
-        "dsa-a2z/step-8/entry-194",
-        "dsa-a2z/step-8/entry-195",
-        "dsa-a2z/step-8/entry-196",
-        "dsa-a2z/step-8/entry-197",
-        "dsa-a2z/step-8/entry-198",
-        "dsa-a2z/step-8/entry-199",
-        "dsa-a2z/step-9/entry-200",
-        "dsa-a2z/step-9/entry-201",
-        "dsa-a2z/step-9/entry-203",
-        "dsa-a2z/step-9/entry-204",
-        "dsa-a2z/step-9/entry-205",
-        "dsa-a2z/step-9/entry-208",
-        "dsa-a2z/step-9/entry-209",
-        "dsa-a2z/step-9/entry-210",
-        "dsa-a2z/step-9/entry-211",
-        "dsa-a2z/step-9/entry-212",
-        "dsa-a2z/step-9/entry-213",
-        "dsa-a2z/step-9/entry-215",
-        "dsa-a2z/step-9/entry-216",
-        "dsa-a2z/step-9/entry-217",
-        "dsa-a2z/step-9/entry-219",
-        "dsa-a2z/step-9/entry-221",
-        "dsa-a2z/step-9/entry-224",
-        "dsa-a2z/step-9/entry-227",
-        "dsa-a2z/step-10/entry-231",
-        "dsa-a2z/step-10/entry-234",
-        "dsa-a2z/step-10/entry-235",
-        "dsa-a2z/step-10/entry-236",
-        "dsa-a2z/step-10/entry-238",
-        "dsa-a2z/step-10/entry-239",
-        "dsa-a2z/step-10/entry-241",
-        "dsa-a2z/step-11/entry-242",
-        "dsa-a2z/step-11/entry-243",
-        "dsa-a2z/step-11/entry-244",
-        "dsa-a2z/step-11/entry-245",
-        "dsa-a2z/step-11/entry-247",
-        "dsa-a2z/step-11/entry-248",
-        "dsa-a2z/step-11/entry-250",
-        "dsa-a2z/step-11/entry-254",
-        "dsa-a2z/step-11/entry-256",
-        "dsa-a2z/step-12/entry-259",
-        "dsa-a2z/step-12/entry-260",
-        "dsa-a2z/step-12/entry-261",
-        "dsa-a2z/step-12/entry-262",
-        "dsa-a2z/step-12/entry-263",
-        "dsa-a2z/step-12/entry-264",
-        "dsa-a2z/step-12/entry-267",
-        "dsa-a2z/step-12/entry-268",
-        "dsa-a2z/step-12/entry-270",
-        "dsa-a2z/step-12/entry-271",
-        "dsa-a2z/step-13/entry-275",
-        "dsa-a2z/step-13/entry-276",
-        "dsa-a2z/step-13/entry-277",
-        "dsa-a2z/step-13/entry-278",
-        "dsa-a2z/step-13/entry-282",
-        "dsa-a2z/step-13/entry-287",
-        "dsa-a2z/step-13/entry-294",
-        "dsa-a2z/step-13/entry-295",
-        "dsa-a2z/step-13/entry-296",
-        "dsa-a2z/step-13/entry-297",
-        "dsa-a2z/step-13/entry-298",
-        "dsa-a2z/step-13/entry-300",
-        "dsa-a2z/step-13/entry-301",
-        "dsa-a2z/step-13/entry-303",
-        "dsa-a2z/step-13/entry-304",
-        "dsa-a2z/step-13/entry-305",
-        "dsa-a2z/step-13/entry-306",
-        "dsa-a2z/step-13/entry-307",
-        "dsa-a2z/step-13/entry-311",
-        "dsa-a2z/step-13/entry-312",
-        "dsa-a2z/step-13/entry-313",
-        "dsa-a2z/step-14/entry-314",
-        "dsa-a2z/step-14/entry-315",
-        "dsa-a2z/step-14/entry-316",
-        "dsa-a2z/step-14/entry-317",
-        "dsa-a2z/step-14/entry-318",
-        "dsa-a2z/step-14/entry-321",
-        "dsa-a2z/step-14/entry-322",
-        "dsa-a2z/step-14/entry-324",
-        "dsa-a2z/step-14/entry-325",
-        "dsa-a2z/step-14/entry-326",
-        "dsa-a2z/step-14/entry-327",
-        "dsa-a2z/step-14/entry-328",
-        "dsa-a2z/step-14/entry-329",
-        "dsa-a2z/step-15/entry-330",
-        "dsa-a2z/step-15/entry-331",
-        "dsa-a2z/step-15/entry-332",
-        "dsa-a2z/step-15/entry-333",
-        "dsa-a2z/step-15/entry-334",
-        "dsa-a2z/step-15/entry-335",
-        "dsa-a2z/step-15/entry-336",
-        "dsa-a2z/step-15/entry-337",
-        "dsa-a2z/step-15/entry-339",
-        "dsa-a2z/step-15/entry-340",
-        "dsa-a2z/step-15/entry-341",
-        "dsa-a2z/step-15/entry-342",
-        "dsa-a2z/step-15/entry-346",
-        "dsa-a2z/step-15/entry-347",
-        "dsa-a2z/step-15/entry-349",
-        "dsa-a2z/step-15/entry-350",
-        "dsa-a2z/step-15/entry-351",
-        "dsa-a2z/step-15/entry-352",
-        "dsa-a2z/step-15/entry-357",
-        "dsa-a2z/step-15/entry-358",
-        "dsa-a2z/step-15/entry-359",
-        "dsa-a2z/step-15/entry-360",
-        "dsa-a2z/step-15/entry-361",
-        "dsa-a2z/step-15/entry-365",
-        "dsa-a2z/step-15/entry-366",
-        "dsa-a2z/step-15/entry-367",
-        "dsa-a2z/step-15/entry-368",
-        "dsa-a2z/step-15/entry-369",
-        "dsa-a2z/step-15/entry-370",
-        "dsa-a2z/step-15/entry-371",
-        "dsa-a2z/step-15/entry-372",
-        "dsa-a2z/step-15/entry-373",
-        "dsa-a2z/step-15/entry-374",
-        "dsa-a2z/step-15/entry-375",
-        "dsa-a2z/step-15/entry-376",
-        "dsa-a2z/step-15/entry-378",
-        "dsa-a2z/step-15/entry-379",
-        "dsa-a2z/step-15/entry-381",
-        "dsa-a2z/step-15/entry-382",
-        "dsa-a2z/step-15/entry-383",
-        "dsa-a2z/step-16/entry-384",
-        "dsa-a2z/step-16/entry-386",
-        "dsa-a2z/step-16/entry-387",
-        "dsa-a2z/step-16/entry-388",
-        "dsa-a2z/step-16/entry-389",
-        "dsa-a2z/step-16/entry-390",
-        "dsa-a2z/step-16/entry-395",
-        "dsa-a2z/step-16/entry-396",
-        "dsa-a2z/step-16/entry-397",
-        "dsa-a2z/step-16/entry-399",
-        "dsa-a2z/step-16/entry-400",
-        "dsa-a2z/step-16/entry-401",
-        "dsa-a2z/step-16/entry-402",
-        "dsa-a2z/step-16/entry-406",
-        "dsa-a2z/step-16/entry-407",
-        "dsa-a2z/step-16/entry-409",
-        "dsa-a2z/step-16/entry-410",
-        "dsa-a2z/step-16/entry-412",
-        "dsa-a2z/step-16/entry-413",
-        "dsa-a2z/step-16/entry-414",
-        "dsa-a2z/step-16/entry-417",
-        "dsa-a2z/step-16/entry-420",
-        "dsa-a2z/step-16/entry-421",
-        "dsa-a2z/step-16/entry-423",
-        "dsa-a2z/step-16/entry-425",
-        "dsa-a2z/step-16/entry-426",
-        "dsa-a2z/step-16/entry-427",
-        "dsa-a2z/step-16/entry-428",
-        "dsa-a2z/step-16/entry-429",
-        "dsa-a2z/step-16/entry-431",
-        "dsa-a2z/step-16/entry-432",
-        "dsa-a2z/step-16/entry-433",
-        "dsa-a2z/step-16/entry-435",
-        "dsa-a2z/step-16/entry-436",
-        "dsa-a2z/step-16/entry-437",
-        "dsa-a2z/step-16/entry-438",
-        "dsa-a2z/step-16/entry-439",
-        "dsa-a2z/step-17/entry-441",
-        "dsa-a2z/step-17/entry-442",
-        "dsa-a2z/step-17/entry-443",
-        "dsa-a2z/step-17/entry-444",
-        "dsa-a2z/step-17/entry-445",
-        "dsa-a2z/step-17/entry-446",
-        "dsa-a2z/step-18/entry-447",
-        "dsa-a2z/step-18/entry-448",
-        "dsa-a2z/step-18/entry-449",
-        "dsa-a2z/step-18/entry-450",
-        "dsa-a2z/step-18/entry-451",
-        "dsa-a2z/step-18/entry-452",
-        "dsa-a2z/step-18/entry-453",
-        "dsa-a2z/step-18/entry-454",
-        "dsa-a2z/step-18/entry-455"
-      ],
+      "missingProblemURLs": [],
       "pathsUnique": true,
       "status": "structure-valid; not approval to publish"
     },

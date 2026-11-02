@@ -1,3 +1,4 @@
+import {parsePractice} from "./practice";
 import { LIBRARY } from "@/config/library";
 import { readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
@@ -16,7 +17,7 @@ export async function loadLearningTree(db: SupabaseClient, user: string, slug: s
  const rows=planManifest(JSON.parse(readFileSync(path,"utf8")));
  if(rows.some(r=>r.is_pro)&&!isPro)throw new Error("Premium preview denied");
  const nodes=new Map<string,TreeNode>();
- for(const r of rows.slice(1))if(r.item_type!=="resource")nodes.set(r.path,{id:r.id,type:r.item_type,title:r.title,description:r.description,url:r.url,platform:r.url?new URL(r.url).hostname:null,difficulty:r.difficulty??null,tags:[],position:r.position,children:[],resources:[],checkable:false,done:false,revise:false,bookmarked:false,note:"",total:0,completed:0});
+ for(const r of rows.slice(1))if(r.item_type!=="resource")nodes.set(r.path,{practice:parsePractice(r.meta.practice),id:r.id,type:r.item_type,title:r.title,description:r.description,url:r.url,platform:r.url?new URL(r.url).hostname:null,difficulty:r.difficulty??null,tags:[],position:r.position,children:[],resources:[],checkable:false,done:false,revise:false,bookmarked:false,note:"",total:0,completed:0});
  const top:TreeNode[]=[];
  for(const r of rows.slice(1)){
   const parent=r.parentPath?nodes.get(r.parentPath):null;

@@ -1,3 +1,4 @@
+import {loadCoverage} from "@/lib/coverage";
 import { learningHref } from "@/config/dsa";
 import { Target } from "lucide-react";
 import Link from "next/link";
@@ -7,14 +8,14 @@ import { Empty, PageHeader, ProgressBar } from "@/components/ui";
 import { WeeklyChart } from "@/components/WeeklyChart";
 import { addDays, formatDay, todayIn } from "@/lib/dates";
 import { requireSession } from "@/lib/session";
-import { fetchAll, getRoots, loadTree } from "@/lib/tree";
+import { fetchAll } from "@/lib/tree";
 
 export const metadata = { title: "Dashboard" };
 
 export default async function Page() {
   const { supabase, user, profile, tz, today, isPro } = await requireSession();
-  const [roots, doneItems, doneTasks, todays, revision, apps] = await Promise.all([
-    getRoots(supabase),
+  const [coverage, doneItems, doneTasks, todays, revision, apps] = await Promise.all([
+    loadCoverage(supabase,user.id),
     fetchAll<{ completed_at: string }>((a, b) => supabase.from("user_item_progress").select("completed_at").eq("status", "done").not("completed_at", "is", null).order("item_id").range(a, b)),
     fetchAll<{ completed_at: string }>((a, b) => supabase.from("daily_tasks").select("completed_at").eq("status", "done").not("completed_at", "is", null).order("id").range(a, b)),
     fetchAll<TaskItem>((a, b) => supabase.from("daily_tasks").select("id,title,notes,status,task_date").eq("task_date", today).order("sort_order").order("created_at").order("id").range(a, b)),
@@ -23,7 +24,7 @@ export default async function Page() {
   ]);
   if (revision.error) throw new Error("Could not load revision counts. Please try again.");
   const reviseCount = revision.count;
-  const trees = await Promise.all(roots.map(async (r) => ({ root: r, t: await loadTree(supabase, user.id, r.slug) })));
+  const trees = coverage.map(({root,data})=>({root,t:data}));
 
   const perDay = new Map<string, number>();
   for (const r of doneItems) { const d = todayIn(tz, new Date(r.completed_at)); perDay.set(d, (perDay.get(d) ?? 0) + 1); }

@@ -21,3 +21,6 @@ content/collections/development.manifest.json
 # Private Development curation and ordering sources
 scripts/content/curate-library.py
 scripts/content/structure-development.py
+
+# Private company-sheet dataset; preserved in local backup / private deployment input.
+content/companies/

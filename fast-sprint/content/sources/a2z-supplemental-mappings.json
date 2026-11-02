@@ -1,0 +1,253 @@
+{
+  "reviewedAt": "2026-11-02",
+  "scope": "Specific primary-publisher topic/articles; no invented video IDs or copied solution code. Supplemental scopes are explicit.",
+  "mappings": {
+    "1": {
+      "urls": [
+        "https://www.geeksforgeeks.org/cpp/basic-input-output-c/"
+      ],
+      "note": "Topic/task resource reviewed against uploaded heading; exact implementation variant may need separate review."
+    },
+    "2": {
+      "urls": [
+        "https://www.geeksforgeeks.org/cpp/cpp-data-types/"
+      ],
+      "note": "Topic/task resource reviewed against uploaded heading; exact implementation variant may need separate review."
+    },
+    "3": {
+      "urls": [
+        "https://www.geeksforgeeks.org/cpp/cpp-decision-making/"
+      ],
+      "note": "Topic/task resource reviewed against uploaded heading; exact implementation variant may need separate review."
+    },
+    "4": {
+      "urls": [
+        "https://www.geeksforgeeks.org/cpp/cpp-decision-making/"
+      ],
+      "note": "Topic/task resource reviewed against uploaded heading; exact implementation variant may need separate review."
+    },
+    "5": {
+      "urls": [
+        "https://www.geeksforgeeks.org/cpp/cpp-arrays/",
+        "https://www.geeksforgeeks.org/cpp/strings-in-cpp/"
+      ],
+      "note": "Topic/task resource reviewed against uploaded heading; exact implementation variant may need separate review."
+    },
+    "6": {
+      "urls": [
+        "https://www.geeksforgeeks.org/dsa/for-loop-in-programming/"
+      ],
+      "note": "Topic/task resource reviewed against uploaded heading; exact implementation variant may need separate review."
+    },
+    "7": {
+      "urls": [
+        "https://www.geeksforgeeks.org/dsa/while-loop-in-programming/"
+      ],
+      "note": "Topic/task resource reviewed against uploaded heading; exact implementation variant may need separate review."
+    },
+    "8": {
+      "urls": [
+        "https://www.geeksforgeeks.org/cpp/parameter-passing-techniques-in-cpp/"
+      ],
+      "note": "Topic/task resource reviewed against uploaded heading; exact implementation variant may need separate review."
+    },
+    "10": {
+      "urls": [
+        "https://www.geeksforgeeks.org/c/pattern-programs-in-c/"
+      ],
+      "note": "Topic/task resource reviewed against uploaded heading; exact implementation variant may need separate review."
+    },
+    "20": {
+      "urls": [
+        "https://takeuforward.org/blogs/data-structure-and-algorithm/print-name-n-times-using-recursion"
+      ],
+      "note": "Topic/task resource reviewed against uploaded heading; exact implementation variant may need separate review."
+    },
+    "21": {
+      "urls": [
+        "https://takeuforward.org/blogs/data-structure-and-algorithm/print-name-n-times-using-recursion"
+      ],
+      "note": "Topic/task resource reviewed against uploaded heading; exact implementation variant may need separate review."
+    },
+    "22": {
+      "urls": [
+        "https://www.geeksforgeeks.org/dsa/print-1-to-n-without-using-loops/"
+      ],
+      "note": "Topic/task resource reviewed against uploaded heading; exact implementation variant may need separate review."
+    },
+    "23": {
+      "urls": [
+        "https://www.geeksforgeeks.org/dsa/print-n-to-1-without-loop/"
+      ],
+      "note": "Topic/task resource reviewed against uploaded heading; exact implementation variant may need separate review."
+    },
+    "30": {
+      "urls": [
+        "https://www.geeksforgeeks.org/dsa/counting-frequencies-of-array-elements/"
+      ],
+      "note": "Topic/task resource reviewed against uploaded heading; exact implementation variant may need separate review."
+    },
+    "31": {
+      "urls": [
+        "https://www.geeksforgeeks.org/dsa/counting-frequencies-of-array-elements/"
+      ],
+      "note": "Supporting frequency-counting article; the exact highest/lowest element variant still needs semantic review."
+    },
+    "57": {
+      "urls": [
+        "https://www.geeksforgeeks.org/dsa/print-the-maximum-subarray-sum/"
+      ],
+      "note": "Topic/task resource reviewed against uploaded heading; exact implementation variant may need separate review."
+    },
+    "112": {
+      "urls": [
+        "https://www.geeksforgeeks.org/dsa/reverse-words-in-a-given-string/"
+      ],
+      "note": "Composite uploaded heading: reverse-words resource provided; palindrome alternative is a separate task."
+    },
+    "120": {
+      "urls": [
+        "https://www.geeksforgeeks.org/dsa/converting-decimal-number-lying-between-1-to-3999-to-roman-numerals/"
+      ],
+      "note": "Integer-to-Roman resource supplied; Roman-to-integer direction needs a companion resource."
+    },
+    "157": {
+      "urls": [
+        "https://www.geeksforgeeks.org/dsa/recursive-implementation-of-atoi/"
+      ],
+      "note": "Topic/task resource reviewed against uploaded heading; exact implementation variant may need separate review."
+    },
+    "160": {
+      "urls": [
+        "https://www.geeksforgeeks.org/dsa/sort-a-stack-using-recursion/"
+      ],
+      "note": "Topic/task resource reviewed against uploaded heading; exact implementation variant may need separate review."
+    },
+    "162": {
+      "urls": [
+        "https://www.geeksforgeeks.org/dsa/print-all-combinations-of-given-length/"
+      ],
+      "note": "General string-generation algorithm: use alphabet {0,1}; not the narrower no-consecutive-ones variant."
+    },
+    "170": {
+      "urls": [
+        "https://www.geeksforgeeks.org/dsa/print-sums-subsets-given-set/"
+      ],
+      "note": "Topic/task resource reviewed against uploaded heading; exact implementation variant may need separate review."
+    },
+    "243": {
+      "urls": [
+        "https://www.geeksforgeeks.org/dsa/binary-heap/"
+      ],
+      "note": "Topic/task resource reviewed against uploaded heading; exact implementation variant may need separate review."
+    },
+    "247": {
+      "urls": [
+        "https://www.geeksforgeeks.org/dsa/k-th-smallest-element-in-an-unsorted-array-using-priority-queue/"
+      ],
+      "note": "Topic/task resource reviewed against uploaded heading; exact implementation variant may need separate review."
+    },
+    "261": {
+      "urls": [
+        "https://www.geeksforgeeks.org/dsa/greedy-algorithm-to-find-minimum-number-of-coins/"
+      ],
+      "note": "Greedy coin selection applies to the source denominations; it is not a general arbitrary-denomination coin-change solution."
+    },
+    "271": {
+      "urls": [
+        "https://www.geeksforgeeks.org/operating-systems/page-faults-in-lru-implementation/"
+      ],
+      "note": "Topic/task resource reviewed against uploaded heading; exact implementation variant may need separate review."
+    },
+    "275": {
+      "urls": [
+        "https://www.geeksforgeeks.org/dsa/introduction-to-binary-tree/"
+      ],
+      "note": "Topic/task resource reviewed against uploaded heading; exact implementation variant may need separate review."
+    },
+    "276": {
+      "urls": [
+        "https://www.geeksforgeeks.org/dsa/binary-tree-representation/"
+      ],
+      "note": "Topic/task resource reviewed against uploaded heading; exact implementation variant may need separate review."
+    },
+    "277": {
+      "urls": [
+        "https://www.geeksforgeeks.org/dsa/binary-tree-representation/"
+      ],
+      "note": "Topic/task resource reviewed against uploaded heading; exact implementation variant may need separate review."
+    },
+    "278": {
+      "urls": [
+        "https://www.geeksforgeeks.org/dsa/binary-tree-data-structure/"
+      ],
+      "note": "Traversal overview with links; language-specific and iterative variants remain in their original uploaded rows."
+    },
+    "300": {
+      "urls": [
+        "https://www.geeksforgeeks.org/dsa/print-path-root-given-node-binary-tree/"
+      ],
+      "note": "Specific root-to-given-node article. The earlier TUF legacy URL returned404 and is excluded from the active links."
+    },
+    "326": {
+      "urls": [
+        "https://www.geeksforgeeks.org/dsa/merge-two-bsts-with-limited-extra-space/"
+      ],
+      "note": "Topic/task resource reviewed against uploaded heading; exact implementation variant may need separate review."
+    },
+    "331": {
+      "urls": [
+        "https://www.geeksforgeeks.org/dsa/graph-and-its-representations/"
+      ],
+      "note": "Topic/task resource reviewed against uploaded heading; exact implementation variant may need separate review."
+    },
+    "332": {
+      "urls": [
+        "https://www.geeksforgeeks.org/dsa/graph-and-its-representations/"
+      ],
+      "note": "Topic/task resource reviewed against uploaded heading; exact implementation variant may need separate review."
+    },
+    "334": {
+      "urls": [
+        "https://www.geeksforgeeks.org/dsa/breadth-first-search-or-bfs-for-a-graph/"
+      ],
+      "note": "Topic/task resource reviewed against uploaded heading; exact implementation variant may need separate review."
+    },
+    "335": {
+      "urls": [
+        "https://www.geeksforgeeks.org/dsa/depth-first-search-or-dfs-for-a-graph/"
+      ],
+      "note": "Topic/task resource reviewed against uploaded heading; exact implementation variant may need separate review."
+    },
+    "342": {
+      "urls": [
+        "https://leetcode.com/problems/01-matrix/"
+      ],
+      "note": "Topic/task resource reviewed against uploaded heading; exact implementation variant may need separate review."
+    },
+    "371": {
+      "urls": [
+        "https://www.geeksforgeeks.org/dsa/prims-minimum-spanning-tree-mst-greedy-algo-5/"
+      ],
+      "note": "Topic/task resource reviewed against uploaded heading; exact implementation variant may need separate review."
+    },
+    "374": {
+      "urls": [
+        "https://www.geeksforgeeks.org/dsa/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/"
+      ],
+      "note": "Topic/task resource reviewed against uploaded heading; exact implementation variant may need separate review."
+    },
+    "409": {
+      "urls": [
+        "https://www.geeksforgeeks.org/dsa/printing-longest-common-subsequence/"
+      ],
+      "note": "Topic/task resource reviewed against uploaded heading; exact implementation variant may need separate review."
+    },
+    "435": {
+      "urls": [
+        "https://www.geeksforgeeks.org/dsa/boolean-parenthesization-problem-dp-37/"
+      ],
+      "note": "Topic/task resource reviewed against uploaded heading; exact implementation variant may need separate review."
+    }
+  }
+}

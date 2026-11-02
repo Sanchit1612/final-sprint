@@ -1,0 +1,10 @@
+import Link from 'next/link';
+import {requireSession} from '@/lib/session';
+import {companyIndex} from '@/lib/content/companies';
+import {ProPreview} from '@/components/ProPreview';
+import {PageHeader} from '@/components/ui';
+export default async function Page({searchParams}:{searchParams:Promise<{q?:string}>}){
+ const {isPro}=await requireSession();if(!isPro)return <ProPreview title="Company-wise DSA sheets" headings={['Company-focused practice','Frequency-ordered problem sheets','Non-Premium LeetCode destinations']} description="Explore company-focused practice sheets, prioritise frequently reported problems and organise your next interview preparation."/>;
+ const {q=''}=await searchParams,companies=companyIndex().filter(c=>c.name.toLowerCase().includes(q.toLowerCase()));
+ return <><PageHeader title="Company-wise DSA sheets" subtitle="Choose a company. Practise its frequency-ordered problems without leaving your preparation library."/><p className="mb-5 text-sm text-muted">Community-sourced company tags; not official employer sheets or guarantees. Only questions marked non-Premium by LeetCode at our latest check are included. Access can change.</p><form className="mb-6"><label htmlFor="company-search" className="sr-only">Search companies</label><input className="input max-w-xl" id="company-search" name="q" placeholder="Search companies…" defaultValue={q}/><button className="btn-ghost ml-2">Search</button></form><div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">{companies.map(c=><Link prefetch={false} href={`/companies/${c.slug}`} key={c.slug} className="card hover-card"><div className="flex items-center gap-3"><span aria-hidden className="grid h-11 w-11 place-items-center rounded-xl bg-accent-soft text-xl font-bold text-accent">{c.name[0]}</span><h2 className="text-lg">{c.name}</h2></div><p className="my-4 text-sm text-muted">Work through the most frequently reported problems first, with direct LeetCode practice links.</p><p className="border-t border-line pt-3 text-sm text-muted">{c.count} non-Premium questions →</p></Link>)}</div>{!companies.length&&<p className="card">No matching company sheets.</p>}</>;
+}

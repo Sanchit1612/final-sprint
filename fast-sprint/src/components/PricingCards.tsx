@@ -7,7 +7,7 @@ import { FEATURES, PRICING } from "@/config/plans";
 const cell = (v: string | boolean) =>
   v === true ? <Check className="mx-auto h-4 w-4 text-success" aria-label="Included" /> : v === false ? <Minus className="mx-auto h-4 w-4 text-muted" aria-label="Not included" /> : <span className="text-sm">{v}</span>;
 
-export function PricingCards({ isPro, signedIn, billing }: { isPro: boolean; signedIn: boolean; billing?: {ready:boolean;mode?:string} }) {
+export function PricingCards({ isPro, signedIn, billing }: { isPro: boolean; signedIn: boolean; billing?: {ready:boolean;mode?:string;testPro?:boolean} }) {
   return (
     <div className="space-y-12">
       <div className="grid gap-4 md:grid-cols-3">
@@ -18,7 +18,7 @@ export function PricingCards({ isPro, signedIn, billing }: { isPro: boolean; sig
             <p className="mt-3 text-lg">₹{value.perMonth.toFixed(2)} <span className="text-sm text-muted">/ month equivalent</span></p>
             {value.savings > 0 && <p className="mt-2 text-xs text-accent">Save ₹{value.savings} ({value.savingPercent}%) versus {p.months} separate one-month passes.</p>}
             <p className="mt-1 text-sm text-muted">{p.tagline}. One-time pass, no auto-renew.</p>
-            <CheckoutButton months={p.months} signedIn={signedIn} ready={billing?.ready??false} mode={billing?.mode}/>
+            <CheckoutButton months={p.months} signedIn={signedIn} ready={billing?.ready??false} mode={billing?.mode} testPro={billing?.testPro}/>
           </div>
         ); })}
       </div>

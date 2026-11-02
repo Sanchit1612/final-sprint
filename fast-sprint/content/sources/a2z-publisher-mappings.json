@@ -1,0 +1,1548 @@
+{
+  "source": "https://takeuforward.org/prep-hub/strivers-a2z-dsa-sheet?page=sheet",
+  "reviewedAt": "2026-11-02",
+  "mappings": {
+    "9": {
+      "publisherId": 1219,
+      "publisherTitle": "Theory with examples",
+      "originalTitle": "Time Complexity",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "11": {
+      "publisherId": 1218,
+      "publisherTitle": "STL",
+      "originalTitle": "C++ STL",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "13": {
+      "publisherId": 367,
+      "publisherTitle": "Count all Digits of a Number",
+      "originalTitle": "Count Digits",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "15": {
+      "publisherId": 374,
+      "publisherTitle": "Palindrome Number",
+      "originalTitle": "Check Palindrome",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "16": {
+      "publisherId": 372,
+      "publisherTitle": "GCD of Two Numbers",
+      "originalTitle": "GCD Or HCF",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "17": {
+      "publisherId": 366,
+      "publisherTitle": "Check if the Number is Armstrong",
+      "originalTitle": "Armstrong Numbers",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "18": {
+      "publisherId": 370,
+      "publisherTitle": "Divisors of a Number",
+      "originalTitle": "Print all Divisors",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "19": {
+      "publisherId": 365,
+      "publisherTitle": "Check for Prime Number",
+      "originalTitle": "Check for Prime",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "25": {
+      "publisherId": 371,
+      "publisherTitle": "Factorial of a given number",
+      "originalTitle": "Factorial of N numbers",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "27": {
+      "publisherId": 378,
+      "publisherTitle": "Check if String is Palindrome or Not ",
+      "originalTitle": "Check if a string is palindrome or not",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "29": {
+      "publisherId": 1203,
+      "publisherTitle": "Basic Hashing",
+      "originalTitle": "Hashing Theory",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "34": {
+      "publisherId": 944,
+      "publisherTitle": "Insertion Sorting",
+      "originalTitle": "Insertion Sort",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "35": {
+      "publisherId": 945,
+      "publisherTitle": "Merge Sorting",
+      "originalTitle": "Merge Sort",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "38": {
+      "publisherId": 946,
+      "publisherTitle": "Quick Sorting",
+      "originalTitle": "Quick Sort",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "39": {
+      "publisherId": 38,
+      "publisherTitle": "Largest Element ",
+      "originalTitle": "Largest Element in an Array",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "40": {
+      "publisherId": 43,
+      "publisherTitle": "Second Largest Element",
+      "originalTitle": "Second Largest Element in an Array without sorting",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "41": {
+      "publisherId": 340,
+      "publisherTitle": "Check if the Array is Sorted I",
+      "originalTitle": "Check if the array is sorted",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "43": {
+      "publisherId": 40,
+      "publisherTitle": "Left Rotate Array by One",
+      "originalTitle": "Left Rotate an array by one place",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "44": {
+      "publisherId": 39,
+      "publisherTitle": "Left Rotate Array by K Places",
+      "originalTitle": "Left rotate an array by D places",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "47": {
+      "publisherId": 48,
+      "publisherTitle": "Union of two sorted arrays",
+      "originalTitle": "Find the Union",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "48": {
+      "publisherId": 44,
+      "publisherTitle": "Find missing number",
+      "originalTitle": "Find missing number in an array",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "50": {
+      "publisherId": 143,
+      "publisherTitle": "Single Number - I",
+      "originalTitle": "Find the number that appears once, and other numbers twice.",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "51": {
+      "publisherId": 564,
+      "publisherTitle": "Longest subarray with sum K",
+      "originalTitle": "Longest subarray with given sum K(positives)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "52": {
+      "publisherId": 564,
+      "publisherTitle": "Longest subarray with sum K",
+      "originalTitle": "Longest subarray with sum K (Positives + Negatives)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "53": {
+      "publisherId": 37,
+      "publisherTitle": "Two Sum",
+      "originalTitle": "2Sum Problem",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "55": {
+      "publisherId": 22,
+      "publisherTitle": "Majority Element-I",
+      "originalTitle": "Majority Element (>n/2 times)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "56": {
+      "publisherId": 29,
+      "publisherTitle": "Kadane's Algorithm",
+      "originalTitle": "Kadane's Algorithm, maximum subarray sum",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "58": {
+      "publisherId": 301,
+      "publisherTitle": "Best time to buy and sell stock",
+      "originalTitle": "Stock Buy and Sell",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "59": {
+      "publisherId": 34,
+      "publisherTitle": "Rearrange array elements by sign",
+      "originalTitle": "Rearrange the array in alternating positive and negative items",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "61": {
+      "publisherId": 30,
+      "publisherTitle": "Leaders in an Array",
+      "originalTitle": "Leaders in an Array problem",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "63": {
+      "publisherId": 911,
+      "publisherTitle": "Set Matrix Zeroes",
+      "originalTitle": "Set Matrix Zeros",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "67": {
+      "publisherId": 32,
+      "publisherTitle": "Pascal's Triangle III",
+      "originalTitle": "Pascal's Triangle",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "68": {
+      "publisherId": 23,
+      "publisherTitle": "Majority Element-II",
+      "originalTitle": "Majority Element (n/3 times)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "69": {
+      "publisherId": 27,
+      "publisherTitle": "3 Sum",
+      "originalTitle": "3-Sum Problem",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "70": {
+      "publisherId": 28,
+      "publisherTitle": "4 Sum",
+      "originalTitle": "4-Sum Problem",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "71": {
+      "publisherId": 605,
+      "publisherTitle": "Largest Subarray with Sum 0",
+      "originalTitle": "Largest Subarray with 0 Sum",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "72": {
+      "publisherId": 562,
+      "publisherTitle": "Count subarrays with given xor K",
+      "originalTitle": "Count number of subarrays with given xor K",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "73": {
+      "publisherId": 712,
+      "publisherTitle": "Merge Intervals",
+      "originalTitle": "Merge Overlapping Subintervals",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "78": {
+      "publisherId": 24,
+      "publisherTitle": "Maximum Product Subarray in an Array",
+      "originalTitle": "Maximum Product Subarray",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "79": {
+      "publisherId": 81,
+      "publisherTitle": "Search X in sorted array",
+      "originalTitle": "Binary Search to find X in sorted array",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "80": {
+      "publisherId": 80,
+      "publisherTitle": "Lower Bound ",
+      "originalTitle": "Implement Lower Bound",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "81": {
+      "publisherId": 82,
+      "publisherTitle": "Upper Bound",
+      "originalTitle": "Implement Upper Bound",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "83": {
+      "publisherId": 86,
+      "publisherTitle": "Floor and Ceil in Sorted Array",
+      "originalTitle": "Floor/Ceil in Sorted Array",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "84": {
+      "publisherId": 85,
+      "publisherTitle": "First and last occurrence",
+      "originalTitle": "Find first or last occurrence of a given number in a sorted arr",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "85": {
+      "publisherId": 229,
+      "publisherTitle": "Count Occurrences in a Sorted Array",
+      "originalTitle": "Count occurrences of a number in a sorted array with duplicates",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "89": {
+      "publisherId": 84,
+      "publisherTitle": "Find out how many times the array is rotated",
+      "originalTitle": "Find out how many times has an array been rotated",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "90": {
+      "publisherId": 90,
+      "publisherTitle": "Single element in sorted array",
+      "originalTitle": "Single element in a Sorted Array",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "92": {
+      "publisherId": 92,
+      "publisherTitle": "Find square root of a number",
+      "originalTitle": "Find square root of a number in log n",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "93": {
+      "publisherId": 91,
+      "publisherTitle": "Find Nth root of a number",
+      "originalTitle": "Find the Nth root of a number using binary search",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "106": {
+      "publisherId": 66,
+      "publisherTitle": "Find row with maximum 1's",
+      "originalTitle": "Find the row with maximum number of 1's",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "108": {
+      "publisherId": 68,
+      "publisherTitle": "Search in 2D matrix - II",
+      "originalTitle": "Search in a row and column wise sorted matrix",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "109": {
+      "publisherId": 65,
+      "publisherTitle": "Find Peak Element - II",
+      "originalTitle": "Find Peak Element (2D Matrix)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "111": {
+      "publisherId": 892,
+      "publisherTitle": "Remove Outermost Parentheses",
+      "originalTitle": "Remove outermost Paranthesis",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "115": {
+      "publisherId": 393,
+      "publisherTitle": "Isomorphic Strings",
+      "originalTitle": "Isomorphic String",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "116": {
+      "publisherId": 398,
+      "publisherTitle": "Rotate String",
+      "originalTitle": "check whether one string is a rotation of another",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "117": {
+      "publisherId": 400,
+      "publisherTitle": "Valid Anagram",
+      "originalTitle": "Check if two strings are anagram of each other",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "119": {
+      "publisherId": 674,
+      "publisherTitle": "Maximum Nesting Depth of the Parentheses",
+      "originalTitle": "Maximum Nesting Depth of Paranthesis",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "121": {
+      "publisherId": 974,
+      "publisherTitle": "String to Integer (atoi)",
+      "originalTitle": "Implement Atoi",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "123": {
+      "publisherId": 638,
+      "publisherTitle": "Longest Palindromic Substring",
+      "originalTitle": "Longest Palindromic Substring[Do it without DP]",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "124": {
+      "publisherId": 993,
+      "publisherTitle": "Sum of Beauty of All Substrings",
+      "originalTitle": "Sum of Beauty of all substring",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "126": {
+      "publisherId": 1237,
+      "publisherTitle": "Introduction to Singly LinkedList",
+      "originalTitle": "Introduction to LinkedList, learn about struct, and node",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "127": {
+      "publisherId": 1236,
+      "publisherTitle": "Insertion in Linked List",
+      "originalTitle": "Inserting a node in LinkedList",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "128": {
+      "publisherId": 1235,
+      "publisherTitle": "Deletion in Linked List",
+      "originalTitle": "Deleting a node in LinkedList",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "129": {
+      "publisherId": 470,
+      "publisherTitle": "Find the length of the Linked List",
+      "originalTitle": "Find the length of the linkedlist [learn traversal]",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "130": {
+      "publisherId": 905,
+      "publisherTitle": "Search in Linked List",
+      "originalTitle": "Search an element in the LL",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "131": {
+      "publisherId": 1234,
+      "publisherTitle": "Introduction to Doubly LL",
+      "originalTitle": "Introduction to DLL, learn about struct, and node",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "132": {
+      "publisherId": 1233,
+      "publisherTitle": "Insertion in DLL",
+      "originalTitle": "Insert a node in DLL",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "133": {
+      "publisherId": 1232,
+      "publisherTitle": "Deletion in Doubly LL",
+      "originalTitle": "Delete a node in DLL",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "134": {
+      "publisherId": 900,
+      "publisherTitle": "Reverse a Doubly Linked List",
+      "originalTitle": "Reverse a DLL",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "135": {
+      "publisherId": 448,
+      "publisherTitle": "Find Middle of Linked List",
+      "originalTitle": "Middle of a LinkedList [TortoiseHare Method]",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "136": {
+      "publisherId": 627,
+      "publisherTitle": "Reverse a LL",
+      "originalTitle": "Reverse a LinkedList [Iterative]",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "137": {
+      "publisherId": 627,
+      "publisherTitle": "Reverse a LL",
+      "originalTitle": "Reverse a LL [Recursive]",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "142": {
+      "publisherId": 628,
+      "publisherTitle": "Segregate odd and even nodes in Linked List",
+      "originalTitle": "Segrregate odd and even nodes in LL",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "144": {
+      "publisherId": 619,
+      "publisherTitle": "Delete the middle node in LL",
+      "originalTitle": "Delete the middle node of LL",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "146": {
+      "publisherId": 629,
+      "publisherTitle": "Sort a Linked List of 0's 1's and 2's",
+      "originalTitle": "Sort a LL of 0's 1's and 2's by changing links",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "148": {
+      "publisherId": 617,
+      "publisherTitle": "Add one to a number represented by LL",
+      "originalTitle": "Add 1 to a number represented by LL",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "149": {
+      "publisherId": 625,
+      "publisherTitle": "Add two numbers in Linked List",
+      "originalTitle": "Add 2 numbers in LL",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "151": {
+      "publisherId": 452,
+      "publisherTitle": "Find Pairs with Given Sum in Doubly Linked List",
+      "originalTitle": "Find pairs with given sum in DLL",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "156": {
+      "publisherId": 611,
+      "publisherTitle": "Clone a LL with random and next pointer",
+      "originalTitle": "Clone a Linked List with random and next pointer",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "161": {
+      "publisherId": 901,
+      "publisherTitle": "Reverse a Stack",
+      "originalTitle": "Reverse a stack using recursion",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "163": {
+      "publisherId": 876,
+      "publisherTitle": "Generate Parentheses",
+      "originalTitle": "Generate Paranthesis",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "164": {
+      "publisherId": 878,
+      "publisherTitle": "Power Set",
+      "originalTitle": "Print all subsequences/Power Set",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "171": {
+      "publisherId": 868,
+      "publisherTitle": "Subsets II",
+      "originalTitle": "Subset Sum-II",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "180": {
+      "publisherId": 873,
+      "publisherTitle": "Sudoku Solver",
+      "originalTitle": "Sudoko Solver",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "182": {
+      "publisherId": 1155,
+      "publisherTitle": "Introduction to Bits and Tricks",
+      "originalTitle": "Introduction to Bit Manipulation [Theory]",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "187": {
+      "publisherId": 19363,
+      "publisherTitle": "Set the Rightmost Unset Bit",
+      "originalTitle": "Set/Unset the rightmost unset bit",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "189": {
+      "publisherId": 140,
+      "publisherTitle": "Divide two numbers without multiplication and division",
+      "originalTitle": "Divide two integers w/o using multiplication, division and mod",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "190": {
+      "publisherId": 141,
+      "publisherTitle": "Minimum Bit Flips to Convert Number",
+      "originalTitle": "Count number of bits to be flipped to convert A to B",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "191": {
+      "publisherId": 143,
+      "publisherTitle": "Single Number - I",
+      "originalTitle": "Find the number that appears odd number of times",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "193": {
+      "publisherId": 146,
+      "publisherTitle": "XOR of numbers in a given range",
+      "originalTitle": "Find xor of numbers from L to R",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "194": {
+      "publisherId": 145,
+      "publisherTitle": "Single Number - III",
+      "originalTitle": "Find the two numbers appearing odd number of times",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "195": {
+      "publisherId": 652,
+      "publisherTitle": "Prime factorisation of a Number",
+      "originalTitle": "Print Prime Factors of a Number",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "196": {
+      "publisherId": 370,
+      "publisherTitle": "Divisors of a Number",
+      "originalTitle": "All Divisors of a Number",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "197": {
+      "publisherId": 653,
+      "publisherTitle": "Print all primes till N",
+      "originalTitle": "Sieve of Eratosthenes",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "198": {
+      "publisherId": 652,
+      "publisherTitle": "Prime factorisation of a Number",
+      "originalTitle": "Find Prime Factorisation of a Number using Sieve",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "199": {
+      "publisherId": 877,
+      "publisherTitle": "Pow(x,n)",
+      "originalTitle": "Power(n, x)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "206": {
+      "publisherId": 966,
+      "publisherTitle": "Balanced Paranthesis",
+      "originalTitle": "Check for balanced paranthesis",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "208": {
+      "publisherId": 586,
+      "publisherTitle": "Infix to Postfix Conversion",
+      "originalTitle": "Infix to Postfix Conversion using Stack",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "212": {
+      "publisherId": 824,
+      "publisherTitle": "Postfix to Infix Conversion",
+      "originalTitle": "Postfix to Infix",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "213": {
+      "publisherId": 587,
+      "publisherTitle": "Infix to Prefix Conversion",
+      "originalTitle": "Convert Infix To Prefix Notation",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "217": {
+      "publisherId": 285,
+      "publisherTitle": "Number of Greater Elements to the Right",
+      "originalTitle": "Number of NGEs to the right",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "219": {
+      "publisherId": 971,
+      "publisherTitle": "Sum of Subarray Minimums",
+      "originalTitle": "Sum of subarray minimum",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "224": {
+      "publisherId": 962,
+      "publisherTitle": "Maximum Rectangles",
+      "originalTitle": "Maximal Rectangles",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "227": {
+      "publisherId": 957,
+      "publisherTitle": "Celebrity Problem",
+      "originalTitle": "The Celebrity Problem",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "228": {
+      "publisherId": 961,
+      "publisherTitle": "LRU Cache",
+      "originalTitle": "LRU cache (IMPORTANT)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "234": {
+      "publisherId": 923,
+      "publisherTitle": "Binary Subarrays With Sum",
+      "originalTitle": "Binary subarray with sum",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "236": {
+      "publisherId": 925,
+      "publisherTitle": "Number of Substrings Containing All Three Characters",
+      "originalTitle": "Number of substring containing all three characters",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "237": {
+      "publisherId": 922,
+      "publisherTitle": "Maximum Points You Can Obtain from Cards ",
+      "originalTitle": "Maximum point you can obtain from cards",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "239": {
+      "publisherId": 988,
+      "publisherTitle": "Subarrays with K Different Integers",
+      "originalTitle": "Subarray with k different integers",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "242": {
+      "publisherId": 1223,
+      "publisherTitle": "Heaps (Theory Video)",
+      "originalTitle": "Introduction to Priority Queues using Binary Heaps",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "244": {
+      "publisherId": 571,
+      "publisherTitle": "Check if an array represents a min heap ",
+      "originalTitle": "Check if an array represents a min-heap or not",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "246": {
+      "publisherId": 578,
+      "publisherTitle": "K-th Largest element in an array",
+      "originalTitle": "Kth largest element in an array [use priority queue]",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "248": {
+      "publisherId": 19361,
+      "publisherTitle": "Sort a K-Sorted Array",
+      "originalTitle": "Sort K sorted array",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "249": {
+      "publisherId": 569,
+      "publisherTitle": "Merge K sorted Lists",
+      "originalTitle": "Merge M sorted Lists",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "250": {
+      "publisherId": 898,
+      "publisherTitle": "Replace Elements by Their Rank",
+      "originalTitle": "Replace each array element by its corresponding rank",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "252": {
+      "publisherId": 556,
+      "publisherTitle": "Hand of Straights",
+      "originalTitle": "Hands of Straights",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "254": {
+      "publisherId": 755,
+      "publisherTitle": "Minimum Cost to Connect Sticks",
+      "originalTitle": "Connect `n` ropes with minimal cost",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "258": {
+      "publisherId": 1018,
+      "publisherTitle": "Top K Frequent Elements",
+      "originalTitle": "K most frequent elements",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "260": {
+      "publisherId": 489,
+      "publisherTitle": "Fractional Knapsack",
+      "originalTitle": "Fractional Knapsack Problem",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "263": {
+      "publisherId": 545,
+      "publisherTitle": "Valid Parenthesis Checker",
+      "originalTitle": "Valid Paranthesis Checker",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "265": {
+      "publisherId": 542,
+      "publisherTitle": "Jump Game - I",
+      "originalTitle": "Jump Game",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "266": {
+      "publisherId": 595,
+      "publisherTitle": "Jump Game II",
+      "originalTitle": "Jump Game 2",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "270": {
+      "publisherId": 551,
+      "publisherTitle": "Shortest Job First",
+      "originalTitle": "Program for Shortest Job First (or SJF) CPU Scheduling",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "279": {
+      "publisherId": 137,
+      "publisherTitle": "Preorder Traversal",
+      "originalTitle": "Preorder Traversal of Binary Tree",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "280": {
+      "publisherId": 133,
+      "publisherTitle": "Inorder Traversal",
+      "originalTitle": "Inorder Traversal of Binary Tree",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "281": {
+      "publisherId": 135,
+      "publisherTitle": "Postorder Traversal",
+      "originalTitle": "Post-order Traversal of Binary Tree",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "282": {
+      "publisherId": 134,
+      "publisherTitle": "Level Order Traversal",
+      "originalTitle": "Level order Traversal / Level order traversal in spiral form",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "283": {
+      "publisherId": 137,
+      "publisherTitle": "Preorder Traversal",
+      "originalTitle": "Iterative Preorder Traversal of Binary Tree",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "284": {
+      "publisherId": 133,
+      "publisherTitle": "Inorder Traversal",
+      "originalTitle": "Iterative Inorder Traversal of Binary Tree",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "285": {
+      "publisherId": 135,
+      "publisherTitle": "Postorder Traversal",
+      "originalTitle": "Post-order Traversal of Binary Tree using 2 stack",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "286": {
+      "publisherId": 135,
+      "publisherTitle": "Postorder Traversal",
+      "originalTitle": "Post-order Traversal of Binary Tree using 1 stack",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "287": {
+      "publisherId": 136,
+      "publisherTitle": "Pre, Post, Inorder in one traversal",
+      "originalTitle": "Preorder, Inorder, and Postorder Traversal in one Traversal",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "288": {
+      "publisherId": 131,
+      "publisherTitle": "Maximum Depth in BT",
+      "originalTitle": "Height of a Binary Tree",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "289": {
+      "publisherId": 127,
+      "publisherTitle": "Check for balanced binary tree",
+      "originalTitle": "Check if the Binary tree is height-balanced or not",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "293": {
+      "publisherId": 126,
+      "publisherTitle": "Zig Zag or Spiral Traversal",
+      "originalTitle": "Zig Zag Traversal of Binary Tree",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "294": {
+      "publisherId": 116,
+      "publisherTitle": "Boundary Traversal",
+      "originalTitle": "Boundary Traversal of Binary Tree",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "295": {
+      "publisherId": 125,
+      "publisherTitle": "Vertical Order Traversal",
+      "originalTitle": "Vertical Order Traversal of Binary Tree",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "296": {
+      "publisherId": 124,
+      "publisherTitle": "Top View of BT",
+      "originalTitle": "Top View of Binary Tree",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "297": {
+      "publisherId": 115,
+      "publisherTitle": "Bottom view of BT",
+      "originalTitle": "Bottom View of Binary Tree",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "298": {
+      "publisherId": 123,
+      "publisherTitle": "Right/Left View of BT",
+      "originalTitle": "Right/Left View of Binary Tree",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "299": {
+      "publisherId": 128,
+      "publisherTitle": "Check for symmetrical BTs",
+      "originalTitle": "Symmetric Binary Tree",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "301": {
+      "publisherId": 118,
+      "publisherTitle": "LCA in BT",
+      "originalTitle": "LCA in Binary Tree",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "302": {
+      "publisherId": 119,
+      "publisherTitle": "Maximum Width of BT",
+      "originalTitle": "Maximum width of a Binary Tree",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "303": {
+      "publisherId": 185,
+      "publisherTitle": "Children Sum Property in Binary Tree",
+      "originalTitle": "Check for Children Sum Property",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "304": {
+      "publisherId": 121,
+      "publisherTitle": "Print all nodes at a distance of K in BT",
+      "originalTitle": "Print all the Nodes at a distance of K in a Binary Tree",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "305": {
+      "publisherId": 120,
+      "publisherTitle": "Minimum time taken to burn the BT from a given Node",
+      "originalTitle": "Minimum time taken to BURN the Binary Tree from a Node",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "306": {
+      "publisherId": 117,
+      "publisherTitle": "Count total nodes in a complete BT",
+      "originalTitle": "Count total Nodes in a COMPLETE Binary Tree",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "307": {
+      "publisherId": 111,
+      "publisherTitle": "Requirements needed to construct a unique BT",
+      "originalTitle": "Requirements needed to construct a Unique Binary Tree | Theory",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "308": {
+      "publisherId": 110,
+      "publisherTitle": "Construct a BT from Preorder and Inorder",
+      "originalTitle": "Construct Binary Tree from inorder and preorder",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "309": {
+      "publisherId": 109,
+      "publisherTitle": "Construct a BT from Postorder and Inorder",
+      "originalTitle": "Construct the Binary Tree from Postorder and Inorder Traversal",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "310": {
+      "publisherId": 112,
+      "publisherTitle": "Serialize and De-serialize BT",
+      "originalTitle": "Serialize and deserialize Binary Tree",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "311": {
+      "publisherId": 138,
+      "publisherTitle": "Morris Preorder Traversal ",
+      "originalTitle": "Morris Preorder Traversal of a Binary Tree",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "312": {
+      "publisherId": 139,
+      "publisherTitle": "Morris Inorder Traversal ",
+      "originalTitle": "Morris Inorder Traversal of a Binary Tree",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "314": {
+      "publisherId": 1153,
+      "publisherTitle": "Introduction to BST",
+      "originalTitle": "Introduction to Binary Search Tree",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "315": {
+      "publisherId": 108,
+      "publisherTitle": "Search in BST",
+      "originalTitle": "Search in a Binary Search Tree",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "316": {
+      "publisherId": 19365,
+      "publisherTitle": "Minimum and Maximum in BST",
+      "originalTitle": "Find Min/Max in BST",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "317": {
+      "publisherId": 107,
+      "publisherTitle": "Floor and Ceil in a BST",
+      "originalTitle": "Ceil in a Binary Search Tree",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "318": {
+      "publisherId": 107,
+      "publisherTitle": "Floor and Ceil in a BST",
+      "originalTitle": "Floor in a Binary Search Tree",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "319": {
+      "publisherId": 104,
+      "publisherTitle": "Insert a given node in BST",
+      "originalTitle": "Insert a given Node in Binary Search Tree",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "320": {
+      "publisherId": 102,
+      "publisherTitle": "Delete a node in BST",
+      "originalTitle": "Delete a Node in Binary Search Tree",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "321": {
+      "publisherId": 105,
+      "publisherTitle": "Kth Smallest and Largest element in BST",
+      "originalTitle": "Find K-th smallest/largest element in BST",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "322": {
+      "publisherId": 100,
+      "publisherTitle": "Check if a tree is a BST or not",
+      "originalTitle": "Check if a tree is a BST or BT",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "323": {
+      "publisherId": 106,
+      "publisherTitle": "LCA in BST",
+      "originalTitle": "LCA in Binary Search Tree",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "325": {
+      "publisherId": 103,
+      "publisherTitle": "Inorder successor and predecessor in BST",
+      "originalTitle": "Inorder Successor/Predecessor in BST",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "327": {
+      "publisherId": 99,
+      "publisherTitle": "Two sum in BST",
+      "originalTitle": "Two Sum In BST | Check if there exists a pair with Sum K",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "328": {
+      "publisherId": 97,
+      "publisherTitle": "Correct BST with two nodes swapped",
+      "originalTitle": "Recover BST | Correct BST with two nodes swapped",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "330": {
+      "publisherId": 1222,
+      "publisherTitle": "Introduction to Graph",
+      "originalTitle": "Graph and Types",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "333": {
+      "publisherId": 528,
+      "publisherTitle": "Connected Components",
+      "originalTitle": "Connected Components | Logic Explanation",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "336": {
+      "publisherId": 535,
+      "publisherTitle": "Number of provinces",
+      "originalTitle": "Number of provinces (leetcode)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "337": {
+      "publisherId": 534,
+      "publisherTitle": "Number of islands",
+      "originalTitle": "Connected Components Problem in Matrix",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "339": {
+      "publisherId": 531,
+      "publisherTitle": "Flood fill algorithm",
+      "originalTitle": "Flood fill",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "340": {
+      "publisherId": 501,
+      "publisherTitle": "Detect a cycle in an undirected graph",
+      "originalTitle": "Cycle Detection in unirected Graph (bfs)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "341": {
+      "publisherId": 501,
+      "publisherTitle": "Detect a cycle in an undirected graph",
+      "originalTitle": "Cycle Detection in undirected Graph (dfs)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "343": {
+      "publisherId": 537,
+      "publisherTitle": "Surrounded Regions",
+      "originalTitle": "Surrounded Regions (dfs)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "344": {
+      "publisherId": 533,
+      "publisherTitle": "Number of enclaves",
+      "originalTitle": "Number of Enclaves [flood fill implementation - multisource]",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "345": {
+      "publisherId": 509,
+      "publisherTitle": "Word ladder I",
+      "originalTitle": "Word ladder - 1",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "346": {
+      "publisherId": 510,
+      "publisherTitle": "Word ladder II",
+      "originalTitle": "Word ladder - 2",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "347": {
+      "publisherId": 532,
+      "publisherTitle": "Number of distinct islands",
+      "originalTitle": "Number of Distinct Islands [dfs multisource]",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "348": {
+      "publisherId": 499,
+      "publisherTitle": "Bipartite graph",
+      "originalTitle": "Bipartite Graph (DFS)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "349": {
+      "publisherId": 500,
+      "publisherTitle": "Detect a cycle in a directed graph",
+      "originalTitle": "Cycle Detection in Directed Graph (DFS)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "350": {
+      "publisherId": 502,
+      "publisherTitle": "Topological sort or Kahn's algorithm",
+      "originalTitle": "Topo Sort",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "351": {
+      "publisherId": 502,
+      "publisherTitle": "Topological sort or Kahn's algorithm",
+      "originalTitle": "Kahn's Algorithm",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "352": {
+      "publisherId": 500,
+      "publisherTitle": "Detect a cycle in a directed graph",
+      "originalTitle": "Cycle Detection in Directed Graph (BFS)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "357": {
+      "publisherId": 508,
+      "publisherTitle": "Shortest path in undirected graph with unit weights",
+      "originalTitle": "Shortest Path in UG with unit weights",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "359": {
+      "publisherId": 520,
+      "publisherTitle": "Dijkstra's algorithm",
+      "originalTitle": "Djisktra's Algorithm",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "360": {
+      "publisherId": 520,
+      "publisherTitle": "Dijkstra's algorithm",
+      "originalTitle": "Why priority Queue is used in Djisktra's Algorithm",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "361": {
+      "publisherId": 527,
+      "publisherTitle": "Shortest Distance in a Binary Maze",
+      "originalTitle": "Shortest path in a binary maze",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "363": {
+      "publisherId": 519,
+      "publisherTitle": "Cheapest flight within K stops",
+      "originalTitle": "Cheapest flights within k stops",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "368": {
+      "publisherId": 522,
+      "publisherTitle": "Floyd warshall algorithm",
+      "originalTitle": "Floyd Warshal Algorithm",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "369": {
+      "publisherId": 521,
+      "publisherTitle": "Find the city with the smallest number of neighbors",
+      "originalTitle": "Find city with minimum neighbors in a threshold distance",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "370": {
+      "publisherId": 1221,
+      "publisherTitle": "MST theory",
+      "originalTitle": "Minimum Spanning Tree",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "372": {
+      "publisherId": 516,
+      "publisherTitle": "Disjoint Set ",
+      "originalTitle": "Disjoint Set [Union by Rank]",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "373": {
+      "publisherId": 516,
+      "publisherTitle": "Disjoint Set ",
+      "originalTitle": "Disjoint Set [Union by Size]",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "376": {
+      "publisherId": 513,
+      "publisherTitle": "Most stones removed with same row or column",
+      "originalTitle": "Most stones removed with same rows or columns",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "378": {
+      "publisherId": 514,
+      "publisherTitle": "Number of islands II",
+      "originalTitle": "Number of island II",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "382": {
+      "publisherId": 496,
+      "publisherTitle": "Articulation point in graph",
+      "originalTitle": "Articulation Point",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "384": {
+      "publisherId": 1195,
+      "publisherTitle": "Introduction to DP",
+      "originalTitle": "Dynamic Programming Introduction",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "385": {
+      "publisherId": 287,
+      "publisherTitle": "Climbing stairs",
+      "originalTitle": "Climbing Stars",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "386": {
+      "publisherId": 288,
+      "publisherTitle": "Frog Jump",
+      "originalTitle": "Frog Jump(DP-3)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "387": {
+      "publisherId": 289,
+      "publisherTitle": "Frog jump with K distances",
+      "originalTitle": "Frog Jump with k distances(DP-4)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "388": {
+      "publisherId": 291,
+      "publisherTitle": "Maximum sum of non adjacent elements",
+      "originalTitle": "Maximum sum of non-adjacent elements (DP 5)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "389": {
+      "publisherId": 290,
+      "publisherTitle": "House robber",
+      "originalTitle": "House Robber (DP 6)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "390": {
+      "publisherId": 292,
+      "publisherTitle": "Ninja's training",
+      "originalTitle": "Ninja's Training (DP 7)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "391": {
+      "publisherId": 297,
+      "publisherTitle": "Grid unique paths",
+      "originalTitle": "Grid Unique Paths : DP on Grids (DP8)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "392": {
+      "publisherId": 300,
+      "publisherTitle": "Unique paths II",
+      "originalTitle": "Grid Unique Paths 2 (DP 9)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "394": {
+      "publisherId": 299,
+      "publisherTitle": "Triangle",
+      "originalTitle": "Minimum path sum in Triangular Grid (DP 11)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "395": {
+      "publisherId": 298,
+      "publisherTitle": "Minimum Falling Path Sum",
+      "originalTitle": "Minimum/Maximum Falling Path Sum (DP-12)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "396": {
+      "publisherId": 296,
+      "publisherTitle": "Cherry pickup II",
+      "originalTitle": "3-d DP : Ninja and his friends (DP-13)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "397": {
+      "publisherId": 323,
+      "publisherTitle": "Subset sum equals to target",
+      "originalTitle": "Subset sum equal to target (DP- 14)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "398": {
+      "publisherId": 321,
+      "publisherTitle": "Partition equal subset sum",
+      "originalTitle": "Partition Equal Subset Sum (DP- 15)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "399": {
+      "publisherId": 320,
+      "publisherTitle": "Partition a set into two subsets with minimum absolute sum difference",
+      "originalTitle": "Partition Set Into 2 Subsets With Min Absolute Sum Diff (DP- 16)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "400": {
+      "publisherId": 318,
+      "publisherTitle": "Count subsets with sum K",
+      "originalTitle": "Count Subsets with Sum K (DP - 17)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "401": {
+      "publisherId": 317,
+      "publisherTitle": "Count partitions with given difference",
+      "originalTitle": "Count Partitions with Given Difference (DP - 18)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "403": {
+      "publisherId": 319,
+      "publisherTitle": "Minimum coins",
+      "originalTitle": "Minimum Coins (DP - 20)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "404": {
+      "publisherId": 324,
+      "publisherTitle": "Target sum",
+      "originalTitle": "Target Sum (DP - 21)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "405": {
+      "publisherId": 316,
+      "publisherTitle": "Coin change II",
+      "originalTitle": "Coin Change 2 (DP - 22)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "406": {
+      "publisherId": 325,
+      "publisherTitle": "Unbounded knapsack",
+      "originalTitle": "Unbounded Knapsack (DP - 23)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "407": {
+      "publisherId": 322,
+      "publisherTitle": "Rod cutting problem",
+      "originalTitle": "Rod Cutting Problem | (DP - 24)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "408": {
+      "publisherId": 308,
+      "publisherTitle": "Longest common subsequence",
+      "originalTitle": "Longest Common Subsequence | (DP - 25)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "410": {
+      "publisherId": 309,
+      "publisherTitle": "Longest common substring",
+      "originalTitle": "Longest Common Substring | (DP - 27)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "411": {
+      "publisherId": 310,
+      "publisherTitle": "Longest palindromic subsequence",
+      "originalTitle": "Longest Palindromic Subsequence | (DP-28)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "412": {
+      "publisherId": 312,
+      "publisherTitle": "Minimum insertions to make string palindrome",
+      "originalTitle": "Minimum insertions to make string palindrome | DP-29",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "413": {
+      "publisherId": 311,
+      "publisherTitle": "Minimum insertions or deletions to convert string A to B",
+      "originalTitle": "Minimum Insertions/Deletions to Convert String | (DP- 30)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "414": {
+      "publisherId": 313,
+      "publisherTitle": "Shortest common supersequence",
+      "originalTitle": "Shortest Common Supersequence | (DP - 31)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "415": {
+      "publisherId": 306,
+      "publisherTitle": "Distinct subsequences",
+      "originalTitle": "Distinct Subsequences| (DP-32)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "416": {
+      "publisherId": 307,
+      "publisherTitle": "Edit distance",
+      "originalTitle": "Edit Distance | (DP-33)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "417": {
+      "publisherId": 314,
+      "publisherTitle": "Wildcard matching",
+      "originalTitle": "Wildcard Matching | (DP-34)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "418": {
+      "publisherId": 301,
+      "publisherTitle": "Best time to buy and sell stock",
+      "originalTitle": "Best Time to Buy and Sell Stock |(DP-35)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "419": {
+      "publisherId": 302,
+      "publisherTitle": "Best time to buy and sell stock II",
+      "originalTitle": "Buy and Sell Stock - II|(DP-36)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "420": {
+      "publisherId": 303,
+      "publisherTitle": "Best time to buy and sell stock III",
+      "originalTitle": "Buy and Sell Stocks III|(DP-37)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "421": {
+      "publisherId": 304,
+      "publisherTitle": "Best time to buy and sell stock IV",
+      "originalTitle": "Buy and Stock Sell IV |(DP-38)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "422": {
+      "publisherId": 56,
+      "publisherTitle": "Best Time to Buy and Sell Stock with Cooldown",
+      "originalTitle": "Buy and Sell Stocks With Cooldown|(DP-39)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "423": {
+      "publisherId": 305,
+      "publisherTitle": "Best time to buy and sell stock with transaction fees",
+      "originalTitle": "Buy and Sell Stocks With Transaction Fee|(DP-40)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "424": {
+      "publisherId": 636,
+      "publisherTitle": "Longest Increasing Subsequence",
+      "originalTitle": "Longest Increasing Subsequence |(DP-41)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "425": {
+      "publisherId": 851,
+      "publisherTitle": "Print Longest Increasing Subsequence",
+      "originalTitle": "Printing Longest Increasing Subsequence|(DP-42)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "426": {
+      "publisherId": 636,
+      "publisherTitle": "Longest Increasing Subsequence",
+      "originalTitle": "Longest Increasing Subsequence |(DP-43)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "427": {
+      "publisherId": 603,
+      "publisherTitle": "Largest Divisible Subset",
+      "originalTitle": "Largest Divisible Subset|(DP-44)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "428": {
+      "publisherId": 640,
+      "publisherTitle": "Longest String Chain",
+      "originalTitle": "Longest String Chain|(DP-45)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "429": {
+      "publisherId": 633,
+      "publisherTitle": "Longest Bitonic Subsequence",
+      "originalTitle": "Longest Bitonic Subsequence |(DP-46)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "430": {
+      "publisherId": 780,
+      "publisherTitle": "Number of Longest Increasing Subsequences",
+      "originalTitle": "Number of Longest Increasing Subsequences|(DP-47)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "431": {
+      "publisherId": 327,
+      "publisherTitle": "Matrix chain multiplication",
+      "originalTitle": "Matrix Chain Multiplication|(DP-48)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "432": {
+      "publisherId": 327,
+      "publisherTitle": "Matrix chain multiplication",
+      "originalTitle": "Matrix Chain Multiplication | Bottom-Up|(DP-49)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "433": {
+      "publisherId": 328,
+      "publisherTitle": "Minimum cost to cut the stick",
+      "originalTitle": "Minimum Cost to Cut the Stick|(DP-50)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "434": {
+      "publisherId": 326,
+      "publisherTitle": "Burst balloons",
+      "originalTitle": "Burst Balloons|(DP-51)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "436": {
+      "publisherId": 329,
+      "publisherTitle": "Palindrome partitioning II ",
+      "originalTitle": "Palindrome Partitioning - II|(DP-53)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "437": {
+      "publisherId": 810,
+      "publisherTitle": "Partition Array for Maximum Sum",
+      "originalTitle": "Partition Array for Maximum Sum|(DP-54)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "438": {
+      "publisherId": 962,
+      "publisherTitle": "Maximum Rectangles",
+      "originalTitle": "Maximum Rectangle Area with all 1's|(DP-55)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "439": {
+      "publisherId": 19360,
+      "publisherTitle": "Count Square Submatrices with All Ones",
+      "originalTitle": "Count Square Submatrices with All Ones|(DP-56)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "440": {
+      "publisherId": 1028,
+      "publisherTitle": "Trie Implementation and Operations",
+      "originalTitle": "Implement TRIE | INSERT | SEARCH | STARTSWITH",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "441": {
+      "publisherId": 1027,
+      "publisherTitle": "Trie Implementation and Advanced Operations",
+      "originalTitle": "Implement Trie - 2 (Prefix Tree)",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "442": {
+      "publisherId": 1023,
+      "publisherTitle": "Longest Word with All Prefixes",
+      "originalTitle": "Longest String with All Prefixes",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "446": {
+      "publisherId": 1025,
+      "publisherTitle": "Maximum Xor with an element from an array",
+      "originalTitle": "Maximum XOR With an Element From Array",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "447": {
+      "publisherId": 983,
+      "publisherTitle": "Minimum number of bracket reversals to make an expression balanced",
+      "originalTitle": "min number of bracket reversals to make an expression balanced",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "450": {
+      "publisherId": 979,
+      "publisherTitle": "Rabin Karp Algorithm",
+      "originalTitle": "Rabin Karp",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "452": {
+      "publisherId": 977,
+      "publisherTitle": "KMP Algorithm or LPS array",
+      "originalTitle": "KMP algo / LPS(pi) array",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "455": {
+      "publisherId": 231,
+      "publisherTitle": "Count Palindromic Subsequences",
+      "originalTitle": "Count palindromic subsequence in given string",
+      "scope": "Reviewed equivalent task/topic; uploaded implementation variants remain explicit. Video method coverage has not been watched."
+    },
+    "366": {
+      "publisherId": 523,
+      "publisherTitle": "Minimum multiplications to reach end",
+      "originalTitle": "Minimum steps to reach end",
+      "scope": "Original Graphs shortest-path step context; publisher problem and actual URL used."
+    }
+  }
+}

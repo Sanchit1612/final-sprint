@@ -1,7 +1,9 @@
+import {parsePractice,type PracticeData} from "./content/practice";
 import type { SupabaseClient } from "@supabase/supabase-js";
 
 export interface Res { id: string; title: string; url: string | null; platform: string | null }
 export interface TreeNode {
+  practice?: PracticeData;
   id: string; type: string; title: string; description: string | null; url: string | null; platform: string | null;
   difficulty: "easy" | "medium" | "hard" | null; tags: string[]; position: number;
   children: TreeNode[]; resources: Res[];
@@ -12,7 +14,7 @@ export interface Filters { difficulty?: string; status?: string; q?: string }
 
 interface Row {
   id: string; parent_id: string | null; item_type: string; title: string; description: string | null; url: string | null;
-  platform: string | null; difficulty: "easy" | "medium" | "hard" | null; tags: string[]; position: number; meta: { for?: string } | null; slug: string;
+  platform: string | null; difficulty: "easy" | "medium" | "hard" | null; tags: string[]; position: number; meta: { for?: string;practice?:unknown } | null; slug: string;
 }
 
 /** PostgREST returns at most 1000 rows per request, so page through. */
@@ -64,7 +66,7 @@ export async function loadTree(supabase: SupabaseClient, userId: string, rootSlu
     if (r.item_type === "resource") continue;
     const p = pMap.get(r.id);
     nodes.set(r.id, {
-      id: r.id, type: r.item_type, title: r.title, description: r.description, url: r.url, platform: r.platform, difficulty: r.difficulty,
+      practice:parsePractice(r.meta?.practice), id: r.id, type: r.item_type, title: r.title, description: r.description, url: r.url, platform: r.platform, difficulty: r.difficulty,
       tags: r.tags ?? [], position: r.position, children: [], resources: [], checkable: false,
       done: p?.status === "done", revise: !!p?.needs_revision, bookmarked: bSet.has(r.id), note: nMap.get(r.id) ?? "", total: 0, completed: 0,
     });

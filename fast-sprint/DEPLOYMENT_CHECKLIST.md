@@ -1,3 +1,5 @@
+Current update2026-11-02: billing proposal has been approved/applied to staging only and SQL isolation/concurrency passed. Staging test-Pro gate enabled; application payments remain configuration-gated. Add server-only RAZORPAY_TEST_PRO_ENABLED=true only for approved staging test upgrades. Production DB must use mode live and allow_test_pro=false; live activation still requires explicit approval. Internal company sheets require private content/companies inputs; excluded from public Git. CS remains review-only at the user’s request. The older checklist below remains a release checklist, not evidence that production is configured.
+
 # Release preparation — configuration and acceptance gates
 
 No deployment, remote migration, additional content publication or live-payment activation was performed in this checkpoint. Existing staging content remains intact. A completed local test is not hosted acceptance.

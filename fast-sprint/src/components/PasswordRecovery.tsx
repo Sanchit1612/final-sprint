@@ -2,6 +2,7 @@
 import { useState, type FormEvent } from "react";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
+import {Logo} from "./Logo";
 import { Notice } from "./ui";
 
 export function PasswordRecovery({ reset = false }: { reset?: boolean }) {
@@ -29,7 +30,7 @@ export function PasswordRecovery({ reset = false }: { reset?: boolean }) {
     } catch (e) { setError(e instanceof Error ? e.message : "Could not complete the request. Try again."); }
     finally { setPending(false); }
   }
-  return <main className="mx-auto max-w-md px-4 py-20"><div className="card">
+  return <main className="grid min-h-screen place-items-center px-4 py-10"><div className="flex w-full max-w-md flex-col items-center gap-8"><Logo/><div className="card w-full">
     <h1 className="text-2xl">{reset ? "Set a new password" : "Reset your password"}</h1>
     <form onSubmit={submit} className="mt-6 space-y-4">
       <label className="label" htmlFor="recovery">{reset ? "New password" : "Email"}</label>
@@ -37,5 +38,5 @@ export function PasswordRecovery({ reset = false }: { reset?: boolean }) {
       {error && <Notice>{error}</Notice>}{message && <Notice kind="success">{message}</Notice>}
       <button className="btn-primary w-full" disabled={pending}>{pending ? "Please wait…" : reset ? "Save password" : "Send recovery link"}</button>
     </form><Link href="/login" className="mt-4 inline-block text-sm text-accent">Back to login</Link>
-  </div></main>;
+  </div></div></main>;
 }

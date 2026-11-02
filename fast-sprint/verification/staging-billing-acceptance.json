@@ -1,0 +1,13 @@
+{
+  "testedAt": "2026-11-02T13:07:46.254Z",
+  "success": true,
+  "scope": "approved staging SQL roles/claims; not issued-JWT or provider browser acceptance",
+  "checks": [
+    "8 independent sessions: duplicate settlement produced one payment term",
+    "8 independent sessions: capture/refund race ended refunded with no Pro",
+    "Separate-session distinct orders extended both terms without a lost update",
+    "Both accounts: own history only; internal reads, forged orders, self-settlement and self-grants denied"
+  ],
+  "independentSessions": 8,
+  "productionChanges": 0
+}

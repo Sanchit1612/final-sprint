@@ -15,6 +15,7 @@ it('billing proposal settles once, isolates history, protects grants, and keeps 
   const test=await order('test','order_test');
   await db.query("select settle_payment($1,'pay_test','test_event','test',8900,'INR')",[test]);
   expect((await db.query<{plan:string}>('select plan from user_entitlements where user_id=$1',[a])).rows[0].plan).toBe('free');
+  await db.exec("update billing_environment set mode='live'");
   const live=await order('live','order_live');
   await expect(db.query("select settle_payment($1,'pay_live','bad_amount','live',1,'INR')",[live])).rejects.toThrow('invalid order');
   await expect(db.query("select settle_payment($1,'pay_live','bad_mode','test',8900,'INR')",[live])).rejects.toThrow('invalid order');
@@ -23,10 +24,11 @@ it('billing proposal settles once, isolates history, protects grants, and keeps 
   await db.query("select settle_payment($1,'pay_live','duplicate_delivery','live',8900,'INR')",[live]);
   expect((await db.query<{expires_at:Date}>('select expires_at from user_entitlements where user_id=$1',[a])).rows[0].expires_at).toEqual(first);
   await expect(db.query("select settle_payment($1,'pay_other','other','live',8900,'INR')",[live])).rejects.toThrow('different payment');
-  expect((await db.query('select * from payment_events')).rows).toHaveLength(2);
-  await db.query("update user_entitlements set expires_at=null where user_id=$1",[a]);
-  await db.query("select grant_pro($1,1)",[a]);
-  expect((await db.query<{expires_at:Date|null}>('select expires_at from user_entitlements where user_id=$1',[a])).rows[0].expires_at).toBeNull();
+  expect((await db.query('select * from payment_events')).rows).toHaveLength(3);
+  // A pre-existing lifetime manual grant survives the ledger snapshot/recompute.
+  await db.query("update user_entitlements set plan='pro',source='manual',expires_at=null where user_id=$1",[b]);
+  await db.query("select grant_pro($1,1)",[b]);
+  expect((await db.query<{expires_at:Date|null}>('select expires_at from user_entitlements where user_id=$1',[b])).rows[0].expires_at).toBeNull();
   await db.query("select set_config('request.jwt.claim.sub',$1,false)",[b]);await db.exec('set role authenticated');
   expect((await db.query('select * from payment_orders')).rows).toHaveLength(0);
   await expect(db.query("select settle_payment($1,'pay_live','forged','live',8900,'INR')",[live])).rejects.toThrow();

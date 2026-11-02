@@ -1,0 +1,2732 @@
+[
+  {
+    "sectionSlug": "step-1",
+    "slug": "entry-001",
+    "title": "User Input / Output",
+    "number": 1
+  },
+  {
+    "sectionSlug": "step-1",
+    "slug": "entry-002",
+    "title": "Data Types",
+    "number": 2
+  },
+  {
+    "sectionSlug": "step-1",
+    "slug": "entry-003",
+    "title": "If Else statements",
+    "number": 3
+  },
+  {
+    "sectionSlug": "step-1",
+    "slug": "entry-004",
+    "title": "Switch Statement",
+    "number": 4
+  },
+  {
+    "sectionSlug": "step-1",
+    "slug": "entry-005",
+    "title": "What are arrays, strings?",
+    "number": 5
+  },
+  {
+    "sectionSlug": "step-1",
+    "slug": "entry-006",
+    "title": "For loops",
+    "number": 6
+  },
+  {
+    "sectionSlug": "step-1",
+    "slug": "entry-007",
+    "title": "While loops",
+    "number": 7
+  },
+  {
+    "sectionSlug": "step-1",
+    "slug": "entry-008",
+    "title": "Functions (Pass by Reference and Value)",
+    "number": 8
+  },
+  {
+    "sectionSlug": "step-1",
+    "slug": "entry-009",
+    "title": "Time Complexity",
+    "number": 9
+  },
+  {
+    "sectionSlug": "step-1",
+    "slug": "entry-010",
+    "title": "Patterns",
+    "number": 10
+  },
+  {
+    "sectionSlug": "step-1",
+    "slug": "entry-011",
+    "title": "C++ STL",
+    "number": 11
+  },
+  {
+    "sectionSlug": "step-1",
+    "slug": "entry-012",
+    "title": "Java Collections",
+    "number": 12
+  },
+  {
+    "sectionSlug": "step-1",
+    "slug": "entry-013",
+    "title": "Count Digits",
+    "number": 13
+  },
+  {
+    "sectionSlug": "step-1",
+    "slug": "entry-014",
+    "title": "Reverse a Number",
+    "number": 14
+  },
+  {
+    "sectionSlug": "step-1",
+    "slug": "entry-015",
+    "title": "Check Palindrome",
+    "number": 15
+  },
+  {
+    "sectionSlug": "step-1",
+    "slug": "entry-016",
+    "title": "GCD Or HCF",
+    "number": 16
+  },
+  {
+    "sectionSlug": "step-1",
+    "slug": "entry-017",
+    "title": "Armstrong Numbers",
+    "number": 17
+  },
+  {
+    "sectionSlug": "step-1",
+    "slug": "entry-018",
+    "title": "Print all Divisors",
+    "number": 18
+  },
+  {
+    "sectionSlug": "step-1",
+    "slug": "entry-019",
+    "title": "Check for Prime",
+    "number": 19
+  },
+  {
+    "sectionSlug": "step-1",
+    "slug": "entry-020",
+    "title": "Understand recursion by print something N times",
+    "number": 20
+  },
+  {
+    "sectionSlug": "step-1",
+    "slug": "entry-021",
+    "title": "Print name N times using recursion",
+    "number": 21
+  },
+  {
+    "sectionSlug": "step-1",
+    "slug": "entry-022",
+    "title": "Print 1 to N using recursion",
+    "number": 22
+  },
+  {
+    "sectionSlug": "step-1",
+    "slug": "entry-023",
+    "title": "Print N to 1 using recursion",
+    "number": 23
+  },
+  {
+    "sectionSlug": "step-1",
+    "slug": "entry-024",
+    "title": "Sum of first N numbers",
+    "number": 24
+  },
+  {
+    "sectionSlug": "step-1",
+    "slug": "entry-025",
+    "title": "Factorial of N numbers",
+    "number": 25
+  },
+  {
+    "sectionSlug": "step-1",
+    "slug": "entry-026",
+    "title": "Reverse an array",
+    "number": 26
+  },
+  {
+    "sectionSlug": "step-1",
+    "slug": "entry-027",
+    "title": "Check if a string is palindrome or not",
+    "number": 27
+  },
+  {
+    "sectionSlug": "step-1",
+    "slug": "entry-028",
+    "title": "Fibonacci Number",
+    "number": 28
+  },
+  {
+    "sectionSlug": "step-1",
+    "slug": "entry-029",
+    "title": "Hashing Theory",
+    "number": 29
+  },
+  {
+    "sectionSlug": "step-1",
+    "slug": "entry-030",
+    "title": "Counting frequencies of array elements",
+    "number": 30
+  },
+  {
+    "sectionSlug": "step-1",
+    "slug": "entry-031",
+    "title": "Find the highest/lowest frequency element",
+    "number": 31
+  },
+  {
+    "sectionSlug": "step-2",
+    "slug": "entry-032",
+    "title": "Selection Sort",
+    "number": 32
+  },
+  {
+    "sectionSlug": "step-2",
+    "slug": "entry-033",
+    "title": "Bubble Sort",
+    "number": 33
+  },
+  {
+    "sectionSlug": "step-2",
+    "slug": "entry-034",
+    "title": "Insertion Sort",
+    "number": 34
+  },
+  {
+    "sectionSlug": "step-2",
+    "slug": "entry-035",
+    "title": "Merge Sort",
+    "number": 35
+  },
+  {
+    "sectionSlug": "step-2",
+    "slug": "entry-036",
+    "title": "Recursive Bubble Sort",
+    "number": 36
+  },
+  {
+    "sectionSlug": "step-2",
+    "slug": "entry-037",
+    "title": "Recursive Insertion Sort",
+    "number": 37
+  },
+  {
+    "sectionSlug": "step-2",
+    "slug": "entry-038",
+    "title": "Quick Sort",
+    "number": 38
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-039",
+    "title": "Largest Element in an Array",
+    "number": 39
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-040",
+    "title": "Second Largest Element in an Array without sorting",
+    "number": 40
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-041",
+    "title": "Check if the array is sorted",
+    "number": 41
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-042",
+    "title": "Remove duplicates from Sorted array",
+    "number": 42
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-043",
+    "title": "Left Rotate an array by one place",
+    "number": 43
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-044",
+    "title": "Left rotate an array by D places",
+    "number": 44
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-045",
+    "title": "Move Zeros to end",
+    "number": 45
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-046",
+    "title": "Linear Search",
+    "number": 46
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-047",
+    "title": "Find the Union",
+    "number": 47
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-048",
+    "title": "Find missing number in an array",
+    "number": 48
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-049",
+    "title": "Maximum Consecutive Ones",
+    "number": 49
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-050",
+    "title": "Find the number that appears once, and other numbers twice.",
+    "number": 50
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-051",
+    "title": "Longest subarray with given sum K(positives)",
+    "number": 51
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-052",
+    "title": "Longest subarray with sum K (Positives + Negatives)",
+    "number": 52
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-053",
+    "title": "2Sum Problem",
+    "number": 53
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-054",
+    "title": "Sort an array of 0's 1's and 2's",
+    "number": 54
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-055",
+    "title": "Majority Element (>n/2 times)",
+    "number": 55
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-056",
+    "title": "Kadane's Algorithm, maximum subarray sum",
+    "number": 56
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-057",
+    "title": "subarray with maximum subarray sum (extended version)",
+    "number": 57
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-058",
+    "title": "Stock Buy and Sell",
+    "number": 58
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-059",
+    "title": "Rearrange the array in alternating positive and negative items",
+    "number": 59
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-060",
+    "title": "Next Permutation",
+    "number": 60
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-061",
+    "title": "Leaders in an Array problem",
+    "number": 61
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-062",
+    "title": "Longest Consecutive Sequence in an Array",
+    "number": 62
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-063",
+    "title": "Set Matrix Zeros",
+    "number": 63
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-064",
+    "title": "Rotate Matrix by 90 degrees",
+    "number": 64
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-065",
+    "title": "Print the matrix in spiral manner",
+    "number": 65
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-066",
+    "title": "Count subarrays with given sum",
+    "number": 66
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-067",
+    "title": "Pascal's Triangle",
+    "number": 67
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-068",
+    "title": "Majority Element (n/3 times)",
+    "number": 68
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-069",
+    "title": "3-Sum Problem",
+    "number": 69
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-070",
+    "title": "4-Sum Problem",
+    "number": 70
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-071",
+    "title": "Largest Subarray with 0 Sum",
+    "number": 71
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-072",
+    "title": "Count number of subarrays with given xor K",
+    "number": 72
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-073",
+    "title": "Merge Overlapping Subintervals",
+    "number": 73
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-074",
+    "title": "Merge two sorted arrays without extra space",
+    "number": 74
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-075",
+    "title": "Find the repeating and missing number",
+    "number": 75
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-076",
+    "title": "Count Inversions",
+    "number": 76
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-077",
+    "title": "Reverse Pairs",
+    "number": 77
+  },
+  {
+    "sectionSlug": "step-3",
+    "slug": "entry-078",
+    "title": "Maximum Product Subarray",
+    "number": 78
+  },
+  {
+    "sectionSlug": "step-4",
+    "slug": "entry-079",
+    "title": "Binary Search to find X in sorted array",
+    "number": 79
+  },
+  {
+    "sectionSlug": "step-4",
+    "slug": "entry-080",
+    "title": "Implement Lower Bound",
+    "number": 80
+  },
+  {
+    "sectionSlug": "step-4",
+    "slug": "entry-081",
+    "title": "Implement Upper Bound",
+    "number": 81
+  },
+  {
+    "sectionSlug": "step-4",
+    "slug": "entry-082",
+    "title": "Search Insert Position",
+    "number": 82
+  },
+  {
+    "sectionSlug": "step-4",
+    "slug": "entry-083",
+    "title": "Floor/Ceil in Sorted Array",
+    "number": 83
+  },
+  {
+    "sectionSlug": "step-4",
+    "slug": "entry-084",
+    "title": "Find first or last occurrence of a given number in a sorted arr",
+    "number": 84
+  },
+  {
+    "sectionSlug": "step-4",
+    "slug": "entry-085",
+    "title": "Count occurrences of a number in a sorted array with duplicates",
+    "number": 85
+  },
+  {
+    "sectionSlug": "step-4",
+    "slug": "entry-086",
+    "title": "Search in Rotated Sorted Array I",
+    "number": 86
+  },
+  {
+    "sectionSlug": "step-4",
+    "slug": "entry-087",
+    "title": "Search in Rotated Sorted Array II",
+    "number": 87
+  },
+  {
+    "sectionSlug": "step-4",
+    "slug": "entry-088",
+    "title": "Find minimum in Rotated Sorted Array",
+    "number": 88
+  },
+  {
+    "sectionSlug": "step-4",
+    "slug": "entry-089",
+    "title": "Find out how many times has an array been rotated",
+    "number": 89
+  },
+  {
+    "sectionSlug": "step-4",
+    "slug": "entry-090",
+    "title": "Single element in a Sorted Array",
+    "number": 90
+  },
+  {
+    "sectionSlug": "step-4",
+    "slug": "entry-091",
+    "title": "Find peak element",
+    "number": 91
+  },
+  {
+    "sectionSlug": "step-4",
+    "slug": "entry-092",
+    "title": "Find square root of a number in log n",
+    "number": 92
+  },
+  {
+    "sectionSlug": "step-4",
+    "slug": "entry-093",
+    "title": "Find the Nth root of a number using binary search",
+    "number": 93
+  },
+  {
+    "sectionSlug": "step-4",
+    "slug": "entry-094",
+    "title": "Koko Eating Bananas",
+    "number": 94
+  },
+  {
+    "sectionSlug": "step-4",
+    "slug": "entry-095",
+    "title": "Minimum days to make M bouquets",
+    "number": 95
+  },
+  {
+    "sectionSlug": "step-4",
+    "slug": "entry-096",
+    "title": "Find the smallest Divisor",
+    "number": 96
+  },
+  {
+    "sectionSlug": "step-4",
+    "slug": "entry-097",
+    "title": "Capacity to Ship Packages within D Days",
+    "number": 97
+  },
+  {
+    "sectionSlug": "step-4",
+    "slug": "entry-098",
+    "title": "Kth Missing Positive Number",
+    "number": 98
+  },
+  {
+    "sectionSlug": "step-4",
+    "slug": "entry-099",
+    "title": "Aggressive Cows",
+    "number": 99
+  },
+  {
+    "sectionSlug": "step-4",
+    "slug": "entry-100",
+    "title": "Book Allocation Problem",
+    "number": 100
+  },
+  {
+    "sectionSlug": "step-4",
+    "slug": "entry-101",
+    "title": "Split array - Largest Sum",
+    "number": 101
+  },
+  {
+    "sectionSlug": "step-4",
+    "slug": "entry-102",
+    "title": "Painter's partition",
+    "number": 102
+  },
+  {
+    "sectionSlug": "step-4",
+    "slug": "entry-103",
+    "title": "Minimize Max Distance to Gas Station",
+    "number": 103
+  },
+  {
+    "sectionSlug": "step-4",
+    "slug": "entry-104",
+    "title": "Median of 2 sorted arrays",
+    "number": 104
+  },
+  {
+    "sectionSlug": "step-4",
+    "slug": "entry-105",
+    "title": "Kth element of 2 sorted arrays",
+    "number": 105
+  },
+  {
+    "sectionSlug": "step-4",
+    "slug": "entry-106",
+    "title": "Find the row with maximum number of 1's",
+    "number": 106
+  },
+  {
+    "sectionSlug": "step-4",
+    "slug": "entry-107",
+    "title": "Search in a 2 D matrix",
+    "number": 107
+  },
+  {
+    "sectionSlug": "step-4",
+    "slug": "entry-108",
+    "title": "Search in a row and column wise sorted matrix",
+    "number": 108
+  },
+  {
+    "sectionSlug": "step-4",
+    "slug": "entry-109",
+    "title": "Find Peak Element (2D Matrix)",
+    "number": 109
+  },
+  {
+    "sectionSlug": "step-4",
+    "slug": "entry-110",
+    "title": "Matrix Median",
+    "number": 110
+  },
+  {
+    "sectionSlug": "step-5",
+    "slug": "entry-111",
+    "title": "Remove outermost Paranthesis",
+    "number": 111
+  },
+  {
+    "sectionSlug": "step-5",
+    "slug": "entry-112",
+    "title": "Reverse words in a given string / Palindrome Check",
+    "number": 112
+  },
+  {
+    "sectionSlug": "step-5",
+    "slug": "entry-113",
+    "title": "Largest odd number in a string",
+    "number": 113
+  },
+  {
+    "sectionSlug": "step-5",
+    "slug": "entry-114",
+    "title": "Longest Common Prefix",
+    "number": 114
+  },
+  {
+    "sectionSlug": "step-5",
+    "slug": "entry-115",
+    "title": "Isomorphic String",
+    "number": 115
+  },
+  {
+    "sectionSlug": "step-5",
+    "slug": "entry-116",
+    "title": "check whether one string is a rotation of another",
+    "number": 116
+  },
+  {
+    "sectionSlug": "step-5",
+    "slug": "entry-117",
+    "title": "Check if two strings are anagram of each other",
+    "number": 117
+  },
+  {
+    "sectionSlug": "step-5",
+    "slug": "entry-118",
+    "title": "Sort Characters by frequency",
+    "number": 118
+  },
+  {
+    "sectionSlug": "step-5",
+    "slug": "entry-119",
+    "title": "Maximum Nesting Depth of Paranthesis",
+    "number": 119
+  },
+  {
+    "sectionSlug": "step-5",
+    "slug": "entry-120",
+    "title": "Roman Number to Integer and vice versa",
+    "number": 120
+  },
+  {
+    "sectionSlug": "step-5",
+    "slug": "entry-121",
+    "title": "Implement Atoi",
+    "number": 121
+  },
+  {
+    "sectionSlug": "step-5",
+    "slug": "entry-122",
+    "title": "Count Number of Substrings",
+    "number": 122
+  },
+  {
+    "sectionSlug": "step-5",
+    "slug": "entry-123",
+    "title": "Longest Palindromic Substring[Do it without DP]",
+    "number": 123
+  },
+  {
+    "sectionSlug": "step-5",
+    "slug": "entry-124",
+    "title": "Sum of Beauty of all substring",
+    "number": 124
+  },
+  {
+    "sectionSlug": "step-5",
+    "slug": "entry-125",
+    "title": "Reverse Every Word in A String",
+    "number": 125
+  },
+  {
+    "sectionSlug": "step-6",
+    "slug": "entry-126",
+    "title": "Introduction to LinkedList, learn about struct, and node",
+    "number": 126
+  },
+  {
+    "sectionSlug": "step-6",
+    "slug": "entry-127",
+    "title": "Inserting a node in LinkedList",
+    "number": 127
+  },
+  {
+    "sectionSlug": "step-6",
+    "slug": "entry-128",
+    "title": "Deleting a node in LinkedList",
+    "number": 128
+  },
+  {
+    "sectionSlug": "step-6",
+    "slug": "entry-129",
+    "title": "Find the length of the linkedlist [learn traversal]",
+    "number": 129
+  },
+  {
+    "sectionSlug": "step-6",
+    "slug": "entry-130",
+    "title": "Search an element in the LL",
+    "number": 130
+  },
+  {
+    "sectionSlug": "step-6",
+    "slug": "entry-131",
+    "title": "Introduction to DLL, learn about struct, and node",
+    "number": 131
+  },
+  {
+    "sectionSlug": "step-6",
+    "slug": "entry-132",
+    "title": "Insert a node in DLL",
+    "number": 132
+  },
+  {
+    "sectionSlug": "step-6",
+    "slug": "entry-133",
+    "title": "Delete a node in DLL",
+    "number": 133
+  },
+  {
+    "sectionSlug": "step-6",
+    "slug": "entry-134",
+    "title": "Reverse a DLL",
+    "number": 134
+  },
+  {
+    "sectionSlug": "step-6",
+    "slug": "entry-135",
+    "title": "Middle of a LinkedList [TortoiseHare Method]",
+    "number": 135
+  },
+  {
+    "sectionSlug": "step-6",
+    "slug": "entry-136",
+    "title": "Reverse a LinkedList [Iterative]",
+    "number": 136
+  },
+  {
+    "sectionSlug": "step-6",
+    "slug": "entry-137",
+    "title": "Reverse a LL [Recursive]",
+    "number": 137
+  },
+  {
+    "sectionSlug": "step-6",
+    "slug": "entry-138",
+    "title": "Detect a loop in LL",
+    "number": 138
+  },
+  {
+    "sectionSlug": "step-6",
+    "slug": "entry-139",
+    "title": "Find the starting point in LL",
+    "number": 139
+  },
+  {
+    "sectionSlug": "step-6",
+    "slug": "entry-140",
+    "title": "Length of Loop in LL",
+    "number": 140
+  },
+  {
+    "sectionSlug": "step-6",
+    "slug": "entry-141",
+    "title": "Check if LL is palindrome or not",
+    "number": 141
+  },
+  {
+    "sectionSlug": "step-6",
+    "slug": "entry-142",
+    "title": "Segrregate odd and even nodes in LL",
+    "number": 142
+  },
+  {
+    "sectionSlug": "step-6",
+    "slug": "entry-143",
+    "title": "Remove Nth node from the back of the LL",
+    "number": 143
+  },
+  {
+    "sectionSlug": "step-6",
+    "slug": "entry-144",
+    "title": "Delete the middle node of LL",
+    "number": 144
+  },
+  {
+    "sectionSlug": "step-6",
+    "slug": "entry-145",
+    "title": "Sort LL",
+    "number": 145
+  },
+  {
+    "sectionSlug": "step-6",
+    "slug": "entry-146",
+    "title": "Sort a LL of 0's 1's and 2's by changing links",
+    "number": 146
+  },
+  {
+    "sectionSlug": "step-6",
+    "slug": "entry-147",
+    "title": "Find the intersection point of Y LL",
+    "number": 147
+  },
+  {
+    "sectionSlug": "step-6",
+    "slug": "entry-148",
+    "title": "Add 1 to a number represented by LL",
+    "number": 148
+  },
+  {
+    "sectionSlug": "step-6",
+    "slug": "entry-149",
+    "title": "Add 2 numbers in LL",
+    "number": 149
+  },
+  {
+    "sectionSlug": "step-6",
+    "slug": "entry-150",
+    "title": "Delete all occurrences of a key in DLL",
+    "number": 150
+  },
+  {
+    "sectionSlug": "step-6",
+    "slug": "entry-151",
+    "title": "Find pairs with given sum in DLL",
+    "number": 151
+  },
+  {
+    "sectionSlug": "step-6",
+    "slug": "entry-152",
+    "title": "Remove duplicates from sorted DLL",
+    "number": 152
+  },
+  {
+    "sectionSlug": "step-6",
+    "slug": "entry-153",
+    "title": "Reverse LL in group of given size K",
+    "number": 153
+  },
+  {
+    "sectionSlug": "step-6",
+    "slug": "entry-154",
+    "title": "Rotate a LL",
+    "number": 154
+  },
+  {
+    "sectionSlug": "step-6",
+    "slug": "entry-155",
+    "title": "Flattening of LL",
+    "number": 155
+  },
+  {
+    "sectionSlug": "step-6",
+    "slug": "entry-156",
+    "title": "Clone a Linked List with random and next pointer",
+    "number": 156
+  },
+  {
+    "sectionSlug": "step-7",
+    "slug": "entry-157",
+    "title": "Recursive Implementation of atoi()",
+    "number": 157
+  },
+  {
+    "sectionSlug": "step-7",
+    "slug": "entry-158",
+    "title": "Pow(x, n)",
+    "number": 158
+  },
+  {
+    "sectionSlug": "step-7",
+    "slug": "entry-159",
+    "title": "Count Good numbers",
+    "number": 159
+  },
+  {
+    "sectionSlug": "step-7",
+    "slug": "entry-160",
+    "title": "Sort a stack using recursion",
+    "number": 160
+  },
+  {
+    "sectionSlug": "step-7",
+    "slug": "entry-161",
+    "title": "Reverse a stack using recursion",
+    "number": 161
+  },
+  {
+    "sectionSlug": "step-7",
+    "slug": "entry-162",
+    "title": "Generate all binary strings",
+    "number": 162
+  },
+  {
+    "sectionSlug": "step-7",
+    "slug": "entry-163",
+    "title": "Generate Paranthesis",
+    "number": 163
+  },
+  {
+    "sectionSlug": "step-7",
+    "slug": "entry-164",
+    "title": "Print all subsequences/Power Set",
+    "number": 164
+  },
+  {
+    "sectionSlug": "step-7",
+    "slug": "entry-165",
+    "title": "Learn All Patterns of Subsequences (Theory)",
+    "number": 165
+  },
+  {
+    "sectionSlug": "step-7",
+    "slug": "entry-166",
+    "title": "Count all subsequences with sum K",
+    "number": 166
+  },
+  {
+    "sectionSlug": "step-7",
+    "slug": "entry-167",
+    "title": "Check if there exists a subsequence with sum K",
+    "number": 167
+  },
+  {
+    "sectionSlug": "step-7",
+    "slug": "entry-168",
+    "title": "Combination Sum",
+    "number": 168
+  },
+  {
+    "sectionSlug": "step-7",
+    "slug": "entry-169",
+    "title": "Combination Sum-II",
+    "number": 169
+  },
+  {
+    "sectionSlug": "step-7",
+    "slug": "entry-170",
+    "title": "Subset Sum-I",
+    "number": 170
+  },
+  {
+    "sectionSlug": "step-7",
+    "slug": "entry-171",
+    "title": "Subset Sum-II",
+    "number": 171
+  },
+  {
+    "sectionSlug": "step-7",
+    "slug": "entry-172",
+    "title": "Combination Sum - III",
+    "number": 172
+  },
+  {
+    "sectionSlug": "step-7",
+    "slug": "entry-173",
+    "title": "Letter Combinations of a Phone number",
+    "number": 173
+  },
+  {
+    "sectionSlug": "step-7",
+    "slug": "entry-174",
+    "title": "Palindrome Partitioning",
+    "number": 174
+  },
+  {
+    "sectionSlug": "step-7",
+    "slug": "entry-175",
+    "title": "Word Search",
+    "number": 175
+  },
+  {
+    "sectionSlug": "step-7",
+    "slug": "entry-176",
+    "title": "N Queen",
+    "number": 176
+  },
+  {
+    "sectionSlug": "step-7",
+    "slug": "entry-177",
+    "title": "Rat in a Maze",
+    "number": 177
+  },
+  {
+    "sectionSlug": "step-7",
+    "slug": "entry-178",
+    "title": "Word Break",
+    "number": 178
+  },
+  {
+    "sectionSlug": "step-7",
+    "slug": "entry-179",
+    "title": "M Coloring Problem",
+    "number": 179
+  },
+  {
+    "sectionSlug": "step-7",
+    "slug": "entry-180",
+    "title": "Sudoko Solver",
+    "number": 180
+  },
+  {
+    "sectionSlug": "step-7",
+    "slug": "entry-181",
+    "title": "Expression Add Operators",
+    "number": 181
+  },
+  {
+    "sectionSlug": "step-8",
+    "slug": "entry-182",
+    "title": "Introduction to Bit Manipulation [Theory]",
+    "number": 182
+  },
+  {
+    "sectionSlug": "step-8",
+    "slug": "entry-183",
+    "title": "Check if the i-th bit is set or not",
+    "number": 183
+  },
+  {
+    "sectionSlug": "step-8",
+    "slug": "entry-184",
+    "title": "Check if a number is odd or not",
+    "number": 184
+  },
+  {
+    "sectionSlug": "step-8",
+    "slug": "entry-185",
+    "title": "Check if a number is power of 2 or not",
+    "number": 185
+  },
+  {
+    "sectionSlug": "step-8",
+    "slug": "entry-186",
+    "title": "Count the number of set bits",
+    "number": 186
+  },
+  {
+    "sectionSlug": "step-8",
+    "slug": "entry-187",
+    "title": "Set/Unset the rightmost unset bit",
+    "number": 187
+  },
+  {
+    "sectionSlug": "step-8",
+    "slug": "entry-188",
+    "title": "Swap two numbers",
+    "number": 188
+  },
+  {
+    "sectionSlug": "step-8",
+    "slug": "entry-189",
+    "title": "Divide two integers w/o using multiplication, division and mod",
+    "number": 189
+  },
+  {
+    "sectionSlug": "step-8",
+    "slug": "entry-190",
+    "title": "Count number of bits to be flipped to convert A to B",
+    "number": 190
+  },
+  {
+    "sectionSlug": "step-8",
+    "slug": "entry-191",
+    "title": "Find the number that appears odd number of times",
+    "number": 191
+  },
+  {
+    "sectionSlug": "step-8",
+    "slug": "entry-192",
+    "title": "Power Set",
+    "number": 192
+  },
+  {
+    "sectionSlug": "step-8",
+    "slug": "entry-193",
+    "title": "Find xor of numbers from L to R",
+    "number": 193
+  },
+  {
+    "sectionSlug": "step-8",
+    "slug": "entry-194",
+    "title": "Find the two numbers appearing odd number of times",
+    "number": 194
+  },
+  {
+    "sectionSlug": "step-8",
+    "slug": "entry-195",
+    "title": "Print Prime Factors of a Number",
+    "number": 195
+  },
+  {
+    "sectionSlug": "step-8",
+    "slug": "entry-196",
+    "title": "All Divisors of a Number",
+    "number": 196
+  },
+  {
+    "sectionSlug": "step-8",
+    "slug": "entry-197",
+    "title": "Sieve of Eratosthenes",
+    "number": 197
+  },
+  {
+    "sectionSlug": "step-8",
+    "slug": "entry-198",
+    "title": "Find Prime Factorisation of a Number using Sieve",
+    "number": 198
+  },
+  {
+    "sectionSlug": "step-8",
+    "slug": "entry-199",
+    "title": "Power(n, x)",
+    "number": 199
+  },
+  {
+    "sectionSlug": "step-9",
+    "slug": "entry-200",
+    "title": "Implement Stack using Arrays",
+    "number": 200
+  },
+  {
+    "sectionSlug": "step-9",
+    "slug": "entry-201",
+    "title": "Implement Queue using Arrays",
+    "number": 201
+  },
+  {
+    "sectionSlug": "step-9",
+    "slug": "entry-202",
+    "title": "Implement Stack using Queue",
+    "number": 202
+  },
+  {
+    "sectionSlug": "step-9",
+    "slug": "entry-203",
+    "title": "Implement Queue using Stack",
+    "number": 203
+  },
+  {
+    "sectionSlug": "step-9",
+    "slug": "entry-204",
+    "title": "Implement stack using Linkedlist",
+    "number": 204
+  },
+  {
+    "sectionSlug": "step-9",
+    "slug": "entry-205",
+    "title": "Implement queue using Linkedlist",
+    "number": 205
+  },
+  {
+    "sectionSlug": "step-9",
+    "slug": "entry-206",
+    "title": "Check for balanced paranthesis",
+    "number": 206
+  },
+  {
+    "sectionSlug": "step-9",
+    "slug": "entry-207",
+    "title": "Implement Min Stack",
+    "number": 207
+  },
+  {
+    "sectionSlug": "step-9",
+    "slug": "entry-208",
+    "title": "Infix to Postfix Conversion using Stack",
+    "number": 208
+  },
+  {
+    "sectionSlug": "step-9",
+    "slug": "entry-209",
+    "title": "Prefix to Infix Conversion",
+    "number": 209
+  },
+  {
+    "sectionSlug": "step-9",
+    "slug": "entry-210",
+    "title": "Prefix to Postfix Conversion",
+    "number": 210
+  },
+  {
+    "sectionSlug": "step-9",
+    "slug": "entry-211",
+    "title": "Postfix to Prefix Conversion",
+    "number": 211
+  },
+  {
+    "sectionSlug": "step-9",
+    "slug": "entry-212",
+    "title": "Postfix to Infix",
+    "number": 212
+  },
+  {
+    "sectionSlug": "step-9",
+    "slug": "entry-213",
+    "title": "Convert Infix To Prefix Notation",
+    "number": 213
+  },
+  {
+    "sectionSlug": "step-9",
+    "slug": "entry-214",
+    "title": "Next Greater Element",
+    "number": 214
+  },
+  {
+    "sectionSlug": "step-9",
+    "slug": "entry-215",
+    "title": "Next Greater Element 2",
+    "number": 215
+  },
+  {
+    "sectionSlug": "step-9",
+    "slug": "entry-216",
+    "title": "Next Smaller Element",
+    "number": 216
+  },
+  {
+    "sectionSlug": "step-9",
+    "slug": "entry-217",
+    "title": "Number of NGEs to the right",
+    "number": 217
+  },
+  {
+    "sectionSlug": "step-9",
+    "slug": "entry-218",
+    "title": "Trapping Rainwater",
+    "number": 218
+  },
+  {
+    "sectionSlug": "step-9",
+    "slug": "entry-219",
+    "title": "Sum of subarray minimum",
+    "number": 219
+  },
+  {
+    "sectionSlug": "step-9",
+    "slug": "entry-220",
+    "title": "Asteroid Collision",
+    "number": 220
+  },
+  {
+    "sectionSlug": "step-9",
+    "slug": "entry-221",
+    "title": "Sum of subarray ranges",
+    "number": 221
+  },
+  {
+    "sectionSlug": "step-9",
+    "slug": "entry-222",
+    "title": "Remove k Digits",
+    "number": 222
+  },
+  {
+    "sectionSlug": "step-9",
+    "slug": "entry-223",
+    "title": "Largest rectangle in a histogram",
+    "number": 223
+  },
+  {
+    "sectionSlug": "step-9",
+    "slug": "entry-224",
+    "title": "Maximal Rectangles",
+    "number": 224
+  },
+  {
+    "sectionSlug": "step-9",
+    "slug": "entry-225",
+    "title": "Sliding Window maximum",
+    "number": 225
+  },
+  {
+    "sectionSlug": "step-9",
+    "slug": "entry-226",
+    "title": "Stock span problem",
+    "number": 226
+  },
+  {
+    "sectionSlug": "step-9",
+    "slug": "entry-227",
+    "title": "The Celebrity Problem",
+    "number": 227
+  },
+  {
+    "sectionSlug": "step-9",
+    "slug": "entry-228",
+    "title": "LRU cache (IMPORTANT)",
+    "number": 228
+  },
+  {
+    "sectionSlug": "step-9",
+    "slug": "entry-229",
+    "title": "LFU cache",
+    "number": 229
+  },
+  {
+    "sectionSlug": "step-10",
+    "slug": "entry-230",
+    "title": "Longest Substring Without Repeating Characters",
+    "number": 230
+  },
+  {
+    "sectionSlug": "step-10",
+    "slug": "entry-231",
+    "title": "Max Consecutive Ones III",
+    "number": 231
+  },
+  {
+    "sectionSlug": "step-10",
+    "slug": "entry-232",
+    "title": "Fruit Into Baskets",
+    "number": 232
+  },
+  {
+    "sectionSlug": "step-10",
+    "slug": "entry-233",
+    "title": "longest repeating character replacement",
+    "number": 233
+  },
+  {
+    "sectionSlug": "step-10",
+    "slug": "entry-234",
+    "title": "Binary subarray with sum",
+    "number": 234
+  },
+  {
+    "sectionSlug": "step-10",
+    "slug": "entry-235",
+    "title": "Count number of nice subarrays",
+    "number": 235
+  },
+  {
+    "sectionSlug": "step-10",
+    "slug": "entry-236",
+    "title": "Number of substring containing all three characters",
+    "number": 236
+  },
+  {
+    "sectionSlug": "step-10",
+    "slug": "entry-237",
+    "title": "Maximum point you can obtain from cards",
+    "number": 237
+  },
+  {
+    "sectionSlug": "step-10",
+    "slug": "entry-238",
+    "title": "Longest Substring with At Most K Distinct Characters",
+    "number": 238
+  },
+  {
+    "sectionSlug": "step-10",
+    "slug": "entry-239",
+    "title": "Subarray with k different integers",
+    "number": 239
+  },
+  {
+    "sectionSlug": "step-10",
+    "slug": "entry-240",
+    "title": "Minimum Window Substring",
+    "number": 240
+  },
+  {
+    "sectionSlug": "step-10",
+    "slug": "entry-241",
+    "title": "Minimum Window Subsequence",
+    "number": 241
+  },
+  {
+    "sectionSlug": "step-11",
+    "slug": "entry-242",
+    "title": "Introduction to Priority Queues using Binary Heaps",
+    "number": 242
+  },
+  {
+    "sectionSlug": "step-11",
+    "slug": "entry-243",
+    "title": "Min Heap and Max Heap Implementation",
+    "number": 243
+  },
+  {
+    "sectionSlug": "step-11",
+    "slug": "entry-244",
+    "title": "Check if an array represents a min-heap or not",
+    "number": 244
+  },
+  {
+    "sectionSlug": "step-11",
+    "slug": "entry-245",
+    "title": "Convert min Heap to max Heap",
+    "number": 245
+  },
+  {
+    "sectionSlug": "step-11",
+    "slug": "entry-246",
+    "title": "Kth largest element in an array [use priority queue]",
+    "number": 246
+  },
+  {
+    "sectionSlug": "step-11",
+    "slug": "entry-247",
+    "title": "Kth smallest element in an array [use priority queue]",
+    "number": 247
+  },
+  {
+    "sectionSlug": "step-11",
+    "slug": "entry-248",
+    "title": "Sort K sorted array",
+    "number": 248
+  },
+  {
+    "sectionSlug": "step-11",
+    "slug": "entry-249",
+    "title": "Merge M sorted Lists",
+    "number": 249
+  },
+  {
+    "sectionSlug": "step-11",
+    "slug": "entry-250",
+    "title": "Replace each array element by its corresponding rank",
+    "number": 250
+  },
+  {
+    "sectionSlug": "step-11",
+    "slug": "entry-251",
+    "title": "Task Scheduler",
+    "number": 251
+  },
+  {
+    "sectionSlug": "step-11",
+    "slug": "entry-252",
+    "title": "Hands of Straights",
+    "number": 252
+  },
+  {
+    "sectionSlug": "step-11",
+    "slug": "entry-253",
+    "title": "Design twitter",
+    "number": 253
+  },
+  {
+    "sectionSlug": "step-11",
+    "slug": "entry-254",
+    "title": "Connect `n` ropes with minimal cost",
+    "number": 254
+  },
+  {
+    "sectionSlug": "step-11",
+    "slug": "entry-255",
+    "title": "Kth largest element in a stream of running integers",
+    "number": 255
+  },
+  {
+    "sectionSlug": "step-11",
+    "slug": "entry-256",
+    "title": "Maximum Sum Combination",
+    "number": 256
+  },
+  {
+    "sectionSlug": "step-11",
+    "slug": "entry-257",
+    "title": "Find Median from Data Stream",
+    "number": 257
+  },
+  {
+    "sectionSlug": "step-11",
+    "slug": "entry-258",
+    "title": "K most frequent elements",
+    "number": 258
+  },
+  {
+    "sectionSlug": "step-12",
+    "slug": "entry-259",
+    "title": "Assign Cookies",
+    "number": 259
+  },
+  {
+    "sectionSlug": "step-12",
+    "slug": "entry-260",
+    "title": "Fractional Knapsack Problem",
+    "number": 260
+  },
+  {
+    "sectionSlug": "step-12",
+    "slug": "entry-261",
+    "title": "Greedy algorithm to find minimum number of coins",
+    "number": 261
+  },
+  {
+    "sectionSlug": "step-12",
+    "slug": "entry-262",
+    "title": "Lemonade Change",
+    "number": 262
+  },
+  {
+    "sectionSlug": "step-12",
+    "slug": "entry-263",
+    "title": "Valid Paranthesis Checker",
+    "number": 263
+  },
+  {
+    "sectionSlug": "step-12",
+    "slug": "entry-264",
+    "title": "N meetings in one room",
+    "number": 264
+  },
+  {
+    "sectionSlug": "step-12",
+    "slug": "entry-265",
+    "title": "Jump Game",
+    "number": 265
+  },
+  {
+    "sectionSlug": "step-12",
+    "slug": "entry-266",
+    "title": "Jump Game 2",
+    "number": 266
+  },
+  {
+    "sectionSlug": "step-12",
+    "slug": "entry-267",
+    "title": "Minimum number of platforms required for a railway",
+    "number": 267
+  },
+  {
+    "sectionSlug": "step-12",
+    "slug": "entry-268",
+    "title": "Job sequencing Problem",
+    "number": 268
+  },
+  {
+    "sectionSlug": "step-12",
+    "slug": "entry-269",
+    "title": "Candy",
+    "number": 269
+  },
+  {
+    "sectionSlug": "step-12",
+    "slug": "entry-270",
+    "title": "Program for Shortest Job First (or SJF) CPU Scheduling",
+    "number": 270
+  },
+  {
+    "sectionSlug": "step-12",
+    "slug": "entry-271",
+    "title": "Program for LRU Page Replacement Algorithm",
+    "number": 271
+  },
+  {
+    "sectionSlug": "step-12",
+    "slug": "entry-272",
+    "title": "Insert Interval",
+    "number": 272
+  },
+  {
+    "sectionSlug": "step-12",
+    "slug": "entry-273",
+    "title": "Merge Intervals",
+    "number": 273
+  },
+  {
+    "sectionSlug": "step-12",
+    "slug": "entry-274",
+    "title": "Non-overlapping Intervals",
+    "number": 274
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-275",
+    "title": "Introduction to Trees",
+    "number": 275
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-276",
+    "title": "Binary Tree Representation in C++",
+    "number": 276
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-277",
+    "title": "Binary Tree Representation in Java",
+    "number": 277
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-278",
+    "title": "Binary Tree Traversals in Binary Tree",
+    "number": 278
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-279",
+    "title": "Preorder Traversal of Binary Tree",
+    "number": 279
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-280",
+    "title": "Inorder Traversal of Binary Tree",
+    "number": 280
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-281",
+    "title": "Post-order Traversal of Binary Tree",
+    "number": 281
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-282",
+    "title": "Level order Traversal / Level order traversal in spiral form",
+    "number": 282
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-283",
+    "title": "Iterative Preorder Traversal of Binary Tree",
+    "number": 283
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-284",
+    "title": "Iterative Inorder Traversal of Binary Tree",
+    "number": 284
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-285",
+    "title": "Post-order Traversal of Binary Tree using 2 stack",
+    "number": 285
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-286",
+    "title": "Post-order Traversal of Binary Tree using 1 stack",
+    "number": 286
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-287",
+    "title": "Preorder, Inorder, and Postorder Traversal in one Traversal",
+    "number": 287
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-288",
+    "title": "Height of a Binary Tree",
+    "number": 288
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-289",
+    "title": "Check if the Binary tree is height-balanced or not",
+    "number": 289
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-290",
+    "title": "Diameter of Binary Tree",
+    "number": 290
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-291",
+    "title": "Maximum path sum",
+    "number": 291
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-292",
+    "title": "Check if two trees are identical or not",
+    "number": 292
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-293",
+    "title": "Zig Zag Traversal of Binary Tree",
+    "number": 293
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-294",
+    "title": "Boundary Traversal of Binary Tree",
+    "number": 294
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-295",
+    "title": "Vertical Order Traversal of Binary Tree",
+    "number": 295
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-296",
+    "title": "Top View of Binary Tree",
+    "number": 296
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-297",
+    "title": "Bottom View of Binary Tree",
+    "number": 297
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-298",
+    "title": "Right/Left View of Binary Tree",
+    "number": 298
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-299",
+    "title": "Symmetric Binary Tree",
+    "number": 299
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-300",
+    "title": "Root to Node Path in Binary Tree",
+    "number": 300
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-301",
+    "title": "LCA in Binary Tree",
+    "number": 301
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-302",
+    "title": "Maximum width of a Binary Tree",
+    "number": 302
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-303",
+    "title": "Check for Children Sum Property",
+    "number": 303
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-304",
+    "title": "Print all the Nodes at a distance of K in a Binary Tree",
+    "number": 304
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-305",
+    "title": "Minimum time taken to BURN the Binary Tree from a Node",
+    "number": 305
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-306",
+    "title": "Count total Nodes in a COMPLETE Binary Tree",
+    "number": 306
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-307",
+    "title": "Requirements needed to construct a Unique Binary Tree | Theory",
+    "number": 307
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-308",
+    "title": "Construct Binary Tree from inorder and preorder",
+    "number": 308
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-309",
+    "title": "Construct the Binary Tree from Postorder and Inorder Traversal",
+    "number": 309
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-310",
+    "title": "Serialize and deserialize Binary Tree",
+    "number": 310
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-311",
+    "title": "Morris Preorder Traversal of a Binary Tree",
+    "number": 311
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-312",
+    "title": "Morris Inorder Traversal of a Binary Tree",
+    "number": 312
+  },
+  {
+    "sectionSlug": "step-13",
+    "slug": "entry-313",
+    "title": "Flatten Binary Tree to LinkedList",
+    "number": 313
+  },
+  {
+    "sectionSlug": "step-14",
+    "slug": "entry-314",
+    "title": "Introduction to Binary Search Tree",
+    "number": 314
+  },
+  {
+    "sectionSlug": "step-14",
+    "slug": "entry-315",
+    "title": "Search in a Binary Search Tree",
+    "number": 315
+  },
+  {
+    "sectionSlug": "step-14",
+    "slug": "entry-316",
+    "title": "Find Min/Max in BST",
+    "number": 316
+  },
+  {
+    "sectionSlug": "step-14",
+    "slug": "entry-317",
+    "title": "Ceil in a Binary Search Tree",
+    "number": 317
+  },
+  {
+    "sectionSlug": "step-14",
+    "slug": "entry-318",
+    "title": "Floor in a Binary Search Tree",
+    "number": 318
+  },
+  {
+    "sectionSlug": "step-14",
+    "slug": "entry-319",
+    "title": "Insert a given Node in Binary Search Tree",
+    "number": 319
+  },
+  {
+    "sectionSlug": "step-14",
+    "slug": "entry-320",
+    "title": "Delete a Node in Binary Search Tree",
+    "number": 320
+  },
+  {
+    "sectionSlug": "step-14",
+    "slug": "entry-321",
+    "title": "Find K-th smallest/largest element in BST",
+    "number": 321
+  },
+  {
+    "sectionSlug": "step-14",
+    "slug": "entry-322",
+    "title": "Check if a tree is a BST or BT",
+    "number": 322
+  },
+  {
+    "sectionSlug": "step-14",
+    "slug": "entry-323",
+    "title": "LCA in Binary Search Tree",
+    "number": 323
+  },
+  {
+    "sectionSlug": "step-14",
+    "slug": "entry-324",
+    "title": "Construct a BST from a preorder traversal",
+    "number": 324
+  },
+  {
+    "sectionSlug": "step-14",
+    "slug": "entry-325",
+    "title": "Inorder Successor/Predecessor in BST",
+    "number": 325
+  },
+  {
+    "sectionSlug": "step-14",
+    "slug": "entry-326",
+    "title": "Merge 2 BST's",
+    "number": 326
+  },
+  {
+    "sectionSlug": "step-14",
+    "slug": "entry-327",
+    "title": "Two Sum In BST | Check if there exists a pair with Sum K",
+    "number": 327
+  },
+  {
+    "sectionSlug": "step-14",
+    "slug": "entry-328",
+    "title": "Recover BST | Correct BST with two nodes swapped",
+    "number": 328
+  },
+  {
+    "sectionSlug": "step-14",
+    "slug": "entry-329",
+    "title": "Largest BST in Binary Tree",
+    "number": 329
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-330",
+    "title": "Graph and Types",
+    "number": 330
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-331",
+    "title": "Graph Representation | C++",
+    "number": 331
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-332",
+    "title": "Graph Representation | Java",
+    "number": 332
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-333",
+    "title": "Connected Components | Logic Explanation",
+    "number": 333
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-334",
+    "title": "BFS",
+    "number": 334
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-335",
+    "title": "DFS",
+    "number": 335
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-336",
+    "title": "Number of provinces (leetcode)",
+    "number": 336
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-337",
+    "title": "Connected Components Problem in Matrix",
+    "number": 337
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-338",
+    "title": "Rotten Oranges",
+    "number": 338
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-339",
+    "title": "Flood fill",
+    "number": 339
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-340",
+    "title": "Cycle Detection in unirected Graph (bfs)",
+    "number": 340
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-341",
+    "title": "Cycle Detection in undirected Graph (dfs)",
+    "number": 341
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-342",
+    "title": "0/1 Matrix (Bfs Problem)",
+    "number": 342
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-343",
+    "title": "Surrounded Regions (dfs)",
+    "number": 343
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-344",
+    "title": "Number of Enclaves [flood fill implementation - multisource]",
+    "number": 344
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-345",
+    "title": "Word ladder - 1",
+    "number": 345
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-346",
+    "title": "Word ladder - 2",
+    "number": 346
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-347",
+    "title": "Number of Distinct Islands [dfs multisource]",
+    "number": 347
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-348",
+    "title": "Bipartite Graph (DFS)",
+    "number": 348
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-349",
+    "title": "Cycle Detection in Directed Graph (DFS)",
+    "number": 349
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-350",
+    "title": "Topo Sort",
+    "number": 350
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-351",
+    "title": "Kahn's Algorithm",
+    "number": 351
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-352",
+    "title": "Cycle Detection in Directed Graph (BFS)",
+    "number": 352
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-353",
+    "title": "Course Schedule - I",
+    "number": 353
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-354",
+    "title": "Course Schedule - II",
+    "number": 354
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-355",
+    "title": "Find eventual safe states",
+    "number": 355
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-356",
+    "title": "Alien dictionary",
+    "number": 356
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-357",
+    "title": "Shortest Path in UG with unit weights",
+    "number": 357
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-358",
+    "title": "Shortest Path in DAG",
+    "number": 358
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-359",
+    "title": "Djisktra's Algorithm",
+    "number": 359
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-360",
+    "title": "Why priority Queue is used in Djisktra's Algorithm",
+    "number": 360
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-361",
+    "title": "Shortest path in a binary maze",
+    "number": 361
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-362",
+    "title": "Path with minimum effort",
+    "number": 362
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-363",
+    "title": "Cheapest flights within k stops",
+    "number": 363
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-364",
+    "title": "Network Delay time",
+    "number": 364
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-365",
+    "title": "Number of ways to arrive at destination",
+    "number": 365
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-366",
+    "title": "Minimum steps to reach end",
+    "number": 366
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-367",
+    "title": "Bellman Ford Algorithm",
+    "number": 367
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-368",
+    "title": "Floyd Warshal Algorithm",
+    "number": 368
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-369",
+    "title": "Find city with minimum neighbors in a threshold distance",
+    "number": 369
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-370",
+    "title": "Minimum Spanning Tree",
+    "number": 370
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-371",
+    "title": "Prim's Algorithm",
+    "number": 371
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-372",
+    "title": "Disjoint Set [Union by Rank]",
+    "number": 372
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-373",
+    "title": "Disjoint Set [Union by Size]",
+    "number": 373
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-374",
+    "title": "Kruskal's Algorithm",
+    "number": 374
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-375",
+    "title": "Number of operations to make network connected",
+    "number": 375
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-376",
+    "title": "Most stones removed with same rows or columns",
+    "number": 376
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-377",
+    "title": "Accounts merge",
+    "number": 377
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-378",
+    "title": "Number of island II",
+    "number": 378
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-379",
+    "title": "Making a Large Island",
+    "number": 379
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-380",
+    "title": "Swim in rising water",
+    "number": 380
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-381",
+    "title": "Bridges in Graph",
+    "number": 381
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-382",
+    "title": "Articulation Point",
+    "number": 382
+  },
+  {
+    "sectionSlug": "step-15",
+    "slug": "entry-383",
+    "title": "Kosaraju's Algorithm",
+    "number": 383
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-384",
+    "title": "Dynamic Programming Introduction",
+    "number": 384
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-385",
+    "title": "Climbing Stars",
+    "number": 385
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-386",
+    "title": "Frog Jump(DP-3)",
+    "number": 386
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-387",
+    "title": "Frog Jump with k distances(DP-4)",
+    "number": 387
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-388",
+    "title": "Maximum sum of non-adjacent elements (DP 5)",
+    "number": 388
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-389",
+    "title": "House Robber (DP 6)",
+    "number": 389
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-390",
+    "title": "Ninja's Training (DP 7)",
+    "number": 390
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-391",
+    "title": "Grid Unique Paths : DP on Grids (DP8)",
+    "number": 391
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-392",
+    "title": "Grid Unique Paths 2 (DP 9)",
+    "number": 392
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-393",
+    "title": "Minimum path sum in Grid (DP 10)",
+    "number": 393
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-394",
+    "title": "Minimum path sum in Triangular Grid (DP 11)",
+    "number": 394
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-395",
+    "title": "Minimum/Maximum Falling Path Sum (DP-12)",
+    "number": 395
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-396",
+    "title": "3-d DP : Ninja and his friends (DP-13)",
+    "number": 396
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-397",
+    "title": "Subset sum equal to target (DP- 14)",
+    "number": 397
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-398",
+    "title": "Partition Equal Subset Sum (DP- 15)",
+    "number": 398
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-399",
+    "title": "Partition Set Into 2 Subsets With Min Absolute Sum Diff (DP- 16)",
+    "number": 399
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-400",
+    "title": "Count Subsets with Sum K (DP - 17)",
+    "number": 400
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-401",
+    "title": "Count Partitions with Given Difference (DP - 18)",
+    "number": 401
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-402",
+    "title": "Assign Cookies",
+    "number": 402
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-403",
+    "title": "Minimum Coins (DP - 20)",
+    "number": 403
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-404",
+    "title": "Target Sum (DP - 21)",
+    "number": 404
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-405",
+    "title": "Coin Change 2 (DP - 22)",
+    "number": 405
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-406",
+    "title": "Unbounded Knapsack (DP - 23)",
+    "number": 406
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-407",
+    "title": "Rod Cutting Problem | (DP - 24)",
+    "number": 407
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-408",
+    "title": "Longest Common Subsequence | (DP - 25)",
+    "number": 408
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-409",
+    "title": "Print Longest Common Subsequence | (DP - 26)",
+    "number": 409
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-410",
+    "title": "Longest Common Substring | (DP - 27)",
+    "number": 410
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-411",
+    "title": "Longest Palindromic Subsequence | (DP-28)",
+    "number": 411
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-412",
+    "title": "Minimum insertions to make string palindrome | DP-29",
+    "number": 412
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-413",
+    "title": "Minimum Insertions/Deletions to Convert String | (DP- 30)",
+    "number": 413
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-414",
+    "title": "Shortest Common Supersequence | (DP - 31)",
+    "number": 414
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-415",
+    "title": "Distinct Subsequences| (DP-32)",
+    "number": 415
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-416",
+    "title": "Edit Distance | (DP-33)",
+    "number": 416
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-417",
+    "title": "Wildcard Matching | (DP-34)",
+    "number": 417
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-418",
+    "title": "Best Time to Buy and Sell Stock |(DP-35)",
+    "number": 418
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-419",
+    "title": "Buy and Sell Stock - II|(DP-36)",
+    "number": 419
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-420",
+    "title": "Buy and Sell Stocks III|(DP-37)",
+    "number": 420
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-421",
+    "title": "Buy and Stock Sell IV |(DP-38)",
+    "number": 421
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-422",
+    "title": "Buy and Sell Stocks With Cooldown|(DP-39)",
+    "number": 422
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-423",
+    "title": "Buy and Sell Stocks With Transaction Fee|(DP-40)",
+    "number": 423
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-424",
+    "title": "Longest Increasing Subsequence |(DP-41)",
+    "number": 424
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-425",
+    "title": "Printing Longest Increasing Subsequence|(DP-42)",
+    "number": 425
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-426",
+    "title": "Longest Increasing Subsequence |(DP-43)",
+    "number": 426
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-427",
+    "title": "Largest Divisible Subset|(DP-44)",
+    "number": 427
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-428",
+    "title": "Longest String Chain|(DP-45)",
+    "number": 428
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-429",
+    "title": "Longest Bitonic Subsequence |(DP-46)",
+    "number": 429
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-430",
+    "title": "Number of Longest Increasing Subsequences|(DP-47)",
+    "number": 430
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-431",
+    "title": "Matrix Chain Multiplication|(DP-48)",
+    "number": 431
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-432",
+    "title": "Matrix Chain Multiplication | Bottom-Up|(DP-49)",
+    "number": 432
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-433",
+    "title": "Minimum Cost to Cut the Stick|(DP-50)",
+    "number": 433
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-434",
+    "title": "Burst Balloons|(DP-51)",
+    "number": 434
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-435",
+    "title": "Evaluate Boolean Expression to True|(DP-52)",
+    "number": 435
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-436",
+    "title": "Palindrome Partitioning - II|(DP-53)",
+    "number": 436
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-437",
+    "title": "Partition Array for Maximum Sum|(DP-54)",
+    "number": 437
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-438",
+    "title": "Maximum Rectangle Area with all 1's|(DP-55)",
+    "number": 438
+  },
+  {
+    "sectionSlug": "step-16",
+    "slug": "entry-439",
+    "title": "Count Square Submatrices with All Ones|(DP-56)",
+    "number": 439
+  },
+  {
+    "sectionSlug": "step-17",
+    "slug": "entry-440",
+    "title": "Implement TRIE | INSERT | SEARCH | STARTSWITH",
+    "number": 440
+  },
+  {
+    "sectionSlug": "step-17",
+    "slug": "entry-441",
+    "title": "Implement Trie - 2 (Prefix Tree)",
+    "number": 441
+  },
+  {
+    "sectionSlug": "step-17",
+    "slug": "entry-442",
+    "title": "Longest String with All Prefixes",
+    "number": 442
+  },
+  {
+    "sectionSlug": "step-17",
+    "slug": "entry-443",
+    "title": "Number of Distinct Substrings in a String",
+    "number": 443
+  },
+  {
+    "sectionSlug": "step-17",
+    "slug": "entry-444",
+    "title": "Bit PreRequisites for TRIE Problems",
+    "number": 444
+  },
+  {
+    "sectionSlug": "step-17",
+    "slug": "entry-445",
+    "title": "Maximum XOR of two numbers in an array",
+    "number": 445
+  },
+  {
+    "sectionSlug": "step-17",
+    "slug": "entry-446",
+    "title": "Maximum XOR With an Element From Array",
+    "number": 446
+  },
+  {
+    "sectionSlug": "step-18",
+    "slug": "entry-447",
+    "title": "min number of bracket reversals to make an expression balanced",
+    "number": 447
+  },
+  {
+    "sectionSlug": "step-18",
+    "slug": "entry-448",
+    "title": "Count and say",
+    "number": 448
+  },
+  {
+    "sectionSlug": "step-18",
+    "slug": "entry-449",
+    "title": "Hashing In Strings | Theory",
+    "number": 449
+  },
+  {
+    "sectionSlug": "step-18",
+    "slug": "entry-450",
+    "title": "Rabin Karp",
+    "number": 450
+  },
+  {
+    "sectionSlug": "step-18",
+    "slug": "entry-451",
+    "title": "Z-Function",
+    "number": 451
+  },
+  {
+    "sectionSlug": "step-18",
+    "slug": "entry-452",
+    "title": "KMP algo / LPS(pi) array",
+    "number": 452
+  },
+  {
+    "sectionSlug": "step-18",
+    "slug": "entry-453",
+    "title": "Shortest Palindrome",
+    "number": 453
+  },
+  {
+    "sectionSlug": "step-18",
+    "slug": "entry-454",
+    "title": "Longest happy prefix",
+    "number": 454
+  },
+  {
+    "sectionSlug": "step-18",
+    "slug": "entry-455",
+    "title": "Count palindromic subsequence in given string",
+    "number": 455
+  }
+]
