@@ -1,3 +1,9 @@
+# Sign-in hardening checkpoint — 2026-11-03
+
+Email login now accepts existing nonempty passwords without imposing signup's eight-character rule; registration retains its existing minimum. Email login/signup catch connection exceptions, Google/email submissions block competing requests, and login/register links preserve the safe return destination. Regression tests cover login versus signup validation and password preservation. 85 tests across 29 files, lint, typecheck and isolated production build passed. New real-provider browser acceptance is not claimed.
+
+Configuration presence checked without printing secrets: Razorpay Test API key/secret, webhook secret and Supabase service-role key are missing locally; Google enable flag is unset. Requested secure local/dashboard setup from the user. No keys invented, Google provider not enabled speculatively, no payment activation, schema/content changes or deployment. Existing three Free DSA collections and notes access preserved. Trial/notes caps/proposed pricing changes are advice only, not approved implementation.
+
 # Latest checkpoint — actionable analytics and preparation tools, 2026-11-02
 
 Continued from fb66320. Analytics now follows the most recently updated checklist, with an explicit collection selector. Master 200 activity no longer defaults to untouched NeetCode recommendations. Pro next steps prioritise manual revision flags (including completed groups), then started patterns, and link to actual unfinished problems. Replaced the long detailed-coverage list with a compact pattern explorer, selected-collection difficulty balance and company priority progress. Eight-week graph sits beside the compact calendar; Free receives a decorative blurred preview, never Pro graph/coverage payloads. Completion figures use a heavier font. No readiness, speed or accuracy scores are invented.

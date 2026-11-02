@@ -6,16 +6,12 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+import {authFormSchema} from "@/lib/auth-form-schema";
 import { safeAuthRedirect } from "@/lib/auth-redirect";
 import { createClient } from "@/lib/supabase/client";
 import { Notice } from "./ui";
 
-const schema = z.object({
-  name: z.string().trim().max(100).optional(),
-  email: z.string().trim().email("Enter a valid email"),
-  password: z.string().min(8, "Use at least 8 characters"),
-});
-type Values = z.infer<typeof schema>;
+type Values = z.infer<ReturnType<typeof authFormSchema>>;
 
 export function AuthForm({ mode }: { mode: "login" | "register" }) {
   const router = useRouter();
@@ -25,10 +21,12 @@ export function AuthForm({ mode }: { mode: "login" | "register" }) {
   const [googlePending,setGooglePending] = useState(false);
   const googleEnabled=process.env.NEXT_PUBLIC_GOOGLE_AUTH_ENABLED === "true";
   const [info, setInfo] = useState<string | null>(null);
-  const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm<Values>({ resolver: zodResolver(schema) });
+  const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm<Values>({ resolver: zodResolver(authFormSchema(mode)) });
 
   const onSubmit = handleSubmit(async (v) => {
+    if(googlePending)return;
     setError(null); setInfo(null);
+    try {
     const supabase = createClient();
     if (mode === "login") {
       const { error } = await supabase.auth.signInWithPassword({ email: v.email, password: v.password });
@@ -43,10 +41,11 @@ export function AuthForm({ mode }: { mode: "login" | "register" }) {
       if (data.session) { router.push("/onboarding"); router.refresh(); }
       else setInfo("Check your email for a confirmation link to finish creating your account.");
     }
+    } catch {setError("Could not connect. Check your connection and try again.");}
   });
 
   const google = async () => {
-    if(!googleEnabled||googlePending)return;
+    if(!googleEnabled||googlePending||isSubmitting)return;
     setError(null);setGooglePending(true);
     try {
       const { error } = await createClient().auth.signInWithOAuth({
@@ -76,13 +75,13 @@ export function AuthForm({ mode }: { mode: "login" | "register" }) {
         </div>
         {error && <Notice>{error}</Notice>}
         {info && <Notice kind="success">{info}</Notice>}
-        <button className="btn-glow w-full" disabled={isSubmitting}>{isSubmitting ? "Please wait…" : mode === "login" ? "Log in" : "Create account"}</button>
+        <button className="btn-glow w-full" disabled={isSubmitting||googlePending}>{isSubmitting ? "Please wait…" : mode === "login" ? "Log in" : "Create account"}</button>
       </form>
       {mode === "login" && <Link href="/forgot-password" className="mt-4 inline-block text-sm text-accent">Forgot password?</Link>}
       <div className="my-5 flex items-center gap-3 text-xs text-muted"><span className="h-px flex-1 bg-line" />or<span className="h-px flex-1 bg-line" /></div>
-      <button type="button" onClick={google} disabled={!googleEnabled||googlePending} className="btn-ghost w-full">{googlePending?"Opening Google…":googleEnabled?"Continue with Google":"Google sign-in opens after setup"}</button>
+      <button type="button" onClick={google} disabled={!googleEnabled||googlePending||isSubmitting} className="btn-ghost w-full">{googlePending?"Opening Google…":googleEnabled?"Continue with Google":"Google sign-in opens after setup"}</button>
       <p className="mt-6 text-center text-sm text-muted">
-        {mode === "login" ? <>New here? <Link className="text-accent hover:underline" href="/register">Create an account</Link></> : <>Already have an account? <Link className="text-accent hover:underline" href="/login">Log in</Link></>}
+        {mode === "login" ? <>New here? <Link className="text-accent hover:underline" href={`/register?next=${encodeURIComponent(next)}`}>Create an account</Link></> : <>Already have an account? <Link className="text-accent hover:underline" href={`/login?next=${encodeURIComponent(next)}`}>Log in</Link></>}
       </p>
     </div>
   );

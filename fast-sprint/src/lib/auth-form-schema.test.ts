@@ -1,0 +1,3 @@
+import {expect,it} from 'vitest';import {authFormSchema} from './auth-form-schema';
+it('accepts an existing shorter password at login but enforces signup strength',()=>{const input={email:' student@example.com ',password:'six123'};expect(authFormSchema('login').parse(input)).toEqual({email:'student@example.com',password:'six123'});expect(authFormSchema('register').safeParse(input).success).toBe(false);expect(authFormSchema('login').safeParse({...input,password:''}).success).toBe(false);});
+it('does not trim or rewrite passwords',()=>{const input={email:'student@example.com',password:' secret password '};expect(authFormSchema('register').parse(input).password).toBe(input.password);});
