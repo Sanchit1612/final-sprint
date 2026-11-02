@@ -1,3 +1,4 @@
+import {companyTrackingEnabled} from "@/lib/company-progress";
 import { ChevronRight } from "lucide-react";
 import type { TreeNode } from "@/lib/tree";
 import { ItemRow } from "./ItemRow";
@@ -8,7 +9,7 @@ export function TreeView({ nodes, depth = 0, forceOpen, readOnly = false }: { no
     <div className={depth === 0 ? "space-y-3" : "space-y-1 border-l border-line pl-3 sm:pl-4"}>
       {nodes.map((n) =>
         n.checkable ? (
-          <ItemRow practice={n.practice} readOnly={readOnly} key={n.id} id={n.id} title={n.title} difficulty={n.difficulty} url={n.url} platform={n.platform} description={n.description}
+          <ItemRow allowReview={companyTrackingEnabled()} practice={n.practice} readOnly={readOnly} key={n.id} id={n.id} title={n.title} difficulty={n.difficulty} url={n.url} platform={n.platform} description={n.description}
             done={n.done} revise={n.revise} bookmarked={n.bookmarked} note={n.note} resources={n.resources} />
         ) : (
           <details key={n.id} id={n.id} open={forceOpen} className={depth === 0 ? "group card !p-0" : "group"}>

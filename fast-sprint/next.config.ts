@@ -4,6 +4,7 @@ const nextConfig: NextConfig = {
   eslint: { ignoreDuringBuilds: true },
   poweredByHeader: false,
   outputFileTracingIncludes: {
+    "/analytics": ["./content/companies/*.json"],
     "/companies": ["./content/companies/*.json"],
     "/companies/*": ["./content/companies/*.json"],
     "/dsa": ["./content/collections/*.manifest.json"],

@@ -1,0 +1,67 @@
+{
+  "appliedAt": "2026-11-02T16:44:47.960Z",
+  "proposalSHA256": "75deeee22c47826b187f308b7accdc0e0947b8e04a04e1e99936207a6c6e5706",
+  "environment": "approved staging only",
+  "tables": [
+    {
+      "tablename": "company_problem_progress",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "item_reviews",
+      "rowsecurity": true
+    }
+  ],
+  "policies": [
+    {
+      "tablename": "company_problem_progress",
+      "policyname": "read own company progress",
+      "cmd": "SELECT"
+    },
+    {
+      "tablename": "company_problem_progress",
+      "policyname": "insert own Pro company progress",
+      "cmd": "INSERT"
+    },
+    {
+      "tablename": "company_problem_progress",
+      "policyname": "update own Pro company progress",
+      "cmd": "UPDATE"
+    },
+    {
+      "tablename": "company_problem_progress",
+      "policyname": "delete own company progress",
+      "cmd": "DELETE"
+    },
+    {
+      "tablename": "item_reviews",
+      "policyname": "read own reviews",
+      "cmd": "SELECT"
+    },
+    {
+      "tablename": "item_reviews",
+      "policyname": "insert own accessible reviews",
+      "cmd": "INSERT"
+    },
+    {
+      "tablename": "item_reviews",
+      "policyname": "update own accessible reviews",
+      "cmd": "UPDATE"
+    },
+    {
+      "tablename": "item_reviews",
+      "policyname": "delete own reviews",
+      "cmd": "DELETE"
+    }
+  ],
+  "triggers": [
+    {
+      "tgname": "company_progress_updated"
+    },
+    {
+      "tgname": "item_reviews_updated"
+    }
+  ],
+  "productionChanges": 0,
+  "contentImports": 0
+}

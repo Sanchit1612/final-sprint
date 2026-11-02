@@ -5,7 +5,7 @@ import Link from "next/link";
 export function Logo({}: { href?: string }) {
   return (
     <Link href="/" className="inline-flex items-center gap-2 text-lg font-bold tracking-tight">
-      <Image src={logo} alt="" width={32} height={32} className="rounded-lg" sizes="32px"/>
+      <span className="relative block h-10 w-10 shrink-0 overflow-hidden rounded-xl"><Image src={logo} alt="" fill className="scale-[2.5] object-cover" sizes="100px"/></span>
       Fast Sprint
     </Link>
   );

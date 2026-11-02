@@ -1,0 +1,42 @@
+{
+  "checkedAt": "2026-11-02T17:00:58.770821+00:00",
+  "scope": "Existing signed-in Pro browser, staging database; no deployment or live providers",
+  "checks": {
+    "master200FocusAndRealRecommendations": "passed",
+    "companyPriorityAdditionalFilters": "passed",
+    "companyCompletionAndBookmarkIndependentReloadPersistence": "passed",
+    "companyAnalyticsPriorityOnly": "passed (1/200 and one bookmark; restored)",
+    "plannerNativeDatePreviewSaveReload": "passed with disposable task",
+    "taskTitleAndDateEdit": "passed; disposable task removed",
+    "confidenceAgainPersistence": "passed; next-day schedule verified in database",
+    "overdueQueue": "passed with only the browser-created disposable review made overdue",
+    "confidenceGoodRescheduleReload": "passed; due 2026-11-05",
+    "stopScheduling": "passed; baseline restored",
+    "responsive390px": [
+      "analytics",
+      "company sheet",
+      "populated 28-task planner"
+    ],
+    "desktopCalendarGraph": "passed",
+    "freeProtectedInsights": "server/component tests passed; no real Free browser account used",
+    "fixtureCleanup": "database-confirmed",
+    "originalCompanyArchiveSHA": "unchanged"
+  },
+  "notClaimed": [
+    "full WCAG audit",
+    "real Free browser account acceptance",
+    "live missed-task redistribution against real overdue tasks",
+    "immutable activity history",
+    "provider acceptance",
+    "production readiness"
+  ],
+  "validation": {
+    "tests": 83,
+    "files": 28,
+    "lint": "passed",
+    "typecheck": "passed",
+    "isolatedProductionBuild": "passed",
+    "analyticsFirstLoadJS_kB": 114,
+    "sprintFirstLoadJS_kB": 113
+  }
+}

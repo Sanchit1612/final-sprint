@@ -1,0 +1,3 @@
+'use client';
+import {useState,useTransition} from 'react';import {redistributeSprintTasks} from '@/app/actions/preparation';
+export function RedistributeTasks(){const [pending,start]=useTransition(),[message,setMessage]=useState('');return <div className="my-3"><button className="btn-ghost" disabled={pending} onClick={()=>start(async()=>{const r=await redistributeSprintTasks();setMessage(r.ok?'Missed tasks have been spread across this week.':r.error);})}>{pending?'Rescheduling…':'Spread missed tasks across this week'}</button><p className="mt-1 text-xs text-muted">Balances the next 7 days up to 3 total tasks/day; preserves completed work.</p>{message&&<p role="status" className="mt-2 text-sm">{message}</p>}</div>;}

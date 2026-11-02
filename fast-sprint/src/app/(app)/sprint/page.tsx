@@ -1,3 +1,9 @@
+import {RedistributeTasks} from "@/components/RedistributeTasks";
+import {CountdownPlanner} from "@/components/CountdownPlanner";
+import {loadCoverage} from "@/lib/coverage";
+import {chooseFocus,type CoverageGroup} from "@/lib/analytics-focus";
+import {learningHref} from "@/config/dsa";
+import type {FocusItem} from "@/lib/schedule/types";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { AddTaskForm } from "@/components/AddTaskForm";
@@ -11,12 +17,16 @@ export const metadata = { title: "Daily Sprint" };
 
 export default async function Page({ searchParams }: { searchParams: Promise<{ date?: string }> }) {
   const sp = await searchParams;
-  const { supabase, today, isPro } = await requireSession();
+  const { supabase, today, isPro, user, profile } = await requireSession();
   const date = sp.date && isISODate(sp.date) ? sp.date : today;
   const [dayTasks, overdue] = await Promise.all([
     fetchAll<TaskItem>((a, b) => supabase.from("daily_tasks").select("id,title,notes,status,task_date").eq("task_date", date).order("sort_order").order("created_at").order("id").range(a, b)),
     fetchAll<TaskItem>((a, b) => supabase.from("daily_tasks").select("id,title,notes,status,task_date").lt("task_date", today).eq("status", "pending").order("task_date").order("id").range(a, b)),
   ]);
+  const coverage=await loadCoverage(supabase,user.id);
+  function leaves(nodes:CoverageGroup[],slug:string,review=false):FocusItem[]{return nodes.flatMap(n=>n.children.length?leaves(n.children,slug,review):((review?n.revision>0:n.completed===0)?[{id:n.id,title:n.title,href:`${learningHref(slug)}#${n.id}`,entityType:"problem"}]:[]));}
+  const dsa=coverage.filter(c=>c.root.slug.startsWith("dsa")&&c.data.total),active=chooseFocus(dsa);
+  dsa.sort((a,b)=>Number(b===active)-Number(a===active));
   const tasks = (dayTasks ?? []) as TaskItem[];
   const done = tasks.filter((t) => t.status === "done").length;
   const missed = (overdue ?? []) as TaskItem[];
@@ -42,10 +52,12 @@ export default async function Page({ searchParams }: { searchParams: Promise<{ d
         {!isPro && <p className="mt-3 text-xs text-muted">Free plan: up to 5 tasks per day. <Link href="/pricing" className="text-accent hover:underline">See Pro</Link></p>}
       </section>
 
+      <CountdownPlanner today={today} role={profile?.target_role??""} collections={dsa.map(c=>({slug:c.root.slug,title:c.root.title,remaining:leaves(c.data.tree,c.root.slug)}))} core={coverage.filter(c=>!c.root.slug.startsWith("dsa")).flatMap(c=>leaves(c.data.tree,c.root.slug))} revision={coverage.flatMap(c=>leaves(c.data.tree,c.root.slug,true))}/>
       {missed.length > 0 && (
         <section className="card mt-6">
           <h2 className="text-lg">Missed tasks</h2>
           <p className="mb-2 text-sm text-muted">Unfinished from earlier days. Move them to today, or delete them.</p>
+          <RedistributeTasks/>
           <TaskList tasks={missed} moveTo={today} />
         </section>
       )}

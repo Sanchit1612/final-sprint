@@ -1,0 +1,4 @@
+import {it,expect} from 'vitest';import {countdownPlan} from './countdown';
+const item={id:'real',title:'Actual next problem',href:'/dsa#real',entityType:'problem'};
+it('uses actual remaining items once and respects the date/capacity budget',()=>{const plan=countdownPlan({today:'2026-11-02',deadline:'2026-11-03',minutes:60,role:'Backend',dsa:[item],core:[],revision:[]});expect(plan.days).toBe(2);expect(plan.dailyProblems).toBe(1);expect(plan.tasks.filter(t=>t.entityId==='real')).toHaveLength(1);expect(plan.tasks.every(t=>t.scheduledDate<='2026-11-03')).toBe(true);for(const d of ['2026-11-02','2026-11-03'])expect(plan.tasks.filter(t=>t.scheduledDate===d).reduce((s,t)=>s+t.estimatedMinutes,0)).toBeLessThanOrEqual(60);});
+it('rejects impossible deadlines and extreme capacity',()=>{for(const deadline of ['2026-02-30','2026-11-01','2030-01-01'])expect(()=>countdownPlan({today:'2026-11-02',deadline,minutes:60,role:'SDE',dsa:[],core:[],revision:[]})).toThrow();});

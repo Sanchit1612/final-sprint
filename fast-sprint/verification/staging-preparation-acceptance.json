@@ -1,0 +1,15 @@
+{
+  "testedAt": "2026-11-02T16:46:04.763Z",
+  "success": true,
+  "scope": "Hosted authenticated SQL roles with two disposable accounts; not issued-JWT acceptance",
+  "checks": [
+    "Both SQL accounts read only their own company and review rows",
+    "Active Pro own company insert/update and accessible Pro-item review succeed",
+    "Free company writes, cross-account forged writes and inaccessible Pro reviews denied",
+    "Free users can schedule their own accessible learning reviews",
+    "Revoked Pro retains own saved state but cannot update company progress"
+  ],
+  "fixturesRolledBack": true,
+  "realUserChanges": 0,
+  "productionChanges": 0
+}

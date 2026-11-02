@@ -1,0 +1,331 @@
+{
+  "package": "simple-icons@14.15.0",
+  "logos": {
+    "google": {
+      "source": "https://partnermarketinghub.withgoogle.com",
+      "icon": "google",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "amazon": {
+      "source": "https://www.amazon.com",
+      "icon": "amazon",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "meta": {
+      "source": "https://www.meta.com",
+      "icon": "meta",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "tiktok": {
+      "source": "https://tiktok.com",
+      "icon": "tiktok",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "uber": {
+      "source": "https://assets.uber.com/d/k4nuxdZ8MC7E/logos/collection/151",
+      "icon": "uber",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "infosys": {
+      "source": "https://www.infosys.com/newsroom/journalist-resources/infosyslogo.html",
+      "icon": "infosys",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "tcs": {
+      "source": "https://www.tcs.com",
+      "icon": "tcs",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "apple": {
+      "source": "https://www.apple.com",
+      "icon": "apple",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "zoho": {
+      "source": "https://www.zoho.com/branding",
+      "icon": "zoho",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "goldman-sachs": {
+      "source": "https://design.gs.com/brand/goldman-sachs-logo",
+      "icon": "goldmansachs",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "visa": {
+      "source": "https://merchantsignageeu.visa.com/product.asp?dptID=696",
+      "icon": "visa",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "walmart-labs": {
+      "source": "https://corporate.walmart.com",
+      "icon": "walmart",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "salesforce": {
+      "source": "https://brand.salesforce.com/content/logo-guidelines",
+      "icon": "salesforce",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "nvidia": {
+      "source": "https://www.nvidia.com/en-us",
+      "icon": "nvidia",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "phonepe": {
+      "source": "https://www.phonepe.com/press/",
+      "icon": "phonepe",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "accenture": {
+      "source": "https://www.accenture.com",
+      "icon": "accenture",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "nutanix": {
+      "source": "https://www.nutanix.com/content/dam/nutanix/en/cmn/documents/nutanix-brandbook.pdf",
+      "icon": "nutanix",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "flipkart": {
+      "source": "https://www.flipkart.com",
+      "icon": "flipkart",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "paypal": {
+      "source": "https://www.paypal.com",
+      "icon": "paypal",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "snowflake": {
+      "source": "https://www.snowflake.com/brand-guidelines/",
+      "icon": "snowflake",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "snap": {
+      "source": "https://www.snapchat.com/brand-guidelines",
+      "icon": "snapchat",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "expedia": {
+      "source": "https://brandfolder.com/portals/brand-expedia",
+      "icon": "expedia",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "ebay": {
+      "source": "https://go.developer.ebay.com/logos",
+      "icon": "ebay",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "samsung": {
+      "source": "https://www.samsung.com/us/about-us/brand-identity/logo/",
+      "icon": "samsung",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "cisco": {
+      "source": "https://www.cisco.com",
+      "icon": "cisco",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "wix": {
+      "source": "https://www.wix.com/about/design-assets",
+      "icon": "wix",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "x": {
+      "source": "https://x.com",
+      "icon": "x",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "qualcomm": {
+      "source": "https://www.qualcomm.com",
+      "icon": "qualcomm",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "bytedance": {
+      "source": "https://www.bytedance.com",
+      "icon": "bytedance",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "airbnb": {
+      "source": "https://www.airbnb.com",
+      "icon": "airbnb",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "doordash": {
+      "source": "https://www.doordash.com/about/",
+      "icon": "doordash",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "palo-alto-networks": {
+      "source": "https://www.paloaltonetworks.com",
+      "icon": "paloaltonetworks",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "intuit": {
+      "source": "https://www.intuit.com",
+      "icon": "intuit",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "roblox": {
+      "source": "https://www.roblox.com",
+      "icon": "roblox",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "microsoft": {
+      "source": "https://developer.microsoft.com",
+      "icon": "microsoft",
+      "package": "simple-icons@11.15.0",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "oracle": {
+      "source": "https://www.oracle.com/opn/index.html",
+      "icon": "oracle",
+      "package": "simple-icons@11.15.0",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "adobe": {
+      "source": "https://www.adobe.com",
+      "icon": "adobe",
+      "package": "simple-icons@11.15.0",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "ibm": {
+      "source": "https://www.ibm.com/design/language/ibm-logos/8-bar/",
+      "icon": "ibm",
+      "package": "simple-icons@11.15.0",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "linkedin": {
+      "source": "https://brand.linkedin.com",
+      "icon": "linkedin",
+      "package": "simple-icons@11.15.0",
+      "license": {
+        "type": "CC0-1.0"
+      }
+    },
+    "bloomberg": {
+      "source": "https://www.bloomberg.com/favicon-black.png",
+      "format": "ICO"
+    },
+    "de-shaw": {
+      "source": "https://www.deshaw.com/inactive-favicon.ico",
+      "format": "ICO"
+    },
+    "yandex": {
+      "source": "https://yastatic.net/s3/home-static/_/nova3/CKig_nVR2.png",
+      "format": "PNG"
+    },
+    "servicenow": {
+      "source": "https://www.servicenow.com/favicon.ico",
+      "format": "ICO"
+    },
+    "morgan-stanley": {
+      "source": "https://www.morganstanley.com/etc.clientlibs/msdotcomr5/clientlibs/components/site/resources/img/favicon-128.png",
+      "format": "PNG"
+    },
+    "capital-one": {
+      "source": "https://www.capitalone.com/assets/shell/apple-touch-icon.png",
+      "format": "PNG"
+    },
+    "sprinklr": {
+      "source": "https://www.sprinklr.com/apple-icon.png?7f3b73fb089e6003",
+      "format": "PNG"
+    },
+    "anduril": {
+      "source": "https://www.anduril.com/assets/favicon/apple-touch-icon.xxx1TpF2gg.png",
+      "format": "PNG"
+    },
+    "citadel": {
+      "source": "https://www.google.com/s2/favicons?domain=citadel.com&sz=128",
+      "format": "PNG",
+      "note": "Public favicon cache; primary website download unavailable"
+    },
+    "epam-systems": {
+      "source": "https://www.google.com/s2/favicons?domain=epam.com&sz=128",
+      "format": "JPEG",
+      "note": "Public favicon cache; primary website download unavailable"
+    },
+    "coupang": {
+      "source": "https://www.google.com/s2/favicons?domain=coupang.com&sz=128",
+      "format": "PNG",
+      "note": "Public favicon cache; primary website download unavailable"
+    }
+  },
+  "missing": []
+}

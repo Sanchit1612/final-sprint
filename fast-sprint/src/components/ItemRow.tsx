@@ -1,4 +1,5 @@
 "use client";
+import {ReviewRating} from "./ReviewRating";
 import {PracticeExercise} from "./PracticeExercise";
 import type {PracticeData} from "@/lib/content/practice";
 
@@ -8,6 +9,7 @@ import { saveNote, setBookmark, setDone, setRevise } from "@/app/actions";
 import type { Res } from "@/lib/tree";
 
 interface Props {
+  allowReview?:boolean;
   practice?: PracticeData;
   readOnly?: boolean;
   id: string; title: string; difficulty: string | null; url: string | null; platform: string | null; description: string | null;
@@ -67,6 +69,7 @@ export function ItemRow(p: Props) {
           <IconBtn disabled={pending || !!p.readOnly} label="Notes" active={open || !!note} onClick={() => setOpen((o) => !o)}><NotebookPen className="h-4 w-4" /></IconBtn>
         </div>
       </div>
+      {done&&!p.readOnly&&p.allowReview&&<div className="mt-3 pl-8"><ReviewRating itemId={p.id}/></div>}
       {p.practice&&<div className="pl-8"><PracticeExercise data={p.practice}/></div>}
       {open && (
         <div className="mt-2 pl-8">

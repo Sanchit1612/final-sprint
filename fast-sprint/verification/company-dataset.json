@@ -4,8 +4,10 @@
   "archiveSHA256": "31222525af9a91c7390609eb86600c84509cebfa4d7dc256b4dd79a0ec9dafad",
   "selection": "50 highest summed frequency scores among eligible source all-time sheets; scores are source-relative, not verified interview counts",
   "companies": 50,
-  "eligibleRows": 12275,
+  "eligibleRows": 12169,
   "excludedPaidOrUnknownRowsAcrossSource": 1686,
   "officialCatalogRows": 4100,
-  "verification": "LeetCode official GraphQL isPaidOnly=false at check time; access can change; company attribution is community sourced, not confirmed employer claims"
+  "verification": "LeetCode official GraphQL isPaidOnly=false at check time; access can change; company attribution is community sourced, not confirmed employer claims",
+  "excludedUnclassifiedRowsInSelectedCompanies": 106,
+  "qualityNote": "Rows lacking official topic tags were conservatively excluded, including unclassified DataFrame exercises."
 }

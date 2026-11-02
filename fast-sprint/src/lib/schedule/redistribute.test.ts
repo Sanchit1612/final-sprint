@@ -1,0 +1,2 @@
+import {expect,it} from 'vitest';import {redistributeMissed} from './redistribute';
+it('balances missed tasks without overfilling days or mutating existing load',()=>{const loads={'2026-11-02':3,'2026-11-03':2};const result=redistributeMissed(Array.from({length:30},(_,i)=>String(i)),'2026-11-02',loads);expect(result).toHaveLength(16);expect(result[0].date).toBe('2026-11-04');expect(result.some(m=>m.date==='2026-11-02')).toBe(false);expect(loads['2026-11-03']).toBe(2);});
