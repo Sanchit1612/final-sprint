@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-11-02T20:03:27.118090+00:00",
+  "mode": "test",
+  "credentialsStored": "ignored local environment only",
+  "readOnlyProviderAuthHTTP": 200,
+  "paymentsEnabled": false,
+  "liveKeysGenerated": false,
+  "supabaseServiceKeyPresent": false,
+  "checkoutVerified": false,
+  "webhookDeliveryVerified": false,
+  "entitlementGrantVerified": false,
+  "deploymentPerformed": false
+}

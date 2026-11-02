@@ -1,3 +1,9 @@
+# Razorpay Test Mode setup — 2026-11-03
+
+User signed in and explicitly approved generation/storage of a Razorpay Test Mode API key pair. Switched dashboard to Test Mode, generated the pair and saved directly to ignored .env.local without exposing values in chat or Git; local file permissions restricted to 0600. Authenticated read-only GET /v1/orders?count=1 returned HTTP 200. This verifies provider credentials only, not a successful checkout, capture, callback, webhook, refund or entitlement grant. Payments remain disabled and live mode remains gated off.
+
+Pending: Supabase service-role key is still absent; Supabase dashboard requires the user's sign-in (setup tab opened). Public HTTPS staging endpoint is needed for webhook setup/delivery tests; no deployment authorized or performed. Razorpay dashboard indicates live API keys require website submission/approval. No business/KYC information invented or submitted, and no live credentials generated. Existing private webhook secret preserved.
+
 # Sign-in hardening checkpoint — 2026-11-03
 
 Email login now accepts existing nonempty passwords without imposing signup's eight-character rule; registration retains its existing minimum. Email login/signup catch connection exceptions, Google/email submissions block competing requests, and login/register links preserve the safe return destination. Regression tests cover login versus signup validation and password preservation. 85 tests across 29 files, lint, typecheck and isolated production build passed. New real-provider browser acceptance is not claimed.
