@@ -49,7 +49,7 @@ export function AuthForm({ mode }: { mode: "login" | "register" }) {
     setError(null);setGooglePending(true);
     try {
       const { error } = await createClient().auth.signInWithOAuth({
-        provider: "google", options: { redirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(next)}` },
+        provider: "google", options: { queryParams: { prompt: "select_account" }, redirectTo: `${window.location.origin}/auth/callback?next=${encodeURIComponent(next)}` },
       });
       if (error) {setError(error.message);setGooglePending(false);}
     }catch {setError("Google sign-in is unavailable. Please try again.");setGooglePending(false);}
