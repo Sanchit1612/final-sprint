@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "dbms-01",
+    "subject": "dbms",
+    "difficulty": "easy",
+    "question": "A transaction debits one account but fails before crediting another. Which property requires the debit to roll back?",
+    "options": [
+      "Atomicity",
+      "Durability",
+      "Availability",
+      "Referential integrity"
+    ],
+    "correct": 0,
+    "explanation": "Atomicity makes a transaction all-or-nothing; durability concerns committed changes surviving failure.",
+    "topic": "Transactions"
+  },
+  {
+    "id": "dbms-02",
+    "subject": "dbms",
+    "difficulty": "easy",
+    "question": "A table's primary key is (student_id, course_id). Which duplicate is forbidden?",
+    "options": [
+      "The same student/course pair twice",
+      "The same student on two courses",
+      "Two students on one course",
+      "Different pairs sharing a course"
+    ],
+    "correct": 0,
+    "explanation": "A composite primary key uniquely identifies the whole pair, not each component separately.",
+    "topic": "Keys"
+  },
+  {
+    "id": "dbms-03",
+    "subject": "dbms",
+    "difficulty": "medium",
+    "question": "In SQL, a nullable column x contains NULL. What does WHERE x = NULL do?",
+    "options": [
+      "Selects no rows",
+      "Selects all NULL rows",
+      "Selects zero values",
+      "Causes a syntax error"
+    ],
+    "correct": 0,
+    "explanation": "Equality with NULL is UNKNOWN, and WHERE retains only TRUE. Use IS NULL.",
+    "topic": "NULL semantics"
+  },
+  {
+    "id": "dbms-04",
+    "subject": "dbms",
+    "difficulty": "medium",
+    "question": "Rows contain salaries 100, 100, 80. What DENSE_RANK values result under salary DESC?",
+    "options": [
+      "1, 1, 2",
+      "1, 2, 3",
+      "1, 1, 3",
+      "2, 2, 3"
+    ],
+    "correct": 0,
+    "explanation": "DENSE_RANK ties equal values and leaves no gap. RANK would give 1,1,3.",
+    "topic": "Window functions"
+  },
+  {
+    "id": "dbms-05",
+    "subject": "dbms",
+    "difficulty": "medium",
+    "question": "A relation has key (student, course) and student determines student_name. What specifically violates 2NF?",
+    "options": [
+      "A non-key attribute depends on part of the key",
+      "A key contains two columns",
+      "The relation has no NULLs",
+      "A non-key attribute determines the full key"
+    ],
+    "correct": 0,
+    "explanation": "student_name depends on student alone, a proper subset of the composite key; separate student details.",
+    "topic": "Normalisation"
+  },
+  {
+    "id": "dbms-06",
+    "subject": "dbms",
+    "difficulty": "medium",
+    "question": "After A commits an update, B reads it. Which dirty-read claim is correct?",
+    "options": [
+      "It is not a dirty read",
+      "Every concurrent read is dirty",
+      "Committed reads are always phantom reads",
+      "It violates durability"
+    ],
+    "correct": 0,
+    "explanation": "A dirty read observes an uncommitted change. A committed value is not dirty merely because another transaction wrote it.",
+    "topic": "Isolation"
+  },
+  {
+    "id": "dbms-07",
+    "subject": "dbms",
+    "difficulty": "medium",
+    "question": "Two transactions lock rows in opposite order and each waits for the other's lock. What has occurred?",
+    "options": [
+      "Deadlock",
+      "Livelock necessarily",
+      "A cache miss",
+      "A lost update necessarily"
+    ],
+    "correct": 0,
+    "explanation": "Each holds a resource the other needs, forming a wait cycle. Consistent lock ordering can prevent this pattern.",
+    "topic": "Concurrency"
+  },
+  {
+    "id": "dbms-08",
+    "subject": "dbms",
+    "difficulty": "medium",
+    "question": "Which query finds departments with more than five employees?",
+    "options": [
+      "GROUP BY department HAVING COUNT(*) > 5",
+      "WHERE COUNT(*) > 5 GROUP BY department",
+      "GROUP BY employee_id HAVING department > 5",
+      "ORDER BY department LIMIT 5"
+    ],
+    "correct": 0,
+    "explanation": "HAVING filters aggregate groups; WHERE filters individual rows before grouping.",
+    "topic": "Aggregation"
+  },
+  {
+    "id": "dbms-09",
+    "subject": "dbms",
+    "difficulty": "easy",
+    "question": "Which constraint prevents an order from referencing a nonexistent customer?",
+    "options": [
+      "Foreign key",
+      "ORDER BY",
+      "Secondary index alone",
+      "DEFAULT"
+    ],
+    "correct": 0,
+    "explanation": "A foreign key enforces referential integrity against the referenced key, subject to its defined NULL rules.",
+    "topic": "Constraints"
+  },
+  {
+    "id": "dbms-10",
+    "subject": "dbms",
+    "difficulty": "medium",
+    "question": "A LEFT JOIN is followed by WHERE right_table.active = true. What happens to unmatched left rows?",
+    "options": [
+      "They are filtered out",
+      "They remain with active=true",
+      "They are duplicated",
+      "The query is invalid"
+    ],
+    "correct": 0,
+    "explanation": "Unmatched right columns are NULL; the predicate is UNKNOWN. Put the condition in ON to preserve unmatched left rows.",
+    "topic": "Joins"
+  },
+  {
+    "id": "dbms-11",
+    "subject": "dbms",
+    "difficulty": "medium",
+    "question": "An index is on (country, city). Which filter most directly uses its leading key prefix?",
+    "options": [
+      "country = 'IN'",
+      "city = 'Pune' only",
+      "LOWER(city) = 'pune' only",
+      "An unrelated salary filter"
+    ],
+    "correct": 0,
+    "explanation": "A leading-prefix predicate aligns with the index ordering. Other access strategies depend on the database and statistics.",
+    "topic": "Indexes"
+  },
+  {
+    "id": "dbms-12",
+    "subject": "dbms",
+    "difficulty": "easy",
+    "question": "What does COUNT(column) exclude?",
+    "options": [
+      "NULL values of that column",
+      "Duplicate values",
+      "Zero values",
+      "Empty strings in PostgreSQL"
+    ],
+    "correct": 0,
+    "explanation": "COUNT(column) counts non-NULL values; COUNT(*) counts rows, including rows with NULL columns.",
+    "topic": "Aggregation"
+  },
+  {
+    "id": "dbms-13",
+    "subject": "dbms",
+    "difficulty": "hard",
+    "question": "A table has A\u2192B and B\u2192C, with A the only candidate key. Why can C violate 3NF?",
+    "options": [
+      "C transitively depends on A through a non-key B",
+      "Every functional dependency violates 3NF",
+      "C must be a foreign key",
+      "A must be nullable"
+    ],
+    "correct": 0,
+    "explanation": "B is not a superkey and C is non-prime; decomposing the dependency can remove update anomalies.",
+    "topic": "Normalisation"
+  },
+  {
+    "id": "dbms-14",
+    "subject": "dbms",
+    "difficulty": "medium",
+    "question": "A transaction reads a row twice and another committed transaction changes that row between reads. What anomaly is possible?",
+    "options": [
+      "Non-repeatable read",
+      "Dirty read necessarily",
+      "Deadlock necessarily",
+      "Write skew necessarily"
+    ],
+    "correct": 0,
+    "explanation": "The same row's committed value changes between reads. A phantom instead concerns changes to the matching row set.",
+    "topic": "Isolation"
+  },
+  {
+    "id": "dbms-15",
+    "subject": "dbms",
+    "difficulty": "medium",
+    "question": "A query uses NOT IN on a subquery that returns 2 and NULL. For x=3, is the predicate TRUE?",
+    "options": [
+      "No, it is UNKNOWN",
+      "Yes, because 3 is not 2",
+      "Yes, because NULL is ignored",
+      "It is always a syntax error"
+    ],
+    "correct": 0,
+    "explanation": "The NULL comparison prevents the conjunction from being TRUE. A correctly correlated NOT EXISTS often avoids this trap.",
+    "topic": "NULL semantics"
+  },
+  {
+    "id": "dbms-16",
+    "subject": "dbms",
+    "difficulty": "easy",
+    "question": "Which SQL operator preserves duplicate rows when combining results?",
+    "options": [
+      "UNION ALL",
+      "UNION",
+      "DISTINCT",
+      "INTERSECT without ALL"
+    ],
+    "correct": 0,
+    "explanation": "UNION ALL concatenates results; UNION removes duplicate result rows.",
+    "topic": "Set operations"
+  },
+  {
+    "id": "dbms-17",
+    "subject": "dbms",
+    "difficulty": "medium",
+    "question": "In a bank transfer, when should an application report final success?",
+    "options": [
+      "After the database confirms COMMIT",
+      "After sending the first UPDATE",
+      "Before starting the transaction",
+      "After obtaining a connection"
+    ],
+    "correct": 0,
+    "explanation": "A successful first statement is not a successful transaction. COMMIT itself can fail and its result must be handled.",
+    "topic": "Transactions"
+  },
+  {
+    "id": "dbms-18",
+    "subject": "dbms",
+    "difficulty": "hard",
+    "question": "Two snapshot transactions each see the other doctor on call and both remove themselves. What anomaly is illustrated?",
+    "options": [
+      "Write skew",
+      "Dirty read",
+      "A uniqueness violation necessarily",
+      "A phantom caused by INSERT only"
+    ],
+    "correct": 0,
+    "explanation": "Transactions update different rows while violating a joint invariant. Serializable isolation or appropriate locking can protect it.",
+    "topic": "Isolation"
+  },
+  {
+    "id": "dbms-19",
+    "subject": "dbms",
+    "difficulty": "medium",
+    "question": "Why can adding indexes slow a write-heavy table?",
+    "options": [
+      "Writes must maintain affected index structures",
+      "Indexes disable transactions",
+      "Every index duplicates the entire database",
+      "Indexes make primary keys nullable"
+    ],
+    "correct": 0,
+    "explanation": "Indexes trade storage and maintenance work for useful read access paths; only justified indexes should be added.",
+    "topic": "Indexes"
+  },
+  {
+    "id": "dbms-20",
+    "subject": "dbms",
+    "difficulty": "easy",
+    "question": "Which action best parameterises an untrusted search value?",
+    "options": [
+      "Bind it as a query parameter",
+      "Concatenate it into SQL",
+      "Remove spaces then concatenate",
+      "Trust it because HTTPS is used"
+    ],
+    "correct": 0,
+    "explanation": "Parameter binding keeps data separate from SQL syntax. HTTPS alone does not prevent injection.",
+    "topic": "Query security"
+  },
+  {
+    "id": "os-01",
+    "subject": "os",
+    "difficulty": "easy",
+    "question": "Two threads in one process normally share which resource?",
+    "options": [
+      "The process address space",
+      "Their instruction pointer",
+      "Their register values",
+      "Their call stacks as one stack"
+    ],
+    "correct": 0,
+    "explanation": "Threads share process memory but normally have separate stacks and register state.",
+    "topic": "Processes and threads"
+  },
+  {
+    "id": "os-02",
+    "subject": "os",
+    "difficulty": "medium",
+    "question": "A process references a valid virtual page absent from RAM. What normally happens?",
+    "options": [
+      "A page fault invokes the OS",
+      "The CPU silently discards the instruction",
+      "The process must always terminate",
+      "The virtual address becomes a physical address unchanged"
+    ],
+    "correct": 0,
+    "explanation": "The OS can load the missing page and resume. An invalid access may instead terminate the process.",
+    "topic": "Virtual memory"
+  },
+  {
+    "id": "os-03",
+    "subject": "os",
+    "difficulty": "medium",
+    "question": "Jobs A=6 ms and B=2 ms arrive at time 0; non-preemptive SJF runs. What is average waiting time?",
+    "options": [
+      "1 ms",
+      "2 ms",
+      "3 ms",
+      "4 ms"
+    ],
+    "correct": 0,
+    "explanation": "B waits 0 and A waits 2, so average waiting is (0+2)/2=1 ms. Waiting excludes execution time.",
+    "topic": "Scheduling"
+  },
+  {
+    "id": "os-04",
+    "subject": "os",
+    "difficulty": "medium",
+    "question": "Round Robin's quantum becomes extremely large relative to every burst. What does it approach?",
+    "options": [
+      "FCFS",
+      "Shortest remaining time first",
+      "Priority preemption",
+      "An idle-only scheduler"
+    ],
+    "correct": 0,
+    "explanation": "Each selected job finishes before its quantum expires, so queue order behaves like FCFS.",
+    "topic": "Scheduling"
+  },
+  {
+    "id": "os-05",
+    "subject": "os",
+    "difficulty": "easy",
+    "question": "What is the purpose of a mutex around a shared counter increment?",
+    "options": [
+      "Prevent overlapping critical sections",
+      "Guarantee every thread runs immediately",
+      "Make the counter persistent",
+      "Remove the need for memory"
+    ],
+    "correct": 0,
+    "explanation": "The read-modify-write increment can race. Mutual exclusion protects it when all writers follow the locking protocol.",
+    "topic": "Synchronisation"
+  },
+  {
+    "id": "os-06",
+    "subject": "os",
+    "difficulty": "medium",
+    "question": "A mutex owner waits indefinitely because low-priority work cannot run while medium-priority work runs. What is this?",
+    "options": [
+      "Priority inversion",
+      "Demand paging",
+      "Internal fragmentation",
+      "Disk starvation only"
+    ],
+    "correct": 0,
+    "explanation": "A high-priority waiter can be blocked by a lower-priority owner. Priority inheritance can mitigate this scheduling problem.",
+    "topic": "Scheduling"
+  },
+  {
+    "id": "os-07",
+    "subject": "os",
+    "difficulty": "medium",
+    "question": "Which is a necessary Coffman condition for deadlock?",
+    "options": [
+      "Circular wait",
+      "Preemptible resources only",
+      "No mutual exclusion",
+      "Every process uses one resource"
+    ],
+    "correct": 0,
+    "explanation": "The four necessary conditions include mutual exclusion, hold-and-wait, no preemption and circular wait.",
+    "topic": "Deadlocks"
+  },
+  {
+    "id": "os-08",
+    "subject": "os",
+    "difficulty": "medium",
+    "question": "Memory is free in many small holes, but no hole fits a large contiguous allocation. What is this?",
+    "options": [
+      "External fragmentation",
+      "Internal fragmentation",
+      "A compulsory cache miss",
+      "A protection fault"
+    ],
+    "correct": 0,
+    "explanation": "Free space exists outside allocations but is split. Internal fragmentation is unused space inside an allocated block.",
+    "topic": "Memory allocation"
+  },
+  {
+    "id": "os-09",
+    "subject": "os",
+    "difficulty": "easy",
+    "question": "What does a TLB cache?",
+    "options": [
+      "Virtual-to-physical address translations",
+      "All disk files",
+      "Process source code",
+      "Network route advertisements"
+    ],
+    "correct": 0,
+    "explanation": "A TLB speeds address translation; it is not a general replacement for data caches or backing storage.",
+    "topic": "Virtual memory"
+  },
+  {
+    "id": "os-10",
+    "subject": "os",
+    "difficulty": "medium",
+    "question": "A system spends most time paging with little useful execution. What is this?",
+    "options": [
+      "Thrashing",
+      "Busy waiting necessarily",
+      "A successful working set fit",
+      "Internal fragmentation only"
+    ],
+    "correct": 0,
+    "explanation": "Excessive page faults can dominate execution when active working sets exceed available memory.",
+    "topic": "Virtual memory"
+  },
+  {
+    "id": "os-11",
+    "subject": "os",
+    "difficulty": "medium",
+    "question": "After fork on a copy-on-write system, when is a shared page typically copied?",
+    "options": [
+      "When a process writes to it",
+      "Immediately for every page",
+      "On every read",
+      "Only when both processes exit"
+    ],
+    "correct": 0,
+    "explanation": "Read-only sharing avoids copying. A protected write triggers creation of a private copy as needed.",
+    "topic": "Processes and threads"
+  },
+  {
+    "id": "os-12",
+    "subject": "os",
+    "difficulty": "easy",
+    "question": "A zombie process has done what?",
+    "options": [
+      "Exited but not yet had its status reaped",
+      "Never started execution",
+      "Lost all page-table entries while running",
+      "Become a kernel thread"
+    ],
+    "correct": 0,
+    "explanation": "The parent must collect the exit status. The process is no longer executing, though a status record remains.",
+    "topic": "Processes and threads"
+  },
+  {
+    "id": "os-13",
+    "subject": "os",
+    "difficulty": "medium",
+    "question": "A counting semaphore starts at 3. Three successful waits occur with no signals. What happens to a fourth wait?",
+    "options": [
+      "It blocks until a permit is available",
+      "It must succeed",
+      "It increments the count",
+      "It unlocks every thread"
+    ],
+    "correct": 0,
+    "explanation": "Each wait consumes a permit. With zero remaining, another waiter must wait for a signal or cancellation.",
+    "topic": "Synchronisation"
+  },
+  {
+    "id": "os-14",
+    "subject": "os",
+    "difficulty": "medium",
+    "question": "Why is a condition-variable wait normally inside a while loop?",
+    "options": [
+      "The predicate must be rechecked after waking",
+      "A signal guarantees the predicate forever",
+      "Mutexes cannot be used with condition variables",
+      "While loops prevent context switches"
+    ],
+    "correct": 0,
+    "explanation": "Wakeups may be spurious or another thread may change the state before the awakened thread reacquires the lock.",
+    "topic": "Synchronisation"
+  },
+  {
+    "id": "os-15",
+    "subject": "os",
+    "difficulty": "easy",
+    "question": "Which transition occurs when a running process waits for disk I/O?",
+    "options": [
+      "Running to blocked",
+      "Blocked to terminated always",
+      "Ready to running",
+      "Running to new"
+    ],
+    "correct": 0,
+    "explanation": "A process waiting for an event cannot currently use the CPU; the scheduler can run another ready process.",
+    "topic": "Processes and threads"
+  },
+  {
+    "id": "os-16",
+    "subject": "os",
+    "difficulty": "medium",
+    "question": "What is one cost of an excessively small Round Robin quantum?",
+    "options": [
+      "More context-switch overhead",
+      "Guaranteed optimal turnaround",
+      "No scheduling overhead",
+      "Every process runs to completion uninterrupted"
+    ],
+    "correct": 0,
+    "explanation": "Short quanta improve interleaving but increase switching overhead relative to useful work.",
+    "topic": "Scheduling"
+  },
+  {
+    "id": "os-17",
+    "subject": "os",
+    "difficulty": "hard",
+    "question": "Under FIFO replacement, can adding more frames increase page faults for some reference strings?",
+    "options": [
+      "Yes, Belady's anomaly",
+      "No, for every policy",
+      "Only if pages contain errors",
+      "Only if page sizes change"
+    ],
+    "correct": 0,
+    "explanation": "FIFO is not a stack algorithm and can exhibit Belady's anomaly. More memory does not guarantee fewer faults for every policy.",
+    "topic": "Virtual memory"
+  },
+  {
+    "id": "os-18",
+    "subject": "os",
+    "difficulty": "medium",
+    "question": "Why can disabling interrupts on one CPU fail to protect shared data on a multicore machine?",
+    "options": [
+      "Other CPUs may still access the data",
+      "All other CPUs stop automatically",
+      "It deletes the page table",
+      "Interrupts exist only in user mode"
+    ],
+    "correct": 0,
+    "explanation": "Local interrupt control does not provide inter-CPU mutual exclusion; an appropriate synchronisation primitive is needed.",
+    "topic": "Synchronisation"
+  },
+  {
+    "id": "os-19",
+    "subject": "os",
+    "difficulty": "easy",
+    "question": "What separates a program from a process?",
+    "options": [
+      "A process is an executing instance with runtime state",
+      "A process is always a source file",
+      "A program must have multiple threads",
+      "They differ only by file extension"
+    ],
+    "correct": 0,
+    "explanation": "The process includes execution state and resources; multiple processes can run the same program.",
+    "topic": "Processes and threads"
+  },
+  {
+    "id": "os-20",
+    "subject": "os",
+    "difficulty": "medium",
+    "question": "Which policy can reduce starvation in priority scheduling?",
+    "options": [
+      "Aging waiting jobs",
+      "Always lowering waiting jobs' priority",
+      "Never preempting any job",
+      "Discarding the ready queue"
+    ],
+    "correct": 0,
+    "explanation": "Aging gradually improves waiting jobs' priority so long-waiting work can eventually run.",
+    "topic": "Scheduling"
+  },
+  {
+    "id": "cn-01",
+    "subject": "cn",
+    "difficulty": "easy",
+    "question": "What does TCP provide to an application?",
+    "options": [
+      "An ordered reliable byte stream",
+      "Preserved application-message boundaries",
+      "Guaranteed fixed latency",
+      "Encrypted payloads by default"
+    ],
+    "correct": 0,
+    "explanation": "TCP handles byte ordering and retransmission; applications still need framing, and TLS provides encryption separately.",
+    "topic": "Transport protocols"
+  },
+  {
+    "id": "cn-02",
+    "subject": "cn",
+    "difficulty": "medium",
+    "question": "A TCP application writes two messages. Can the receiver read them in one read?",
+    "options": [
+      "Yes, TCP does not preserve write boundaries",
+      "No, every write is a packet",
+      "Only if TLS is disabled",
+      "Only on UDP"
+    ],
+    "correct": 0,
+    "explanation": "The receiving application must implement framing; one read can contain part of a message or several messages.",
+    "topic": "Transport protocols"
+  },
+  {
+    "id": "cn-03",
+    "subject": "cn",
+    "difficulty": "easy",
+    "question": "Which transport is connectionless and does not itself guarantee delivery?",
+    "options": [
+      "UDP",
+      "TCP",
+      "TLS",
+      "HTTP/2"
+    ],
+    "correct": 0,
+    "explanation": "UDP sends datagrams without TCP's delivery and ordering guarantees; applications can build additional mechanisms above it.",
+    "topic": "Transport protocols"
+  },
+  {
+    "id": "cn-04",
+    "subject": "cn",
+    "difficulty": "medium",
+    "question": "What is the usable host count in a conventional IPv4 /26 subnet excluding network and broadcast?",
+    "options": [
+      "62",
+      "64",
+      "32",
+      "126"
+    ],
+    "correct": 0,
+    "explanation": "Six host bits give 64 addresses; subtract the conventional network and broadcast addresses to get 62.",
+    "topic": "IP addressing"
+  },
+  {
+    "id": "cn-05",
+    "subject": "cn",
+    "difficulty": "easy",
+    "question": "What does DNS primarily resolve in a typical web request?",
+    "options": [
+      "A hostname to records such as IP addresses",
+      "A private password to an account",
+      "A MAC address to a process ID",
+      "An HTTP body to HTML"
+    ],
+    "correct": 0,
+    "explanation": "DNS is a record lookup system. Address records are common, but DNS also contains other record types.",
+    "topic": "DNS"
+  },
+  {
+    "id": "cn-06",
+    "subject": "cn",
+    "difficulty": "medium",
+    "question": "An HTTP client receives 304 after a conditional GET. What should it normally do?",
+    "options": [
+      "Reuse its cached representation",
+      "Treat the body as a new full representation",
+      "Delete all cookies",
+      "Retry using POST"
+    ],
+    "correct": 0,
+    "explanation": "304 Not Modified indicates the cached representation remains valid under the conditional request.",
+    "topic": "HTTP caching"
+  },
+  {
+    "id": "cn-07",
+    "subject": "cn",
+    "difficulty": "medium",
+    "question": "Which HTTP method is defined as idempotent?",
+    "options": [
+      "PUT",
+      "POST in every case",
+      "PATCH in every case",
+      "CONNECT in every case"
+    ],
+    "correct": 0,
+    "explanation": "Repeating a PUT has the same intended resource effect as one request. Responses and logging may still differ.",
+    "topic": "HTTP semantics"
+  },
+  {
+    "id": "cn-08",
+    "subject": "cn",
+    "difficulty": "easy",
+    "question": "Why is HTTPS different from plain HTTP?",
+    "options": [
+      "TLS protects the HTTP connection",
+      "It removes all application bugs",
+      "It prevents every SQL injection",
+      "It makes all content public"
+    ],
+    "correct": 0,
+    "explanation": "TLS provides transport confidentiality/integrity and authenticated endpoints when properly validated; it does not fix application logic.",
+    "topic": "TLS"
+  },
+  {
+    "id": "cn-09",
+    "subject": "cn",
+    "difficulty": "medium",
+    "question": "What does a browser's same-origin policy primarily restrict?",
+    "options": [
+      "Scripts reading certain cross-origin responses",
+      "All cross-origin network traffic",
+      "Every link to another site",
+      "DNS lookups"
+    ],
+    "correct": 0,
+    "explanation": "Some cross-origin requests can be sent; access to responses is restricted unless the relevant cross-origin mechanism permits it.",
+    "topic": "Browser security"
+  },
+  {
+    "id": "cn-10",
+    "subject": "cn",
+    "difficulty": "medium",
+    "question": "What does a CORS preflight use?",
+    "options": [
+      "An OPTIONS request",
+      "A DNS TXT query",
+      "A TCP FIN packet",
+      "An HTTP DELETE request"
+    ],
+    "correct": 0,
+    "explanation": "For qualifying cross-origin requests the browser asks the server which methods/headers are allowed before the actual request.",
+    "topic": "Browser security"
+  },
+  {
+    "id": "cn-11",
+    "subject": "cn",
+    "difficulty": "easy",
+    "question": "What is the role of ARP on an IPv4 local network?",
+    "options": [
+      "Resolve a local next-hop IPv4 address to a link-layer address",
+      "Encrypt application data",
+      "Allocate TCP ports",
+      "Resolve domain names globally"
+    ],
+    "correct": 0,
+    "explanation": "ARP maps local IPv4 addresses to hardware addresses. For an off-subnet destination, the next hop is often a router.",
+    "topic": "Local networks"
+  },
+  {
+    "id": "cn-12",
+    "subject": "cn",
+    "difficulty": "medium",
+    "question": "Which value prevents an IP packet from circulating indefinitely?",
+    "options": [
+      "TTL or hop limit",
+      "The TCP application message count",
+      "The HTTP status code",
+      "The DNS record owner"
+    ],
+    "correct": 0,
+    "explanation": "Routers decrement the relevant limit; expiry prevents persistent routing loops from circulating a packet forever.",
+    "topic": "IP routing"
+  },
+  {
+    "id": "cn-13",
+    "subject": "cn",
+    "difficulty": "medium",
+    "question": "Why can a client retrying a timed-out purchase POST create two orders?",
+    "options": [
+      "The first request may have committed before its response was lost",
+      "Timeout proves the server rolled back",
+      "POST is always idempotent",
+      "TCP forbids retries"
+    ],
+    "correct": 0,
+    "explanation": "Use an application idempotency key and server enforcement; transport failure does not establish the business operation's outcome.",
+    "topic": "Request reliability"
+  },
+  {
+    "id": "cn-14",
+    "subject": "cn",
+    "difficulty": "medium",
+    "question": "What usually distinguishes flow control from congestion control in TCP?",
+    "options": [
+      "Flow control protects the receiver; congestion control responds to network capacity",
+      "They only change DNS",
+      "Flow control encrypts packets",
+      "Congestion control allocates SQL locks"
+    ],
+    "correct": 0,
+    "explanation": "A receiver window bounds receiving capacity; congestion algorithms limit sending based on network conditions.",
+    "topic": "Transport protocols"
+  },
+  {
+    "id": "cn-15",
+    "subject": "cn",
+    "difficulty": "easy",
+    "question": "Which device normally forwards packets between IP networks?",
+    "options": [
+      "Router",
+      "A passive cable",
+      "A DNS zone file",
+      "A process mutex"
+    ],
+    "correct": 0,
+    "explanation": "Routers use network-layer routing information. Switches typically forward link-layer frames within a network.",
+    "topic": "IP routing"
+  },
+  {
+    "id": "cn-16",
+    "subject": "cn",
+    "difficulty": "medium",
+    "question": "Why can a DNS lookup still use an old address shortly after a record is changed?",
+    "options": [
+      "A resolver may retain a cached record until its TTL expires",
+      "DNS updates delete every cache instantly",
+      "TLS forces DNS to ignore updates",
+      "The browser must use UDP forever"
+    ],
+    "correct": 0,
+    "explanation": "Cached answers need not refresh immediately; TTL and caching layers affect when clients observe changes.",
+    "topic": "DNS"
+  },
+  {
+    "id": "cn-17",
+    "subject": "cn",
+    "difficulty": "medium",
+    "question": "Which response most directly represents a successful HTTP request with no response content?",
+    "options": [
+      "204",
+      "404",
+      "301",
+      "503"
+    ],
+    "correct": 0,
+    "explanation": "204 No Content indicates success without a response body; the other statuses represent different outcomes.",
+    "topic": "HTTP semantics"
+  },
+  {
+    "id": "cn-18",
+    "subject": "cn",
+    "difficulty": "medium",
+    "question": "What does a TCP SYN-SYN/ACK-ACK exchange establish?",
+    "options": [
+      "A TCP connection and initial sequence-state agreement",
+      "An encrypted TLS session by itself",
+      "An HTTP login session",
+      "A DNS delegation"
+    ],
+    "correct": 0,
+    "explanation": "The handshake establishes TCP state. TLS and application authentication are separate layers.",
+    "topic": "Transport protocols"
+  },
+  {
+    "id": "cn-19",
+    "subject": "cn",
+    "difficulty": "hard",
+    "question": "Can an HTTP/2 connection over TCP suffer transport head-of-line blocking across streams?",
+    "options": [
+      "Yes, lost TCP bytes can delay delivery for multiple streams",
+      "No, streams use separate TCP connections by definition",
+      "Only when DNS fails",
+      "Only when compression is disabled"
+    ],
+    "correct": 0,
+    "explanation": "HTTP/2 multiplexes streams, but TCP still delivers an ordered byte stream. This differs from QUIC's stream delivery model.",
+    "topic": "Transport protocols"
+  },
+  {
+    "id": "cn-20",
+    "subject": "cn",
+    "difficulty": "medium",
+    "question": "Which cookie attribute restricts JavaScript access to a cookie?",
+    "options": [
+      "HttpOnly",
+      "Secure alone",
+      "Path alone",
+      "Max-Age alone"
+    ],
+    "correct": 0,
+    "explanation": "HttpOnly prevents access through ordinary JavaScript cookie APIs. Secure controls transmission over secure connections.",
+    "topic": "Browser security"
+  },
+  {
+    "id": "oop-01",
+    "subject": "oop",
+    "difficulty": "easy",
+    "question": "Which design best protects a bank account balance invariant?",
+    "options": [
+      "Expose deposit/withdraw methods that validate changes",
+      "Make balance publicly writable",
+      "Remove all methods",
+      "Trust every caller to maintain rules"
+    ],
+    "correct": 0,
+    "explanation": "Encapsulation centralises valid state transitions; private fields alone are not enough if methods bypass the invariant.",
+    "topic": "Encapsulation"
+  },
+  {
+    "id": "oop-02",
+    "subject": "oop",
+    "difficulty": "medium",
+    "question": "A subclass rejects inputs that its base contract explicitly permits. Which principle is threatened?",
+    "options": [
+      "Liskov substitution",
+      "Single responsibility automatically",
+      "Dependency inversion automatically",
+      "Interface segregation automatically"
+    ],
+    "correct": 0,
+    "explanation": "Clients relying on the base contract should work with the subtype; strengthening preconditions can break substitutability.",
+    "topic": "SOLID"
+  },
+  {
+    "id": "oop-03",
+    "subject": "oop",
+    "difficulty": "easy",
+    "question": "Which relationship usually models a car containing an engine?",
+    "options": [
+      "Composition or aggregation depending on lifetime ownership",
+      "Inheritance solely because both are objects",
+      "Method overloading",
+      "Static dispatch"
+    ],
+    "correct": 0,
+    "explanation": "A has-a relationship is represented by object references/ownership, not automatically by an is-a subtype relationship.",
+    "topic": "Object modelling"
+  },
+  {
+    "id": "oop-04",
+    "subject": "oop",
+    "difficulty": "medium",
+    "question": "A payment service depends on a PaymentGateway interface rather than one concrete vendor. What improves?",
+    "options": [
+      "Dependency inversion and replaceability",
+      "A guarantee of zero latency",
+      "Elimination of testing",
+      "Mandatory inheritance of vendor internals"
+    ],
+    "correct": 0,
+    "explanation": "High-level policy can depend on an abstraction; adapters implement it for providers and test doubles.",
+    "topic": "SOLID"
+  },
+  {
+    "id": "oop-05",
+    "subject": "oop",
+    "difficulty": "easy",
+    "question": "Two methods have the same name but different parameter lists in Java. What is this?",
+    "options": [
+      "Overloading",
+      "Overriding necessarily",
+      "Garbage collection",
+      "Composition"
+    ],
+    "correct": 0,
+    "explanation": "Overloading selects among signatures. Overriding supplies subtype behaviour for an inherited instance-method contract.",
+    "topic": "Dispatch"
+  },
+  {
+    "id": "oop-06",
+    "subject": "oop",
+    "difficulty": "medium",
+    "question": "For an overridden Java instance method, what determines the implementation called through a base reference?",
+    "options": [
+      "The runtime object's class",
+      "Only the variable's declared type",
+      "Only the source filename",
+      "The object's hash code"
+    ],
+    "correct": 0,
+    "explanation": "Dynamic dispatch selects the override for the runtime object. Overload resolution and static methods follow different rules.",
+    "topic": "Dispatch"
+  },
+  {
+    "id": "oop-07",
+    "subject": "oop",
+    "difficulty": "medium",
+    "question": "A notification service repeatedly switches on channel type before sending. Which pattern can isolate each sending algorithm?",
+    "options": [
+      "Strategy",
+      "Singleton necessarily",
+      "Memento necessarily",
+      "Prototype necessarily"
+    ],
+    "correct": 0,
+    "explanation": "A strategy interface gives each channel its own implementation and lets the service delegate the behaviour.",
+    "topic": "Design patterns"
+  },
+  {
+    "id": "oop-08",
+    "subject": "oop",
+    "difficulty": "medium",
+    "question": "A GUI must notify several listeners when a document changes. Which pattern fits?",
+    "options": [
+      "Observer",
+      "Builder",
+      "Adapter necessarily",
+      "Flyweight necessarily"
+    ],
+    "correct": 0,
+    "explanation": "Observer describes a subject notifying registered observers. Listener lifetime and unsubscription still need careful design.",
+    "topic": "Design patterns"
+  },
+  {
+    "id": "oop-09",
+    "subject": "oop",
+    "difficulty": "easy",
+    "question": "What does an interface primarily specify?",
+    "options": [
+      "A contract implementations agree to provide",
+      "The physical layout of every object",
+      "A database transaction log",
+      "A guarantee that all code is immutable"
+    ],
+    "correct": 0,
+    "explanation": "Interfaces describe a supported contract; exact language capabilities such as default methods vary by language/version.",
+    "topic": "Contracts"
+  },
+  {
+    "id": "oop-10",
+    "subject": "oop",
+    "difficulty": "medium",
+    "question": "One interface forces a read-only client to implement delete and write operations. What is a better design?",
+    "options": [
+      "Split interfaces around client needs",
+      "Add more unrelated methods",
+      "Make all operations global",
+      "Remove type checking"
+    ],
+    "correct": 0,
+    "explanation": "Interface segregation avoids forcing clients to depend on methods they do not use.",
+    "topic": "SOLID"
+  },
+  {
+    "id": "oop-11",
+    "subject": "oop",
+    "difficulty": "medium",
+    "question": "A class changes for payroll rules, report formatting and database migration logic. What is the concern?",
+    "options": [
+      "Multiple independent reasons to change",
+      "Too few public fields",
+      "Every class must have one method",
+      "Inheritance is always required"
+    ],
+    "correct": 0,
+    "explanation": "Single responsibility concerns cohesive reasons to change, not an arbitrary one-method limit.",
+    "topic": "SOLID"
+  },
+  {
+    "id": "oop-12",
+    "subject": "oop",
+    "difficulty": "easy",
+    "question": "What distinguishes abstraction from merely hiding a field?",
+    "options": [
+      "Abstraction exposes an essential contract while omitting irrelevant detail",
+      "Abstraction means every field is public",
+      "They are impossible to combine",
+      "Abstraction forbids interfaces"
+    ],
+    "correct": 0,
+    "explanation": "Encapsulation controls access and state transitions; abstraction presents the model or contract clients need.",
+    "topic": "Abstraction"
+  },
+  {
+    "id": "oop-13",
+    "subject": "oop",
+    "difficulty": "medium",
+    "question": "A legacy library uses a different API from the interface your app expects. Which pattern bridges them?",
+    "options": [
+      "Adapter",
+      "Observer",
+      "Iterator necessarily",
+      "Memento necessarily"
+    ],
+    "correct": 0,
+    "explanation": "An adapter translates between interfaces so existing code can be used through the expected contract.",
+    "topic": "Design patterns"
+  },
+  {
+    "id": "oop-14",
+    "subject": "oop",
+    "difficulty": "medium",
+    "question": "You need to construct an object with many optional parts and validate the finished configuration. Which pattern can help?",
+    "options": [
+      "Builder",
+      "Observer",
+      "State necessarily",
+      "Flyweight necessarily"
+    ],
+    "correct": 0,
+    "explanation": "A builder separates construction steps and can validate combinations; it is not a replacement for domain validation.",
+    "topic": "Design patterns"
+  },
+  {
+    "id": "oop-15",
+    "subject": "oop",
+    "difficulty": "medium",
+    "question": "A connection object behaves differently when Open, Closed or Reconnecting. Which pattern can organise these transitions?",
+    "options": [
+      "State",
+      "Prototype",
+      "Decorator necessarily",
+      "Iterator necessarily"
+    ],
+    "correct": 0,
+    "explanation": "State delegates state-dependent behaviour to state objects or an explicit transition model, avoiding scattered conditionals.",
+    "topic": "Design patterns"
+  },
+  {
+    "id": "oop-16",
+    "subject": "oop",
+    "difficulty": "hard",
+    "question": "Why can a publicly accessible mutable singleton complicate tests?",
+    "options": [
+      "State can leak between tests and create hidden dependencies",
+      "Singletons cannot contain fields",
+      "Singletons are always immutable",
+      "A singleton guarantees thread safety"
+    ],
+    "correct": 0,
+    "explanation": "A single instance is not automatically isolated or thread-safe. Dependency injection can make state and lifetimes explicit.",
+    "topic": "Object lifetime"
+  },
+  {
+    "id": "oop-17",
+    "subject": "oop",
+    "difficulty": "medium",
+    "question": "An object exposes an iterator instead of its backing collection representation. What is the benefit?",
+    "options": [
+      "Traversal can be decoupled from storage details",
+      "Traversal becomes constant-time always",
+      "Mutation becomes impossible in every language",
+      "The collection must be a linked list"
+    ],
+    "correct": 0,
+    "explanation": "Iterator provides a traversal contract; complexity and mutation guarantees still depend on the implementation.",
+    "topic": "Design patterns"
+  },
+  {
+    "id": "oop-18",
+    "subject": "oop",
+    "difficulty": "easy",
+    "question": "In Java, can a class extend two concrete classes directly?",
+    "options": [
+      "No, Java has single class inheritance",
+      "Yes, with two extends clauses",
+      "Only if both have constructors",
+      "Only if they have no fields"
+    ],
+    "correct": 0,
+    "explanation": "A Java class has one direct superclass but may implement multiple interfaces.",
+    "topic": "Inheritance"
+  },
+  {
+    "id": "oop-19",
+    "subject": "oop",
+    "difficulty": "medium",
+    "question": "A wrapper adds logging while preserving an existing service interface. Which pattern fits?",
+    "options": [
+      "Decorator",
+      "Abstract factory necessarily",
+      "Memento necessarily",
+      "Visitor necessarily"
+    ],
+    "correct": 0,
+    "explanation": "A decorator wraps an object implementing the same contract and adds behaviour before or after delegation.",
+    "topic": "Design patterns"
+  },
+  {
+    "id": "oop-20",
+    "subject": "oop",
+    "difficulty": "hard",
+    "question": "Why is calling overridable methods from a Java superclass constructor risky?",
+    "options": [
+      "Subclass state may not yet be initialised when the override runs",
+      "Dynamic dispatch is always disabled in constructors",
+      "It prevents superclass construction",
+      "It automatically causes a compile error"
+    ],
+    "correct": 0,
+    "explanation": "An override can run before subclass initialisation completes, exposing default or inconsistent state. Avoid such constructor calls.",
+    "topic": "Object lifetime"
+  }
+]

@@ -7,7 +7,7 @@ export const LIBRARY = [
  {slug:"aptitude",title:"Aptitude",pro:true,status:"75 link-out entries; not a verified quiz bank"},
  {slug:"behavioural",title:"Behavioural and HR",pro:true,status:"60 supplied questions; attribution review pending"},
  {slug:"interview",title:"Interview preparation",pro:true,status:"59 question titles; answers missing"},
- {slug:"companies",title:"Company preparation",pro:true,status:"86 community-reported OA source links"},
+ {slug:"companies",title:"Company preparation",pro:true,status:"50 company sheets with frequency-informed priority practice"},
  {slug:"development",title:"Development paths",pro:true,status:"Structured development paths and project resources"},
 ] as const;
 export const isCoreRoot=(slug:string)=>["dbms","os","cn","oop","sql"].includes(slug);

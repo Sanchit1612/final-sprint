@@ -1,0 +1,2 @@
+import type {CompanySheet} from './companies';
+export function companyFacts(sheet:CompanySheet){const difficulty={easy:0,medium:0,hard:0},topics=new Map<string,number>();for(const p of sheet.problems){if(p.difficulty in difficulty)difficulty[p.difficulty as keyof typeof difficulty]++;for(const tag of p.topics??[])topics.set(tag,(topics.get(tag)??0)+1);}return {difficulty,topics:[...topics].sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0])).slice(0,3)};}

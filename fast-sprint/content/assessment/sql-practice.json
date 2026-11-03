@@ -1,0 +1,403 @@
+{
+  "schema": "CREATE TABLE departments(id int primary key,name text);\nCREATE TABLE employees(id int primary key,name text,department_id int references departments(id),salary int,manager_id int);\nCREATE TABLE customers(id int primary key,name text);\nCREATE TABLE orders(id int primary key,customer_id int references customers(id),amount int,status text,ordered_on date);\nINSERT INTO departments VALUES (1,'Engineering'),(2,'Sales'),(3,'Support');\nINSERT INTO employees VALUES (1,'Asha',1,100,NULL),(2,'Ben',1,80,1),(3,'Chen',1,80,1),(4,'Diya',2,90,NULL),(5,'Eli',2,60,4);\nINSERT INTO customers VALUES (1,'Ada'),(2,'Bo'),(3,'Cy'),(4,'Dee');\nINSERT INTO orders VALUES (1,1,100,'paid','2026-01-01'),(2,1,50,'paid','2026-01-02'),(3,2,80,'paid','2026-01-02'),(4,2,40,'cancelled','2026-01-03'),(5,3,120,'paid','2026-01-03'),(6,3,30,'paid','2026-01-03');",
+  "problems": [
+    {
+      "id": "filter",
+      "title": "Paid orders",
+      "difficulty": "easy",
+      "prompt": "Return paid order IDs and amounts, ordered by ID.",
+      "solution": "SELECT id,amount FROM orders WHERE status='paid' ORDER BY id",
+      "expected": [
+        [
+          1,
+          100
+        ],
+        [
+          2,
+          50
+        ],
+        [
+          3,
+          80
+        ],
+        [
+          5,
+          120
+        ],
+        [
+          6,
+          30
+        ]
+      ],
+      "explanation": "Filter before presenting the result. Cancelled orders are excluded."
+    },
+    {
+      "id": "join",
+      "title": "Order owners",
+      "difficulty": "easy",
+      "prompt": "Return each order ID and its customer name, ordered by order ID.",
+      "solution": "SELECT o.id,c.name FROM orders o JOIN customers c ON c.id=o.customer_id ORDER BY o.id",
+      "expected": [
+        [
+          1,
+          "Ada"
+        ],
+        [
+          2,
+          "Ada"
+        ],
+        [
+          3,
+          "Bo"
+        ],
+        [
+          4,
+          "Bo"
+        ],
+        [
+          5,
+          "Cy"
+        ],
+        [
+          6,
+          "Cy"
+        ]
+      ],
+      "explanation": "Join on the foreign key rather than names; customer names need not be unique."
+    },
+    {
+      "id": "missing",
+      "title": "Customers without orders",
+      "difficulty": "medium",
+      "prompt": "Return customer names with no orders of any status, ordered by name.",
+      "solution": "SELECT c.name FROM customers c WHERE NOT EXISTS(SELECT 1 FROM orders o WHERE o.customer_id=c.id) ORDER BY c.name",
+      "expected": [
+        [
+          "Dee"
+        ]
+      ],
+      "explanation": "NOT EXISTS checks absence directly. Cancelled orders still count as orders for this prompt."
+    },
+    {
+      "id": "totals",
+      "title": "Paid spending per customer",
+      "difficulty": "medium",
+      "prompt": "Include every customer with total paid spending; use 0 when none. Order by customer ID.",
+      "solution": "SELECT c.name,COALESCE(SUM(o.amount),0)::int total FROM customers c LEFT JOIN orders o ON o.customer_id=c.id AND o.status='paid' GROUP BY c.id,c.name ORDER BY c.id",
+      "expected": [
+        [
+          "Ada",
+          150
+        ],
+        [
+          "Bo",
+          80
+        ],
+        [
+          "Cy",
+          150
+        ],
+        [
+          "Dee",
+          0
+        ]
+      ],
+      "explanation": "Keep the status condition in ON so customers without paid orders survive the LEFT JOIN."
+    },
+    {
+      "id": "having",
+      "title": "Repeat paying customers",
+      "difficulty": "medium",
+      "prompt": "Return customer IDs having at least two paid orders, ordered by customer ID.",
+      "solution": "SELECT customer_id FROM orders WHERE status='paid' GROUP BY customer_id HAVING COUNT(*)>=2 ORDER BY customer_id",
+      "expected": [
+        [
+          1
+        ],
+        [
+          3
+        ]
+      ],
+      "explanation": "WHERE selects paid rows first; HAVING then filters the grouped counts."
+    },
+    {
+      "id": "second",
+      "title": "Second distinct salary",
+      "difficulty": "medium",
+      "prompt": "Return the second highest distinct salary as salary.",
+      "solution": "SELECT DISTINCT salary FROM employees ORDER BY salary DESC OFFSET 1 LIMIT 1",
+      "expected": [
+        [
+          90
+        ]
+      ],
+      "explanation": "Distinct matters when salaries tie. This query returns no row if a second distinct salary does not exist."
+    },
+    {
+      "id": "top",
+      "title": "Top earners per department",
+      "difficulty": "medium",
+      "prompt": "Return names of all highest-paid employees in each populated department, ordered by name.",
+      "solution": "SELECT name FROM (SELECT name,DENSE_RANK() OVER(PARTITION BY department_id ORDER BY salary DESC) r FROM employees) t WHERE r=1 ORDER BY name",
+      "expected": [
+        [
+          "Asha"
+        ],
+        [
+          "Diya"
+        ]
+      ],
+      "explanation": "DENSE_RANK retains ties. A deterministic single winner would need a different requirement."
+    },
+    {
+      "id": "above",
+      "title": "Above department average",
+      "difficulty": "medium",
+      "prompt": "Return employee names earning above their department average, ordered by name.",
+      "solution": "SELECT name FROM (SELECT name,salary,AVG(salary) OVER(PARTITION BY department_id) av FROM employees) t WHERE salary>av ORDER BY name",
+      "expected": [
+        [
+          "Asha"
+        ],
+        [
+          "Diya"
+        ]
+      ],
+      "explanation": "A window aggregate preserves each employee row while computing the comparison baseline."
+    },
+    {
+      "id": "manager",
+      "title": "Employees and managers",
+      "difficulty": "easy",
+      "prompt": "Return every employee name and manager name (NULL for no manager), ordered by employee ID.",
+      "solution": "SELECT e.name,m.name manager FROM employees e LEFT JOIN employees m ON m.id=e.manager_id ORDER BY e.id",
+      "expected": [
+        [
+          "Asha",
+          null
+        ],
+        [
+          "Ben",
+          "Asha"
+        ],
+        [
+          "Chen",
+          "Asha"
+        ],
+        [
+          "Diya",
+          null
+        ],
+        [
+          "Eli",
+          "Diya"
+        ]
+      ],
+      "explanation": "A self join gives the two roles separate aliases. LEFT JOIN preserves top-level employees."
+    },
+    {
+      "id": "empty",
+      "title": "Departments without employees",
+      "difficulty": "medium",
+      "prompt": "Return department names with no employees, ordered by name.",
+      "solution": "SELECT d.name FROM departments d LEFT JOIN employees e ON e.department_id=d.id GROUP BY d.id,d.name HAVING COUNT(e.id)=0 ORDER BY d.name",
+      "expected": [
+        [
+          "Support"
+        ]
+      ],
+      "explanation": "COUNT(e.id) is zero for an unmatched department. COUNT(*) would count its outer-join row."
+    },
+    {
+      "id": "running",
+      "title": "Running paid revenue",
+      "difficulty": "hard",
+      "prompt": "For paid orders, return order ID and cumulative revenue ordered by date then ID. Use the same ordering in the window.",
+      "solution": "SELECT id,SUM(amount) OVER(ORDER BY ordered_on,id ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)::int running FROM orders WHERE status='paid' ORDER BY ordered_on,id",
+      "expected": [
+        [
+          1,
+          100
+        ],
+        [
+          2,
+          150
+        ],
+        [
+          3,
+          230
+        ],
+        [
+          5,
+          350
+        ],
+        [
+          6,
+          380
+        ]
+      ],
+      "explanation": "An explicit ROWS frame and unique ordering make ties on the same day deterministic."
+    },
+    {
+      "id": "latest",
+      "title": "Latest paid order per customer",
+      "difficulty": "hard",
+      "prompt": "Return customer ID and their latest paid order ID. Break same-day ties with larger order ID. Order by customer ID.",
+      "solution": "SELECT customer_id,id FROM (SELECT customer_id,id,ROW_NUMBER() OVER(PARTITION BY customer_id ORDER BY ordered_on DESC,id DESC) r FROM orders WHERE status='paid') t WHERE r=1 ORDER BY customer_id",
+      "expected": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "explanation": "ROW_NUMBER chooses exactly one row per group; the ID tie-breaker is essential."
+    },
+    {
+      "id": "daily",
+      "title": "Daily paid revenue",
+      "difficulty": "easy",
+      "prompt": "Return paid revenue by date, ordered by date. Format date as YYYY-MM-DD text.",
+      "solution": "SELECT to_char(ordered_on,'YYYY-MM-DD') AS revenue_day,SUM(amount)::int revenue FROM orders WHERE status='paid' GROUP BY ordered_on ORDER BY ordered_on",
+      "expected": [
+        [
+          "2026-01-01",
+          100
+        ],
+        [
+          "2026-01-02",
+          130
+        ],
+        [
+          "2026-01-03",
+          150
+        ]
+      ],
+      "explanation": "Group by date after filtering paid orders. Cast totals here to keep the fixture output type simple."
+    },
+    {
+      "id": "lag",
+      "title": "Day-over-day revenue change",
+      "difficulty": "hard",
+      "prompt": "Return each paid-revenue date and change from the previous available date. First change is NULL.",
+      "solution": "WITH daily AS(SELECT ordered_on,SUM(amount)::int revenue FROM orders WHERE status='paid' GROUP BY ordered_on) SELECT to_char(ordered_on,'YYYY-MM-DD') AS revenue_day,revenue-LAG(revenue) OVER(ORDER BY ordered_on) change FROM daily ORDER BY ordered_on",
+      "expected": [
+        [
+          "2026-01-01",
+          null
+        ],
+        [
+          "2026-01-02",
+          30
+        ],
+        [
+          "2026-01-03",
+          20
+        ]
+      ],
+      "explanation": "Aggregate first, then LAG the daily totals. Missing calendar dates would need a date spine if required."
+    },
+    {
+      "id": "ties",
+      "title": "Duplicate salaries",
+      "difficulty": "medium",
+      "prompt": "Return each repeated salary and its employee count, ordered by salary.",
+      "solution": "SELECT salary,COUNT(*)::int n FROM employees GROUP BY salary HAVING COUNT(*)>1 ORDER BY salary",
+      "expected": [
+        [
+          80,
+          2
+        ]
+      ],
+      "explanation": "Grouping identifies repeated values. This detects salary ties, not duplicate employee records."
+    },
+    {
+      "id": "conditional",
+      "title": "Paid and cancelled counts",
+      "difficulty": "medium",
+      "prompt": "Return counts of paid and cancelled orders in one row.",
+      "solution": "SELECT COUNT(*) FILTER(WHERE status='paid')::int paid,COUNT(*) FILTER(WHERE status='cancelled')::int cancelled FROM orders",
+      "expected": [
+        [
+          5,
+          1
+        ]
+      ],
+      "explanation": "PostgreSQL FILTER applies a separate condition to each aggregate without dropping the other rows."
+    },
+    {
+      "id": "shares",
+      "title": "Department salary totals",
+      "difficulty": "easy",
+      "prompt": "Return each department name and salary total, including empty departments as 0. Order by department ID.",
+      "solution": "SELECT d.name,COALESCE(SUM(e.salary),0)::int total FROM departments d LEFT JOIN employees e ON e.department_id=d.id GROUP BY d.id,d.name ORDER BY d.id",
+      "expected": [
+        [
+          "Engineering",
+          260
+        ],
+        [
+          "Sales",
+          150
+        ],
+        [
+          "Support",
+          0
+        ]
+      ],
+      "explanation": "Preserve departments with LEFT JOIN and replace a NULL sum with zero."
+    },
+    {
+      "id": "exists",
+      "title": "Customers with cancelled and paid orders",
+      "difficulty": "medium",
+      "prompt": "Return names of customers with at least one paid and one cancelled order, ordered by name.",
+      "solution": "SELECT c.name FROM customers c WHERE EXISTS(SELECT 1 FROM orders o WHERE o.customer_id=c.id AND o.status='paid') AND EXISTS(SELECT 1 FROM orders o WHERE o.customer_id=c.id AND o.status='cancelled') ORDER BY c.name",
+      "expected": [
+        [
+          "Bo"
+        ]
+      ],
+      "explanation": "Two EXISTS predicates express both requirements without multiplying rows in a pair of joins."
+    },
+    {
+      "id": "rank",
+      "title": "Top two distinct salaries in Engineering",
+      "difficulty": "hard",
+      "prompt": "Return employee names with either of Engineering's top two distinct salaries, ordered by salary descending then ID.",
+      "solution": "SELECT name FROM (SELECT id,name,salary,DENSE_RANK() OVER(ORDER BY salary DESC) r FROM employees WHERE department_id=1) t WHERE r<=2 ORDER BY salary DESC,id",
+      "expected": [
+        [
+          "Asha"
+        ],
+        [
+          "Ben"
+        ],
+        [
+          "Chen"
+        ]
+      ],
+      "explanation": "Top two salary values can include more than two people. ROW_NUMBER would instead cap employee count."
+    },
+    {
+      "id": "anti",
+      "title": "Customers with no paid orders",
+      "difficulty": "medium",
+      "prompt": "Return names of customers with no paid orders, including customers with no orders at all. Order by name.",
+      "solution": "SELECT c.name FROM customers c WHERE NOT EXISTS(SELECT 1 FROM orders o WHERE o.customer_id=c.id AND o.status='paid') ORDER BY c.name",
+      "expected": [
+        [
+          "Dee"
+        ]
+      ],
+      "explanation": "Only paid orders disqualify a customer; move the status filter inside the correlated subquery."
+    }
+  ]
+}

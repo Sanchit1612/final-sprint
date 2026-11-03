@@ -1,0 +1,13 @@
+import {beforeEach,expect,it,vi} from 'vitest';
+const mocks=vi.hoisted(()=>({rpc:vi.fn(),maybeSingle:vi.fn(),eq:vi.fn(),session:vi.fn()}));
+vi.mock('@/lib/session',()=>({requireSession:mocks.session}));
+vi.mock('next/cache',()=>({revalidatePath:vi.fn()}));
+vi.mock('@/lib/billing/server',()=>({billingAdmin:()=>({rpc:mocks.rpc,from:()=>({select:()=>({eq:mocks.eq})})})}));
+import {startMock,resumeMock,submitMock} from './assessment';
+import {bank} from '@/lib/assessment/bank';
+const id='11111111-1111-4111-8111-111111111111';
+beforeEach(()=>{vi.clearAllMocks();vi.stubEnv('ASSESSMENTS_ENABLED','true');mocks.session.mockResolvedValue({user:{id:'verified-user'}});mocks.eq.mockReturnValue({eq:()=>({maybeSingle:mocks.maybeSingle})});});
+it('keeps answer keys private on start and binds the verified user to the service RPC',async()=>{mocks.rpc.mockResolvedValue({data:{id,questions:bank.slice(0,10)},error:null});const r=await startMock({id,subject:'dbms',count:10});expect(r.questions).toHaveLength(10);expect(r.questions?.[0]).not.toHaveProperty('correct');expect(r.questions?.[0]).not.toHaveProperty('explanation');expect(mocks.rpc.mock.calls[0][1].p_user).toBe('verified-user');});
+it('rejects invalid input and disabled setup before any trusted call',async()=>{expect((await startMock({id,subject:'dbms',count:12})).error).toBeTruthy();vi.stubEnv('ASSESSMENTS_ENABLED','false');expect((await startMock({id,subject:'dbms',count:10})).error).toBeTruthy();expect((await submitMock(id,Array(10).fill(0))).error).toBeTruthy();expect(mocks.rpc).not.toHaveBeenCalled();});
+it('reveals explanations on resume only after server submission',async()=>{mocks.maybeSingle.mockResolvedValue({data:{id,questions:bank.slice(0,10),answers:null,score:null,submitted_at:null},error:null});expect((await resumeMock(id)).questions?.[0]).not.toHaveProperty('correct');mocks.maybeSingle.mockResolvedValue({data:{id,questions:bank.slice(0,10),answers:Array(10).fill(0),score:10,submitted_at:'2026-11-03'},error:null});expect((await resumeMock(id)).questions?.[0]).toHaveProperty('explanation');expect(mocks.eq).toHaveBeenCalledWith('id',id);});
+it('returns trusted grading results rather than a caller-supplied score',async()=>{mocks.rpc.mockResolvedValue({data:{score:0,questions:bank.slice(0,10),answers:Array(10).fill(null)},error:null});const r=await submitMock(id,Array(10).fill(null));expect(r.score).toBe(0);expect(mocks.rpc).toHaveBeenCalledWith('submit_quiz',{p_user:'verified-user',p_id:id,p_answers:Array(10).fill(null)});});

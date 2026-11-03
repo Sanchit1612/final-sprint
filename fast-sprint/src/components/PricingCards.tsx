@@ -14,8 +14,8 @@ export function PricingCards({ isPro, signedIn, billing }: { isPro: boolean; sig
         {PRICING.map((p) => { const value = passValue(p.price, p.months); return (
           <div key={p.months} className={`card hover-card ${"popular" in p && p.popular ? "border-accent/60 shadow-glow" : ""}`}>
             <p className="text-sm text-muted">Pro · {p.label}</p>
-            <p className="mt-2 text-5xl font-bold tracking-tight text-accent">₹{p.price}<span className="ml-2 text-sm font-normal text-muted">total</span></p>
-            <p className="mt-3 text-lg">₹{value.perMonth.toFixed(2)} <span className="text-sm text-muted">/ month equivalent</span></p>
+            <p className="mt-2 text-5xl font-extrabold tracking-tight text-accent">₹{value.perMonth.toFixed(2)}<span className="ml-2 text-base font-medium text-muted">/ month</span></p>
+            <p className="mt-3 text-base font-semibold">₹{p.price} billed once for {p.months} {p.months===1?"month":"months"}</p>
             {value.savings > 0 && <p className="mt-2 text-xs text-accent">Save ₹{value.savings} ({value.savingPercent}%) versus {p.months} separate one-month passes.</p>}
             <p className="mt-1 text-sm text-muted">{p.tagline}. One-time pass, no auto-renew.</p>
             <CheckoutButton months={p.months} signedIn={signedIn} ready={billing?.ready??false} mode={billing?.mode} testPro={billing?.testPro}/>

@@ -9,6 +9,9 @@ export interface Feature { name: string; free: string | boolean; pro: string | b
 
 /** `available: false` = on the roadmap, not built yet (shown honestly as "coming soon"). */
 export const FEATURES: Feature[] = [
+  {name:"CS mocks (10, 15 or 20 questions)",free:"1 per UTC day",pro:"Unlimited",available:true},
+  {name:"SQL practice and system design / LLD roadmap",free:true,pro:true,available:true},
+  {name:"Answer-based mock revision insights",free:false,pro:true,available:true},
   { name: "DSA and Core CS checklists", free: true, pro: true, available: true },
   { name: "Progress tracking, notes and bookmarks", free: true, pro: true, available: true },
   { name: "Daily Sprint task list", free: "5 tasks per day", pro: "Unlimited", available: true },
@@ -17,9 +20,9 @@ export const FEATURES: Feature[] = [
   { name: "Striver A2Z (source-link review pending)", free: true, pro: true, available: false },
   { name: "Aptitude preparation packs", free: false, pro: true, available: false },
   { name: "Behavioural and HR preparation packs", free: false, pro: true, available: false },
-  { name: "Company preparation packs", free: false, pro: true, available: false },
+  { name: "Company-wise DSA priority sheets", free: false, pro: true, available: true },
   { name: "Personalised Placement Mode", free: false, pro: true, available: false },
-  { name: "Spaced repetition and revision tools", free: false, pro: true, available: false },
+  { name: "Confidence-based revision queue", free: true, pro: true, available: true },
   { name: "Company-specific mocks and readiness reports", free: false, pro: true, available: false },
   { name: "Detailed coverage and completion trends", free: false, pro: true, available: true },
   { name: "Development learning paths (review preview)", free: false, pro: true, available: true },

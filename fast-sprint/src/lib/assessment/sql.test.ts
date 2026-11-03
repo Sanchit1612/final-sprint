@@ -1,0 +1,3 @@
+import {PGlite} from '@electric-sql/pglite';import {expect,it} from 'vitest';import {sql,lldLessons,studyKeys} from '../study';
+it('executes every SQL solution and checks exact expected values and ordering',async()=>{const db=new PGlite();try{await db.exec(sql.schema);expect(sql.problems).toHaveLength(20);for(const p of sql.problems){const result=await db.query(p.solution);expect(result.rows.map(r=>Object.values(r as Record<string,unknown>)),p.title).toEqual(p.expected);}}finally{await db.close();}},30000);
+it('has complete distinct LLD exercises and valid checklist keys',()=>{expect(lldLessons).toHaveLength(12);expect(studyKeys.size).toBe(32);for(const l of lldLessons){expect(l.solution.length).toBeGreaterThan(100);expect(l.exercise.length).toBeGreaterThan(30);}});

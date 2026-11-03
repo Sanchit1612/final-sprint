@@ -1,0 +1,29 @@
+{
+  "appliedAt": "2026-11-03T14:39:50.146Z",
+  "proposalSHA256": "12240c87ae597f3ac7424e0fae7c60683c49244d7744dc7b96358cf5bfe271c7",
+  "environment": "approved staging only",
+  "tables": [
+    {
+      "tablename": "quiz_attempts",
+      "rowsecurity": true
+    },
+    {
+      "tablename": "study_progress",
+      "rowsecurity": true
+    }
+  ],
+  "policies": [
+    {
+      "tablename": "study_progress",
+      "policyname": "own study rows",
+      "cmd": "ALL"
+    }
+  ],
+  "triggers": [
+    {
+      "tgname": "study_progress_updated"
+    }
+  ],
+  "productionChanges": 0,
+  "contentImports": 0
+}

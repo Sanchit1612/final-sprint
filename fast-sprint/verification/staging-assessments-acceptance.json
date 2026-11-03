@@ -1,0 +1,15 @@
+{
+  "testedAt": "2026-11-03T14:40:50.594Z",
+  "success": true,
+  "scope": "Hosted SQL roles and independent database sessions; browser acceptance separate",
+  "checks": [
+    "8 separate sessions: exactly one Free attempt admitted",
+    "Existing attempt retries do not consume another quota",
+    "Cross-account grading denied; grading and replay are authoritative",
+    "Active Pro can start multiple mocks in the same day",
+    "Both authenticated accounts denied direct answer-table access and trusted RPC execution",
+    "Study checklists isolate both accounts"
+  ],
+  "independentSessions": 8,
+  "productionChanges": 0
+}

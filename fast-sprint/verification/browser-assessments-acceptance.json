@@ -1,0 +1,24 @@
+{
+  "testedAt": "2026-11-03T14:56:59.791928+00:00",
+  "environment": "localhost against approved staging schema",
+  "disposableAccounts": 2,
+  "checks": [
+    "Free mixed 10-question start; no pre-submit explanations in UI",
+    "Three selected choices restored after reload and opening saved attempt",
+    "Submitted 10-question score and per-question explanations displayed",
+    "Second same-day Free start denied",
+    "Pro 15-question OS submission scored skipped answers 0/15",
+    "Pro second same-day 20-question CN attempt opened with 20 fieldsets",
+    "SQL checklist persisted through reload",
+    "LLD checklist persisted through reload after server save completed",
+    "Anonymous LLD page exposes 12 walkthroughs and sign-in-to-save link",
+    "390px mock and SQL layouts: document width equals viewport width"
+  ],
+  "cleanup": "Both auth accounts deleted; zero matching auth/quiz/study rows verified; ignored credentials deleted; browser signed out",
+  "limitations": [
+    "Not a full accessibility audit",
+    "No browser midnight rollover or expired-Pro test",
+    "No Google callback, payment capture or webhook acceptance in this test",
+    "Question editorial difficulty is not empirically calibrated"
+  ]
+}
