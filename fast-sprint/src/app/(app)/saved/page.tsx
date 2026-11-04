@@ -1,3 +1,4 @@
+import { BrowserSavedItems } from "@/components/BrowserSavedItems";
 import { learningHref } from "@/config/dsa";
 import { ExternalLink } from "lucide-react";
 import Link from "next/link";
@@ -13,7 +14,7 @@ interface Item { id: string; title: string; root_id: string; url: string | null;
 export default async function Page({ searchParams }: { searchParams: Promise<{ tab?: string }> }) {
   const { tab: raw } = await searchParams;
   const tab = TABS.find((t) => t.id === raw)?.id ?? "bookmarks";
-  const { supabase } = await requireSession();
+  const { supabase, user, isPro } = await requireSession();
   const roots = await getRoots(supabase);
   const slugOf = new Map(roots.map((r) => [r.id, r.slug]));
   const hrefFor = (i: Item) => { const s = slugOf.get(i.root_id); return s ? `${learningHref(s)}#${i.id}` : "/dsa"; };
@@ -39,8 +40,9 @@ export default async function Page({ searchParams }: { searchParams: Promise<{ t
           <Link key={t.id} href={`/saved?tab=${t.id}`} role="tab" aria-selected={tab === t.id} className={`flex-1 rounded-lg px-4 py-2 text-center text-sm transition sm:flex-none ${tab === t.id ? "bg-accent-soft text-accent" : "text-muted hover:text-white"}`}>{t.label}</Link>
         ))}
       </div>
+      <BrowserSavedItems key={`${user.id}:${tab}:${isPro}`} user={user.id} isPro={isPro} tab={tab} />
       {items.length === 0 ? (
-        <Empty title={tab === "bookmarks" ? "No bookmarks yet" : tab === "notes" ? "No notes yet" : "Nothing flagged for revision"}>
+        <Empty title={tab === "bookmarks" ? "No account bookmarks yet" : tab === "notes" ? "No account notes yet" : "No account revision flags yet"}>
           {tab === "bookmarks" ? "Tap the bookmark icon on any problem or topic." : tab === "notes" ? "Open the notes icon on any item to write one." : "Tap the revision icon on an item you want to come back to."}
         </Empty>
       ) : (

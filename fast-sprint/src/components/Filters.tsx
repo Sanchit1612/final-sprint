@@ -4,7 +4,7 @@ import { Search } from "lucide-react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
-export function Filters({ showDifficulty = true, patterns }: { showDifficulty?: boolean; patterns?: { id: string; title: string }[] }) {
+export function Filters({ showDifficulty = true, showStatus = true, patterns }: { showDifficulty?: boolean; showStatus?: boolean; patterns?: { id: string; title: string }[] }) {
   const router = useRouter();
   const path = usePathname();
   const sp = useSearchParams();
@@ -34,9 +34,9 @@ export function Filters({ showDifficulty = true, patterns }: { showDifficulty?: 
           <option value="all">All difficulties</option><option value="easy">Easy</option><option value="medium">Medium</option><option value="hard">Hard</option>
         </select>
       )}
-      <select className="input !w-auto" aria-label="Status" value={sp.get("status") ?? "all"} onChange={(e) => set("status", e.target.value)}>
+      {showStatus && <select className="input !w-auto" aria-label="Status" value={sp.get("status") ?? "all"} onChange={(e) => set("status", e.target.value)}>
         <option value="all">Everything</option><option value="todo">To do</option><option value="done">Done</option><option value="revise">Needs revision</option><option value="bookmarked">Bookmarked</option>
-      </select>
+      </select>}
       {active && <button type="button" className="btn-ghost !py-2" onClick={() => { setQ(""); const next = new URLSearchParams(sp.toString()); ["q", "difficulty", "status", "pattern"].forEach(k => next.delete(k)); router.replace(`${path}${next.size ? `?${next}` : ""}`, { scroll: false }); }}>Clear</button>}
     </div>
   );

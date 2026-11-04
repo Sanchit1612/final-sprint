@@ -1,3 +1,4 @@
+import { LockedFeatures } from "@/components/LockedFeatures";
 import {RedistributeTasks} from "@/components/RedistributeTasks";
 import {CountdownPlanner} from "@/components/CountdownPlanner";
 import {loadCoverage} from "@/lib/coverage";
@@ -50,6 +51,7 @@ export default async function Page({ searchParams }: { searchParams: Promise<{ d
         {tasks.length === 0 ? <p className="mb-4 text-sm text-muted">No tasks for this day yet. Add your first one below.</p> : <div className="mb-4"><TaskList tasks={tasks} /></div>}
         <AddTaskForm date={date} />
         {!isPro && <p className="mt-3 text-xs text-muted">Free plan: up to 5 tasks per day. <Link href="/pricing" className="text-accent hover:underline">See Pro</Link></p>}
+      {!isPro && <LockedFeatures features={[["Unlimited daily tasks", "Plan longer study days beyond the Free limit of five tasks."]]} />}
       </section>
 
       <CountdownPlanner today={today} role={profile?.target_role??""} collections={dsa.map(c=>({slug:c.root.slug,title:c.root.title,remaining:leaves(c.data.tree,c.root.slug)}))} core={coverage.filter(c=>!c.root.slug.startsWith("dsa")).flatMap(c=>leaves(c.data.tree,c.root.slug))} revision={coverage.flatMap(c=>leaves(c.data.tree,c.root.slug,true))}/>

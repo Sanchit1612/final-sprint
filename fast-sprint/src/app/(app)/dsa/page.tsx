@@ -1,3 +1,4 @@
+import { learningHref } from "@/config/dsa";
 import Link from "next/link";
 import { DSA_COLLECTIONS, dsaCollection } from "@/config/dsa";
 import { difficultyCounts } from "@/lib/dsa/stats";
@@ -28,19 +29,19 @@ export default async function Page({ searchParams }: { searchParams: Promise<Rec
         {DSA_COLLECTIONS.map(c => <Link key={c.key} href={`/dsa?collection=${c.key}`} aria-current={!legacy && collection.key === c.key ? "page" : undefined} className={`card !p-4 ${!legacy && collection.key === c.key ? "border-accent" : "hover-card"}`}><p className="text-xs text-accent">Free collection</p><h2 className="mt-1 text-base">{c.title}</h2><p className="mt-2 text-xs text-muted">{c.description}</p></Link>)}
       </nav>
       {!legacy && <Link href="/dsa?collection=legacy" className="mb-4 inline-block text-xs text-muted hover:text-white">Open existing checklist</Link>}
-      {data?.preview && <p role="status" className="card mb-5 text-sm text-muted">Content review preview: problem and video links are available. Progress, notes and bookmarks activate after the reviewed dataset is published to the database. Source mappings are recorded; LeetCode live checks were blocked. A2Z unresolved links remain blank.</p>}
+      {data?.preview && <p role="status" className="card mb-5 text-sm text-muted">Your checklist, notes and bookmarks for this collection are saved in this browser.</p>}
       {!data || data.total === 0 ? (
         <Empty title="This collection is being prepared">Verified problem links and learning order will appear here after content review. No problems have been published to this collection yet.</Empty>
       ) : (
         <>
-          <div className="card mb-5">
+          {!data.preview && <div className="card mb-5">
             <div className="mb-2 flex items-baseline justify-between"><span className="text-sm text-muted">Overall progress</span><span className="text-sm">{data.completed} / {data.total} done · {pct}%</span></div>
             <ProgressBar value={data.completed} total={data.total} />
-          </div>
-          <Filters patterns={data.patterns} />
+          </div>}
+          <Filters showStatus={!data.preview} patterns={data.patterns} />
           <p className="mb-4 text-xs text-muted">Visible problems: {distribution.easy} Easy · {distribution.medium} Medium · {distribution.hard} Hard{distribution.unspecified ? ` · ${distribution.unspecified} without difficulty` : ""}</p>
           <HashOpener />
-          {visible.length === 0 ? <Empty title="Nothing matches those filters">Try clearing the search or choosing a different status.</Empty> : <TreeView nodes={visible} readOnly={data.preview} forceOpen={data.filtered || !!sp.pattern} />}
+          {visible.length === 0 ? <Empty title="Nothing matches those filters">Try clearing the search or choosing a different status.</Empty> : <TreeView localStudy={data.preview ? { user: user.id, href: learningHref(root) } : undefined} nodes={visible} readOnly={data.preview} forceOpen={data.filtered || !!sp.pattern} />}
         </>
       )}
     </>

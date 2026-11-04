@@ -47,6 +47,8 @@ export default async function Page() {
   const weekTotal = week.reduce((a, d) => a + d.done, 0);
 
   const tasks = (todays ?? []) as TaskItem[];
+  const pendingTasks = tasks.filter(task => task.status !== "done");
+  const completedTasks = tasks.filter(task => task.status === "done");
   const appCounts = new Map<string, number>();
   for (const a of apps ?? []) appCounts.set(a.status, (appCounts.get(a.status) ?? 0) + 1);
   const firstName = (profile?.full_name ?? "").split(" ")[0];
@@ -61,7 +63,7 @@ export default async function Page() {
       <PageHeader title={firstName ? `Hi, ${firstName}` : "Dashboard"} subtitle={formatDay(today, { weekday: "long", day: "numeric", month: "long" })} />
       <section className="card mb-4" aria-labelledby="next-practice">
         <h2 id="next-practice" className="text-xl">What to practise today</h2>
-        <div className="mt-4 grid gap-3 sm:grid-cols-3">
+        <div className="mt-4 grid gap-3 sm:grid-cols-2">
           <Link href={nextProblem ? `/dsa?collection=master#${nextProblem.id}` : "/dsa"} className="hover-card rounded-xl border border-line p-4">
             <p className="text-xs text-accent">DSA · Continue Master 200</p>
             <p className="mt-2 font-semibold">{nextProblem?.title ?? "Browse your problem sheets"}</p>
@@ -72,20 +74,19 @@ export default async function Page() {
             <p className="mt-2 font-semibold">{reviseCount ? `${reviseCount} flagged for revision` : "Take a CS mock"}</p>
             <p className="mt-1 text-sm text-muted">{reviseCount ? "Revisit the items you marked for another attempt." : "Use the explanations to pick what to revise."}</p>
           </Link>
-          <Link href="/sprint" className="hover-card rounded-xl border border-line p-4">
-            <p className="text-xs text-accent">Plan · Daily Sprint</p>
-            <p className="mt-2 font-semibold">{tasks.length ? `${tasks.filter(task => task.status !== "done").length} tasks left today` : "Plan your next study session"}</p>
-            <p className="mt-1 text-sm text-muted">Set a realistic workload and move missed tasks forward.</p>
-          </Link>
         </div>
       </section>
       <div className="grid gap-4 lg:grid-cols-3">
-        <section className="card lg:col-span-2" aria-labelledby="goal">
-          <h2 id="goal" className="mb-3 flex items-center gap-2 text-base"><Target className="h-4 w-4 text-accent" aria-hidden />Your goal</h2>
-          {profile?.target_role || profile?.target_company ? (
-            <p className="text-lg">{profile.target_role ?? "Placement"}{profile.target_company ? <span className="text-muted"> at {profile.target_company}</span> : null}</p>
-          ) : <p className="text-sm text-muted">Add a target role and company in <Link href="/settings" className="text-accent hover:underline">Settings</Link> so your goal shows here.</p>}
+        <section className="card lg:col-span-2" aria-labelledby="today">
+          <div className="mb-3 flex items-center justify-between"><h2 id="today" className="text-base">Today&apos;s sprint</h2><Link href="/sprint" className="text-xs text-accent hover:underline">Open</Link></div>
+          {tasks.length === 0 ? <p className="text-sm text-muted">No tasks yet. <Link href="/sprint" className="text-accent hover:underline">Plan your day</Link>.</p> : (
+            <>
+              <p className="mb-3 text-sm text-muted">{completedTasks.length} of {tasks.length} done today{pendingTasks.length === 0 ? " · Sprint complete" : ""}</p>
+              <TaskList tasks={[...pendingTasks, ...completedTasks].slice(0, 6)} />
+            </>
+          )}
         </section>
+
         <section className="card" aria-labelledby="streak">
           <h2 id="streak" className="mb-1 text-base">Streak</h2>
           <p className="text-5xl font-bold tracking-tight text-accent">{streak}<span className="ml-1 text-sm font-normal text-muted">{streak === 1 ? "day" : "days"}</span></p>
@@ -108,29 +109,23 @@ export default async function Page() {
           )}
         </section>
 
-        <section className="card" aria-labelledby="today">
-          <div className="mb-3 flex items-center justify-between"><h2 id="today" className="text-base">Today&apos;s sprint</h2><Link href="/sprint" className="text-xs text-accent hover:underline">Open</Link></div>
-          {tasks.length === 0 ? <p className="text-sm text-muted">No tasks yet. <Link href="/sprint" className="text-accent hover:underline">Plan your day</Link>.</p> : <TaskList tasks={tasks.slice(0, 6)} />}
-        </section>
-
-        <section className="card lg:col-span-2" aria-labelledby="week">
+        <section className="card" aria-labelledby="week">
           <div className="mb-3 flex items-baseline justify-between"><h2 id="week" className="text-base">This week</h2><span className="text-xs text-muted">{weekTotal} completed in 7 days</span></div>
           {weekTotal === 0 ? <p className="py-8 text-center text-sm text-muted">Completed items will show up here as you work.</p> : <WeeklyChart data={week} />}
         </section>
 
-        <div className="space-y-4">
-          <section className="card" aria-labelledby="rev">
-            <h2 id="rev" className="mb-1 text-base">Needs revision</h2>
-            <p className="text-5xl font-bold tracking-tight text-accent">{reviseCount ?? 0}</p>
-            <Link href="/saved?tab=revision" className="mt-1 inline-block text-xs text-accent hover:underline">View list</Link>
-          </section>
-          <section className="card" aria-labelledby="apps">
-            <div className="mb-2 flex items-center justify-between"><h2 id="apps" className="text-base">Applications</h2><Link href="/applications" className="text-xs text-accent hover:underline">Open</Link></div>
-            {appCounts.size === 0 ? <p className="text-sm text-muted">None tracked yet.</p> : (
-              <ul className="space-y-1 text-sm">{[...appCounts].map(([s, n]) => <li key={s} className="flex justify-between"><span className="text-muted">{STATUS_LABEL[s]}</span><span>{n}</span></li>)}</ul>
-            )}
-          </section>
-        </div>
+        <section className="card lg:col-span-2" aria-labelledby="goal">
+          <h2 id="goal" className="mb-3 flex items-center gap-2 text-base"><Target className="h-4 w-4 text-accent" aria-hidden />Your goal</h2>
+          {profile?.target_role || profile?.target_company ? (
+            <p className="text-lg">{profile.target_role ?? "Placement"}{profile.target_company ? <span className="text-muted"> at {profile.target_company}</span> : null}</p>
+          ) : <p className="text-sm text-muted">Add a target role and company in <Link href="/settings" className="text-accent hover:underline">Settings</Link> so your goal shows here.</p>}
+        </section>
+        <section className="card" aria-labelledby="apps">
+          <div className="mb-2 flex items-center justify-between"><h2 id="apps" className="text-base">Applications</h2><Link href="/applications" className="text-xs text-accent hover:underline">Open</Link></div>
+          {appCounts.size === 0 ? <p className="text-sm text-muted">None tracked yet.</p> : (
+            <ul className="space-y-1 text-sm">{[...appCounts].map(([s, n]) => <li key={s} className="flex justify-between"><span className="text-muted">{STATUS_LABEL[s]}</span><span>{n}</span></li>)}</ul>
+          )}
+        </section>
       </div>
       {!isPro && <p className="mt-6 text-xs text-muted">You are on the Free plan. <Link href="/pricing" className="text-accent hover:underline">Compare plans</Link></p>}
     </>

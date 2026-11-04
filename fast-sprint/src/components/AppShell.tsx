@@ -7,19 +7,22 @@ import { useEffect, useState } from "react";
 import { signOut } from "@/app/actions";
 import { Logo } from "./Logo";
 
-const NAV = [
-  {href:"/practice",label:"CS mocks",icon:ListChecks},
-  {href:"/system-design",label:"System design & LLD",icon:Cpu},
-  {href:"/sql-practice",label:"SQL practice",icon:Code2},
-  {href:"/companies",label:"Company-wise DSA",icon:Briefcase},
-  { href: "/resources", label: "Resource library", icon: BookMarked },
-  { href: "/analytics", label: "Analytics", icon: LayoutDashboard },
+const DAILY_NAV = [
   { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
-  { href: "/dsa", label: "DSA", icon: Code2 },
-  { href: "/core", label: "Core CS", icon: Cpu },
   { href: "/sprint", label: "Daily Sprint", icon: ListChecks },
-  { href: "/applications", label: "Applications", icon: Briefcase },
   { href: "/saved", label: "Saved", icon: BookMarked },
+];
+const PRACTICE_NAV = [
+  { href: "/dsa", label: "DSA", icon: Code2 },
+  { href: "/practice", label: "CS mocks", icon: ListChecks },
+  { href: "/sql-practice", label: "SQL practice", icon: Code2 },
+  { href: "/system-design", label: "System design & LLD", icon: Cpu },
+  { href: "/companies", label: "Company-wise DSA", icon: Briefcase },
+  { href: "/resources", label: "Resource library", icon: BookMarked },
+];
+const PROGRESS_NAV = [
+  { href: "/analytics", label: "Analytics", icon: LayoutDashboard },
+  { href: "/applications", label: "Applications", icon: Briefcase },
 ];
 const NAV_BOTTOM = [
   { href: "/pricing", label: "Plans", icon: Sparkles },
@@ -32,7 +35,7 @@ export function AppShell({ name, isPro, children }: { name: string; isPro: boole
   const [open, setOpen] = useState(false);
   useEffect(() => setOpen(false), [path]);
 
-  const link = ({ href, label, icon: Icon }: (typeof NAV)[number]) => {
+  const link = ({ href, label, icon: Icon }: { href: string; label: string; icon: typeof Cpu }) => {
     const active = path === href || path.startsWith(`${href}/`);
     return (
       <Link key={href} href={href} aria-current={active ? "page" : undefined}
@@ -45,8 +48,19 @@ export function AppShell({ name, isPro, children }: { name: string; isPro: boole
   const sidebar = (
     <nav aria-label="Main" className="flex h-full flex-col gap-1 overflow-y-auto p-4">
       <div className="mb-6 px-1"><Logo href="/dashboard" /></div>
-      {NAV.filter(n=>n.href!=="/core").map(link)}
-      <details className="rounded-xl" open={path.startsWith("/core")||["dbms","os","cn","oop","sql"].some(s=>path===`/resources/${s}`)}><summary className="flex cursor-pointer items-center gap-3 px-3 py-2.5 text-sm text-muted"><Cpu className="h-4 w-4" aria-hidden/>CS concepts</summary><div className="ml-5 space-y-1 border-l border-line pl-2">{[{href:"/core",label:"All CS concepts",icon:Cpu},...[["dbms","DBMS"],["os","Operating Systems"],["cn","Computer Networks"],["oop","OOP"],["sql","SQL"]].map(([key,label])=>({href:`/resources/${key}`,label,icon:Cpu}))].map(link)}</div></details>
+      <div role="group" aria-label="Daily prep">
+        <p className="px-3 pb-1 text-xs font-semibold text-muted">Daily prep</p>
+        {DAILY_NAV.map(link)}
+      </div>
+      <div role="group" aria-label="Practice" className="mt-3">
+        <p className="px-3 pb-1 text-xs font-semibold text-muted">Practice</p>
+        {PRACTICE_NAV.map(link)}
+        <details className="rounded-xl" open={path.startsWith("/core")||["dbms","os","cn","oop","sql"].some(s=>path===`/resources/${s}`)}><summary className="flex cursor-pointer items-center gap-3 px-3 py-2.5 text-sm text-muted"><Cpu className="h-4 w-4" aria-hidden/>CS concepts</summary><div className="ml-5 space-y-1 border-l border-line pl-2">{[{href:"/core",label:"All CS concepts",icon:Cpu},...[["dbms","DBMS"],["os","Operating Systems"],["cn","Computer Networks"],["oop","OOP"],["sql","SQL"]].map(([key,label])=>({href:`/resources/${key}`,label,icon:Cpu}))].map(link)}</div></details>
+      </div>
+      <div role="group" aria-label="Progress and applications" className="my-3">
+        <p className="px-3 pb-1 text-xs font-semibold text-muted">Progress and applications</p>
+        {PROGRESS_NAV.map(link)}
+      </div>
       <div className="mt-auto space-y-1 border-t border-line pt-4">
         {NAV_BOTTOM.map(link)}
         <form action={signOut}>

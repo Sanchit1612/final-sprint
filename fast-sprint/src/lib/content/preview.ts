@@ -26,11 +26,11 @@ export async function loadLearningTree(db: SupabaseClient, user: string, slug: s
  }
  const count=(n:TreeNode):number=>{n.checkable=!n.children.length;n.total=n.checkable?1:n.children.reduce((s,c)=>s+count(c),0);return n.total;};
  const total=top.reduce((s,n)=>s+count(n),0);
- const filtered=!!(filters.q||filters.difficulty&&filters.difficulty!=="all"||filters.status&&filters.status!=="all");
+ const filtered=!!(filters.q||filters.difficulty&&filters.difficulty!=="all");
  const prune=(n:TreeNode):TreeNode|null=>{
   if(n.checkable){if(filters.difficulty&&filters.difficulty!=="all"&&filters.difficulty!==n.difficulty)return null;
    if(filters.q&&!n.title.toLowerCase().includes(filters.q.toLowerCase().trim()))return null;
-   if(filters.status&&!["all","todo"].includes(filters.status))return null;
+
    return n;}
   const children=n.children.map(prune).filter((c):c is TreeNode=>c!==null);return children.length?{...n,children}:null;
  };

@@ -1,3 +1,4 @@
+import { LockedFeatures } from "@/components/LockedFeatures";
 import Link from "next/link";
 import { ApplicationsBoard, type App } from "@/components/ApplicationsBoard";
 import { PageHeader } from "@/components/ui";
@@ -14,6 +15,7 @@ export default async function Page() {
       <PageHeader title="Applications" subtitle="Keep every company, role and deadline in one place." />
       <ApplicationsBoard apps={(data ?? []) as App[]} />
       {!isPro && <p className="mt-6 text-xs text-muted">Free plan: up to 10 applications. <Link href="/pricing" className="text-accent hover:underline">See Pro</Link></p>}
+      {!isPro && <LockedFeatures features={[["Unlimited applications", "Keep tracking roles beyond the Free limit of ten applications."]]} />}
     </>
   );
 }

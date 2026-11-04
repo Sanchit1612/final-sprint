@@ -39,7 +39,7 @@ export function AuthForm({ mode }: { mode: "login" | "register" }) {
       });
       if (error) return setError(error.message);
       if (data.session) { router.push("/onboarding"); router.refresh(); }
-      else setInfo("Check your email for a confirmation link to finish creating your account.");
+      else setInfo("Check your email for a confirmation link. Open it in the same browser you used to sign up. If it is missing, check your spam folder.");
     }
     } catch {setError("Could not connect. Check your connection and try again.");}
   });

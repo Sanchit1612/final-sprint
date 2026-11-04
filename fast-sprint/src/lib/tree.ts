@@ -45,10 +45,14 @@ export async function loadTree(supabase: SupabaseClient, userId: string, rootSlu
   const ids = rows.map((r) => r.id);
   const inChunks = async <T,>(table: string, cols: string) => {
     const out: T[] = [];
-    for (let i = 0; i < ids.length; i += 150) {
-      const { data, error } = await supabase.from(table).select(cols).eq("user_id", userId).in("item_id", ids.slice(i, i + 150));
-      if (error) throw new Error(error.message);
-      out.push(...((data ?? []) as T[]));
+    for (let offset = 0; offset < ids.length; offset += 450) {
+      const chunks = [0, 150, 300].map(start => ids.slice(offset + start, offset + start + 150)).filter(chunk => chunk.length);
+      const results = await Promise.all(chunks.map(chunk =>
+        supabase.from(table).select(cols).eq("user_id", userId).in("item_id", chunk)));
+      for (const { data, error } of results) {
+        if (error) throw new Error(error.message);
+        out.push(...((data ?? []) as T[]));
+      }
     }
     return out;
   };

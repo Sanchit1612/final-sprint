@@ -1,3 +1,11 @@
+# Checklist reliability and deployment checks — 2026-11-04
+
+Collections served from local manifests now support completion, revision flags, bookmarks and notes in the current browser. Saved shows those entries separately from account data. Published collections retain Supabase persistence. Browser-only progress does not count toward account analytics and does not transfer automatically when a collection is published. No additional content or SQL was applied.
+
+Signed-in browser checks saved and reloaded all four controls on an A2Z item and a published Master 200 item. Verified the A2Z Saved tabs and the link back to its checklist row. Restored the temporary test state. Checklist reads now fetch independent item chunks concurrently in bounded batches. User-facing collection copy states where progress is saved.
+
+97 automated tests, lint and typecheck passed. Confirmation callback tests cover successful code exchange and expired codes. Razorpay Test Mode authenticated order lookup returned HTTP 200. Real inbox delivery, hosted test payment capture and HTTPS webhook acceptance remain release gates.
+
 # Learning and scored mocks checkpoint — 2026-11-03
 
 Implemented 80 original scenario MCQs (20 each DBMS, OS, CN, OOP), subject/mixed mocks of 10/15/20 questions, shuffled options, score, subject breakdown, explanations, mistakes-only review, resumable attempts and tab-local draft choices. Free gets one start per UTC day; active Pro unlimited. Server-only question snapshots/grading prevent pre-submit answer disclosure through the app; score is never accepted from the client. Pro analytics uses real submitted answers to prioritise topics for review (last 20 mocks), explicitly treating skipped answers as gaps and small samples as revision signals.
