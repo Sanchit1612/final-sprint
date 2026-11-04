@@ -11,6 +11,19 @@ import { safeAuthRedirect } from "@/lib/auth-redirect";
 import { createClient } from "@/lib/supabase/client";
 import { Notice } from "./ui";
 
+function confirmationError(error: { code?: string; message: string }) {
+  if (error.code === "over_email_send_rate_limit" || error.code === "over_request_rate_limit") {
+    return "Too many email requests. Wait before requesting another confirmation link.";
+  }
+  if (error.code === "email_address_not_authorized" || /email address not authorized/i.test(error.message)) {
+    return "This address cannot receive confirmation email from the current mail provider. Contact support.";
+  }
+  if (/error sending|smtp/i.test(error.message)) {
+    return "We couldn't send the confirmation email. Try again later or contact support.";
+  }
+  return error.message;
+}
+
 type Values = z.infer<ReturnType<typeof authFormSchema>>;
 
 export function AuthForm({ mode }: { mode: "login" | "register" }) {
@@ -20,12 +33,14 @@ export function AuthForm({ mode }: { mode: "login" | "register" }) {
   const [error, setError] = useState<string | null>(sp.get("error"));
   const [googlePending,setGooglePending] = useState(false);
   const googleEnabled=process.env.NEXT_PUBLIC_GOOGLE_AUTH_ENABLED === "true";
+  const [confirmationEmail, setConfirmationEmail] = useState("");
+  const [resending, setResending] = useState(false);
   const [info, setInfo] = useState<string | null>(null);
   const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm<Values>({ resolver: zodResolver(authFormSchema(mode)) });
 
   const onSubmit = handleSubmit(async (v) => {
-    if(googlePending)return;
-    setError(null); setInfo(null);
+    if (googlePending || resending) return;
+    setError(null); setInfo(null); setConfirmationEmail("");
     try {
     const supabase = createClient();
     if (mode === "login") {
@@ -37,15 +52,38 @@ export function AuthForm({ mode }: { mode: "login" | "register" }) {
         email: v.email, password: v.password,
         options: { data: { full_name: v.name || undefined }, emailRedirectTo: `${window.location.origin}/auth/callback?next=/onboarding` },
       });
-      if (error) return setError(error.message);
+      if (error) return setError(confirmationError(error));
       if (data.session) { router.push("/onboarding"); router.refresh(); }
-      else setInfo("Check your email for a confirmation link. Open it in the same browser you used to sign up. If it is missing, check your spam folder.");
+      else {
+        setConfirmationEmail(v.email);
+        setInfo("Check your inbox and spam folder for the confirmation link. Open it in the same browser you used to sign up.");
+      }
     }
     } catch {setError("Could not connect. Check your connection and try again.");}
   });
 
+  const resendConfirmation = async () => {
+    if (!confirmationEmail || resending || isSubmitting || googlePending) return;
+    setResending(true);
+    setError(null);
+    setInfo(null);
+    try {
+      const { error } = await createClient().auth.resend({
+        type: "signup",
+        email: confirmationEmail,
+        options: { emailRedirectTo: `${window.location.origin}/auth/callback?next=/onboarding` },
+      });
+      if (error) setError(confirmationError(error));
+      else setInfo("If your account is still awaiting confirmation, check your inbox and spam folder for a new link.");
+    } catch {
+      setError("Could not request a new confirmation link. Check your connection and try again.");
+    } finally {
+      setResending(false);
+    }
+  };
+
   const google = async () => {
-    if(!googleEnabled||googlePending||isSubmitting)return;
+    if (!googleEnabled || googlePending || isSubmitting || resending) return;
     setError(null);setGooglePending(true);
     try {
       const { error } = await createClient().auth.signInWithOAuth({
@@ -75,11 +113,16 @@ export function AuthForm({ mode }: { mode: "login" | "register" }) {
         </div>
         {error && <Notice>{error}</Notice>}
         {info && <Notice kind="success">{info}</Notice>}
-        <button className="btn-glow w-full" disabled={isSubmitting||googlePending}>{isSubmitting ? "Please wait…" : mode === "login" ? "Log in" : "Create account"}</button>
+        <button className="btn-glow w-full" disabled={isSubmitting || googlePending || resending}>{isSubmitting ? "Please wait…" : mode === "login" ? "Log in" : "Create account"}</button>
       </form>
+      {confirmationEmail && (
+        <button type="button" className="btn-ghost mt-3 w-full" onClick={resendConfirmation} disabled={resending || isSubmitting || googlePending}>
+          {resending ? "Requesting link…" : "Resend confirmation link"}
+        </button>
+      )}
       {mode === "login" && <Link href="/forgot-password" className="mt-4 inline-block text-sm text-accent">Forgot password?</Link>}
       <div className="my-5 flex items-center gap-3 text-xs text-muted"><span className="h-px flex-1 bg-line" />or<span className="h-px flex-1 bg-line" /></div>
-      <button type="button" onClick={google} disabled={!googleEnabled||googlePending||isSubmitting} className="btn-ghost w-full">{googlePending?"Opening Google…":googleEnabled?"Continue with Google":"Google sign-in opens after setup"}</button>
+      <button type="button" onClick={google} disabled={!googleEnabled || googlePending || isSubmitting || resending} className="btn-ghost w-full">{googlePending?"Opening Google…":googleEnabled?"Continue with Google":"Google sign-in opens after setup"}</button>
       <p className="mt-6 text-center text-sm text-muted">
         {mode === "login" ? <>New here? <Link className="text-accent hover:underline" href={`/register?next=${encodeURIComponent(next)}`}>Create an account</Link></> : <>Already have an account? <Link className="text-accent hover:underline" href={`/login?next=${encodeURIComponent(next)}`}>Log in</Link></>}
       </p>
