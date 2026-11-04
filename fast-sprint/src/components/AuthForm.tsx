@@ -42,24 +42,47 @@ export function AuthForm({ mode }: { mode: "login" | "register" }) {
     if (googlePending || resending) return;
     setError(null); setInfo(null); setConfirmationEmail("");
     try {
-    const supabase = createClient();
-    if (mode === "login") {
-      const { error } = await supabase.auth.signInWithPassword({ email: v.email, password: v.password });
-      if (error) return setError(error.message);
-      router.push(next); router.refresh();
-    } else {
-      const { data, error } = await supabase.auth.signUp({
-        email: v.email, password: v.password,
-        options: { data: { full_name: v.name || undefined }, emailRedirectTo: `${window.location.origin}/auth/callback?next=/onboarding` },
-      });
-      if (error) return setError(confirmationError(error));
-      if (data.session) { router.push("/onboarding"); router.refresh(); }
-      else {
-        setConfirmationEmail(v.email);
-        setInfo("Check your inbox and spam folder for the confirmation link. Open it in the same browser you used to sign up.");
+      const supabase = createClient();
+      if (mode === "login") {
+        const { error } = await supabase.auth.signInWithPassword({ email: v.email, password: v.password });
+        if (error) {
+          if (error.code === "email_not_confirmed") {
+            setConfirmationEmail(v.email);
+            setError("Confirm your email before signing in. You can request a new link below.");
+          } else {
+            setError(error.message);
+          }
+          return;
+        }
+        router.push(next);
+        router.refresh();
+        return;
       }
+
+      const { data, error } = await supabase.auth.signUp({
+        email: v.email,
+        password: v.password,
+        options: {
+          data: { full_name: v.name || undefined },
+          emailRedirectTo: `${window.location.origin}/auth/callback?next=/onboarding`,
+        },
+      });
+      if (error && !["user_already_exists", "email_exists"].includes(error.code ?? "")) {
+        setError(confirmationError(error));
+        return;
+      }
+      if (data.session) {
+        router.push("/onboarding");
+        router.refresh();
+        return;
+      }
+
+      // Supabase can return the same response for a new and an existing address.
+      setConfirmationEmail(v.email);
+      setInfo("If this address needs confirmation, check your inbox and spam folder for a link. Open it in the same browser. Already confirmed your account? Log in or reset your password.");
+    } catch {
+      setError("Could not connect. Check your connection and try again.");
     }
-    } catch {setError("Could not connect. Check your connection and try again.");}
   });
 
   const resendConfirmation = async () => {
@@ -112,7 +135,7 @@ export function AuthForm({ mode }: { mode: "login" | "register" }) {
           {errors.password && <p className="field-error">{errors.password.message}</p>}
         </div>
         {error && <Notice>{error}</Notice>}
-        {info && <Notice kind="success">{info}</Notice>}
+        {info && <Notice>{info}</Notice>}
         <button className="btn-glow w-full" disabled={isSubmitting || googlePending || resending}>{isSubmitting ? "Please wait…" : mode === "login" ? "Log in" : "Create account"}</button>
       </form>
       {confirmationEmail && (
@@ -120,7 +143,7 @@ export function AuthForm({ mode }: { mode: "login" | "register" }) {
           {resending ? "Requesting link…" : "Resend confirmation link"}
         </button>
       )}
-      {mode === "login" && <Link href="/forgot-password" className="mt-4 inline-block text-sm text-accent">Forgot password?</Link>}
+      <Link href="/forgot-password" className="mt-4 inline-block text-sm text-accent">Forgot password?</Link>
       <div className="my-5 flex items-center gap-3 text-xs text-muted"><span className="h-px flex-1 bg-line" />or<span className="h-px flex-1 bg-line" /></div>
       <button type="button" onClick={google} disabled={!googleEnabled || googlePending || isSubmitting || resending} className="btn-ghost w-full">{googlePending?"Opening Google…":googleEnabled?"Continue with Google":"Google sign-in opens after setup"}</button>
       <p className="mt-6 text-center text-sm text-muted">
