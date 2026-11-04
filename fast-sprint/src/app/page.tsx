@@ -47,11 +47,11 @@ export default function Home() {
               Your <span className="text-accent">next move</span> starts here.
             </h1>
             <p className="mt-8 max-w-md text-lg leading-relaxed text-muted">
-              One calm place for your DSA and Core CS checklists, a daily task list and every application, with progress that tracks itself.
+              Practise DSA, take scored CS mocks and turn the questions you miss into your next revision session. Keep your placement prep and applications in one place.
             </p>
             <div className="mt-10 flex flex-wrap gap-3">
               <Link href="/register" className="btn-glow group px-7 py-3.5 text-base">Start free<ArrowRight className="h-4 w-4 transition group-hover:translate-x-0.5" /></Link>
-              <Link href="/pricing" className="btn-ghost px-7 py-3.5 text-base">See plans</Link>
+              <Link href="/try" className="btn-ghost px-7 py-3.5 text-base">Try a mini mock</Link>
             </div>
           </div>
           <div className="relative mx-auto aspect-square w-full max-w-md lg:max-w-none"><Orbit /></div>

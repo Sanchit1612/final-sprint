@@ -10,7 +10,7 @@ const nodeSchema: z.ZodType<ContentNode> = z.lazy(() => z.object({
   slug: z.string().regex(/^[a-z0-9][a-z0-9-]*$/).max(160), title: z.string().trim().min(1),
   type: z.enum(["subject", "topic", "section", "problem", "resource"]), description: z.string().optional(),
   url: httpURL.optional(), difficulty: z.enum(["easy", "medium", "hard"]).optional(), isPro: z.boolean().optional(),
-  meta: z.record(z.unknown()).optional(), children: z.array(nodeSchema).optional(),
+  meta: z.record(z.string(), z.unknown()).optional(), children: z.array(nodeSchema).optional(),
 }).strict());
 export const manifestSchema = z.object({ version: z.literal(1), root: nodeSchema }).strict();
 export interface ImportRow { id: string; path: string; parentPath: string | null; slug: string; title: string; item_type: ContentNode["type"]; position: number; is_pro: boolean; url: string | null; difficulty: ContentNode["difficulty"] | null; description: string | null; meta: Record<string, unknown> }

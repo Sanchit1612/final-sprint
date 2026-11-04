@@ -10,6 +10,17 @@ import { addDays, formatDay, todayIn } from "@/lib/dates";
 import { requireSession } from "@/lib/session";
 import { fetchAll } from "@/lib/tree";
 
+type PracticeNode = { id: string; title: string; completed: number; total: number; children: PracticeNode[] };
+
+function firstUnfinished(node: PracticeNode): PracticeNode | undefined {
+  if (node.completed >= node.total) return;
+  if (!node.children.length) return node;
+  for (const child of node.children) {
+    const next = firstUnfinished(child);
+    if (next) return next;
+  }
+}
+
 export const metadata = { title: "Dashboard" };
 
 export default async function Page() {
@@ -41,9 +52,33 @@ export default async function Page() {
   const firstName = (profile?.full_name ?? "").split(" ")[0];
   const withContent = trees.filter((x) => x.t && x.t.total > 0);
 
+  const master = withContent.find(({ root }) => root.slug === "dsa-200");
+  const nextPattern = master?.t.tree.find(pattern => pattern.completed < pattern.total);
+  const nextProblem = nextPattern && firstUnfinished(nextPattern);
+
   return (
     <>
       <PageHeader title={firstName ? `Hi, ${firstName}` : "Dashboard"} subtitle={formatDay(today, { weekday: "long", day: "numeric", month: "long" })} />
+      <section className="card mb-4" aria-labelledby="next-practice">
+        <h2 id="next-practice" className="text-xl">What to practise today</h2>
+        <div className="mt-4 grid gap-3 sm:grid-cols-3">
+          <Link href={nextProblem ? `/dsa?collection=master#${nextProblem.id}` : "/dsa"} className="hover-card rounded-xl border border-line p-4">
+            <p className="text-xs text-accent">DSA · Continue Master 200</p>
+            <p className="mt-2 font-semibold">{nextProblem?.title ?? "Browse your problem sheets"}</p>
+            {nextProblem && <p className="mt-1 text-sm text-muted">Next unfinished problem in {nextPattern?.title}.</p>}
+          </Link>
+          <Link href={reviseCount ? "/saved?tab=revision" : "/practice"} className="hover-card rounded-xl border border-line p-4">
+            <p className="text-xs text-accent">Recall · Review or test yourself</p>
+            <p className="mt-2 font-semibold">{reviseCount ? `${reviseCount} flagged for revision` : "Take a CS mock"}</p>
+            <p className="mt-1 text-sm text-muted">{reviseCount ? "Revisit the items you marked for another attempt." : "Use the explanations to pick what to revise."}</p>
+          </Link>
+          <Link href="/sprint" className="hover-card rounded-xl border border-line p-4">
+            <p className="text-xs text-accent">Plan · Daily Sprint</p>
+            <p className="mt-2 font-semibold">{tasks.length ? `${tasks.filter(task => task.status !== "done").length} tasks left today` : "Plan your next study session"}</p>
+            <p className="mt-1 text-sm text-muted">Set a realistic workload and move missed tasks forward.</p>
+          </Link>
+        </div>
+      </section>
       <div className="grid gap-4 lg:grid-cols-3">
         <section className="card lg:col-span-2" aria-labelledby="goal">
           <h2 id="goal" className="mb-3 flex items-center gap-2 text-base"><Target className="h-4 w-4 text-accent" aria-hidden />Your goal</h2>
