@@ -17,7 +17,7 @@ export const FEATURES: Feature[] = [
   { name: "Daily Sprint task list", free: "5 tasks per day", pro: "Unlimited", available: true },
   { name: "Application tracker", free: "10 applications", pro: "Unlimited", available: true },
   { name: "Master 200 and NeetCode 150", free: true, pro: true, available: true },
-  { name: "Striver A2Z (source-link review pending)", free: true, pro: true, available: false },
+  { name: "Striver A2Z", free: "Browser saves", pro: "Browser saves", available: true },
   { name: "Aptitude preparation packs", free: false, pro: true, available: false },
   { name: "Behavioural and HR preparation packs", free: false, pro: true, available: false },
   { name: "Company-wise DSA priority sheets", free: false, pro: true, available: true },
@@ -25,7 +25,7 @@ export const FEATURES: Feature[] = [
   { name: "Confidence-based revision queue", free: true, pro: true, available: true },
   { name: "Company-specific mocks and readiness reports", free: false, pro: true, available: false },
   { name: "Detailed coverage and completion trends", free: false, pro: true, available: true },
-  { name: "Development learning paths (review preview)", free: false, pro: true, available: true },
+  { name: "Development learning paths", free: false, pro: true, available: true },
   { name: "Expanded technical interview collections", free: false, pro: true, available: false },
 ];
 

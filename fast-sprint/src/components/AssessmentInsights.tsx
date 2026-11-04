@@ -15,7 +15,7 @@ export async function AssessmentInsights({ user }: { user: string }) {
   if (!assessmentsEnabled()) return (
     <section className="card mt-5">
       <h2 className="text-xl">Blind Spot Radar</h2>
-      <p className="mt-2 text-sm text-muted">Mock analytics is unavailable in this environment.</p>
+      <p className="mt-2 text-sm text-muted">Mock analytics is currently unavailable.</p>
     </section>
   );
 

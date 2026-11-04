@@ -21,7 +21,7 @@ export default async function Page() {
               <h2 className="text-lg">{s.title}</h2>
               {s.t && s.t.total > 0 ? (
                 <>
-                  <p className="mt-1 text-sm text-muted">{s.t.completed} of {s.t.total} topics done{s.t.preview ? " · review preview" : ""}</p>
+                  <p className="mt-1 text-sm text-muted">{s.t.preview ? `${s.t.total} topics · saves on this browser` : `${s.t.completed} of ${s.t.total} topics done`}</p>
                   <ProgressBar value={s.t.completed} total={s.t.total} className="mt-4" />
                 </>
               ) : <p className="mt-1 text-sm text-muted">No topics added yet.</p>}

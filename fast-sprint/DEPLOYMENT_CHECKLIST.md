@@ -1,3 +1,14 @@
+# Public signup email
+
+Fast Sprint uses Supabase Auth to deliver signup confirmation, resend and password recovery. Configure a transactional SMTP provider in Supabase before inviting the public. Brevo Free is the proposed starting tier. Its published allowance is 300 emails per day. An authenticated sender domain provides the intended public From address and lets us verify sender identity. Brevo may substitute a shared sender domain when using an unauthenticated address.
+
+1. In Brevo, verify the sender and authenticate the sending domain if available. Create a dedicated SMTP key under SMTP & API and note the SMTP login shown there.
+2. In the Fast Sprint Supabase project under Authentication → Emails → SMTP settings, enable custom SMTP. Set host `smtp-relay.brevo.com`, port `587`, username to the Brevo SMTP login, password to the SMTP key and From name to `Fast Sprint`. Use the sender address verified in Brevo. Enter secrets in Supabase only.
+3. Add the preview origin's callback to the Supabase redirect allowlist. Keep the existing local entries for local testing. Check the confirmation and recovery templates and turn off provider click tracking for authentication links.
+4. On the HTTPS preview, use a fresh non-team inbox to verify signup, confirmation, resend and password recovery. Check the mail provider event log if delivery fails. The public launch gate is actual receipt and successful browser completion.
+
+[Brevo Free limits](https://help.brevo.com/hc/en-us/articles/208580669-FAQs-What-are-the-limits-of-the-Free-plan) · [Brevo SMTP](https://help.brevo.com/hc/en-us/articles/7924908994450-Send-transactional-emails-using-Brevo-SMTP) · [Supabase custom SMTP](https://supabase.com/docs/guides/auth/auth-smtp)
+
 # Netlify preview handoff
 
 Use the GitHub repository root with `fast-sprint` as the app base directory and `npm run build` as the build command. Keep the Next.js runtime enabled so middleware, server actions and payment webhooks run server-side. Start on a staging URL with staging Supabase credentials, test-only Razorpay settings and live payments disabled. Restore reviewed private company data through a private build input before enabling the company sheets.

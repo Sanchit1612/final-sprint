@@ -9,7 +9,7 @@ import {nextReview,type Rating} from '@/lib/revision/srs';
 import type {Result} from '@/app/actions';
 export async function saveCompanyProgress(company:string,problem:string,field:'completed'|'bookmarked',value:boolean):Promise<Result> {
  const {supabase,user,isPro}=await requireSession();
- if(!isPro||!companyTrackingEnabled())return {ok:false,error:'Company tracking is awaiting the approved database setup.'};
+ if(!isPro||!companyTrackingEnabled())return {ok:false,error:'Company tracking is currently unavailable.'};
  if(!z.string().regex(/^[a-z0-9-]{1,200}$/).safeParse(problem).success||!['completed','bookmarked'].includes(field)||typeof value!=='boolean')return {ok:false,error:'Invalid progress.'};
  const sheet=companySheet(company);if(!sheet?.problems.some(p=>p.slug===problem)||field==='completed'&&!priorityProblems(sheet.problems).some(p=>p.slug===problem))return {ok:false,error:'Only priority questions count towards this checklist.'};
  const {error}=await supabase.from('company_problem_progress').upsert({user_id:user.id,company_slug:company,problem_slug:problem,[field]:value},{onConflict:'user_id,company_slug,problem_slug'});
@@ -18,7 +18,7 @@ export async function saveCompanyProgress(company:string,problem:string,field:'c
 }
 export async function rateReview(itemId:string,rating:Rating):Promise<Result> {
  const {supabase,user,today}=await requireSession();
- if(!companyTrackingEnabled())return {ok:false,error:'Confidence reviews are awaiting the approved database setup.'};
+ if(!companyTrackingEnabled())return {ok:false,error:'Confidence reviews are currently unavailable.'};
  if(!z.string().uuid().safeParse(itemId).success||!['again','hard','good','easy'].includes(rating))return {ok:false,error:'Invalid review.'};
  const {data:content,error:contentError}=await supabase.from('content_items').select('id').eq('id',itemId).maybeSingle();
  if(contentError||!content)return {ok:false,error:'This learning item is unavailable.'};

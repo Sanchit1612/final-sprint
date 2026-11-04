@@ -1,12 +1,12 @@
 export const LIBRARY = [
  {slug:"dbms",title:"DBMS",pro:false,status:"Curated GFG learning index"},
- {slug:"os",title:"Operating Systems",pro:false,status:"57 supplied topics"},
- {slug:"cn",title:"Computer Networks",pro:false,status:"118 supplied topics"},
- {slug:"oop",title:"OOP",pro:false,status:"36 supplied topics"},
+ {slug:"os",title:"Operating Systems",pro:false,status:"Processes, memory and concurrency"},
+ {slug:"cn",title:"Computer Networks",pro:false,status:"Protocols, addressing and transport"},
+ {slug:"oop",title:"OOP",pro:false,status:"Objects, interfaces and design patterns"},
  {slug:"sql",title:"SQL",pro:false,status:"Curated GFG learning index"},
- {slug:"aptitude",title:"Aptitude",pro:true,status:"75 link-out entries; not a verified quiz bank"},
- {slug:"behavioural",title:"Behavioural and HR",pro:true,status:"60 supplied questions; attribution review pending"},
- {slug:"interview",title:"Interview preparation",pro:true,status:"59 question titles; answers missing"},
+ {slug:"aptitude",title:"Aptitude",pro:true,status:"Work through aptitude topics and exercises"},
+ {slug:"behavioural",title:"Behavioural and HR",pro:true,status:"Practise stories and follow-up questions"},
+ {slug:"interview",title:"Interview preparation",pro:true,status:"Practise technical interview prompts"},
  {slug:"companies",title:"Company preparation",pro:true,status:"50 company sheets with frequency-informed priority practice"},
  {slug:"development",title:"Development paths",pro:true,status:"Structured development paths and project resources"},
 ] as const;

@@ -15,14 +15,23 @@ function isLearningLink(url: string | null) {
   }
 }
 
+function displayDescription(description: string | null) {
+  if (!description) return null;
+  if (/^(Uploaded title and order preserved|Original uploaded heading preserved|Link-out source index)/i.test(description)) return null;
+  return description;
+}
+
 export function TreeView({ nodes, depth = 0, forceOpen, readOnly = false, hideGitHubLinks = false, localStudy }: { nodes: TreeNode[]; depth?: number; forceOpen: boolean; readOnly?: boolean; hideGitHubLinks?: boolean; localStudy?: { user: string; href: string; requiresPro?: boolean } }) {
   return (
     <div className={depth === 0 ? "space-y-3" : "space-y-1 border-l border-line pl-3 sm:pl-4"}>
       {nodes.map((n) => {
-        const resources = hideGitHubLinks ? n.resources.filter(resource => isLearningLink(resource.url)) : n.resources;
+        const resources = (hideGitHubLinks ? n.resources.filter(resource => isLearningLink(resource.url)) : n.resources)
+          .map(resource => resource.title === "Striver publisher lesson (method coverage unverified)"
+            ? { ...resource, title: "Striver lesson" }
+            : resource);
         const url = hideGitHubLinks && !isLearningLink(n.url) ? null : n.url;
         return n.checkable ? (
-          <ItemRow localStudy={localStudy} allowReview={companyTrackingEnabled()} practice={n.practice} readOnly={readOnly} key={n.id} id={n.id} title={n.title} difficulty={n.difficulty} url={url} platform={url ? n.platform : null} description={n.description}
+          <ItemRow localStudy={localStudy} allowReview={companyTrackingEnabled()} practice={n.practice} readOnly={readOnly} key={n.id} id={n.id} title={n.title} difficulty={n.difficulty} url={url} platform={url ? n.platform : null} description={displayDescription(n.description)}
             done={n.done} revise={n.revise} bookmarked={n.bookmarked} note={n.note} resources={resources} />
         ) : (
           <details key={n.id} id={n.id} open={forceOpen} className={depth === 0 ? "group card !p-0" : "group"}>

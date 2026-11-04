@@ -4,7 +4,7 @@ import { PRICING } from "@/config/plans";
 export type BillingMode = "test" | "live";
 export function billingConfig(env: Record<string,string|undefined> = process.env) {
   const mode = env.RAZORPAY_MODE;
-  if (env.PAYMENTS_ENABLED !== "true" || (mode !== "test" && mode !== "live")) throw new Error("Payments are awaiting configuration.");
+  if (env.PAYMENTS_ENABLED !== "true" || (mode !== "test" && mode !== "live")) throw new Error("Checkout is currently unavailable.");
   if (mode === "live" && env.RAZORPAY_LIVE_ENABLED !== "true") throw new Error("Live payments are disabled.");
   const key = env.RAZORPAY_KEY_ID, secret = env.RAZORPAY_KEY_SECRET, webhook = env.RAZORPAY_WEBHOOK_SECRET;
   if (!key?.startsWith(`rzp_${mode}_`) || !secret || !webhook || !env.SUPABASE_SERVICE_ROLE_KEY) throw new Error("Payment credentials are incomplete or do not match the selected mode.");
