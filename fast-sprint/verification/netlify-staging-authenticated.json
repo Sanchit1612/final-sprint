@@ -1,0 +1,72 @@
+{
+  "checks": [
+    {
+      "tier": "free",
+      "path": "/companies",
+      "status": 200,
+      "privateCache": true,
+      "serviceKeyAbsent": true,
+      "links": 0,
+      "expectedAccess": true
+    },
+    {
+      "tier": "free",
+      "path": "/companies/google",
+      "status": 200,
+      "privateCache": true,
+      "serviceKeyAbsent": true,
+      "links": 0,
+      "expectedAccess": true
+    },
+    {
+      "tier": "free",
+      "path": "/resources/development",
+      "status": 200,
+      "privateCache": true,
+      "serviceKeyAbsent": true
+    },
+    {
+      "tier": "free",
+      "path": "/analytics",
+      "status": 200,
+      "privateCache": true,
+      "serviceKeyAbsent": true,
+      "blindSpotVisible": true,
+      "patternExplorerVisible": true
+    },
+    {
+      "tier": "pro",
+      "path": "/companies",
+      "status": 200,
+      "privateCache": true,
+      "serviceKeyAbsent": true,
+      "links": 50,
+      "expectedAccess": true
+    },
+    {
+      "tier": "pro",
+      "path": "/companies/google",
+      "status": 200,
+      "privateCache": true,
+      "serviceKeyAbsent": true,
+      "links": 50,
+      "expectedAccess": true
+    },
+    {
+      "tier": "pro",
+      "path": "/resources/development",
+      "status": 200,
+      "privateCache": true,
+      "serviceKeyAbsent": true
+    },
+    {
+      "tier": "pro",
+      "path": "/analytics",
+      "status": 200,
+      "privateCache": true,
+      "serviceKeyAbsent": true,
+      "blindSpotVisible": true,
+      "patternExplorerVisible": true
+    }
+  ]
+}

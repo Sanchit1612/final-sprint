@@ -1,0 +1,119 @@
+{
+  "origin": "https://fast-sprint-staging.netlify.app",
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "location": null,
+      "cache": "public,max-age=0,must-revalidate",
+      "frame": "DENY",
+      "nosniff": "nosniff",
+      "csp": "frame-ancestors 'none'; object-src 'none'; base-uri 'self'"
+    },
+    {
+      "path": "/login",
+      "status": 200,
+      "location": null,
+      "cache": "private,no-cache,no-store,max-age=0,must-revalidate",
+      "frame": "DENY",
+      "nosniff": "nosniff",
+      "csp": "frame-ancestors 'none'; object-src 'none'; base-uri 'self'"
+    },
+    {
+      "path": "/analytics",
+      "status": 307,
+      "location": "/login?next=%2Fanalytics",
+      "cache": "private, no-store",
+      "frame": null,
+      "nosniff": null,
+      "csp": null
+    },
+    {
+      "path": "/companies/google",
+      "status": 307,
+      "location": "/login?next=%2Fcompanies%2Fgoogle",
+      "cache": "private, no-store",
+      "frame": null,
+      "nosniff": null,
+      "csp": null
+    },
+    {
+      "path": "/.env.local",
+      "status": 404,
+      "location": null,
+      "cache": "private,no-cache,no-store,max-age=0,must-revalidate",
+      "frame": "DENY",
+      "nosniff": "nosniff",
+      "csp": "frame-ancestors 'none'; object-src 'none'; base-uri 'self'"
+    },
+    {
+      "path": "/content/companies/google.json",
+      "status": 404,
+      "location": null,
+      "cache": "private,no-cache,no-store,max-age=0,must-revalidate",
+      "frame": "DENY",
+      "nosniff": "nosniff",
+      "csp": "frame-ancestors 'none'; object-src 'none'; base-uri 'self'"
+    },
+    {
+      "path": "/content/collections/aptitude.manifest.json",
+      "status": 404,
+      "location": null,
+      "cache": "private,no-cache,no-store,max-age=0,must-revalidate",
+      "frame": "DENY",
+      "nosniff": "nosniff",
+      "csp": "frame-ancestors 'none'; object-src 'none'; base-uri 'self'"
+    },
+    {
+      "path": "/_next/server/app/page.js",
+      "status": 404,
+      "location": null,
+      "cache": "private,no-cache,no-store,max-age=0,must-revalidate",
+      "frame": "DENY",
+      "nosniff": "nosniff",
+      "csp": "frame-ancestors 'none'; object-src 'none'; base-uri 'self'"
+    },
+    {
+      "path": "/system-design",
+      "status": 200,
+      "location": null,
+      "cache": "private, no-store",
+      "frame": "DENY",
+      "nosniff": "nosniff",
+      "csp": "frame-ancestors 'none'; object-src 'none'; base-uri 'self'"
+    },
+    {
+      "path": "/try",
+      "status": 200,
+      "location": null,
+      "cache": "public,max-age=0,must-revalidate",
+      "frame": "DENY",
+      "nosniff": "nosniff",
+      "csp": "frame-ancestors 'none'; object-src 'none'; base-uri 'self'"
+    },
+    {
+      "path": "/pricing",
+      "status": 200,
+      "location": null,
+      "cache": "private,no-cache,no-store,max-age=0,must-revalidate",
+      "frame": "DENY",
+      "nosniff": "nosniff",
+      "csp": "frame-ancestors 'none'; object-src 'none'; base-uri 'self'"
+    },
+    {
+      "path": "/api/billing/order",
+      "method": "POST",
+      "status": 503
+    },
+    {
+      "path": "/api/billing/verify",
+      "method": "POST",
+      "status": 503
+    },
+    {
+      "path": "/api/billing/webhook",
+      "method": "POST",
+      "status": 503
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 # Public signup email
 
+2026-11-05 staging update: Brevo custom SMTP is enabled in the existing staging Supabase project; the provider recorded the recovery-email test as Delivered. Supabase Site URL and exact-origin callback allowlist now include `https://fast-sprint-staging.netlify.app`; localhost entries remain. The deployed Google button reaches Google's chooser, but final matching-account callback and real signup confirmation await user acceptance. The verified Gmail sender is rewritten by Brevo to its shared domain; authenticate a dedicated domain before relying on public deliverability. Google remains in Testing mode. Checkout/live payments remain disabled, and no Razorpay secrets were uploaded to Netlify in this checkpoint.
+
 Fast Sprint uses Supabase Auth to deliver signup confirmation, resend and password recovery. Configure a transactional SMTP provider in Supabase before inviting the public. Brevo Free is the proposed starting tier. Its published allowance is 300 emails per day. An authenticated sender domain provides the intended public From address and lets us verify sender identity. Brevo may substitute a shared sender domain when using an unauthenticated address.
 
 1. In Brevo, verify the sender and authenticate the sending domain if available. Create a dedicated SMTP key under SMTP & API and note the SMTP login shown there.

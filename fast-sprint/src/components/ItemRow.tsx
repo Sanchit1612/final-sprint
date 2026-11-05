@@ -84,7 +84,8 @@ export function ItemRow(p: Props) {
   };
 
   return (
-    <div id={p.id} className="group scroll-mt-24 rounded-xl px-2 py-2 hover:bg-white/[0.03]">
+    <div id={p.id} aria-busy={pending} className="group scroll-mt-24 rounded-xl px-2 py-2 hover:bg-white/[0.03]">
+      {pending && !open && <p role="status" className="mb-1 text-xs text-muted">Saving…</p>}
       <div className="flex items-start gap-3">
         <button
           disabled={disabled} type="button" role="checkbox" aria-checked={done} aria-label={`Mark ${p.title} ${done ? "not done" : "done"}`}
