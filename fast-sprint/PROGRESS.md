@@ -1,3 +1,11 @@
+# Staging deployment preparation — 2026-11-05
+
+User approved Netlify staging deployment, storage of the existing staging service-role key there, a dedicated Brevo SMTP key in staging Supabase, the public URL/anon-key secret-scan exception and a private resource build bundle. Brevo phone verification completed by the user. Custom SMTP enabled and persisted in Supabase (Brevo relay, port 587, verified sender, Fast Sprint display name). The local recovery form accepted a request; provider delivery and inbox/callback completion are not yet verified. No SMTP key was written to Git or frontend code. Gmail sender identity is verified but has no authenticated custom domain; public deliverability remains a release concern.
+
+Created a private staging Storage bucket `fast-sprint-builds` and uploaded the approved 57-file / 465278-byte resource bundle. SHA256 `3de31ed672e1f81d7cbb9cb1bf5aa59638a7e4fb164c2282a767877b5b5c95b0`; authenticated read-back matched, unauthenticated and anon-key downloads denied (HTTP 400). No learning-table import, migration, user-data change or live payment activation. Build restoration verifies the hash, restricts paths/types/sizes and restores only server-side JSON content. Private pack originals remain unchanged and excluded from public Git.
+
+104 tests across 36 files, lint and explicit typecheck passed. Clean isolated production build restored all 57 private files successfully; generated browser assets (59 files) contained no staging service-role key. These checks do not establish complete security compliance. Netlify's initial builds failed on a public Supabase URL mistakenly marked secret; the user approved a narrowly named URL/anon-key exception, leaving all real secrets scanned. Hosted deployment/authentication acceptance is still in progress; checkout remains disabled.
+
 # Checklist reliability and deployment checks — 2026-11-04
 
 Collections served from local manifests now support completion, revision flags, bookmarks and notes in the current browser. Saved shows those entries separately from account data. Published collections retain Supabase persistence. Browser-only progress does not count toward account analytics and does not transfer automatically when a collection is published. No additional content or SQL was applied.

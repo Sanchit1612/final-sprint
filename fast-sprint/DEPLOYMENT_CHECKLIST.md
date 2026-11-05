@@ -11,6 +11,10 @@ Fast Sprint uses Supabase Auth to deliver signup confirmation, resend and passwo
 
 # Netlify preview handoff
 
+Private build input: `npm run prebuild` restores only JSON data from the private staging Storage bucket `fast-sprint-builds` when `PRIVATE_CONTENT_SHA256` is configured. It downloads the immutable hash-named gzip using the server-only service key, verifies SHA256 before decoding, limits compressed/decompressed sizes, rejects unexpected paths, and places the files in existing server-side tracing paths. No resource files go in `public/` or public Git. Never set a `NEXT_PUBLIC_` prefix on the service key. A missing/invalid configured bundle fails the build. Public-clone builds without the hash remain possible without private packs.
+
+Netlify secret scanning stays enabled. Only the intentionally public `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` are approved omissions from value scanning. No service credential is excluded. Untrusted fork deploys must require approval before receiving project secrets.
+
 Use the GitHub repository root with `fast-sprint` as the app base directory and `npm run build` as the build command. Keep the Next.js runtime enabled so middleware, server actions and payment webhooks run server-side. Start on a staging URL with staging Supabase credentials, test-only Razorpay settings and live payments disabled. Restore reviewed private company data through a private build input before enabling the company sheets.
 
 At the preview URL, verify account redirects preserve the destination, Google consent returns to the same origin, auth cookies survive refresh, protected responses are private and uncached, and headers appear on deployed responses. Check keyboard use on the public mini mock and confirm Free and Pro see only the data they are entitled to see. Test payment capture, signature rejection and replay through the deployed HTTPS endpoint before offering paid access. Track remaining resource reviews separately from deploy acceptance.
