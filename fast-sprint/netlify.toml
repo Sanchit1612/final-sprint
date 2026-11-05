@@ -1,0 +1,7 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+# Next.js requires the server runtime for auth middleware and server actions.
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
