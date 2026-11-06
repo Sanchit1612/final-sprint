@@ -11,7 +11,7 @@ export function BrowserSavedItems({ user, tab, isPro }: { user: string; isPro: b
       const matches = Object.keys(localStorage).filter(key => key.startsWith(prefix)).flatMap(key => {
         try {
           const item = readLocalLearningItem(key);
-          if (!item || (!isPro && (item.requiresPro ||
+          if (!item || localStorage.getItem(`fast-sprint:synced:${user}:${key.slice(prefix.length)}`) || (!isPro && (item.requiresPro ||
             /^\/resources\/(aptitude|behavioural|interview|development)(?:[/?#]|$)/.test(item.href)))) return [];
           return (tab === "bookmarks" ? item.marked : tab === "notes" ? item.note.trim() : item.revise) ? [item] : [];
         } catch { return []; }

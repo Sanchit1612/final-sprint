@@ -1,3 +1,17 @@
+# Live integration configuration — 2026-11-06
+
+User approved Live Mode key creation, local/Netlify secret storage and the live webhook. Razorpay account activation and website approval were observed. Live credentials were generated after user-completed OTP, saved in ignored local configuration and Netlify secret variables, and authenticated a read-only provider request (HTTP 200). Live webhook for fastsprintprep.netlify.app/api/billing/webhook is Enabled for all 12 supported events. Billing environment settings were backed up and switched to live with allow_test_pro=false; no outstanding test-payment access existed. No schema change was needed for this switch. A real captured-payment/browser/webhook entitlement round trip remains unverified and requires the user to complete a payment. Do not interpret provider authentication as successful payment acceptance.
+
+GA4 property FastSprint / G-H63CDF4BH2 is configured in source with optional consent and sanitized manual page views. Enhanced measurement was disabled in the Google Analytics dashboard to avoid automatic search/form/history collection. Advertising signals are disabled in the application tag. Realtime receipt remains pending deployment/consent acceptance. The Google business dashboard remains private to authorized Google users.
+
+Release also contains earlier resource/sync work: 142 aptitude exercises (75 new originals, 67 retained), 59 original interview answer guides, correction of one malformed PDF question/options, 10 live-checked GFG reading URLs, account-backed manifest learning state with approved hosted RLS, public previews and anonymous Free DSA sheets, and the DSA search-timer race fix. Browser migration, hosted cross-device checks and the final release smoke tests remain separately verifiable; prior hosted checks below refer to the earlier commit.
+
+# Payment and site analytics preparation — 2026-11-06
+
+Razorpay website approval observed for fastsprintprep.netlify.app. Dashboard still displayed the existing Test Mode key. Live credentials, live webhook and a real captured-payment acceptance test are not verified; live checkout has not been enabled. User handoff requested for Live Mode after automatic approval review rejected an insufficiently identified navigation control.
+
+Google Analytics property inspected: FastSprint, Measurement ID G-H63CDF4BH2. Added optional-consent site tracking, excluding sensitive paths and query/hash details from manually emitted page views. Added path-redaction regression coverage; test and typecheck passed. Hosted tag delivery, enhanced-measurement settings and realtime acceptance remain unverified. No business report is exposed to ordinary app users. Earlier unfinished learning-sync/resource changes remain in the worktree and have not been represented as deployed.
+
 # Hosted staging acceptance — 2026-11-05
 
 Staging is published at https://fast-sprint-staging.netlify.app using the Next.js server runtime. Deployment 882d0a4 restored the approved private resource bundle. Checkout and live payments remain disabled. No migration or learning-table import was performed.

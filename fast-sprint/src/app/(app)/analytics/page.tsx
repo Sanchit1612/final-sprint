@@ -18,7 +18,7 @@ export default async function Page({searchParams}:{searchParams:Promise<{focus?:
  const {supabase,user,tz,isPro}=await requireSession(),sp=await searchParams;
  const [items,tasks,trees]=await Promise.all([
  fetchAll<{completed_at:string}>((a,b)=>supabase.from('user_item_progress').select('completed_at').eq('user_id',user.id).eq('status','done').not('completed_at','is',null).order('item_id').range(a,b)),
- fetchAll<{completed_at:string}>((a,b)=>supabase.from('daily_tasks').select('completed_at').eq('user_id',user.id).eq('status','done').not('completed_at','is',null).order('id').range(a,b)),loadCoverage(supabase,user.id)]);
+ fetchAll<{completed_at:string}>((a,b)=>supabase.from('daily_tasks').select('completed_at').eq('user_id',user.id).eq('status','done').not('completed_at','is',null).order('id').range(a,b)),loadCoverage(supabase,user.id,isPro)]);
  const activity=activitySummary([...items,...tasks].map(r=>r.completed_at),tz),available=trees.filter(t=>t.data.total>0),focus=chooseFocus(available,sp.focus);
  const trends=isPro?completionTrends(activity.days,activity.today):null;
  const groups=isPro?focus?.data.tree??[]:[],moves=preparationMoves(groups),revision=groups.reduce((s,g)=>s+g.revision,0),untouched=groups.filter(g=>!g.completed).length;

@@ -1,0 +1,52 @@
+[
+  {
+    "url": "https://www.geeksforgeeks.org/aptitude/ages/",
+    "status": 200,
+    "final_url": "https://www.geeksforgeeks.org/aptitude/ages/"
+  },
+  {
+    "url": "https://www.geeksforgeeks.org/aptitude/average/",
+    "status": 200,
+    "final_url": "https://www.geeksforgeeks.org/aptitude/average/"
+  },
+  {
+    "url": "https://www.geeksforgeeks.org/aptitude/numbers-in-aptitude/",
+    "status": 200,
+    "final_url": "https://www.geeksforgeeks.org/aptitude/numbers-in-aptitude/"
+  },
+  {
+    "url": "https://www.geeksforgeeks.org/aptitude/partnership-2/",
+    "status": 200,
+    "final_url": "https://www.geeksforgeeks.org/aptitude/partnership-2/"
+  },
+  {
+    "url": "https://www.geeksforgeeks.org/aptitude/profit-and-loss-questions-aptitude/",
+    "status": 200,
+    "final_url": "https://www.geeksforgeeks.org/aptitude/profit-and-loss-questions-aptitude/"
+  },
+  {
+    "url": "https://www.geeksforgeeks.org/aptitude/speed-time-distance/",
+    "status": 200,
+    "final_url": "https://www.geeksforgeeks.org/aptitude/speed-time-distance/"
+  },
+  {
+    "url": "https://www.geeksforgeeks.org/aptitude/time-work-and-wages/",
+    "status": 200,
+    "final_url": "https://www.geeksforgeeks.org/aptitude/time-work-and-wages/"
+  },
+  {
+    "url": "https://www.geeksforgeeks.org/maths/basic-concepts-of-probability/",
+    "status": 200,
+    "final_url": "https://www.geeksforgeeks.org/maths/basic-concepts-of-probability/"
+  },
+  {
+    "url": "https://www.geeksforgeeks.org/maths/percentage/",
+    "status": 200,
+    "final_url": "https://www.geeksforgeeks.org/maths/percentage/"
+  },
+  {
+    "url": "https://www.geeksforgeeks.org/maths/ratio-and-proportion/",
+    "status": 200,
+    "final_url": "https://www.geeksforgeeks.org/maths/ratio-and-proportion/"
+  }
+]

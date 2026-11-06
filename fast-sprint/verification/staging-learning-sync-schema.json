@@ -1,0 +1,40 @@
+{
+  "appliedAt": "2026-11-05T08:01:53.847Z",
+  "proposalSHA256": "129f9c3cbb2c7ab314843db5db9aa15a182ef3f284b9b657155cc237c3d4aed3",
+  "environment": "approved staging only",
+  "tables": [
+    {
+      "tablename": "learning_item_state",
+      "rowsecurity": true
+    }
+  ],
+  "policies": [
+    {
+      "tablename": "learning_item_state",
+      "policyname": "read own learning state",
+      "cmd": "SELECT"
+    },
+    {
+      "tablename": "learning_item_state",
+      "policyname": "insert accessible learning state",
+      "cmd": "INSERT"
+    },
+    {
+      "tablename": "learning_item_state",
+      "policyname": "update accessible learning state",
+      "cmd": "UPDATE"
+    },
+    {
+      "tablename": "learning_item_state",
+      "policyname": "delete own learning state",
+      "cmd": "DELETE"
+    }
+  ],
+  "triggers": [
+    {
+      "tgname": "learning_state_updated"
+    }
+  ],
+  "productionChanges": 0,
+  "contentImports": 0
+}

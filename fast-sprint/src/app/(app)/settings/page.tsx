@@ -4,6 +4,8 @@ import { ProfileForm } from "@/components/ProfileForm";
 import { PageHeader } from "@/components/ui";
 import { formatDay } from "@/lib/dates";
 import { requireSession } from "@/lib/session";
+import {LearningSyncBridge} from '@/components/LearningSyncBridge';
+import {learningSyncEnabled} from '@/lib/learning-sync';
 
 export const metadata = { title: "Settings" };
 
@@ -33,6 +35,7 @@ export default async function Page() {
           </section>
         </div>
       </div>
+      {learningSyncEnabled()&&<LearningSyncBridge user={user.id} tools/>}
     </>
   );
 }

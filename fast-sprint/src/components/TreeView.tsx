@@ -21,7 +21,7 @@ function displayDescription(description: string | null) {
   return description;
 }
 
-export function TreeView({ nodes, depth = 0, forceOpen, readOnly = false, hideGitHubLinks = false, localStudy }: { nodes: TreeNode[]; depth?: number; forceOpen: boolean; readOnly?: boolean; hideGitHubLinks?: boolean; localStudy?: { user: string; href: string; requiresPro?: boolean } }) {
+export function TreeView({ nodes, depth = 0, forceOpen, readOnly = false, signInHref, hideGitHubLinks = false, localStudy }: { nodes: TreeNode[]; depth?: number; forceOpen: boolean; readOnly?: boolean; signInHref?:string; hideGitHubLinks?: boolean; localStudy?: { user: string; href: string; requiresPro?: boolean; root?:string; cloud?:boolean } }) {
   return (
     <div className={depth === 0 ? "space-y-3" : "space-y-1 border-l border-line pl-3 sm:pl-4"}>
       {nodes.map((n) => {
@@ -31,7 +31,7 @@ export function TreeView({ nodes, depth = 0, forceOpen, readOnly = false, hideGi
             : resource);
         const url = hideGitHubLinks && !isLearningLink(n.url) ? null : n.url;
         return n.checkable ? (
-          <ItemRow localStudy={localStudy} allowReview={companyTrackingEnabled()} practice={n.practice} readOnly={readOnly} key={n.id} id={n.id} title={n.title} difficulty={n.difficulty} url={url} platform={url ? n.platform : null} description={displayDescription(n.description)}
+          <ItemRow signInHref={signInHref} interviewAnswer={n.interviewAnswer} localStudy={localStudy} allowReview={companyTrackingEnabled()} practice={n.practice} readOnly={readOnly} key={n.id} id={n.id} title={n.title} difficulty={n.difficulty} url={url} platform={url ? n.platform : null} description={displayDescription(n.description)}
             done={n.done} revise={n.revise} bookmarked={n.bookmarked} note={n.note} resources={resources} />
         ) : (
           <details key={n.id} id={n.id} open={forceOpen} className={depth === 0 ? "group card !p-0" : "group"}>
@@ -39,7 +39,7 @@ export function TreeView({ nodes, depth = 0, forceOpen, readOnly = false, hideGi
               <ChevronRight className="h-4 w-4 shrink-0 text-muted transition group-open:rotate-90" aria-hidden />
               <span className={`flex-1 ${depth === 0 ? "text-base font-semibold" : "text-sm font-medium"}`}>{n.title}</span>
               <span className="w-24 shrink-0 text-right text-xs text-muted">
-                {localStudy ? `${n.total} items` : <>
+                {localStudy&&!localStudy.cloud ? `${n.total} items` : <>
                   {n.completed}/{n.total}
                   <ProgressBar value={n.completed} total={n.total} className="mt-1" />
                 </>}
@@ -51,7 +51,7 @@ export function TreeView({ nodes, depth = 0, forceOpen, readOnly = false, hideGi
                   {resources.map((r) => r.url && <a key={r.id} href={r.url} target="_blank" rel="noopener noreferrer" className="text-xs text-accent hover:underline">{r.title}</a>)}
                 </div>
               )}
-              <TreeView localStudy={localStudy} nodes={n.children} hideGitHubLinks={hideGitHubLinks} depth={depth + 1} forceOpen={forceOpen} readOnly={readOnly} />
+              <TreeView signInHref={signInHref} localStudy={localStudy} nodes={n.children} hideGitHubLinks={hideGitHubLinks} depth={depth + 1} forceOpen={forceOpen} readOnly={readOnly} />
             </div>
           </details>
         );

@@ -26,7 +26,7 @@ export const metadata = { title: "Dashboard" };
 export default async function Page() {
   const { supabase, user, profile, tz, today, isPro } = await requireSession();
   const [coverage, doneItems, doneTasks, todays, revision, apps] = await Promise.all([
-    loadCoverage(supabase,user.id),
+    loadCoverage(supabase,user.id,isPro),
     fetchAll<{ completed_at: string }>((a, b) => supabase.from("user_item_progress").select("completed_at").eq("status", "done").not("completed_at", "is", null).order("item_id").range(a, b)),
     fetchAll<{ completed_at: string }>((a, b) => supabase.from("daily_tasks").select("completed_at").eq("status", "done").not("completed_at", "is", null).order("id").range(a, b)),
     fetchAll<TaskItem>((a, b) => supabase.from("daily_tasks").select("id,title,notes,status,task_date").eq("task_date", today).order("sort_order").order("created_at").order("id").range(a, b)),

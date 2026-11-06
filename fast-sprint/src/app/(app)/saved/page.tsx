@@ -4,12 +4,14 @@ import { ExternalLink } from "lucide-react";
 import Link from "next/link";
 import { Empty, PageHeader } from "@/components/ui";
 import { requireSession } from "@/lib/session";
+import {learningStates} from '@/lib/learning-sync';
+import {manifestLeaves} from '@/lib/content/files';
 import { fetchAll, getRoots } from "@/lib/tree";
 
 export const metadata = { title: "Saved" };
 const TABS = [{ id: "bookmarks", label: "Bookmarks" }, { id: "notes", label: "Notes" }, { id: "revision", label: "Needs revision" }] as const;
 
-interface Item { id: string; title: string; root_id: string; url: string | null; body?: string }
+interface Item { id: string; title: string; root_id: string; url: string | null; body?: string; href?:string }
 
 export default async function Page({ searchParams }: { searchParams: Promise<{ tab?: string }> }) {
   const { tab: raw } = await searchParams;
@@ -17,7 +19,7 @@ export default async function Page({ searchParams }: { searchParams: Promise<{ t
   const { supabase, user, isPro } = await requireSession();
   const roots = await getRoots(supabase);
   const slugOf = new Map(roots.map((r) => [r.id, r.slug]));
-  const hrefFor = (i: Item) => { const s = slugOf.get(i.root_id); return s ? `${learningHref(s)}#${i.id}` : "/dsa"; };
+  const hrefFor = (i: Item) => { if(i.href)return i.href;const s = slugOf.get(i.root_id); return s ? `${learningHref(s)}#${i.id}` : "/dsa"; };
 
   let items: Item[] = [];
   const cols = "id,title,root_id,url";
@@ -32,6 +34,15 @@ export default async function Page({ searchParams }: { searchParams: Promise<{ t
     items = (data ?? []).flatMap((r: { content_items: unknown }) => (r.content_items ? [r.content_items as Item] : []));
   }
 
+  const cloud=await learningStates(supabase,user.id);
+  for(const root of new Set(cloud.map(r=>r.root_slug))){
+    try{const leaves=new Map(manifestLeaves(root,isPro).map(r=>[r.id,r]));
+      for(const state of cloud.filter(r=>r.root_slug===root)){
+        const row=leaves.get(state.item_id);if(!row||!(tab==='bookmarks'?state.bookmarked:tab==='notes'?state.note.trim():state.revise))continue;
+        items.push({id:row.id,title:row.title,root_id:root,url:row.url,body:tab==='notes'?state.note:undefined,href:learningHref(root)+'#'+row.id});
+      }
+    }catch{/* An expired Pro pack is not delivered through Saved. */}
+  }
   return (
     <>
       <PageHeader title="Saved" subtitle="Your bookmarks, notes and items flagged for revision." />

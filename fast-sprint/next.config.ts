@@ -16,6 +16,7 @@ const nextConfig: NextConfig = {
     }];
   },
   outputFileTracingIncludes: {
+    "/*": ["./content/collections/*.manifest.json"],
     "/analytics": ["./content/companies/*.json"],
     "/companies": ["./content/companies/*.json"],
     "/companies/*": ["./content/companies/*.json"],

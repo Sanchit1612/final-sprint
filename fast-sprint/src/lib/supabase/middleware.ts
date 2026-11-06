@@ -2,7 +2,7 @@ import { createServerClient, type CookieOptions } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 import { authCookieOptions, SUPABASE_KEY, SUPABASE_URL, supabaseConfigured } from "../env";
 
-const PROTECTED = ["/practice", "/sql-practice", "/companies","/billing", "/resources", "/analytics", "/dashboard", "/dsa", "/core", "/sprint", "/applications", "/saved", "/settings", "/onboarding"];
+const PROTECTED = ["/system-design", "/try", "/practice", "/sql-practice", "/companies","/billing", "/resources", "/analytics", "/dashboard", "/dsa", "/core", "/sprint", "/applications", "/saved", "/settings", "/onboarding"];
 
 export async function updateSession(request: NextRequest) {
   let response = NextResponse.next({ request });
@@ -30,7 +30,13 @@ export async function updateSession(request: NextRequest) {
     return redirect;
   }
 
-  if (!user && protectedPage) {
+  if (!user && protectedPage && path!=="/dsa" && request.method==="GET") {
+    const url=request.nextUrl.clone();url.pathname='/preview';url.search=`?section=${encodeURIComponent(path)}`;
+    const preview=NextResponse.rewrite(url);preview.headers.set('Cache-Control','private, no-store');
+    for(const cookie of response.cookies.getAll())preview.cookies.set(cookie);
+    return preview;
+  }
+  if (!user && protectedPage && path!=="/dsa") {
     const url = request.nextUrl.clone();
     url.pathname = "/login";
     url.search = `?next=${encodeURIComponent(path + request.nextUrl.search)}`;

@@ -24,7 +24,7 @@ export default async function Page({ searchParams }: { searchParams: Promise<{ d
     fetchAll<TaskItem>((a, b) => supabase.from("daily_tasks").select("id,title,notes,status,task_date").eq("task_date", date).order("sort_order").order("created_at").order("id").range(a, b)),
     fetchAll<TaskItem>((a, b) => supabase.from("daily_tasks").select("id,title,notes,status,task_date").lt("task_date", today).eq("status", "pending").order("task_date").order("id").range(a, b)),
   ]);
-  const coverage=await loadCoverage(supabase,user.id);
+  const coverage=await loadCoverage(supabase,user.id,isPro,false);
   function leaves(nodes:CoverageGroup[],slug:string,review=false):FocusItem[]{return nodes.flatMap(n=>n.children.length?leaves(n.children,slug,review):((review?n.revision>0:n.completed===0)?[{id:n.id,title:n.title,href:`${learningHref(slug)}#${n.id}`,entityType:"problem"}]:[]));}
   const dsa=coverage.filter(c=>c.root.slug.startsWith("dsa")&&c.data.total),active=chooseFocus(dsa);
   dsa.sort((a,b)=>Number(b===active)-Number(a===active));

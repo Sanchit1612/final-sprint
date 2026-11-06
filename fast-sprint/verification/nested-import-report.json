@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-11-02T16:09:32.188Z",
+  "generatedAt": "2026-11-05T08:16:51.559Z",
   "databaseWrites": 0,
   "reports": [
     {
       "file": "aptitude.manifest.json",
-      "sha256": "6c0acea27597b8417ebc49564a9f84d11029faf29d0e92a208fd7d09b9d1d96d",
-      "rows": 236,
+      "sha256": "624ff7837ecd7eec27024a4cdf0b535d1ad6212431990e49de4e9f525340b75a",
+      "rows": 172,
       "problems": 0,
-      "resources": 75,
+      "resources": 11,
       "learningLeaves": 142,
-      "leavesWithoutLinks": 67,
-      "duplicateResourceURLCount": 0,
+      "leavesWithoutLinks": 142,
+      "duplicateResourceURLCount": 1,
       "duplicateResourceURLs": "private-details-omitted",
       "tier": "Pro",
       "missingProblemURLs": [],
@@ -445,7 +445,7 @@
     },
     {
       "file": "interview.manifest.json",
-      "sha256": "d513ca4055158e36b8f7ad86ab3316dd52195cc76b3f50cb85c7360f8ff9e78e",
+      "sha256": "29e3fd2483d191e09396a7b880689e9ab1f30f3f36e150598324226e2d23a968",
       "rows": 63,
       "problems": 0,
       "resources": 0,

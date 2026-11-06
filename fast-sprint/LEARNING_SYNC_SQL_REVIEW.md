@@ -1,0 +1,5 @@
+# Account learning sync proposal
+
+Apply only after explicit approval to the existing staging project. Adds `learning_item_state`, four own-user RLS policies and one timestamp trigger. Stores manifest item IDs, collection, completion, revision, bookmarks and notes (maximum 5000 characters). No curriculum import, existing-row update/deletion, payment change or activity-history migration. Anonymous access is denied. Pro collection writes require active Pro at the database layer; own saved text is retained after expiry. Server actions independently validate collection/item access against the actual manifest. Existing published DSA storage remains unchanged.
+
+Browser data is copied into an account row only if that row does not already exist; existing cloud state wins. Local records are retained until their cloud write is acknowledged. Data on another origin cannot be read automatically: use the export/import transfer for legacy-domain browser saves. Signing into the same account is required on each device.

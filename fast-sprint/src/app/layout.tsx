@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "@fontsource-variable/outfit";
 import "./globals.css";
+import {SiteAnalytics} from '@/components/SiteAnalytics';
 
 export const metadata: Metadata = {
   title: { default: "Fast Sprint — placement prep that tracks itself", template: "%s · Fast Sprint" },
@@ -11,7 +12,7 @@ export const viewport: Viewport = { themeColor: "#0A0A0B", width: "device-width"
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>{children}<SiteAnalytics/></body>
     </html>
   );
 }

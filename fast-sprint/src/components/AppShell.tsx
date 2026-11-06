@@ -30,7 +30,7 @@ const NAV_BOTTOM = [
   { href: "/settings", label: "Settings", icon: Settings },
 ];
 
-export function AppShell({ name, isPro, children }: { name: string; isPro: boolean; children: React.ReactNode }) {
+export function AppShell({ name, isPro, children, guest=false }: { name: string; isPro: boolean; children: React.ReactNode; guest?:boolean }) {
   const path = usePathname();
   const [open, setOpen] = useState(false);
   useEffect(() => setOpen(false), [path]);
@@ -47,7 +47,7 @@ export function AppShell({ name, isPro, children }: { name: string; isPro: boole
 
   const sidebar = (
     <nav aria-label="Main" className="flex h-full flex-col gap-1 overflow-y-auto p-4">
-      <div className="mb-6 px-1"><Logo href="/dashboard" /></div>
+      <div className="mb-6 px-1"><Logo href="/" /></div>
       <div role="group" aria-label="Daily prep">
         <p className="px-3 pb-1 text-xs font-semibold text-muted">Daily prep</p>
         {DAILY_NAV.map(link)}
@@ -63,9 +63,9 @@ export function AppShell({ name, isPro, children }: { name: string; isPro: boole
       </div>
       <div className="mt-auto space-y-1 border-t border-line pt-4">
         {NAV_BOTTOM.map(link)}
-        <form action={signOut}>
+        {!guest&&<form action={signOut}>
           <button className="flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-sm text-muted transition hover:bg-white/5 hover:text-white"><LogOut className="h-4 w-4" aria-hidden />Log out</button>
-        </form>
+        </form>}
       </div>
     </nav>
   );
@@ -86,7 +86,7 @@ export function AppShell({ name, isPro, children }: { name: string; isPro: boole
           </button>
           <div className="flex-1" />
           <Link href="/pricing" className={`chip ${isPro ? "border-accent/50 text-accent" : ""}`}>{isPro ? "Pro" : "Free plan"}</Link>
-          <Link href="/settings" className="grid h-8 w-8 place-items-center rounded-full bg-surface-2 text-sm font-semibold" aria-label="Settings">{(name || "?").charAt(0).toUpperCase()}</Link>
+          {guest?<Link className="btn-primary !py-1.5" href="/login">Sign in</Link>:<Link href="/settings" className="grid h-8 w-8 place-items-center rounded-full bg-surface-2 text-sm font-semibold" aria-label="Settings">{(name || "?").charAt(0).toUpperCase()}</Link>}
         </header>
         <main className="mx-auto max-w-5xl px-4 py-8 sm:px-6">{children}</main>
       </div>

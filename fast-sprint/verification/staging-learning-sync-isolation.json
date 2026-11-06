@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "twoAccountIsolation": true,
+  "crossOwnerUpdateDenied": true,
+  "freeProWriteDenied": true,
+  "activeProWriteAllowed": true,
+  "fixturesRolledBack": true,
+  "billingEnvironment": [
+    {
+      "mode": "test",
+      "allow_test_pro": true
+    }
+  ]
+}

@@ -1,19 +1,24 @@
 "use client";
 import {ReviewRating} from "./ReviewRating";
+import {InterviewAnswer} from './InterviewAnswer';
+import type {InterviewAnswer as Answer} from '@/lib/content/interview-answer';
 import {PracticeExercise} from "./PracticeExercise";
 import type {PracticeData} from "@/lib/content/practice";
 
 import { Bookmark, Check, ExternalLink, NotebookPen, RotateCcw } from "lucide-react";
 import { useEffect, useState, useTransition } from "react";
 import { saveNote, setBookmark, setDone, setRevise } from "@/app/actions";
+import {saveManifestState} from '@/app/actions/learning';
 import { localLearningPrefix, readLocalLearningItem, type LocalLearningItem } from "@/lib/local-learning";
 import type { Res } from "@/lib/tree";
 
 interface Props {
+  signInHref?:string;
+  interviewAnswer?:Answer;
   allowReview?:boolean;
   practice?: PracticeData;
   readOnly?: boolean;
-  localStudy?: { user: string; href: string; requiresPro?: boolean };
+  localStudy?: { user: string; href: string; requiresPro?: boolean; root?:string; cloud?:boolean };
   id: string; title: string; difficulty: string | null; url: string | null; platform: string | null; description: string | null;
   done: boolean; revise: boolean; bookmarked: boolean; note: string; resources: Res[];
 }
@@ -34,7 +39,7 @@ export function ItemRow(p: Props) {
   const disabled = pending || (localKey ? !localReady : !!p.readOnly);
 
   useEffect(() => {
-    if (!localKey) return;
+    if (!localKey || p.localStudy?.cloud) { setLocalReady(true); return; }
     try {
       const item = readLocalLearningItem(localKey);
       if (item) {
@@ -47,7 +52,11 @@ export function ItemRow(p: Props) {
       setError("Could not read your saved work in this browser.");
     }
     setLocalReady(true);
-  }, [localKey]);
+  }, [localKey,p.localStudy?.cloud]);
+
+  useEffect(()=>{setDoneS(p.done);},[p.done]);
+  useEffect(()=>{setReviseS(p.revise);},[p.revise]);
+  useEffect(()=>{setMarked(p.bookmarked);},[p.bookmarked]);
 
   function updateLocal(change: Partial<LocalLearningItem>) {
     if (!localKey || !p.localStudy) return;
@@ -66,14 +75,16 @@ export function ItemRow(p: Props) {
   const run = (fn: () => Promise<{ ok: boolean; error?: string }>, rollback: () => void,
     localChange: Partial<LocalLearningItem>, onSuccess?: () => void) => {
     setError(null);
-    if (localKey) {
+    if (localKey && !p.localStudy?.cloud) {
       try { updateLocal(localChange); onSuccess?.(); }
       catch { rollback(); setError("Could not save in this browser. Check your storage settings."); }
       return;
     }
     start(async () => {
       try {
-        const result = await fn();
+        const entry=Object.entries(localChange)[0];
+        const result = p.localStudy?.cloud&&p.localStudy.root
+          ? await saveManifestState({root:p.localStudy.root,id:p.id,field:entry[0],value:entry[1]}) : await fn();
         if (result.ok) onSuccess?.();
         else { rollback(); setError(result.error ?? "Could not save. Try again."); }
       } catch {
@@ -87,13 +98,13 @@ export function ItemRow(p: Props) {
     <div id={p.id} aria-busy={pending} className="group scroll-mt-24 rounded-xl px-2 py-2 hover:bg-white/[0.03]">
       {pending && !open && <p role="status" className="mb-1 text-xs text-muted">Saving…</p>}
       <div className="flex items-start gap-3">
-        <button
+        {p.signInHref?<a href={p.signInHref} aria-label={`Sign in to track ${p.title}`} className="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-md border border-line text-accent">+</a>:<button
           disabled={disabled} type="button" role="checkbox" aria-checked={done} aria-label={`Mark ${p.title} ${done ? "not done" : "done"}`}
           onClick={() => { const v = !done; setDoneS(v); run(() => setDone(p.id, v), () => setDoneS(!v), { done: v }); }}
           className={`mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-md border transition ${done ? "border-success bg-success text-black" : "border-line hover:border-accent"}`}
         >
           {done && <Check className="h-3.5 w-3.5" strokeWidth={3} />}
-        </button>
+        </button>}
         <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
             {p.url ? (
@@ -113,13 +124,14 @@ export function ItemRow(p: Props) {
             </div>
           )}
         </div>
-        <div className="flex shrink-0 items-center gap-0.5">
+        {p.signInHref?<a href={p.signInHref} className="text-xs text-accent">Sign in to save</a>:<div className="flex shrink-0 items-center gap-0.5">
           <IconBtn disabled={disabled} label={revise ? "Remove from revision" : "Mark for revision"} active={revise} onClick={() => { const v = !revise; setReviseS(v); run(() => setRevise(p.id, v), () => setReviseS(!v), { revise: v }); }}><RotateCcw className="h-4 w-4" /></IconBtn>
           <IconBtn disabled={disabled} label={marked ? "Remove bookmark" : "Bookmark"} active={marked} onClick={() => { const v = !marked; setMarked(v); run(() => setBookmark(p.id, v), () => setMarked(!v), { marked: v }); }}><Bookmark className="h-4 w-4" fill={marked ? "currentColor" : "none"} /></IconBtn>
           <IconBtn disabled={disabled} label="Notes" active={open || !!note} onClick={() => setOpen((o) => !o)}><NotebookPen className="h-4 w-4" /></IconBtn>
-        </div>
+        </div>}
       </div>
       {done&&!p.readOnly&&p.allowReview&&<div className="mt-3 pl-8"><ReviewRating itemId={p.id}/></div>}
+      {p.interviewAnswer&&<div className="pl-8"><InterviewAnswer data={p.interviewAnswer}/></div>}
       {p.practice&&<div className="pl-8"><PracticeExercise data={p.practice}/></div>}
       {open && (
         <div className="mt-2 pl-8">

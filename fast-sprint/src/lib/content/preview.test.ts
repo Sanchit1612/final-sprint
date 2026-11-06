@@ -6,6 +6,9 @@ import type {SupabaseClient} from "@supabase/supabase-js";
 const {load}=vi.hoisted(()=>({load:vi.fn().mockResolvedValue(null)}));
 vi.mock('../tree',()=>({loadTree:load}));
 import {loadLearningTree} from './preview';
+it('serves complete Free DSA sheets to guests without querying private account tables',async()=>{
+ load.mockClear();const data=await loadLearningTree({} as SupabaseClient,'','dsa-a2z');expect(data?.total).toBe(455);expect(data?.completed).toBe(0);expect(load).not.toHaveBeenCalled();
+});
 it('denies premium review content before querying or reading its data',async()=>{
  load.mockClear();await expect(loadLearningTree({} as SupabaseClient,'user','behavioural')).rejects.toThrow('Pro entitlement required');expect(load).not.toHaveBeenCalled();
 });
