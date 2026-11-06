@@ -1,0 +1,61 @@
+{
+  "at": "2026-11-06T08:05:46.799Z",
+  "noOrdersOrChargesCreated": true,
+  "checks": [
+    {
+      "name": "invalidWebhook",
+      "status": 400,
+      "body": "Invalid signature"
+    },
+    {
+      "name": "signedIgnoredWebhook",
+      "status": 200,
+      "body": "{\"ignored\":true}"
+    },
+    {
+      "name": "anonymousOrder",
+      "status": 401,
+      "body": "{\"error\":\"Sign in to choose a pass.\"}"
+    },
+    {
+      "name": "wrongOrigin",
+      "status": 503,
+      "body": "{\"error\":\"Checkout is unavailable or pending setup. Check payment history before retrying; contact support if money was deducted.\"}"
+    },
+    {
+      "path": "/pricing",
+      "status": 200,
+      "setupDisabled": false,
+      "signInCheckout": true,
+      "analyticsConsent": true
+    },
+    {
+      "path": "/dsa?collection=striver",
+      "status": 200,
+      "setupDisabled": false,
+      "signInCheckout": false,
+      "analyticsConsent": true
+    },
+    {
+      "path": "/companies",
+      "status": 200,
+      "setupDisabled": false,
+      "signInCheckout": false,
+      "analyticsConsent": true
+    },
+    {
+      "path": "/.env.local",
+      "status": 404,
+      "setupDisabled": false,
+      "signInCheckout": false,
+      "analyticsConsent": true
+    },
+    {
+      "path": "/content/manifests/aptitude.json",
+      "status": 404,
+      "setupDisabled": false,
+      "signInCheckout": false,
+      "analyticsConsent": true
+    }
+  ]
+}

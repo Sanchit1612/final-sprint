@@ -22,7 +22,7 @@ export function PricingCards({ isPro, signedIn, billing }: { isPro: boolean; sig
           </div>
         ); })}
       </div>
-      <p className="-mt-8 text-xs text-muted">Prices are proposed launch prices and may change before payments go live. Your progress is always kept if a Pro pass ends.</p>
+      <p className="-mt-8 text-xs text-muted">Passes are billed once with no automatic renewal. Your saved progress is kept when a Pro pass ends.</p>
 
       <div>
         <h2 className="mb-4 text-xl">Free vs Pro</h2>

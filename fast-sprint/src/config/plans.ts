@@ -1,4 +1,4 @@
-/** Free vs Pro. Prices are PROPOSED launch prices to validate with students; payments are not live yet. */
+/** Fixed-term passes, billed once with no automatic renewal. */
 export const PRICING = [
   { months: 1, price: 89, label: "1 month", tagline: "Try it for a month" },
   { months: 3, price: 219, label: "3 months", tagline: "One placement season", popular: true },
@@ -17,7 +17,7 @@ export const FEATURES: Feature[] = [
   { name: "Daily Sprint task list", free: "5 tasks per day", pro: "Unlimited", available: true },
   { name: "Application tracker", free: "10 applications", pro: "Unlimited", available: true },
   { name: "Master 200 and NeetCode 150", free: true, pro: true, available: true },
-  { name: "Striver A2Z", free: "Browser saves", pro: "Browser saves", available: true },
+  { name: "Striver A2Z", free: true, pro: true, available: true },
   { name: "Aptitude preparation packs", free: false, pro: true, available: false },
   { name: "Behavioural and HR preparation packs", free: false, pro: true, available: false },
   { name: "Company-wise DSA priority sheets", free: false, pro: true, available: true },

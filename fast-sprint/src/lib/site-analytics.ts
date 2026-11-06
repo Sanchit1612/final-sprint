@@ -8,3 +8,11 @@ export function analyticsPath(path:string){
  if(clean.startsWith('/resources/'))return '/resources/collection';
  return ['/', '/pricing','/dashboard','/dsa','/analytics','/practice','/sql-practice','/system-design','/sprint','/applications','/saved','/companies','/resources','/core'].includes(clean)?clean:null;
 }
+
+/** gtag consumes Arguments entries, rather than plain arrays. */
+export function analyticsCommandQueue(queue:unknown[]): (...args:unknown[])=>void {
+ return function(){
+  // eslint-disable-next-line prefer-rest-params -- Required by Google's gtag queue protocol.
+  queue.push(arguments);
+ };
+}
